@@ -9,8 +9,7 @@ Subset includes:
 - `character` - 1 of character
 - `(group|character)?` - 0 or 1 of
 - `(group|character)+` - 1 or more of
-- `.` - 1 of any character, also counts as a character
-- `[^characters]` - beginning
 - `$` - end
+- `^` - beginning
 - any ascii character
 - escape special characters with `\`
