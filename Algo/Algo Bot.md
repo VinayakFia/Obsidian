@@ -5,5 +5,5 @@
 - [ ] Make plot display of buy and sell better
 - [ ] Make Order class contain more info regarding order to reduce complexity
 - [ ] Figure out if there is a worthwhile math library for this
-- [ ] Save to CSV
+- [x] Save to CSV ✅ 2024-09-10
 
