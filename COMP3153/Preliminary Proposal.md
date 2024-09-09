@@ -4,4 +4,9 @@
 
 ## Ideas
 ### Buggy parser for simplified regex
-Subset of options
+Subset includes:
+- `?`
+- `+`
+- any ascii character
+- escape special characters with `\`
+- 
