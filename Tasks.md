@@ -3,6 +3,7 @@
 ### Not Done
 ```tasks
 not done
+group by function tasks
 ```
 
 ## Done
