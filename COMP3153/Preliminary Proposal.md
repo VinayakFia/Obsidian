@@ -6,7 +6,7 @@
 ### Buggy parser for simplified regex
 Subset includes:
 - `[characters]` - group
-- `character` - character
+- `character` - 1 of character
 - `(group|character)?` - 0 or 1 of
 - `(group|character)+` - 1 or more of
 - `.`
