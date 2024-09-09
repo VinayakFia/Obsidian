@@ -7,6 +7,9 @@
 Subset includes:
 - `?`
 - `+`
+- `.`
+- `^` - beginning
+- `$` - end
+- 
 - any ascii character
 - escape special characters with `\`
-- 
