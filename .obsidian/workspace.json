@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP3153/Preliminary Proposal.md",
+                "file": "Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP3153/Preliminary Proposal.md",
+                "file": "Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP3153/Preliminary Proposal.md",
+                "file": "Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP3153/Preliminary Proposal.md"
+                "file": "Tasks.md"
               }
             }
           },
@@ -218,9 +218,11 @@
   },
   "active": "ad6a931c3db443fd",
   "lastOpenFiles": [
+    "COMP4920/COMP4920.md",
+    "COMP3153/Preliminary Proposal.md",
+    "COMP4920",
     "CompClub T3 Workshop.md",
     "Tasks.md",
-    "COMP3153/Preliminary Proposal.md",
     "Algo/Algo Bot.md",
     "COMP3153",
     "Archive/BABS1111 - Assessment 3.md",
