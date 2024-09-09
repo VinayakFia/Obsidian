@@ -5,8 +5,8 @@
 ## Ideas
 ### Buggy parser for simplified regex
 Subset includes:
-- `?`
-- `+`
+- `(group|character)?`
+- `(group|character)+`
 - `.`
 - `^` - beginning
 - `$` - end
