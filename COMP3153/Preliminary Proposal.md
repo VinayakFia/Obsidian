@@ -8,7 +8,7 @@ Subset includes:
 - `(group|character)?`
 - `(group|character)+`
 - `.`
-- `^` - beginning
+- `[^]` - beginning
 - `$` - end
 - 
 - any ascii character
