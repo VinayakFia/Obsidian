@@ -5,11 +5,12 @@
 ## Ideas
 ### Buggy parser for simplified regex
 Subset includes:
-- `(group|character)?`
-- `(group|character)+`
+- `[characters]` - group
+- `character` - character
+- `(group|character)?` - 0 or 1 of
+- `(group|character)+` - 1 or more of
 - `.`
-- `[^]` - beginning
+- `[^characters]` - beginning
 - `$` - end
-- 
 - any ascii character
 - escape special characters with `\`
