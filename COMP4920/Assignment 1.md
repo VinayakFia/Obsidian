@@ -18,4 +18,4 @@
 ## Draft 1
 
 **Expound Kantian ethics**
-Kantian ethics is a deontological ethical theory; it is a theory that judges the morality of an action not through its consequences, but whether the action itself adheres to certain rules and duties. Specifically, Kantian ethics is based on concept of the *categorical imperative*, which, in its original form, is based on the formulation: "Act only according to that maxim *(moral rule or principal)* whereby you can at the same time will that it should become a universal law".
+Specifically, Kantian ethics is based on concept of the *categorical imperative*, which, in its original form, is based on the formulation: "Act only according to that maxim *(moral rule or principal)* whereby you can at the same time will that it should become a universal law".
