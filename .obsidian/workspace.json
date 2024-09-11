@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tasks.md",
+                "file": "COMP4920/Assignment 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tasks.md",
+                "file": "COMP4920/Assignment 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tasks.md",
+                "file": "COMP4920/Assignment 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tasks.md"
+                "file": "COMP4920/Assignment 1.md"
               }
             }
           },
@@ -219,8 +219,9 @@
   },
   "active": "ad6a931c3db443fd",
   "lastOpenFiles": [
-    "CompClub T3 Workshop.md",
     "Tasks.md",
+    "COMP4920/Assignment 1.md",
+    "CompClub T3 Workshop.md",
     "COMP4920/COMP4920.md",
     "COMP3153/Preliminary Proposal.md",
     "COMP4920",

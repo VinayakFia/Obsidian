@@ -1,0 +1,3 @@
+- [ ]
+
+> [!info] Expound and assess rule-based/Kantian ethics. Analyse the extent to which such an ethics might be used to design an automated ethics as per the readings in section 1.2 below. What do you think that the risks and opportunities of such an automated ethics might be? Why? Justify your answer with explicit, detailed, expositional reference to at least one of the suggested readings in section 1.2 below.
