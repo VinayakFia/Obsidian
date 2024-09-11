@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "Algo/Breakout Strategies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "Algo/Breakout Strategies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 1.md"
+                "file": "Algo/Breakout Strategies.md"
               }
             }
           },
@@ -217,10 +217,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad6a931c3db443fd",
+  "active": "8514f328c82bdd02",
   "lastOpenFiles": [
-    "Tasks.md",
     "COMP4920/Assignment 1.md",
+    "Tasks.md",
     "CompClub T3 Workshop.md",
     "COMP4920/COMP4920.md",
     "COMP3153/Preliminary Proposal.md",

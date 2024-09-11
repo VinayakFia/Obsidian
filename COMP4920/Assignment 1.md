@@ -18,4 +18,4 @@
 ## Draft 1
 
 **Expound Kantian ethics**
-Kantian ethics is a deontological ethical theory. Deontoligic
+Kantian ethics is a deontological ethical theory. a theory that judges the morality of an action not through its consequences, but the
