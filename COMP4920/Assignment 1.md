@@ -14,3 +14,5 @@
 *Coeckelbergh, M. (2021): Does kindness towards robots lead to virtue? A reply to Sparrow’s asymmetry argument, Ethics and Information Technology (2021) 23:649–656.*
 
 *Coeckelbergh, M. (2021): Should We Treat Teddy Bear 2.0 as a Kantian Dog? Four Arguments for the Indirect Moral Standing of Personal Social Robots, with Implications for Thinking About Animals and Humans, Minds and Machines (2021) 31:337–360.*
+
+## Draft 1
