@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo/Breakout Strategies.md",
+                "file": "COMP4920/Assignment 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo/Breakout Strategies.md",
+                "file": "COMP4920/Assignment 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo/Breakout Strategies.md",
+                "file": "COMP4920/Assignment 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo/Breakout Strategies.md"
+                "file": "COMP4920/Assignment 1.md"
               }
             }
           },
@@ -219,10 +219,11 @@
   },
   "active": "8514f328c82bdd02",
   "lastOpenFiles": [
+    "COMP4920/COMP4920.md",
+    "Algo/Breakout Strategies.md",
     "COMP4920/Assignment 1.md",
     "Tasks.md",
     "CompClub T3 Workshop.md",
-    "COMP4920/COMP4920.md",
     "COMP3153/Preliminary Proposal.md",
     "COMP4920",
     "Algo/Algo Bot.md",
@@ -231,7 +232,6 @@
     "attachments/Alice and Healthy Person Glucose Concentration.png.png",
     "Archive",
     "Algo/assets/plot 2.png",
-    "Algo/Breakout Strategies.md",
     "Algo/assets/plot 1.png",
     "Algo/assets/plot.png",
     "Algo/assets",
