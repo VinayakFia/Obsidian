@@ -4,7 +4,9 @@
 
 ## SCATS - Sydney Coordinated Adaptive Traffic System
 
-> [!info] [SCATS](https://en.wikipedia.org/wiki/Sydney_Coordinated_Adaptive_Traffic_System)
+## Overview
+
+> [!info] For more information about [SCATS](https://en.wikipedia.org/wiki/Sydney_Coordinated_Adaptive_Traffic_System)
 
 I propose to model a traffic light system based on SCATS. The traffic light system will run on a common, *small* intersection setup as below:
 
@@ -18,4 +20,7 @@ We have several key components here:
 | Pedestrian Light      | 4                                                 | These will have 2 states, Red and Green.                                                                   |
 | Pedestrian(s) Present | 8 (can be simplified to 4, one for each crossing) | These will have 2 states, present, and not present.                                                        |
 | Car Sensor            | 4                                                 | These will have 2 states, present, and not present.                                                        |
-|                       |                                                   |                                                                                                            |
+All together, this leads to a system that is much more complex, and have many more states than a simple traffic light system.
+
+### Implementation Details
+This will be run on a tick based simulation, where a tick is analogous to a second. We will have several non-deterministic transitions
