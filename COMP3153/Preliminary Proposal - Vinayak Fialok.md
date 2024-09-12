@@ -15,12 +15,12 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 
 We have several key components here:
 
-| Name                  | Count                                             | States                                                                                                     |
-| --------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Traffic Light         | 4                                                 | For simplicity, I have decided to settle on a traffic light with only three states: Red, amber, and green. |
-| Pedestrian Light      | 4                                                 | These will have 2 states, Red and Green.                                                                   |
-| Pedestrian(s) Present | 8 (can be simplified to 4, one for each crossing) | These will have 2 states, present, and not present.                                                        |
-| Car Sensor            | 4                                                 | These will have 2 states, present, and not present.                                                        |
+| Name                 | Count                                             | States                                                                                                     |
+| -------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Traffic Light        | 4                                                 | For simplicity, I have decided to settle on a traffic light with only three states: Red, amber, and green. |
+| Pedestrian Light     | 4                                                 | These will have 2 states, Red and Green.                                                                   |
+| Pedestrian(s) Sensor | 8 (can be simplified to 4, one for each crossing) | These will have 2 states, present, and not present.                                                        |
+| Car Sensor           | 4                                                 | These will have 2 states, present, and not present.                                                        |
 All together, this leads to a system that is much more complex, and have many more states than a simple traffic light system.
 
 ### Implementation Details
