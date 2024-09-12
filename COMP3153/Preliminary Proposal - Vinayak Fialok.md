@@ -41,4 +41,5 @@ Some liveliness properties we can validate here include:
 2. All pedestrians must eventually be able to cross the road.
 
 ### Extensibility
-1. Previously I mentioned that cars can only cross the intersection straight. We can introduce a new traffic light which enables cars to cross left and right as well. This will **significantly** increase complexity. However, will le
+1. Previously I mentioned that cars can only cross the intersection straight. We can introduce a new traffic light which enables cars to cross left and right as well. This will **significantly** increase complexity. However, will lead to a more useful model. **My aim is to validate such a system in the end!**. This also leads to more safety properties to validate for pedestrians and cars. However, this also leads to a two lane road, which undoubtably may increase complexity too much.
+2. As an add on to the above, or more likely, an alternative: TOpen green light. In such a light, cars may cross right, buy only if there is no other cars impeding their path. This is very interesting, as it may lead to certain scenarios where a crossing is bottle necked by cars turning right.
