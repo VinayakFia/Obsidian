@@ -10,3 +10,11 @@ I propose to model a traffic light system based on SCATS. The traffic light syst
 
 ![[COMP3153 Exalidraw.excalidraw]]
 
+We have several key components here:
+
+| Name             | States                                                                                                                               |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Traffic Light    | For simplicity, I have decided to settle on a traffic light with only three states: Red, amber, and green. There will be 4 of these. |
+| Pedestrian Light |                                                                                                                                      |
+2. Pedestrian lights, which will have 2 states, Red, and Green. There will be 4 of these.
+3. For each pedestrian crossing, 
