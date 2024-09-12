@@ -1,6 +1,6 @@
 > [!info] [Pdf](file:///C:/Users/vinay/Downloads/COMP3153-A.1P-1.pdf)
 
-- [ ] COMP3153 - Preliminary Model 📅 2024-09-13
+- [x] COMP3153 - Preliminary Model 📅 2024-09-13 ✅ 2024-09-13
 
 ## SCATS - Sydney Coordinated Adaptive Traffic System
 
@@ -8,7 +8,7 @@
 
 > [!info] For more information about [SCATS](https://en.wikipedia.org/wiki/Sydney_Coordinated_Adaptive_Traffic_System)
 
-I propose to model a traffic light system based on SCATS. The traffic light system will run on a common, *small* intersection setup as below:
+I propose to model a traffic light system based on SCATS. Unfortunately, SCATS will not show me they're proprietary algorithm, so I will be making a simplified estimation based on experience and research. The traffic light system will run on a common, *small* intersection setup as below:
 
 ![[COMP3153 Exalidraw.excalidraw|1000px]]
 > [!note] For simplicity, and only for now, cars can only cross straight.
@@ -42,4 +42,4 @@ Some liveliness properties we can validate here include:
 
 ### Extensibility
 1. Previously I mentioned that cars can only cross the intersection straight. We can introduce a new traffic light which enables cars to cross left and right as well. This will **significantly** increase complexity. However, will lead to a more useful model. **My aim is to validate such a system in the end!**. This also leads to more safety properties to validate for pedestrians and cars. However, this also leads to a two lane road, which undoubtably may increase complexity too much.
-2. As an add on to the above, or more likely, an alternative: TOpen green light. In such a light, cars may cross right, buy only if there is no other cars impeding their path. This is very interesting, as it may lead to certain scenarios where a crossing is bottle necked by cars turning right.
+2. As an add on to the above, or more likely, an alternative: The open green light with turns allowed. In such a light, cars may cross right and left, buy only if there is no other cars or pedestrians impeding their path. This is very interesting, as it may lead to certain scenarios where a crossing is bottle necked by cars turning right.
