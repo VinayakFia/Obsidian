@@ -27,4 +27,8 @@ This will be run on a tick based simulation, where a tick is analogous to a seco
 1. Cars arriving at each intersection. For example, we can choose to have a 20% chance of a car arriving at any intersection each tick.
 2. Pedestrians arriving at each crossing. For example, we can choose to have a 10% chance of a pedestrian arriving at any crossing with the intent of travelling some direction (there are 8 choices here).
 We also have some additional states here as a result of entities in our system taking action:
-1. C
+1. Cars crossing / remaining stationary.
+2. Pedestrians crossing / remaining stationary.
+Some safety properties we can validate here include:
+1. No perpendicular traffic lights should be green or amber simultaneously.
+2. Pedestrian lights must be red if an opposing traffic light is green.
