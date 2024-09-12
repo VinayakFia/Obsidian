@@ -8,6 +8,5 @@
 
 I propose to model a traffic light system based on SCATS. The traffic light system will run on a common, *small* intersection setup as below:
 
-```mermaid
+![[COMP3153 Exalidraw.excalidraw]]
 
-```
