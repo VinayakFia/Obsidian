@@ -71,11 +71,9 @@
             "id": "8514f328c82bdd02",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "COMP3153/Preliminary Proposal.md",
-                "mode": "source",
-                "source": false
+                "file": "COMP3153/COMP3153 Exalidraw.excalidraw"
               }
             }
           }
@@ -146,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP3153/Preliminary Proposal.md",
+                "file": "COMP3153/COMP3153 Exalidraw.excalidraw",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP3153/Preliminary Proposal.md",
+                "file": "COMP3153/COMP3153 Exalidraw.excalidraw",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP3153/Preliminary Proposal.md"
+                "file": "COMP3153/COMP3153 Exalidraw.excalidraw"
               }
             }
           },
@@ -214,17 +212,19 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "8514f328c82bdd02",
   "lastOpenFiles": [
+    "COMP3153/Preliminary Proposal.md",
+    "COMP3153/COMP3153 Exalidraw.excalidraw",
     "COMP4920/COMP4920.md",
     "COMP4920/Assignment 1.md",
     "Algo/Breakout Strategies.md",
     "Tasks.md",
     "CompClub T3 Workshop.md",
-    "COMP3153/Preliminary Proposal.md",
     "COMP4920",
     "Algo/Algo Bot.md",
     "COMP3153",
