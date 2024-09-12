@@ -2,14 +2,4 @@
 
 - [ ] COMP3153 - Preliminary Model 📅 2024-09-13
 
-## Ideas
-### Buggy parser for simplified regex
-Subset includes:
-- `[characters]` - 1 of group
-- `character` - 1 of character
-- `(group|character)?` - 0 or 1 of
-- `(group|character)+` - 1 or more of
-- `$` - end
-- `^` - beginning
-- any ascii character
-- escape special characters with `\`
+##

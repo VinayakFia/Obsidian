@@ -2,5 +2,7 @@
   "Appearance-dark@@theme-dark-style-select": "theme-dark-background-default",
   "Appearance-dark@@card-layout-open-dark": true,
   "Appearance-dark@@card-highlight-dark": false,
-  "Appearance-dark@@workspace-divider-transparent-dark": false
+  "Appearance-dark@@workspace-divider-transparent-dark": false,
+  "shimmering-focus@@vim-active-visual-line": true,
+  "shimmering-focus@@angular-shapes": true
 }
