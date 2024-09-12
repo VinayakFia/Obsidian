@@ -1,7 +1,3 @@
-> [!info] [Pdf](file:///C:/Users/vinay/Downloads/COMP3153-A.1P-1.pdf)
-
-- [x] COMP3153 - Preliminary Model 📅 2024-09-13 ✅ 2024-09-13
-
 ## SCATS - Sydney Coordinated Adaptive Traffic System
 
 ## Overview
@@ -21,6 +17,7 @@ We have several key components here:
 | Pedestrian Light     | 4                                                 | These will have 2 states, Red and Green.                                                                   |
 | Pedestrian(s) Sensor | 8 (can be simplified to 4, one for each crossing) | These will have 2 states, present, and not present.                                                        |
 | Car Sensor           | 4                                                 | These will have 2 states, present, and not present.                                                        |
+
 All together, this leads to a system that is much more complex, and have many more states than a simple traffic light system.
 
 ### Implementation Details
