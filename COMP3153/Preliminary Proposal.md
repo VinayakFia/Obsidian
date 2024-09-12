@@ -6,7 +6,7 @@
 
 > [!info] [SCATS](https://en.wikipedia.org/wiki/Sydney_Coordinated_Adaptive_Traffic_System)
 
-I propose to model a traffic light system based on SCATS. The traffic light system will run on a common intersection setup as below:
+I propose to model a traffic light system based on SCATS. The traffic light system will run on a common, *small* intersection setup as below:
 
 ```mermaid
 
