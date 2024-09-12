@@ -18,4 +18,4 @@
 ## Draft 1
 
 **Expound Kantian ethics**
-Specifically, Kantian ethics is based on concept of the *categorical imperative*, which, in its original form, is based on the formulation: "Act only according to that maxim whereby you can at the same time will that it should become a universal law". A moral agent must first reduce a proposed action to a maxim, after which they must reason whether said maxim 
+Specifically, Kantian ethics is based on concept of the *categorical imperative*, which, in its original form, is based on the formulation: "Act only according to that maxim whereby you can at the same time will that it should become a universal law". A moral agent must first reduce a proposed action to a maxim, after which they must reason whether they will said maxim to become moral law.
