@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "Algo/Algo Bot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "Algo/Algo Bot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 1.md"
+                "file": "Algo/Algo Bot.md"
               }
             }
           },
@@ -217,7 +217,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8514f328c82bdd02",
+  "active": "1b5cc27e511e8760",
   "lastOpenFiles": [
     "COMP4920/Assignment 1.md",
     "COMP4920/COMP4920.md",
