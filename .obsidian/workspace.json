@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "COMP4920/Assignment 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "COMP4920/Assignment 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "COMP4920/Assignment 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Tute 01.md"
+                "file": "COMP4920/Assignment 1.md"
               }
             }
           },
@@ -159,10 +159,10 @@
   },
   "active": "26d143ff163b7ddd",
   "lastOpenFiles": [
-    "Pasted image 20240913153727.png",
-    "Pasted image 20240913153718.png",
-    "Pasted image 20240913150705.png",
     "COMP4920/Tute 01.md",
+    "attachments/Pasted image 20240913150705.png",
+    "attachments/Pasted image 20240913153727.png",
+    "attachments/Pasted image 20240913153718.png",
     "COMP4920/COMP4920.md",
     "COMP4920/Assignment 1.md",
     "Tasks.md",
