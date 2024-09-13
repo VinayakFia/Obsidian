@@ -4,22 +4,83 @@
     "type": "split",
     "children": [
       {
-        "id": "2fd1226dc1813112",
+        "id": "84bd27cf92cb2853",
         "type": "tabs",
         "children": [
           {
-            "id": "26d143ff163b7ddd",
+            "id": "a05bc1f6611d3e6d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "Archive/BABS1111 - Assessment 3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a53fe8489c5e6460",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CompClub T3 Workshop.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "913f51354d0e5247",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "COMP3153/Preliminary Proposal - Vinayak Fialok.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad6a931c3db443fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "COMP4920/Assignment 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1b5cc27e511e8760",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algo/Algo Bot.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8514f328c82bdd02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "COMP4920/Assignment 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "Algo/Algo Bot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "Algo/Algo Bot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Tute 01.md"
+                "file": "Algo/Algo Bot.md"
               }
             }
           },
@@ -142,8 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -157,24 +217,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "26d143ff163b7ddd",
+  "active": "1b5cc27e511e8760",
   "lastOpenFiles": [
-    "COMP4920/COMP4920.md",
-    "Pasted image 20240913150705.png",
-    "Pasted image 20240913153718.png",
-    "COMP4920/Tute 01.md",
     "Pasted image 20240913153727.png",
+    "Pasted image 20240913153718.png",
+    "Pasted image 20240913150705.png",
+    "COMP4920/Tute 01.md",
     "COMP4920/Assignment 1.md",
-    "Tasks.md",
-    "CompClub T3 Workshop.md",
-    "Archive/BABS1111 - Assessment 3.md",
+    "COMP4920/COMP4920.md",
     "COMP3153/Preliminary Proposal - Vinayak Fialok.md",
-    "Algo/Algo Bot.md",
     "COMP3153/COMP3153 Exalidraw.excalidraw.md",
     "COMP3153/COMP3153 Exalidraw.excalidraw",
     "Algo/Breakout Strategies.md",
+    "Tasks.md",
+    "CompClub T3 Workshop.md",
     "COMP4920",
+    "Algo/Algo Bot.md",
     "COMP3153",
+    "Archive/BABS1111 - Assessment 3.md",
     "attachments/Alice and Healthy Person Glucose Concentration.png.png",
     "Archive",
     "Algo/assets/plot 2.png",
