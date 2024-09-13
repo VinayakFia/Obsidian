@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP4920/Tute 01.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP4920/Tute 01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP4920/Tute 01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 1.md"
+                "file": "COMP4920/Tute 01.md"
               }
             }
           },
@@ -159,11 +159,12 @@
   },
   "active": "26d143ff163b7ddd",
   "lastOpenFiles": [
+    "Pasted image 20240913150705.png",
+    "COMP4920/Assignment 1.md",
     "COMP4920/Tute 01.md",
     "Tasks.md",
     "COMP4920/COMP4920.md",
     "CompClub T3 Workshop.md",
-    "COMP4920/Assignment 1.md",
     "Archive/BABS1111 - Assessment 3.md",
     "COMP3153/Preliminary Proposal - Vinayak Fialok.md",
     "Algo/Algo Bot.md",
