@@ -11,9 +11,11 @@
             "id": "26d143ff163b7ddd",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20240913153727.png"
+                "file": "COMP4920/Tute 01.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240913153727.png",
+                "file": "COMP4920/Tute 01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240913153727.png",
+                "file": "COMP4920/Tute 01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240913153727.png"
+                "file": "COMP4920/Tute 01.md"
               }
             }
           },
@@ -157,9 +159,9 @@
   },
   "active": "26d143ff163b7ddd",
   "lastOpenFiles": [
+    "Pasted image 20240913153727.png",
     "Pasted image 20240913153718.png",
     "Pasted image 20240913150705.png",
-    "Pasted image 20240913153727.png",
     "COMP4920/Tute 01.md",
     "COMP4920/COMP4920.md",
     "COMP4920/Assignment 1.md",

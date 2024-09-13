@@ -13,7 +13,7 @@ bool shouldwekill5people?()
 		{
 			sadness += sadnessIfDeadEarly[age + yearleft];
 		}
-		sadness += dyingearlyfamilyfriendimpact[expectedage - ];
+		sadness += dyingearlyfamilyfriendimpact[expectedage - n];
 	}
 	
 	return (5 * HappinessYear_deprecation(10, AVERAGE_AGE) - HappinessYear_deprecation(50, AVERAGE_AGE)) > 0;
