@@ -20,4 +20,4 @@ bool shouldwekill5people?()
 }
 ``` 
 RULE BASED:
-Intention 
+id

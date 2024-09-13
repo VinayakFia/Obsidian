@@ -11,11 +11,9 @@
             "id": "26d143ff163b7ddd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "COMP4920/Tute 01.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20240913153727.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "Pasted image 20240913153727.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "Pasted image 20240913153727.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Tute 01.md"
+                "file": "Pasted image 20240913153727.png"
               }
             }
           },
@@ -159,11 +157,11 @@
   },
   "active": "26d143ff163b7ddd",
   "lastOpenFiles": [
-    "COMP4920/COMP4920.md",
-    "Pasted image 20240913150705.png",
     "Pasted image 20240913153718.png",
-    "COMP4920/Tute 01.md",
+    "Pasted image 20240913150705.png",
     "Pasted image 20240913153727.png",
+    "COMP4920/Tute 01.md",
+    "COMP4920/COMP4920.md",
     "COMP4920/Assignment 1.md",
     "Tasks.md",
     "CompClub T3 Workshop.md",
