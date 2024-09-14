@@ -68,6 +68,28 @@
             }
           },
           {
+            "id": "a52ae5b06e4d7dfe",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": ".obsidian/workspace.json",
+                "staged": false
+              }
+            }
+          },
+          {
+            "id": "b868136f32f5df38",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": ".obsidian/workspace.json",
+                "staged": false
+              }
+            }
+          },
+          {
             "id": "8514f328c82bdd02",
             "type": "leaf",
             "state": {
@@ -80,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -126,7 +148,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -146,7 +169,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo/Algo Bot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +185,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo/Algo Bot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,9 +206,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Algo/Algo Bot.md"
-              }
+              "state": {}
             }
           },
           {
@@ -217,8 +236,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1b5cc27e511e8760",
+  "active": "b868136f32f5df38",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Algo/Algo Bot.md",
     "Pasted image 20240913153727.png",
     "Pasted image 20240913153718.png",
     "Pasted image 20240913150705.png",
@@ -232,7 +253,6 @@
     "Tasks.md",
     "CompClub T3 Workshop.md",
     "COMP4920",
-    "Algo/Algo Bot.md",
     "COMP3153",
     "Archive/BABS1111 - Assessment 3.md",
     "attachments/Alice and Healthy Person Glucose Concentration.png.png",
