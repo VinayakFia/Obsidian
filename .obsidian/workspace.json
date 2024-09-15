@@ -116,11 +116,10 @@
             "id": "8514f328c82bdd02",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
-                "mode": "source",
-                "source": false
+                "file": ".obsidian/workspace.json",
+                "staged": false
               }
             }
           }
@@ -191,7 +190,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +206,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,9 +227,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "COMP4920/Assignment 1.md"
-              }
+              "state": {}
             }
           },
           {
@@ -265,6 +260,7 @@
   "active": "8514f328c82bdd02",
   "lastOpenFiles": [
     "COMP4920/Assignment 1.md",
+    "CompClub T3 Workshop.md",
     "COMP4920/COMP4920.md",
     "COMP4920/Tute 01.md",
     "conflict-files-obsidian-git.md",
@@ -280,7 +276,6 @@
     "COMP3153/COMP3153 Exalidraw.excalidraw",
     "Algo/Breakout Strategies.md",
     "Tasks.md",
-    "CompClub T3 Workshop.md",
     "COMP4920",
     "COMP3153",
     "Archive/BABS1111 - Assessment 3.md",
