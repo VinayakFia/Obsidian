@@ -106,7 +106,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP4920/COMP4920.md",
                 "mode": "source",
                 "source": false
               }
@@ -179,6 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "COMP4920/COMP4920.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,6 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "COMP4920/COMP4920.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,7 +219,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hong Kong.md"
+                "file": "COMP4920/COMP4920.md"
               }
             }
           },
@@ -248,10 +250,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4de4277901e9392f",
+  "active": "01a9e934604906f0",
   "lastOpenFiles": [
-    "COMP4920/Assignment 1.md",
     "Hong Kong.md",
+    "COMP4920/Assignment 1.md",
     "COMP4920/Tute 01.md",
     "COMP4920/COMP4920.md",
     "CompClub T3 Workshop.md",
