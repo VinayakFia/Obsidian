@@ -111,21 +111,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "218581ffcfa623ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hong Kong.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -191,7 +179,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hong Kong.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +195,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hong Kong.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -262,7 +248,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "218581ffcfa623ae",
+  "active": "4de4277901e9392f",
   "lastOpenFiles": [
     "COMP4920/Assignment 1.md",
     "Hong Kong.md",
