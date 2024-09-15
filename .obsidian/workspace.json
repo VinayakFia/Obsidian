@@ -111,9 +111,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "218581ffcfa623ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hong Kong.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -179,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "Hong Kong.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "Hong Kong.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 1.md"
+                "file": "Hong Kong.md"
               }
             }
           },
@@ -250,11 +262,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "01a9e934604906f0",
+  "active": "218581ffcfa623ae",
   "lastOpenFiles": [
+    "COMP4920/Assignment 1.md",
+    "Hong Kong.md",
     "COMP4920/Tute 01.md",
     "COMP4920/COMP4920.md",
-    "COMP4920/Assignment 1.md",
     "CompClub T3 Workshop.md",
     "conflict-files-obsidian-git.md",
     "attachments/Pasted image 20240913153727.png",
