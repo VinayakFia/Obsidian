@@ -118,7 +118,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "COMP4920/Assignment 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -191,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "COMP4920/Assignment 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Tute 01.md",
+                "file": "COMP4920/Assignment 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Tute 01.md"
+                "file": "COMP4920/Assignment 1.md"
               }
             }
           },
@@ -264,10 +264,10 @@
   },
   "active": "8514f328c82bdd02",
   "lastOpenFiles": [
-    "COMP4920/Assignment 1.md",
-    "CompClub T3 Workshop.md",
     "COMP4920/COMP4920.md",
     "COMP4920/Tute 01.md",
+    "COMP4920/Assignment 1.md",
+    "CompClub T3 Workshop.md",
     "conflict-files-obsidian-git.md",
     "attachments/Pasted image 20240913153727.png",
     "attachments/Pasted image 20240913153718.png",
