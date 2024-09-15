@@ -25,6 +25,6 @@ Unlike Utilitarianism's impractical computation of the hedonic calculus, one may
 
 Let us cover a common critique of Kant. Suppose one must lie to save a life, as a murder has arrived at your doorstep asking for your boss. A Kantian moral agent must tell the truth. However, this radical simplification of a situation to a unrealistic dichotomy is not reflective of reality[^1]. A moral agent has many possible moral actions to take. For example, it may be a better action to not answer, call security, or to try to reason with them. Indeed one may be forced to make the harder, but moral, choice over the easy one. Yet, this brings us to what is a true limitation of Kantian ethics, the inability to identify the best action. Kantian ethics is black and white, either something is moral, or it is immoral. As such, given situations where there are several moral actions, one must derive their own logic to decide which is best.
 
-Overall, Kantian ethics is a pragmatic framework for the individual to make
+Overall, Kantian ethics is a pragmatic framework for the individual to make rational, *right*, decisions.
 
 [^1]: This doesn't read well pls fix
