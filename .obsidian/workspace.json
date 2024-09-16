@@ -106,7 +106,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/COMP4920.md",
+                "file": "COMP4920/Assignment 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/COMP4920.md",
+                "file": "COMP4920/Assignment 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/COMP4920.md",
+                "file": "COMP4920/Assignment 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,7 +219,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/COMP4920.md"
+                "file": "COMP4920/Assignment 1.md"
               }
             }
           },
@@ -252,10 +252,11 @@
   },
   "active": "01a9e934604906f0",
   "lastOpenFiles": [
-    "Hong Kong.md",
+    "Tasks.md",
     "COMP4920/Assignment 1.md",
     "COMP4920/Tute 01.md",
     "COMP4920/COMP4920.md",
+    "Hong Kong.md",
     "CompClub T3 Workshop.md",
     "conflict-files-obsidian-git.md",
     "attachments/Pasted image 20240913153727.png",
@@ -269,7 +270,6 @@
     "COMP3153/COMP3153 Exalidraw.excalidraw.md",
     "COMP3153/COMP3153 Exalidraw.excalidraw",
     "Algo/Breakout Strategies.md",
-    "Tasks.md",
     "COMP4920",
     "COMP3153",
     "Archive/BABS1111 - Assessment 3.md",
