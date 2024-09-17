@@ -9,10 +9,13 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 ![[COMP3153 Exalidraw.excalidraw|1000px]]
 For simplicity, cars can only cross straight.
 
-## Key Components
+## Implementation Details
+This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
+1. Cars arriving at each intersection. For example, we can choose to have a 20% chance of a car arriving at any intersection each tick.
+2. Pedestrians arriving at each crossing. For example, we can choose to have a 10% chance of a pedestrian arriving at any crossing with the intent of travelling some direction (there are 8 choices here).
 
-This will be run on a tick based simulation, where a tick is analogous to a second.
 
+## State Diagrams
 #### Car Sensor
 The input stream of the car sensor diagram is the the form `(c|n)+` where `c` indicates a car is on the sensor this tick and `n` indicates no car car is on the sensor. This will be important for the traffic light diagram as well
 
@@ -56,8 +59,7 @@ stateDiagram-v2
 	Yellow --> Red : timer
 ```
 
-> [!NOTE] All transitions below occur on a tick.
-
+#### Traffic Light and Sensor Combined Diagram
 ```mermaid
 ---
 title: Traffic Light and Car Sensor Diagram
@@ -116,6 +118,7 @@ stateDiagram-v2
 	Green --> Red : timer
 ```
 
+#### Pedestrian Light and Sensor Diagram
 ```mermaid
 ---
 title: Pedestrian Light and Sensor Diagram
@@ -129,15 +132,11 @@ stateDiagram-v2
 	[*] --> nr
 	nr --> nr : pn
 	nr --> pr : p
-	pr --> pg : 
+	pr --> pg
 	pg --> nr : timer
 ```
 
-### Implementation Details
-This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
-1. Cars arriving at each intersection. For example, we can choose to have a 20% chance of a car arriving at any intersection each tick.
-2. Pedestrians arriving at each crossing. For example, we can choose to have a 10% chance of a pedestrian arriving at any crossing with the intent of travelling some direction (there are 8 choices here).
-
+## REMOVE
 We also have some additional states here as a result of entities in our system taking action:
 1. Cars crossing / remaining stationary.
 2. Pedestrians crossing / remaining stationary.
