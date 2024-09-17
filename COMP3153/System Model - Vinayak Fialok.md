@@ -94,7 +94,14 @@ stateDiagram-v2
 ```
 
 #### Pedestrian Light
-
+```mermaid
+---
+title: Pedestrian Light Diagram
+---
+stateDiagram-v2
+	direction LR
+	
+```
 
 ### Implementation Details
 This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
