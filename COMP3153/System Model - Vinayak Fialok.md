@@ -30,7 +30,11 @@ stateDiagram-v2
 ```
 
 #### Traffic Light
-Traffic lights ONLY turn green when there are cars waiting to go. Additionally, traffic lights stay green for 1 tick, in which 1 car may go
+Traffic lights ONLY turn green when there are cars waiting to go. Additionally, traffic lights stay green for 1 tick, in which 1 car may go. After 1 tick, they turn yellow, after that tick they turn red. Here is the order of a tick where a traffic light is green:
+1. The first car leaves
+2. The sensor updates its state, if there are cars waiting it remains as `Has Cars`, otherwise it turns to `No Cars`.
+3. The traffic light changes and we return to step 1 for the yellow signal.
+
 ```mermaid
 ---
 title: Traffic Light Diagram
