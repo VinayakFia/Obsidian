@@ -10,7 +10,21 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 > [!note] For simplicity, cars can only cross straight.
 
 ## Key Components
-We have several key components here:
+
+> [!INFO] This will be run on a tick based simulation, where a tick is analogous to a second.
+
+#### Car Sensor
+```mermaid
+---
+title: Car Sensor Diagram
+---
+stateDiagram-v2
+	n:: No Cars
+	c:: Car
+	nc:: Cars
+	[*] --> n
+	n --> c : car arrives
+```
 
 | Name                 | Count                                             | States                                                                                                     |
 | -------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
