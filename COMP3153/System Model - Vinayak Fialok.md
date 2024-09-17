@@ -52,8 +52,8 @@ stateDiagram-v2
 	[*] --> Red
 	Red --> Red
 	Red --> Green
-	Green --> Yellow
-	Yellow --> Red
+	Green --> Yellow : timer
+	Yellow --> Red : timer
 ```
 
 > [!NOTE] All transitions below occur on a tick.
@@ -74,10 +74,10 @@ stateDiagram-v2
 	nr --> hr : car arrives
 	hr --> hr : car arrives
 	hr --> hg
-	hg --> hy : cars remain
-	hg --> ny : no cars
-	ny --> nr
-	hy --> hr : cars remain
+	hg --> hy : timer, cars remain
+	hg --> ny : timer, no cars
+	ny --> nr : timer
+	hy --> hr : timer, cars remain
 ```
 
 #### Pedestrian Sensor
@@ -114,7 +114,7 @@ stateDiagram-v2
 	direction LR
 	[*] --> Red
 	Red --> Green
-	Green --> Red
+	Green --> Red : timer
 ```
 
 ```mermaid
