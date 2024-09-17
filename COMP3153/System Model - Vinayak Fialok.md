@@ -136,6 +136,9 @@ stateDiagram-v2
 	pg --> nr : timer
 ```
 
+#### Whole System
+There are some unfilled state transitions here, e.g. (Pedestrians, Red) --> (Pedestrians, Green) and (Has Cars, Red) --> (Has Cars, Green). This is because they are determined based upon 
+
 ## REMOVE
 We also have some additional states here as a result of entities in our system taking action:
 1. Cars crossing / remaining stationary.
