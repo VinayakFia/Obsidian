@@ -81,7 +81,7 @@ stateDiagram-v2
 ```
 
 #### Pedestrian Sensor
-The input stream for the pedestrian sensor is in the form `(p|np)`
+The input stream for the pedestrian sensor is in the form `(p|np)` where `p` represents a pedestrian pressing the button and `np` represents the button not being pressed that tick.
 ```mermaid
 ---
 title: Pedestrian Sensor
@@ -91,9 +91,9 @@ stateDiagram-v2
 	n: No Pedestrians
 	p: Has Pedestrians
 	[*] --> n
-	n --> n
-	n --> p : pedestrian arrives
-	p --> n : pedestrian leaves
+	n --> n : n
+	n --> p : p
+	p --> n : n
 	p --> p : pedestrian arrives
 	p --> p : pedestrian leaves
 	p --> p
