@@ -31,13 +31,13 @@ stateDiagram-v2
 
 ```mermaid
 ---
-title: Traffi Light 
+title: Traffic Light State Diagram
 ---
 stateDiagram-v2
-	[*] --> NoCar
-	HasCar --> NoCar : car leaves when num cars < 0
+	[*] --> [NoCar, Green]
+	HasCar --> [NoCar, Green] : car leaves when num cars < 0
 	HasCar --> HasCar : car leaves when num cars > 0 
-	NoCar --> HasCar : car arrives 
+	[NoCar, Green] --> HasCar : car arrives 
 ```
 
 ### Implementation Details
