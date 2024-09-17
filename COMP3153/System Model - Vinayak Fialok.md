@@ -19,14 +19,38 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 title: Car Sensor Diagram
 ---
 stateDiagram-v2
-	direction l
+	direction LR
 	n: No Cars
-	c: Cars > 0
+	c: Has Cars (cars waiting > 0)
 	[*] --> n
 	n --> c : car arrives
 	c --> n : car leaves
 	c --> c : car leaves
 	c --> c : car arrives
+```
+
+#### Traffic Light
+```mermaid
+---
+title: Traffic Light Diagram
+---
+stateDiagram-v2
+	direction LR
+	[*] --> Red
+	Red --> Green
+	Green --> Yellow
+	Yellow --> Red
+```
+
+```mermaid
+---
+title: Traffic Light and Car Sensor Diagram
+---
+stateDiagram-v2
+	direction LR
+	ng: No Cars, Green
+	nr: No Cars, Red
+	ny: No Cars, Yelo
 ```
 
 | Name                 | Count                                             | States                                                                                                     |
