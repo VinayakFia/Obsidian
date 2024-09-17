@@ -30,6 +30,7 @@ stateDiagram-v2
 ```
 
 #### Traffic Light
+Traffic lights ONLY turn green when there are cars waiting to go. Additionally, traffic lights stay green for 1 tick, in which 1 car may go
 ```mermaid
 ---
 title: Traffic Light Diagram
@@ -50,7 +51,18 @@ stateDiagram-v2
 	direction LR
 	ng: No Cars, Green
 	nr: No Cars, Red
-	ny: No Cars, Yelo
+	ny: No Cars, Yellow
+	hg: Has Cars, Green
+	hr: Has Cars, Red
+	hy: Has Cars, Yellow
+	[*] --> nr
+	nr --> hr : car arrives
+	hr --> hr : car arrives
+	hr --> hg
+	hg --> hy
+	hg --> ny
+	ny --> nr
+	hy --> hr
 ```
 
 | Name                 | Count                                             | States                                                                                                     |
