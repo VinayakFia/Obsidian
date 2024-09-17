@@ -7,15 +7,14 @@
 I propose to model a traffic light system based on SCATS. Unfortunately, SCATS will not show me they're proprietary algorithm, so I will be making a simplified estimation based on experience and research. The traffic light system will run on a common, *small* intersection setup as below:
 
 ![[COMP3153 Exalidraw.excalidraw|1000px]]
-> [!note] For simplicity, cars can only cross straight.
+For simplicity, cars can only cross straight.
 
 ## Key Components
 
-> [!INFO] This will be run on a tick based simulation, where a tick is analogous to a second.
+This will be run on a tick based simulation, where a tick is analogous to a second.
 
 #### Car Sensor
-
-The input stream of the car sensor diagram is the the form `(c|n)+` where `c` indicates a car is on the sensor this tick and `n` indicates no car car is on the sensor.
+The input stream of the car sensor diagram is the the form `(c|n)+` where `c` indicates a car is on the sensor this tick and `n` indicates no car car is on the sensor. This will be important for the traffic light diagram as well
 
 ```mermaid
 ---
@@ -26,12 +25,10 @@ stateDiagram-v2
 	n: No Cars
 	c: Has Cars
 	[*] --> n
-	n --> c : car arrives
-	n --> n
-	c --> n : car leaves
-	c --> c : car leaves
-	c --> c : car arrives
-	c --> c
+	n --> c : c
+	n --> n : n
+	c --> n : n
+	c --> c : c
 ```
 
 #### Traffic Light
@@ -74,16 +71,17 @@ stateDiagram-v2
 	hr: Has Cars, Red
 	hy: Has Cars, Yellow
 	[*] --> nr
-	nr --> hr : car arrives
-	hr --> hr : car arrives
+	nr --> hr : c
+	hr --> hr : c
 	hr --> hg
-	hg --> hy : timer, cars remain
-	hg --> ny : timer, no cars
+	hg --> hy : timer, c
+	hg --> ny : timer, n
 	ny --> nr : timer
-	hy --> hr : timer, cars remain
+	hy --> hr : timer, c
 ```
 
 #### Pedestrian Sensor
+The input stream for the pedestrian sensor is in the form `(p|np)`
 ```mermaid
 ---
 title: Pedestrian Sensor
