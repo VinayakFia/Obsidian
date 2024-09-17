@@ -20,6 +20,7 @@ We have several key components here:
 | Car Sensor           | 4                                                 | These will have 2 states, present, and not present.                                                        |
 
 ```mermaid
+
 ```
 
 ### Implementation Details
