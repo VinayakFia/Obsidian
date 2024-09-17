@@ -7,8 +7,9 @@
 I propose to model a traffic light system based on SCATS. Unfortunately, SCATS will not show me they're proprietary algorithm, so I will be making a simplified estimation based on experience and research. The traffic light system will run on a common, *small* intersection setup as below:
 
 ![[COMP3153 Exalidraw.excalidraw|1000px]]
-> [!note] For simplicity, and only for now, cars can only cross straight.
+> [!note] For simplicity, cars can only cross straight.
 
+## Key Components
 We have several key components here:
 
 | Name                 | Count                                             | States                                                                                                     |
@@ -18,7 +19,8 @@ We have several key components here:
 | Pedestrian(s) Sensor | 8 (can be simplified to 4, one for each crossing) | These will have 2 states, present, and not present.                                                        |
 | Car Sensor           | 4                                                 | These will have 2 states, present, and not present.                                                        |
 
-All together, this leads to a system that is much more complex, and have many more states than a simple traffic light system.
+```mermaid
+```
 
 ### Implementation Details
 This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
