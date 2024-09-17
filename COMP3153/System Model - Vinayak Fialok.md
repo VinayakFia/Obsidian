@@ -24,6 +24,9 @@ stateDiagram-v2
 	nc:: Cars
 	[*] --> n
 	n --> c : car arrives
+	c --> n : car leaves
+	c --> nc : car arrives
+	nc --> nc : car leaves
 ```
 
 | Name                 | Count                                             | States                                                                                                     |
