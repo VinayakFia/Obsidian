@@ -23,8 +23,10 @@ We have several key components here:
 title: Car Sensor
 ---
 stateDiagram-v2
-	[*] --> NoCars
-	NoCars --> 
+	[*] --> NoCar
+	HasCar --> NoCar : car leaves when num cars < 0
+	HasCar --> HasCar : car leaves when num cars > 0 
+	NoCar --> HasCar : car arrives 
 ```
 
 ```mermaid
@@ -33,7 +35,7 @@ title: Traffic Light
 ---
 stateDiagram-v2
 	[*] --> Red
-	Red --> Green
+	Red --> Green : when
 	Green --> Yellow
 	Yellow --> Red
 ```
