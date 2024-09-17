@@ -24,9 +24,11 @@ stateDiagram-v2
 	c: Has Cars
 	[*] --> n
 	n --> c : car arrives
+	n --> n
 	c --> n : car leaves
 	c --> c : car leaves
 	c --> c : car arrives
+	c --> c
 ```
 
 #### Traffic Light
@@ -48,6 +50,7 @@ title: Traffic Light Diagram
 stateDiagram-v2
 	direction LR
 	[*] --> Red
+	Red --> Red
 	Red --> Green
 	Green --> Yellow
 	Yellow --> Red
@@ -87,20 +90,37 @@ stateDiagram-v2
 	n: No Pedestrians
 	p: Has Pedestrians
 	[*] --> n
+	n --> n
 	n --> p : pedestrian arrives
 	p --> n : pedestrian leaves
 	p --> p : pedestrian arrives
 	p --> p : pedestrian leaves
+	p --> p
 ```
 
 #### Pedestrian Light
+Pedestrian lights stay green for 1 tick in which all pedestrians can cross.
+
 ```mermaid
 ---
 title: Pedestrian Light Diagram
 ---
 stateDiagram-v2
 	direction LR
-	
+	[*] --> Red
+	Red --> Green
+	Green --> Red
+```
+
+```mermaid
+---
+title: Pedestrian Light and Sensor Diagram
+---
+stateDiagram-v2
+	direction LR
+	nr: No Pedestrians, Red
+	ng: No Pedestrians, Green
+	pr: No Pedestrians
 ```
 
 ### Implementation Details
