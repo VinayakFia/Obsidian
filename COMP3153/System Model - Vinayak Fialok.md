@@ -32,12 +32,12 @@ stateDiagram-v2
 #### Traffic Light
 Traffic lights ONLY turn green when there are cars waiting to go. Additionally, traffic lights stay green for 1 tick, in which 1 car may go. After 1 tick, they turn yellow, after that tick they turn red. 
 
-> [!INFO] Tick order:
+> [!INFO] Tick order of green/yellow traffic light:
 > 1. Cars randomly arrive.
 > 	1. If a car arrives at a green or yellow light, and there are no cars at that light, it may immediately go.
 > 	2. If a car arrives at a green or yellow light, it must wait in the queue.
 > 2. The first car leaves.
-> 3. Cars shuffle up 
+> 3. Cars shuffle up the queue.
 > 4. The sensor updates its state, if there are cars waiting it remains as `Has Cars`, otherwise it turns to `No Cars`.
 > 5. The traffic light changes and we return to step 1 for the yellow signal.
 
@@ -52,6 +52,8 @@ stateDiagram-v2
 	Green --> Yellow
 	Yellow --> Red
 ```
+
+> [!NOTE] All transitions below occur on a tick.
 
 ```mermaid
 ---
@@ -69,10 +71,10 @@ stateDiagram-v2
 	nr --> hr : car arrives
 	hr --> hr : car arrives
 	hr --> hg
-	hg --> hy
-	hg --> ny
+	hg --> hy : cars remain after tick
+	hg --> ny : all cars gone
 	ny --> nr
-	hy --> hr
+	hy --> hr : cars remain after tick
 ```
 
 ### Implementation Details
