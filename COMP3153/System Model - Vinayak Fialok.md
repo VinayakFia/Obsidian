@@ -14,6 +14,9 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 > [!INFO] This will be run on a tick based simulation, where a tick is analogous to a second.
 
 #### Car Sensor
+
+The input stream of the car sensor diagram is the the form `(c|n)+` where `c` indicates a car is on the sensor this tick and `n` indicates no car car is on the sensor.
+
 ```mermaid
 ---
 title: Car Sensor Diagram
@@ -131,7 +134,7 @@ stateDiagram-v2
 	nr --> nr
 	nr --> pr : pedestrian arrives
 	pr --> pg
-	pg --> nr
+	pg --> nr : timer
 ```
 
 ### Implementation Details
