@@ -30,10 +30,16 @@ stateDiagram-v2
 ```
 
 #### Traffic Light
-Traffic lights ONLY turn green when there are cars waiting to go. Additionally, traffic lights stay green for 1 tick, in which 1 car may go. After 1 tick, they turn yellow, after that tick they turn red. Here is the order of a tick where a traffic light is green:
-1. The first car leaves
-2. The sensor updates its state, if there are cars waiting it remains as `Has Cars`, otherwise it turns to `No Cars`.
-3. The traffic light changes and we return to step 1 for the yellow signal.
+Traffic lights ONLY turn green when there are cars waiting to go. Additionally, traffic lights stay green for 1 tick, in which 1 car may go. After 1 tick, they turn yellow, after that tick they turn red. 
+
+> [!INFO] Tick order:
+> 1. Cars randomly arrive.
+> 	1. If a car arrives at a green or yellow light, and there are no cars at that light, it may immediately go.
+> 	2. If a car arrives at a green or yellow light, it must wait in the queue.
+> 2. The first car leaves.
+> 3. Cars shuffle up 
+> 4. The sensor updates its state, if there are cars waiting it remains as `Has Cars`, otherwise it turns to `No Cars`.
+> 5. The traffic light changes and we return to step 1 for the yellow signal.
 
 ```mermaid
 ---
@@ -67,34 +73,6 @@ stateDiagram-v2
 	hg --> ny
 	ny --> nr
 	hy --> hr
-```
-
-| Name                 | Count                                             | States                                                                                                     |
-| -------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Traffic Light        | 4                                                 | For simplicity, I have decided to settle on a traffic light with only three states: Red, amber, and green. |
-| Pedestrian Light     | 4                                                 | These will have 2 states, Red and Green.                                                                   |
-| Pedestrian(s) Sensor | 8 (can be simplified to 4, one for each crossing) | These will have 2 states, present, and not present.                                                        |
-| Car Sensor           | 4                                                 | These will have 2 states, present, and not present.                                                        |
-```mermaid
----
-title: Car Sensor
----
-stateDiagram-v2
-	[*] --> NoCar
-	HasCar --> NoCar : car leaves when num cars < 0
-	HasCar --> HasCar : car leaves when num cars > 0 
-	NoCar --> HasCar : car arrives 
-```
-
-```mermaid
----
-title: Traffic Light State Diagram
----
-stateDiagram-v2
-	[*] --> [NoCar, Green]
-	HasCar --> [NoCar, Green] : car leaves when num cars < 0
-	HasCar --> HasCar : car leaves when num cars > 0 
-	[NoCar, Green] --> HasCar : car arrives 
 ```
 
 ### Implementation Details
