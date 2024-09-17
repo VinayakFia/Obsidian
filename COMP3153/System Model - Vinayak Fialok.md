@@ -21,7 +21,7 @@ title: Car Sensor Diagram
 stateDiagram-v2
 	direction LR
 	n: No Cars
-	c: Has Cars (cars waiting > 0)
+	c: Has Cars
 	[*] --> n
 	n --> c : car arrives
 	c --> n : car leaves
@@ -72,10 +72,29 @@ stateDiagram-v2
 	hr --> hr : car arrives
 	hr --> hg
 	hg --> hy : cars remain
-	hg --> ny : all cars gone
+	hg --> ny : no cars
 	ny --> nr
-	hy --> hr : cars remain after tick
+	hy --> hr : cars remain
 ```
+
+#### Pedestrian Sensor
+```mermaid
+---
+title: Pedestrian Sensor
+---
+stateDiagram-v2
+	direction LR
+	n: No Pedestrians
+	p: Has Pedestrians
+	[*] --> n
+	n --> p : pedestrian arrives
+	p --> n : pedestrian leaves
+	p --> p : pedestrian arrives
+	p --> p : pedestrian leaves
+```
+
+#### Pedestrian Light
+
 
 ### Implementation Details
 This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
