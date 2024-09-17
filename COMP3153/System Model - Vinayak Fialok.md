@@ -137,7 +137,7 @@ stateDiagram-v2
 ```
 
 #### Whole System
-There are some unfilled state transitions here, e.g. (Pedestrians, Red) --> (Pedestrians, Green) and (Has Cars, Red) --> (Has Cars, Green). This is because they are determined based upon 
+There are some unfilled state transitions here, e.g. (Pedestrians, Red) --> (Pedestrians, Green) and (Has Cars, Red) --> (Has Cars, Green). This is because they are determined based upon the other lights.
 
 ## REMOVE
 We also have some additional states here as a result of entities in our system taking action:
