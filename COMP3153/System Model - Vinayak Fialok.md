@@ -71,7 +71,7 @@ stateDiagram-v2
 	nr --> hr : car arrives
 	hr --> hr : car arrives
 	hr --> hg
-	hg --> hy : cars remain after tick
+	hg --> hy : cars remain
 	hg --> ny : all cars gone
 	ny --> nr
 	hy --> hr : cars remain after tick
