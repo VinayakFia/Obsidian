@@ -31,7 +31,7 @@ stateDiagram-v2
 
 ```mermaid
 ---
-title: Car Sensor
+title: Traffi Light 
 ---
 stateDiagram-v2
 	[*] --> NoCar
