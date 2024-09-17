@@ -18,9 +18,24 @@ We have several key components here:
 | Pedestrian Light     | 4                                                 | These will have 2 states, Red and Green.                                                                   |
 | Pedestrian(s) Sensor | 8 (can be simplified to 4, one for each crossing) | These will have 2 states, present, and not present.                                                        |
 | Car Sensor           | 4                                                 | These will have 2 states, present, and not present.                                                        |
+```mermaid
+---
+title: Car Sensor
+---
+stateDiagram-v2
+	[*] --> NoCars
+	NoCars --> 
+```
 
 ```mermaid
-
+---
+title: Traffic Light
+---
+stateDiagram-v2
+	[*] --> Red
+	Red --> Green
+	Green --> Yellow
+	Yellow --> Red
 ```
 
 ### Implementation Details
