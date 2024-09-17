@@ -35,13 +35,14 @@ stateDiagram-v2
 Traffic lights ONLY turn green when there are cars waiting to go. Additionally, traffic lights stay green for 1 tick, in which 1 car may go. After 1 tick, they turn yellow, after that tick they turn red. 
 
 > [!INFO] Tick order of green/yellow traffic light:
-> 1. Cars randomly arrive.
+> 1. Light turns green
+> 2. Cars randomly arrive.
 > 	1. If a car arrives at a green or yellow light, and there are no cars at that light, it may immediately go.
 > 	2. If a car arrives at a green or yellow light, it must wait in the queue.
-> 2. The first car leaves.
-> 3. Cars shuffle up the queue.
-> 4. The sensor updates its state, if there are cars waiting it remains as `Has Cars`, otherwise it turns to `No Cars`.
-> 5. The traffic light changes and we return to step 1 for the yellow signal.
+> 3. The first car leaves.
+> 4. Cars shuffle up the queue.
+> 5. The sensor updates its state, if there are cars waiting it remains as `Has Cars`, otherwise it turns to `No Cars`.
+> 6. The traffic light changes and we return to step 1 for the yellow signal.
 
 ```mermaid
 ---
@@ -101,6 +102,11 @@ stateDiagram-v2
 #### Pedestrian Light
 Pedestrian lights stay green for 1 tick in which all pedestrians can cross.
 
+> [!INFO] Tick order of pedestrians on green light
+> 1. Light turns green
+> 2. All pedestrians cross
+> 3. Light turns red
+
 ```mermaid
 ---
 title: Pedestrian Light Diagram
@@ -120,7 +126,13 @@ stateDiagram-v2
 	direction LR
 	nr: No Pedestrians, Red
 	ng: No Pedestrians, Green
-	pr: No Pedestrians
+	pr: Pedestrians, Red
+	pg: Pedestrians, Green
+	[*] --> nr
+	nr --> nr
+	nr --> pr : pedestrian arrives
+	pr --> pg
+	pg --> nr
 ```
 
 ### Implementation Details
