@@ -9,21 +9,17 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 ![[COMP3153 Exalidraw.excalidraw|1000px]]
 For simplicity, cars can only cross straight.
 
-## Implementation Details
+## Implementation Details + Non-determinism
 This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
 1. Cars arriving at each intersection. For example, we can choose to have a 20% chance of a car arriving at any intersection each tick.
 2. Pedestrians arriving at each crossing. For example, we can choose to have a 10% chance of a pedestrian arriving at any crossing with the intent of travelling some direction (there are 8 choices here).
-
-
 ## State Diagrams
 #### Channels
 We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, ct_2, ct_3, ct_4$.
 - Let the `broadcast(signal)` function send `signal` to all channels.
 - Let the `ct_x(signal)` function send `signal` to $ct_x$. E.g. the `ct_1(signal!)` sends signal `signal!` to $ct_1$.
-
 #### Car Sensor
 Every time a car arrives, the car sensor emits the `car` signal to its corresponding traffic light. I.e. $car\_sensor_i$ will emit `ct_x(car)`.
-
 #### Traffic Light
 **Variables**
 `uint car = 0;`
@@ -58,9 +54,11 @@ stateDiagram-v2
 ```
 
 #### Pedestrian Signal
+The pedestrian signal will be much like the buttons we press in Sydney intersections.
 ```mermaid
 stateDiagram-v2
-	
+	[*] --> unarmed
+	unarmed --> armed : 
 ```
 ### Extensibility
 1. Previously I mentioned that cars can only cross the intersection straight. We can introduce a new traffic light which enables cars to cross left and right as well. This will **significantly** increase complexity. However, will lead to a more useful model. **My aim is to validate such a system in the end!**. This also leads to more safety properties to validate for pedestrians and cars. However, this also leads to a two lane road, which undoubtably may increase complexity too much.
