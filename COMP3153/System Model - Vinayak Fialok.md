@@ -13,7 +13,7 @@ For simplicity, cars can only cross straight.
 ## A.2C Potential Abstractions/Specifications Considered
 - **Abstracting traffic light logic to let traffic lights just go green one after another.** This is easy to implement, however, it has little utility and is not every useful or complex.
 - **Allowing left turns on a green light.** Although this is part of a possible extension to the system, I have chosen to not integrate it just now as it increases the states and signals required for the system.
-- **Abstracting the timer away so everything just lasts 1 tick.** Although this does allows us to model the system more simply without losing significant simplicity, I have chosen to allow ti
+- **Abstracting the timer away so everything just lasts 1 tick.** Although this does allows us to model the system more simply without losing significant simplicity, I have chosen to allow 
 ## Implementation Details
 ### Non-determinism
 This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
