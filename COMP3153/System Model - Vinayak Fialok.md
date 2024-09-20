@@ -30,6 +30,9 @@ Every time a car arrives, the car sensor emits the `car` signal to its correspon
 `uint timer = 0;`
 Every tick in the `green`, `greenInfinity`, and `amber` states, the `car` and `timer` variables are decremented by 1.
 
+**Signals**
+- 
+
 ```mermaid
 stateDiagram-v2
 	state after_amber <<choice>>
