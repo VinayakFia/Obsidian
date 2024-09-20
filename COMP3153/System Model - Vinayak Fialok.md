@@ -8,7 +8,7 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 
 ![[COMP3153 Exalidraw.excalidraw|1000px]]
 
-For simplicity, cars can only cross straight. 
+For simplicity, cars can only cross straight. However, this may be modified 
 
 ## Implementation Details
 ### Non-determinism
