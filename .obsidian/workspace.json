@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/Tute 02.md",
+                "file": "COMP3153/System Model - Vinayak Fialok.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Tute 02.md",
+                "file": "COMP3153/System Model - Vinayak Fialok.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Tute 02.md",
+                "file": "COMP3153/System Model - Vinayak Fialok.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Tute 02.md"
+                "file": "COMP3153/System Model - Vinayak Fialok.md"
               }
             }
           },
@@ -142,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,30 +162,28 @@
     "Pasted image 20240920151840.png",
     "Pasted image 20240920151514.png",
     "Pasted image 20240920151344.png",
-    "COMP4920/Assignment 1.md",
     "COMP4920/Tute 02.md",
-    "COMP4920/Tute 01.md",
-    "COMP3153/System Model - Vinayak Fialok.md",
-    "COMP3153/COMP3153 Exalidraw.excalidraw.md",
-    "COMP4920/COMP4920.md",
     "Excalidraw/System Model - Vinayak Fialok 2024-09-20 13.14.20.excalidraw.md",
     "Excalidraw",
-    "COMP3153/task.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/zune.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/train.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/salesman2.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/salesman1.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/pftp.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/petersonN.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/patterns.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/mobile2.pml",
+    "conflict-files-obsidian-git.md",
+    "COMP3153/System Model - Vinayak Fialok.md",
+    "COMP3153/Spin/Spin-version-6.5.2/optional_gui/ispin.tcl",
+    "COMP3153/Spin/Spin-version-6.5.2/optional_gui",
+    "COMP3153/Spin/Spin-version-6.5.2/Man/spin.1",
     "COMP3153/Spin/Spin-version-6.5.2/Man/README.md",
-    "COMP3153/Spin/Spin-version-6.5.2/README.md",
-    "COMP4920/Spin/Spin-version-6.5.2/Man/README.md",
-    "COMP4920/Spin/Spin-version-6.5.2/README.md",
+    "COMP3153/Spin/Spin-version-6.5.2/Man/html_manual_pages.tar.gz",
+    "COMP3153/Spin/Spin-version-6.5.2/Man",
+    "COMP4920/installspin.sh",
+    "COMP3153/task.pml",
+    "COMP3153/Spin/version-6.5.2.tar.gz",
+    "COMP3153/Spin/Spin-version-6.5.2/Src/version.h",
+    "COMP3153/COMP3153 Exalidraw.excalidraw.md",
+    "COMP4920/Assignment 1.md",
+    "COMP4920/Tute 01.md",
     "attachments/Pasted image 20240913150705.png",
     "attachments/Pasted image 20240913153727.png",
     "attachments/Pasted image 20240913153718.png",
+    "COMP4920/COMP4920.md",
     "Tasks.md",
     "CompClub T3 Workshop.md",
     "Archive/BABS1111 - Assessment 3.md",
