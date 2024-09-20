@@ -95,11 +95,11 @@ stateDiagram-v2
 ### Safety Properties
 1. No perpendicular traffic lights should be green or amber simultaneously.
 2. Pedestrian lights must be red if an opposing traffic light is green.
-3. The system never results in a deadlock where no cars/pedestrians may cross.
+3. A green light shall never be triggered if there are no pedestrians/cars waiting.
+4. The system never results in a deadlock where no cars/pedestrians may cross.
 	1. I have chosen not to do this specification as it is covered in the liveliness properties.
-4. The system will never have a green light go on forever and thus does not allow other cars/pedestrians to cross.
+5. The system will never have a green light go on forever and thus does not allow other cars/pedestrians to cross.
 	1. I have chosen not to do this specification as it is covered in the liveliness properties.\
-5. 
 ### Liveliness Properties <- A.2D
 1. Eventually, all cars will be able to cross.
 2. Eventually, all pedestrians will be able to cross.
