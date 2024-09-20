@@ -55,10 +55,16 @@ stateDiagram-v2
 
 #### Pedestrian Signal
 The pedestrian signal will be much like the buttons we press in Sydney intersections.
+#### Pedestrian Light
 ```mermaid
 stateDiagram-v2
-	[*] --> unarmed
-	unarmed --> armed : 
+	[*] --> waiting
+	waiting --> stopped : stop?
+	stopped --> stoppedPedestrian : p?, p++
+	stopped --> waiting : go?
+	waiting --> ready : p?, p++
+	stoppedPedestrian --> ready : go?
+	ready --> stoppedPedestrian : stop?
 ```
 ### Extensibility
 1. Previously I mentioned that cars can only cross the intersection straight. We can introduce a new traffic light which enables cars to cross left and right as well. This will **significantly** increase complexity. However, will lead to a more useful model. **My aim is to validate such a system in the end!**. This also leads to more safety properties to validate for pedestrians and cars. However, this also leads to a two lane road, which undoubtably may increase complexity too much.
