@@ -55,7 +55,6 @@ stateDiagram-v2
 ```
 
 #### Pedestrian Signal
-The pedestrian signal will be much like the buttons we press in Sydney intersections. For 
 #### Pedestrian Light
 Although there are 8 pedestrian lights, we can reduce this 4 pairs. In the end, we have a state diagram very similar to that of traffic lights.
 ```mermaid
