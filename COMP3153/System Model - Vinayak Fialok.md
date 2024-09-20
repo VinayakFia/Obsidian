@@ -19,7 +19,7 @@ This will be run on a tick based simulation, where a tick is analogous to a seco
 We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, ct_2, ct_3, ct_4$. We also have channels for each pair of pedestrian lights named $pc_1, pc_2, pc_3, pc_4$.
 - Let the `broadcast(signal)` function send `signal` to all channels.
 - Let the `ct_x(signal)` function send `signal` to $ct_x$. E.g. the `ct_1(signal!)` sends signal `signal!` to $ct_1$. Same with function `pc_x(signal)`.
-#### Simplification
+#### Simplification 
 We can simplify the 4 traffic lights + 4 pedestrian lights into 2 pairs of traffic lights and pedestrian lights. This is because when a traffic light is activated, so too can the opposing traffic light be activated.
 As such, we can simplify our channels into:
 - $ct_1, ct_2$ where $ct_1$ serves a pair of opposing traffic lights and $ct_2$ represents the perpendicular pair of traffic lights.
@@ -87,10 +87,10 @@ stateDiagram-v2
 1. No perpendicular traffic lights should be green or amber simultaneously.
 2. Pedestrian lights must be red if an opposing traffic light is green.
 3. The system never results in a deadlock where no cars/pedestrians may cross.
+	1. I have chosen not to do this specification as it is covered in the liveliness properties
 ### Liveliness Properties
 1. Eventually, all cars will be able to cross.
 2. Eventually, all pedestrians will be able to cross.
-###
 ## Extensibility
 1. Previously I mentioned that cars can only cross the intersection straight. We can introduce a new traffic light which enables cars to cross left and right as well. This will **significantly** increase complexity. However, will lead to a more useful model. **My aim is to validate such a system in the end!**. This also leads to more safety properties to validate for pedestrians and cars.
 2. As an add on to the above, or more likely, an alternative: The open green light with turns allowed. In such a light, cars may cross right and left, buy only if there is no other cars or pedestrians impeding their path. This is very interesting, as it may lead to certain scenarios where a crossing is bottle necked by cars turning right.
