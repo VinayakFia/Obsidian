@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP4920/Tute 02.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP4920/Tute 02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP4920/Tute 02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 1.md"
+                "file": "COMP4920/Tute 02.md"
               }
             }
           },
@@ -159,10 +159,12 @@
   },
   "active": "26d143ff163b7ddd",
   "lastOpenFiles": [
+    "Pasted image 20240920151344.png",
+    "COMP4920/Assignment 1.md",
+    "COMP4920/Tute 02.md",
     "COMP4920/Tute 01.md",
     "COMP3153/System Model - Vinayak Fialok.md",
     "COMP3153/COMP3153 Exalidraw.excalidraw.md",
-    "COMP4920/Assignment 1.md",
     "COMP4920/COMP4920.md",
     "Excalidraw/System Model - Vinayak Fialok 2024-09-20 13.14.20.excalidraw.md",
     "Excalidraw",
