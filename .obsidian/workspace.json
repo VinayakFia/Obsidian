@@ -11,11 +11,9 @@
             "id": "26d143ff163b7ddd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md",
-                "mode": "source",
-                "source": false
+                "file": "COMP3153/COMP3153 Exalidraw.excalidraw.md"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md",
+                "file": "COMP3153/COMP3153 Exalidraw.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md",
+                "file": "COMP3153/COMP3153 Exalidraw.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md"
+                "file": "COMP3153/COMP3153 Exalidraw.excalidraw.md"
               }
             }
           },
@@ -157,13 +155,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4de4277901e9392f",
+  "active": "26d143ff163b7ddd",
   "lastOpenFiles": [
+    "COMP3153/System Model - Vinayak Fialok.md",
+    "Excalidraw/System Model - Vinayak Fialok 2024-09-20 13.14.20.excalidraw.md",
+    "COMP3153/COMP3153 Exalidraw.excalidraw.md",
+    "Excalidraw",
     "COMP4920/Assignment 1.md",
     "COMP4920/Tute 01.md",
     "COMP4920/COMP4920.md",
-    "COMP3153/System Model - Vinayak Fialok.md",
-    "COMP3153/COMP3153 Exalidraw.excalidraw.md",
     "COMP3153/task.pml",
     "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/zune.pml",
     "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/train.pml",
@@ -173,7 +173,6 @@
     "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/petersonN.pml",
     "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/patterns.pml",
     "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/mobile2.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/ltl_example.pml",
     "COMP3153/Spin/Spin-version-6.5.2/Man/README.md",
     "COMP3153/Spin/Spin-version-6.5.2/README.md",
     "COMP4920/Spin/Spin-version-6.5.2/Man/README.md",

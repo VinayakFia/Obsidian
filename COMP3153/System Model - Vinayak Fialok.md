@@ -24,6 +24,11 @@ We can simplify the 4 traffic lights + 4 pedestrian lights into 2 pairs of traff
 As such, we can simplify our channels into:
 - $ct_1, ct_2$ where $ct_1$ serves a pair of opposing traffic lights and $ct_2$ represents the perpendicular pair of traffic lights.
 - similarly $pc_1, pc_2$.
+We also reduce our required components to just:
+- $t_1, t_2$ for the 2 pairs of traffic lights.
+- $p_1, p_2$ for the 2 pairs of pedestrian lights.
+- $ps_1, ps_2$ for the 2 pairs of pedestrian signals.
+- $cs_1, cs_2$ for the 2 pairs of car signals.
 By doing so, we maintain the functionality and properties of the system, whilst reducing the complexity of it significantly.
 
 > [!info] Alternative approaches
