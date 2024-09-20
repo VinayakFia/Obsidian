@@ -60,10 +60,13 @@ stateDiagram-v2
 ```
 
 #### Pedestrian Signal
-Whenever the pedestrian button is clicked, we will 
+Whenever the pedestrian button is clicked, we will send a `p` signal to the corresponding pedestrian light pair.
 #### Pedestrian Light
-Although there are 8 pedestrian lights, we can reduce this 2 pairs of perpendicular pedes. In the end, we have a state diagram very similar to that of traffic lights.
+Although there are 8 pedestrian lights, we can reduce this 2 pairs of perpendicular pedestrian lights. In the end, we have a state diagram very similar to that of traffic lights.
 ```mermaid
+---
+title: Pedestrian Light 1
+---
 stateDiagram-v2
 	state after_green <<choice>>
 
@@ -74,7 +77,7 @@ stateDiagram-v2
 	waiting --> ready : p?, p++
 	stoppedPedestrian --> ready : go?
 	ready --> stoppedPedestrian : stop?
-	ready --> green : ct_x(stop!)
+	ready --> green : ct_2(stop!)
 	green --> after_green
 	after_green --> waiting : when p = 0
 	after_green --> ready : when p > 0
