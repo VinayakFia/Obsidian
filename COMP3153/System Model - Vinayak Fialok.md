@@ -18,7 +18,8 @@ This will be run on a tick based simulation, where a tick is analogous to a seco
 ## State Diagrams
 #### Channels
 We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, ct_2, ct_3, ct_4$.
-Let the `broadcast(signal)` func
+- Let the `broadcast(signal)` function send `signal` to all channels.
+- Let the `ct_x(signal)` function send `signal` to $ct_x$. E.g. the `ct_1(signal!)` sends signal `signal!` to $ct_1$.
 
 #### Car Sensor
 ```mermaid
