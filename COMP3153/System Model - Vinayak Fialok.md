@@ -22,9 +22,10 @@ We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, 
 #### Simplification
 We can simplify the 4 traffic lights + 4 pedestrian lights into 2 pairs of traffic lights and pedestrian lights. This is because when a traffic light is activated, so too can the opposing traffic light be activated.
 As such, we can simplify our channels into:
-- $ct_1, ct_2$ where $ct_1$ serves a pair of opposing traffic lights and $ct_2$ repre
+- $ct_1, ct_2$ where $ct_1$ serves a pair of opposing traffic lights and $ct_2$ represents the perpendicular pair of traffic lights.
+- similarly $pc_1, pc_2$.
 #### Car Sensor
-Every time a car arrives, the car sensor emits the `car` signal to its corresponding traffic light. I.e. $car\_sensor_i$ will emit `ct_x(car)`.
+Every time a car arrives, the car sensor emits the `car` signal to its corresponding traffic light. I.e. $car\_sensor_i$ will emit `ct_i(car)`.
 #### Traffic Light
 **Variables**
 `uint car = 0;`
@@ -59,8 +60,9 @@ stateDiagram-v2
 ```
 
 #### Pedestrian Signal
+Whenever the pedestrian button is clicked, we will 
 #### Pedestrian Light
-Although there are 8 pedestrian lights, we can reduce this 4 pairs. In the end, we have a state diagram very similar to that of traffic lights.
+Although there are 8 pedestrian lights, we can reduce this 2 pairs of opposing. In the end, we have a state diagram very similar to that of traffic lights.
 ```mermaid
 stateDiagram-v2
 	state after_green <<choice>>
