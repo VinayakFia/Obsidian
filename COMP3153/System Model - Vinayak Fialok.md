@@ -22,11 +22,10 @@ We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, 
 - Let the `ct_x(signal)` function send `signal` to $ct_x$. E.g. the `ct_1(signal!)` sends signal `signal!` to $ct_1$.
 
 #### Car Sensor
-```mermaid
-stateDiagram-v2
-	direction LR
-	
-```
+Every time a car arrives, the car sensor emits the `car` signal to its corresponding traffic light. I.e. $car\_sensor_i$ will emit `ct_x(car)`.
+
+#### Traffic Light
+
 
 #### Car Sensor
 The input stream of the car sensor diagram is the the form `(c|n)+` where `c` indicates a car is on the sensor this tick and `n` indicates no car car is on the sensor. This will be important for the traffic light diagram as well
