@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "attachments/Pasted image 20240920154610.png",
+                "file": "attachments/Pasted image 20240920151344.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "attachments/Pasted image 20240920154610.png",
+                "file": "attachments/Pasted image 20240920151344.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "attachments/Pasted image 20240920154610.png"
+                "file": "attachments/Pasted image 20240920151344.png"
               }
             }
           },
@@ -188,12 +188,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "eacc4fa136a950cb",
+  "active": "17158850eed9cb32",
   "lastOpenFiles": [
-    "attachments/Pasted image 20240920151514.png",
-    "COMP4920/Tute 02.md",
-    "attachments/Pasted image 20240920151344.png",
     "attachments/Pasted image 20240920154610.png",
+    "attachments/Pasted image 20240920151514.png",
+    "attachments/Pasted image 20240920151344.png",
+    "COMP4920/Tute 02.md",
     "attachments/Pasted image 20240920152500.png",
     "attachments/Pasted image 20240920152002.png",
     "attachments/Pasted image 20240920151840.png",
