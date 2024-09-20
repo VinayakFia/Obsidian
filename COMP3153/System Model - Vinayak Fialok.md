@@ -27,10 +27,19 @@ Every time a car arrives, the car sensor emits the `car` signal to its correspon
 #### Traffic Light
 ```mermaid
 stateDiagram-v2
-	direction LR
 	[*] --> waiting
 	waiting --> stopped : stop?
-	stopped --> stoppedcar : 
+	stopped --> stoppedCar : car?, car++
+	stopped --> waiting : go?
+	stoppedCar --> ready : go?, broadcast(ready!)
+	stoppedCar --> stoppedCar : car?, car++
+	waiting --> ready : car?, car++, broadcast(ready!)
+	ready --> greenInfinity : broadcast(stop!)
+	ready --> ready : car?, car++
+	greenInfinity --> green : ready?, timer = 5
+	green --> amber : timer = 3
+	amber --> ready : when car > 0, broadcast(ready)
+	amber --> waiting : when car = 0
 ```
 
 #### Car Sensor
