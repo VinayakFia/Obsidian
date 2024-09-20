@@ -8,8 +8,10 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 
 ![[COMP3153 Exalidraw.excalidraw|1000px]]
 
-For simplicity, cars can only cross straight. However, this may be modified 
+For simplicity, cars can only cross straight.
 
+## A.2C Potential Abstractions
+I
 ## Implementation Details
 ### Non-determinism
 This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
