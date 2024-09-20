@@ -49,7 +49,7 @@ stateDiagram-v2
 	ready --> ready : car?, car++
 	greenInfinity --> green : ready?, timer = 5
 	green --> amber : timer = 3
-	amber --> after_amber
+	amber --> after_amber : broadcast(go!)
 	after_amber --> ready : when car > 0, broadcast(ready!)
 	after_amber --> waiting : when car = 0
 ```
