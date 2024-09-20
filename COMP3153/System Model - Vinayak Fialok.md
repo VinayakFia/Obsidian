@@ -25,6 +25,11 @@ We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, 
 Every time a car arrives, the car sensor emits the `car` signal to its corresponding traffic light. I.e. $car\_sensor_i$ will emit `ct_x(car)`.
 
 #### Traffic Light
+**Variables**
+`uint car = 0;`
+`uint timer = 0;`
+Every tick in the `green`, `greenInfinity`, and `amber` states, the `car` and `timer` variables are decremented by 1.
+
 ```mermaid
 stateDiagram-v2
 	state after_amber <<choice>>
@@ -45,7 +50,6 @@ stateDiagram-v2
 	after_amber --> ready : when car > 0, broadcast(ready!)
 	after_amber --> waiting : when car = 0
 ```
-
 #### Car Sensor
 The input stream of the car sensor diagram is the the form `(c|n)+` where `c` indicates a car is on the sensor this tick and `n` indicates no car car is on the sensor. This will be important for the traffic light diagram as well
 
