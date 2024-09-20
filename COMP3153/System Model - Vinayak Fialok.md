@@ -18,9 +18,14 @@ This will be run on a tick based simulation, where a tick is analogous to a seco
 ## State Diagrams
 #### Channels
 We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, ct_2, ct_3, ct_4$.
+Let the `broadcast(signal)` func
 
 #### Car Sensor
-
+```mermaid
+stateDiagram-v2
+	direction LR
+	
+```
 
 #### Car Sensor
 The input stream of the car sensor diagram is the the form `(c|n)+` where `c` indicates a car is on the sensor this tick and `n` indicates no car car is on the sensor. This will be important for the traffic light diagram as well
