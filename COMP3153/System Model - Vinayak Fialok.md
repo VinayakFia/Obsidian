@@ -1,3 +1,4 @@
+# PLEASE SEE HD SUBMISSION
 # SCATS - Sydney Coordinated Adaptive Traffic System
 
 ## Overview
