@@ -1,4 +1,4 @@
-## SCATS - Sydney Coordinated Adaptive Traffic System
+# SCATS - Sydney Coordinated Adaptive Traffic System
 
 ## Overview
 
@@ -9,15 +9,16 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 ![[COMP3153 Exalidraw.excalidraw|1000px]]
 For simplicity, cars can only cross straight.
 
-## Implementation Details + Non-determinism
+## Implementation Details
+### Non-determinism
 This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
 1. Cars arriving at each intersection. For example, we can choose to have a 20% chance of a car arriving at any intersection each tick.
 2. Pedestrians arriving at each crossing. For example, we can choose to have a 10% chance of a pedestrian arriving at any crossing with the intent of travelling some direction (there are 8 choices here).
-## State Diagrams
+### State Diagrams
 #### Channels
-We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, ct_2, ct_3, ct_4$. We also have ch
+We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, ct_2, ct_3, ct_4$. We also have channels for each pair of pedestrian lights named $pc_1, pc_2, pc_3, pc_4$.
 - Let the `broadcast(signal)` function send `signal` to all channels.
-- Let the `ct_x(signal)` function send `signal` to $ct_x$. E.g. the `ct_1(signal!)` sends signal `signal!` to $ct_1$.
+- Let the `ct_x(signal)` function send `signal` to $ct_x$. E.g. the `ct_1(signal!)` sends signal `signal!` to $ct_1$. Same with function `pc_x(signal)`.
 #### Car Sensor
 Every time a car arrives, the car sensor emits the `car` signal to its corresponding traffic light. I.e. $car\_sensor_i$ will emit `ct_x(car)`.
 #### Traffic Light
@@ -68,7 +69,7 @@ stateDiagram-v2
 	waiting --> ready : p?, p++
 	stoppedPedestrian --> ready : go?
 	ready --> stoppedPedestrian : stop?
-	ready --> green
+	ready --> green : ct_x(stop!)
 	green --> after_green
 	after_green --> waiting : when p = 0
 	after_green --> ready : when p > 0
