@@ -10,8 +10,9 @@ I propose to model a traffic light system based on SCATS. Unfortunately, SCATS w
 
 For simplicity, cars can only cross straight.
 
-## A.2C Potential Abstractions
-I
+## A.2C Potential Abstractions/Specifications Considered
+- Abstracting traffic light logic to let traffic lights just go green one after another. This is easy to implement, however, it has little utility and is not every useful or complex.
+- 
 ## Implementation Details
 ### Non-determinism
 This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
@@ -105,3 +106,4 @@ stateDiagram-v2
 ## Extensibility
 1. Previously I mentioned that cars can only cross the intersection straight. We can introduce a new traffic light which enables cars to cross left and right as well. This will **significantly** increase complexity. However, will lead to a more useful model. **My aim is to validate such a system in the end!**. This also leads to more safety properties to validate for pedestrians and cars.
 2. As an add on to the above, or more likely, an alternative: The open green light with turns allowed. In such a light, cars may cross right and left, buy only if there is no other cars or pedestrians impeding their path. This is very interesting, as it may lead to certain scenarios where a crossing is bottle necked by cars turning right.
+3. 
