@@ -88,7 +88,9 @@ stateDiagram-v2
 2. Pedestrian lights must be red if an opposing traffic light is green.
 3. The system never results in a deadlock where no cars/pedestrians may cross.
 ### Liveliness Properties
-1. 
+1. Eventually, all cars will be able to cross.
+2. Eventually, all pedestrians will be able to cross.
+###
 ## Extensibility
 1. Previously I mentioned that cars can only cross the intersection straight. We can introduce a new traffic light which enables cars to cross left and right as well. This will **significantly** increase complexity. However, will lead to a more useful model. **My aim is to validate such a system in the end!**. This also leads to more safety properties to validate for pedestrians and cars.
 2. As an add on to the above, or more likely, an alternative: The open green light with turns allowed. In such a light, cars may cross right and left, buy only if there is no other cars or pedestrians impeding their path. This is very interesting, as it may lead to certain scenarios where a crossing is bottle necked by cars turning right.
