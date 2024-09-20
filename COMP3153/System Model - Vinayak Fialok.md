@@ -24,7 +24,10 @@ We can simplify the 4 traffic lights + 4 pedestrian lights into 2 pairs of traff
 As such, we can simplify our channels into:
 - $ct_1, ct_2$ where $ct_1$ serves a pair of opposing traffic lights and $ct_2$ represents the perpendicular pair of traffic lights.
 - similarly $pc_1, pc_2$.
-The alternative to this is to model a system with 4 traffic lights. This is possible through a few more signals, and several more states. However, it does not increase the utility of the system nor the depth of the requirements.
+By doing so, we maintain the functionality and properties of the system, whilst reducing the complexity of it significantly. Although underl
+
+> [!info] Alternative approaches
+> The alternative to this is to model a system with 4 traffic lights and 4 pedestrian lights. This is possible through a few more signals, and several more states. However, it does not increase the utility of the system nor the depth of the requirements.
 #### Car Sensor
 Every time a car arrives, the car sensor emits the `car` signal to its corresponding traffic light. I.e. $car\_sensor_i$ will emit `ct_i(car)`.
 #### Traffic Light
@@ -89,7 +92,7 @@ stateDiagram-v2
 2. Pedestrian lights must be red if an opposing traffic light is green.
 3. The system never results in a deadlock where no cars/pedestrians may cross.
 	1. I have chosen not to do this specification as it is covered in the liveliness properties
-### Liveliness Properties
+### Liveliness Properties <- A.2D
 1. Eventually, all cars will be able to cross.
 2. Eventually, all pedestrians will be able to cross.
 ## Extensibility
