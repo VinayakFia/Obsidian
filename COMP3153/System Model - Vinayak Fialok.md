@@ -16,9 +16,13 @@ This will be run on a tick based simulation, where a tick is analogous to a seco
 2. Pedestrians arriving at each crossing. For example, we can choose to have a 10% chance of a pedestrian arriving at any crossing with the intent of travelling some direction (there are 8 choices here).
 ### State Diagrams
 #### Channels
-We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, ct_2, ct_3, ct_4$. We also have channels for each pair of pedestrian lights named $pc_1, pc_2$.
+We will have a channel for each traffic light $t_1, t_2, t_3, t_4$ named $ct_1, ct_2, ct_3, ct_4$. We also have channels for each pair of pedestrian lights named $pc_1, pc_2, pc_3, pc_4$.
 - Let the `broadcast(signal)` function send `signal` to all channels.
 - Let the `ct_x(signal)` function send `signal` to $ct_x$. E.g. the `ct_1(signal!)` sends signal `signal!` to $ct_1$. Same with function `pc_x(signal)`.
+#### Simplification
+We can simplify the 4 traffic lights + 4 pedestrian lights into 2 pairs of traffic lights and pedestrian lights. This is because when a traffic light is activated, so too can the opposing traffic light be activated.
+As such, we can simplify our channels into:
+- $ct_1, ct_2$ where $ct_1$ serves a pair of opposing traffic lights and $ct_2$ repre
 #### Car Sensor
 Every time a car arrives, the car sensor emits the `car` signal to its corresponding traffic light. I.e. $car\_sensor_i$ will emit `ct_x(car)`.
 #### Traffic Light
