@@ -62,7 +62,7 @@ stateDiagram-v2
 #### Pedestrian Signal
 Whenever the pedestrian button is clicked, we will 
 #### Pedestrian Light
-Although there are 8 pedestrian lights, we can reduce this 2 pairs of opposing. In the end, we have a state diagram very similar to that of traffic lights.
+Although there are 8 pedestrian lights, we can reduce this 2 pairs of perpendicular pedes. In the end, we have a state diagram very similar to that of traffic lights.
 ```mermaid
 stateDiagram-v2
 	state after_green <<choice>>
