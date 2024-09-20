@@ -12,7 +12,7 @@ For simplicity, cars can only cross straight.
 
 ## A.2C Potential Abstractions/Specifications Considered
 - Abstracting traffic light logic to let traffic lights just go green one after another. This is easy to implement, however, it has little utility and is not every useful or complex.
-- Allowing left turns on a green light. Although
+- Allowing left turns on a green light. Although this is part of a possible extension to the system, I have 
 ## Implementation Details
 ### Non-determinism
 This will be run on a tick based simulation, where a tick is analogous to a second. We will have some random non-deterministic variables:
