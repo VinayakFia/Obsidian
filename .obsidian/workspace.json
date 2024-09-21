@@ -85,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -156,8 +154,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "26d143ff163b7ddd",
+  "active": "23a57abe309e8c1f",
   "lastOpenFiles": [
+    "Tasks.md",
+    "conflict-files-obsidian-git.md",
+    "COMP3161",
+    "COMP3153/System Model - Vinayak Fialok.md",
     "attachments/Pasted image 20240920152500.png",
     "attachments/Pasted image 20240920152002.png",
     "attachments/Pasted image 20240920151840.png",
@@ -170,8 +172,6 @@
     "COMP4920/Tute 02.md",
     "Excalidraw/System Model - Vinayak Fialok 2024-09-20 13.14.20.excalidraw.md",
     "Excalidraw",
-    "conflict-files-obsidian-git.md",
-    "COMP3153/System Model - Vinayak Fialok.md",
     "COMP3153/Spin/Spin-version-6.5.2/optional_gui/ispin.tcl",
     "COMP3153/Spin/Spin-version-6.5.2/optional_gui",
     "COMP3153/Spin/Spin-version-6.5.2/Man/spin.1",
@@ -181,14 +181,11 @@
     "COMP4920/installspin.sh",
     "COMP3153/task.pml",
     "COMP3153/Spin/version-6.5.2.tar.gz",
-    "COMP3153/Spin/Spin-version-6.5.2/Src/version.h",
     "COMP3153/COMP3153 Exalidraw.excalidraw.md",
     "COMP4920/Assignment 1.md",
     "COMP4920/Tute 01.md",
     "attachments/Pasted image 20240913150705.png",
-    "attachments/Pasted image 20240913153727.png",
     "COMP4920/COMP4920.md",
-    "Tasks.md",
     "CompClub T3 Workshop.md",
     "Archive/BABS1111 - Assessment 3.md",
     "COMP3153/Preliminary Proposal - Vinayak Fialok.md",
