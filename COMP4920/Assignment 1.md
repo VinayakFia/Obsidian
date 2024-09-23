@@ -21,9 +21,9 @@ Specifically, Kantian ethics is based on concept of the *categorical imperative*
 
 Kant states that we must never treat humans as a mere means, but always at the same time an end. As O'Neil expounds, to use someone as a mere means is to involve them in a scheme of action to which they could not in principle consent (O’Neill, 1986). The earlier proposed scheme of lying could indeed not be consented to by the deceived party.
 
-Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each.
+Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Further, consideration for both the actor and the related parties through 
 
--to-day, its subjectivity makes it unsuitable for automation. Unlike utilitarianism's impractical computation of the hedonic calculus, one may reasonably form maxims, and reason their universality. For the modern individual, employing a Kantian framework of ethics to personal decisions can be quite effective.However
+Its subjectivity makes it unsuitable for automation. Unlike utilitarianism's impractical computation of the hedonic calculus, one may reasonably form maxims, and reason their universality. For the modern individual, employing a Kantian framework of ethics to personal decisions can be quite effective.However
 
 **Assess Kantian ethics**
 Unlike Utilitarianism's impractical computation of the hedonic calculus, one may reasonably utilise Kantian ethics to rationalise moral decisions in everyday life. Moreover, the emphasis on the individual's "will that it (a maxim) should become universal law" accounts for variance in individual preference.
