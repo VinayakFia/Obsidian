@@ -43,9 +43,11 @@
             "id": "17158850eed9cb32",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "attachments/Pasted image 20240920151344.png"
+                "file": "COMP4920/Assignment 1.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -116,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "attachments/Pasted image 20240920151344.png",
+                "file": "COMP4920/Assignment 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "attachments/Pasted image 20240920151344.png",
+                "file": "COMP4920/Assignment 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "attachments/Pasted image 20240920151344.png"
+                "file": "COMP4920/Assignment 1.md"
               }
             }
           },
@@ -190,11 +192,11 @@
   },
   "active": "17158850eed9cb32",
   "lastOpenFiles": [
+    "attachments/Pasted image 20240920151344.png",
     "COMP3161/Assignment 1 - Vinayak Fialok.md",
     "COMP3161",
     "attachments/Pasted image 20240920154610.png",
     "attachments/Pasted image 20240920151514.png",
-    "attachments/Pasted image 20240920151344.png",
     "COMP4920/Tute 02.md",
     "attachments/Pasted image 20240920152500.png",
     "attachments/Pasted image 20240920152002.png",
