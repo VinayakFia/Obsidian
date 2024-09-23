@@ -16,20 +16,14 @@
 *Coeckelbergh, M. (2021): Should We Treat Teddy Bear 2.0 as a Kantian Dog? Four Arguments for the Indirect Moral Standing of Personal Social Robots, with Implications for Thinking About Animals and Humans, Minds and Machines (2021) 31:337–360.*
 
 ## Draft 1
-
+**Expound**
 Specifically, Kantian ethics is based on concept of the *categorical imperative*, which, in its first formulation states that one must act only according to maxims that they wish to become universal law. Each act represents one or more maxims, and one must formulate such maxims by deleting references to supplementary details such as places, times, or persons. Then, one must reason whether said maxims ought to be universal law, that is, it ought to be moral and acted upon by all. Suppose a moral agent was considering lying to their friend about attending their birthday, they may reduce this act to 'I ought to lie'. Then, rationalising that certainly they would not wish a world where lying be moral, they would conclude that lying to their friend is immoral.
 
 Kant states that we must never treat humans as a mere means, but always at the same time an end. As O'Neil expounds, to use someone as a mere means is to involve them in a scheme of action to which they could not in principle consent (O’Neill, 1986). The earlier proposed scheme of lying could indeed not be consented to by the deceived party.
 
-Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Further Kantian ethics' uniquely considers the individual's preference, leading to an ethical framework consistent with the diversity of beliefs in the 21st century. Ultimately deciding whether one chooses a maxim to become universal law is based on their personal beliefs. As such, each person, when considering their own actions, is free to choose their morality. The actions of others, regardless of one's own beliefs, must also be respected, as one must respect the rationality, and autonomy of other persons based upon Kant's second forumlation.  
+**Good**
+**REWORD**
+Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Further Kantian ethics' uniquely considers the individual's preference, leading to an ethical framework consistent with the diversity of beliefs in the 21st century. Ultimately deciding whether one chooses a maxim to become universal law is based on their personal beliefs. As such, each person, when considering their own actions, is free to choose their morality. The actions of others, regardless of one's own beliefs, must also be respected, as one must respect the rationality, and autonomy of other persons based upon Kant's second formulation.  
 
-Its subjectivity makes it unsuitable for automation. Unlike utilitarianism's impractical computation of the hedonic calculus, one may reasonably form maxims, and reason their universality. For the modern individual, employing a Kantian framework of ethics to personal decisions can be quite effective.However
-
-**Assess Kantian ethics**
-Unlike Utilitarianism's impractical computation of the hedonic calculus, one may reasonably utilise Kantian ethics to rationalise moral decisions in everyday life. Moreover, the emphasis on the individual's "will that it (a maxim) should become universal law" accounts for variance in individual preference.
-
-Let us cover a common critique of Kant. Suppose one must lie to save a life, as a murder has arrived at your doorstep asking for your boss. A Kantian moral agent must tell the truth. However, this radical simplification of a situation to a unrealistic dichotomy is not reflective of reality[^1]. A moral agent has many possible moral actions to take. For example, it may be a better action to not answer, call security, or to try to reason with them. Indeed one may be forced to make the harder, but moral, choice over the easy one. Yet, this brings us to what is a true limitation of Kantian ethics, the inability to identify the best action. Kantian ethics is black and white, either something is moral, or it is immoral. As such, given situations where there are several moral actions, one must derive their own logic to decide which is best.
-
-Overall, Kantian ethics is a pragmatic framework for the individual to make rational, *right*, decisions.
-
-[^1]: This doesn't read well pls fix
+**Bad -> lead into automation**
+Its subjectivity makes it unsuitable for automation. Unlike utilitarianism's impractical computation of the hedonic calculus, one may reasonably form maxims, and reason their universality. For the modern individual, employing a Kantian framework of ethics to personal decisions can be quite effective.
