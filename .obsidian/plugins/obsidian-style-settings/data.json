@@ -4,5 +4,7 @@
   "Appearance-dark@@card-highlight-dark": false,
   "Appearance-dark@@workspace-divider-transparent-dark": false,
   "shimmering-focus@@vim-active-visual-line": true,
-  "shimmering-focus@@angular-shapes": true
+  "shimmering-focus@@angular-shapes": true,
+  "shimmering-focus@@bg-hue-light": 230,
+  "shimmering-focus@@bg-hue-dark": 230
 }
