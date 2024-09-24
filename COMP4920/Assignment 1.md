@@ -23,7 +23,7 @@ Kant states that we must never treat humans as a mere means, but always at the s
 
 **Good**
 **REWORD**
-Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Further Kantian ethics' uniquely considers the individual's preference, leading to an ethical framework consistent with the diversity of beliefs in the 21st century. Ultimately deciding whether one chooses a maxim to become universal law is based on their own will. As such, each person, when considering their own actions, is free to choose their morality. The actions of others, regardless of one's own beliefs, must also be respected, as one must respect the rationality, and autonomy of other persons based upon Kant's second formulation.  
+Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Further Kantian ethics' uniquely considers the individual's preference, leading to an ethical framework consistent with the diversity of beliefs in the 21st century. Ultimately deciding whether one chooses a maxim to become universal law is based on their own will. As such, each person, when considering their own actions, is free to choose their morality. Moreover, the actions of others, regardless of one's own beliefs, must also be respected, as one must respect human rationality.
 
 **Bad -> lead into automation**
-Its subjectivity makes it unsuitable for automation. Unlike utilitarianism's impractical computation of the hedonic calculus, one may reasonably form maxims, and reason their universality. For the modern individual, employing a Kantian framework of ethics to personal decisions can be quite effective.
+
