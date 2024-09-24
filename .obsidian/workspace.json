@@ -33,9 +33,11 @@
             "id": "ef9b32bbaaf3e98b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "attachments/Pasted image 20240920151514.png"
+                "file": "COMP4920/Assignment 1.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -52,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -190,22 +192,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "17158850eed9cb32",
+  "active": "ef9b32bbaaf3e98b",
   "lastOpenFiles": [
+    "COMP4920/COMP4920.md",
+    "COMP4920/Assignment 1.md",
+    "attachments/Pasted image 20240920151514.png",
     "attachments/Pasted image 20240920151344.png",
     "COMP3161/Assignment 1 - Vinayak Fialok.md",
     "COMP3161",
     "attachments/Pasted image 20240920154610.png",
-    "attachments/Pasted image 20240920151514.png",
     "COMP4920/Tute 02.md",
     "attachments/Pasted image 20240920152500.png",
     "attachments/Pasted image 20240920152002.png",
     "attachments/Pasted image 20240920151840.png",
-    "COMP4920/Assignment 1.md",
     "COMP4920/Tute 01.md",
     "COMP3153/System Model - Vinayak Fialok.md",
     "COMP3153/COMP3153 Exalidraw.excalidraw.md",
-    "COMP4920/COMP4920.md",
     "Excalidraw/System Model - Vinayak Fialok 2024-09-20 13.14.20.excalidraw.md",
     "Excalidraw",
     "COMP3153/task.pml",
