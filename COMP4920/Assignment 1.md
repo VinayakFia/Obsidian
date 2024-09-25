@@ -17,7 +17,7 @@
 
 ## Draft 1
 **INTRO**
-Kantian ethics provides a sound framework for the individual to reason the morality of their decisions. To an extent, the proof and rigour of human procured maxims can be supported through formal verification software. However, 
+Kantian ethics provides a sound framework for the individual to reason the morality of their decisions. To an extent, the proof and rigour of human procured maxims can be supported through formal verification software. However, end to end pr
 
 **Expound**
 Specifically, Kantian ethics is based on concept of the *categorical imperative*, which, in its first formulation states that one must act only according to maxims that they wish to become universal law. Each act represents one or more maxims, and one must formulate such maxims by deleting references to supplementary details such as places, times, or persons. Then, one must reason whether said maxims ought to be universal law, that is, it ought to be moral and acted upon by all. Suppose a moral agent was considering lying to their friend about attending their birthday, they may reduce this act to 'I ought to lie'. Then, rationalising that certainly they would not wish a world where lying be moral, they would conclude that lying to their friend is immoral.
