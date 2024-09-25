@@ -17,6 +17,7 @@
 
 ## Draft 1
 **INTRO**
+Kantian ethics provides a sound framework for the indvidual to 
 
 **Expound**
 Specifically, Kantian ethics is based on concept of the *categorical imperative*, which, in its first formulation states that one must act only according to maxims that they wish to become universal law. Each act represents one or more maxims, and one must formulate such maxims by deleting references to supplementary details such as places, times, or persons. Then, one must reason whether said maxims ought to be universal law, that is, it ought to be moral and acted upon by all. Suppose a moral agent was considering lying to their friend about attending their birthday, they may reduce this act to 'I ought to lie'. Then, rationalising that certainly they would not wish a world where lying be moral, they would conclude that lying to their friend is immoral.
@@ -30,7 +31,7 @@ Kantian ethics provides a practical framework for the modern individual to ratio
 **Bad -> lead into automation**
 
 **Automation based upon neural networks incompatable, risks and usability**
-AI ethics based upon neural networks is fundamentally incompatible with Kantian ethics. (EXPOUND ON THIS)
+AI ethics based upon neural networks is fundamentally incompatible with Kantian ethics.
 
 **FORMAL AUTOMATION using proofs, a reasonable avenue, risks, emphasise limited scope as human still has to do lot of work**
 Although aspects of Kantian ethics may be automated, a moral agent must ultimately rely upon their own rationality to concretely determine the morality of actions. As demonstrated by Lavanya Singh, who builds upon prior research in the field of ethical automation; Kantian ethics can be formalised into the rigorous semantics of proof languages such as Isabelle. Indeed Singh demonstrates proof of maxims pertaining to ethical dilemmas such as lying, or the morality of joking. However, the critical step of forming the 'maxim' of an action seems quite indeterminable (Kitcher 2003). Singh adopts O'Niell's view that maxims are composed of the act, circumstance, and goal (Singh 2022). Although this serves as a more sophisticated guide for a moral agent to procure maxims, several maxims may still apply to a single action. So, the burden falls upon the user of an ethical proof system to conceive of sophisticated assumptions, maxims, and specifications.
