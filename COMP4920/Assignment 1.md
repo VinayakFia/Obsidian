@@ -30,7 +30,7 @@ Kant, in his second formulation, states that we must never treat humans as a mer
 Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Further Kantian ethics' uniquely considers the individual's preference, leading to an ethical framework consistent with the diversity of beliefs in the 21st century. Ultimately deciding whether one chooses a maxim to become universal law is based on their own will. As such, each person, when considering their own actions, is free to choose their morality. Moreover, the actions of others, regardless of one's own beliefs, must also be respected, as one must respect human rationality.
 
 **Bad -> lead into automation**
-I will consider two approaches for the automation of kantian ethics. Firstly 
+I will consider two approaches for the automation of Kantian ethics. Firstly, complete at
 
 **Automation based upon neural networks incompatable, risks and usability**
 AI ethics based upon neural networks is fundamentally incompatible with Kantian ethics.
