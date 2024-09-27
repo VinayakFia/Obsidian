@@ -29,12 +29,12 @@ Kant, in his second formulation, states that we must never treat humans as a mer
 **REWORD**
 Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Further Kantian ethics' uniquely considers the individual's preference, leading to an ethical framework consistent with the diversity of beliefs in the 21st century. Ultimately deciding whether one chooses a maxim to become universal law is based on their own will. As such, each person, when considering their own actions, is free to choose their morality. Moreover, the actions of others, regardless of one's own beliefs, must also be respected, as one must respect human rationality.
 
-I will consider two approaches for the automation of Kantian ethics. Firstly, end-to-end automation through the creation of a Kantian artificial moral agent. Secondly, we will explore automation through formalisation of the Categorial imperative into proof software, which a moral agent utilises to prove .
+I will consider two approaches for the automation of Kantian ethics. Firstly, end-to-end automation through the creation of a Kantian artificial moral agent. Secondly, we will explore automation through formalisation of the Categorial imperative into proof software, which a moral agent utilises to prove the ethicality of a maxim.
 
 **FORMAL AUTOMATION using proofs, a reasonable avenue, risks, emphasise limited scope as human still has to do lot of work**
 Although aspects of Kantian ethics may be automated, a moral agent must ultimately rely upon their own rationality to concretely determine the morality of actions. As demonstrated by Lavanya Singh, who builds upon prior research in the field of ethical automation; Kantian ethics can be formalised into the rigorous semantics of proof languages such as Isabelle. Indeed Singh demonstrates proof of maxims pertaining to ethical dilemmas such as lying, or the morality of joking. However, the critical step of forming the 'maxim' of an action seems quite indeterminable (Kitcher 2003). Singh adopts O'Niell's view that maxims are composed of the act, circumstance, and goal (Singh 2022). Although this serves as a more sophisticated guide for a moral agent to procure maxims, several maxims may still apply to a single action. So, the burden falls upon the user of an ethical proof system to conceive of sophisticated assumptions, maxims, and specifications.
 
 **Automation based upon neural networks incompatable, risks and usability**
-AI ethics based upon neural networks is fundamentally incompatible with Kantian ethics. 
+The notion of a Kantian moral agent, regardless of implement 
 
 **CONCLUSION**
