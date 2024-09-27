@@ -6,5 +6,7 @@
   "shimmering-focus@@vim-active-visual-line": true,
   "shimmering-focus@@angular-shapes": true,
   "shimmering-focus@@bg-hue-light": 230,
-  "shimmering-focus@@bg-hue-dark": 230
+  "shimmering-focus@@mac-os-native": false,
+  "shimmering-focus@@bg-hue-dark": 230,
+  "shimmering-focus@@highlight-hue-1": 280
 }
