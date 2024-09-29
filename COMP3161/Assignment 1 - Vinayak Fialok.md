@@ -12,8 +12,8 @@ $$True \wedge False \wedge True$$
 $$P_{and}(P_{atom} \wedge P_{and}(P_{atom} \wedge P_{and}(P_{atom})))$$**DELETE ABOVE 2 lines**
 $$\frac{}{True}P_{atom}, \frac{}{False}P_{atom}$$
 $$\frac{p \space P_{atom}}{p}P_{and}, \frac{p_1 \space P_{atom} \space p_2 \space P_{and}}{p_2 \wedge p_2}P_{and}$$
-$$\frac{p \space P_{and}}{p}P_{brac}, \frac{p \space P_{and}}{(p)}P_{brac}$$
-$$\frac{p \space P_{brac}}{p}P, \frac{p \space P_{brac}}{\neg p}P$$
+$$\frac{p \space P_{and}}{p \space P_{brac}}, \frac{p \space P_{and}}{(p)}P_{brac}$$
+$$\frac{p \space P_{brac}}{p \space P}, \frac{p \space P_{brac}}{\neg p \space P}$$
 
 ### 3
 > Here is an abstract syntax B for the same language: `B ::= Not B | And B B | True | False` Write an inductive definition for the parsing relation connecting your unambiguous judgements to this abstract syntax. *(5 marks)*
