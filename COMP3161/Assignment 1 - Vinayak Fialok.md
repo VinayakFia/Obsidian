@@ -60,8 +60,15 @@ stateDiagram-v2
 ### 2
 > Define an equivalent big-step semantics for L. *(5 marks)*
 
-$$\frac{c \Downarrow v' \ \ \ t' \Downarrow t \ \ \ e^3 \Downarrow v^3}{(\text{If} )}$$
+$$\frac{t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ \text{False} \ t \ f) \Downarrow f}$$
+$$\frac{t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ \text{True} \ t \ f) \Downarrow t}$$
 
 
-
+### 3
+> Prove that if e ⇓ v then e ⋆
+→ v, where ⇓ is the big-step semantics you defined in
+the previous question, and ⋆
+7
+→ is the reflexive and transitive closure of 7 →. Use rule
+induction on e ⇓ v. (10 marks)
 
