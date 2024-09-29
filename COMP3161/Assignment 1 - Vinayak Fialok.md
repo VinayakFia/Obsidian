@@ -65,10 +65,5 @@ $$\frac{t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ \text{True} \ t \ f)
 
 
 ### 3
-> Prove that if e ⇓ v then e ⋆
-→ v, where ⇓ is the big-step semantics you defined in
-the previous question, and ⋆
-7
-→ is the reflexive and transitive closure of 7 →. Use rule
-induction on e ⇓ v. (10 marks)
+> Prove that if $e \Downarrow v$ then $e \mapsto^{*} v$, where $\Downarrow$ is the big-step semantics you defined in the previous question, and $\mapsto^{*}$ is the reflexive and transitive closure of $\mapsto$. Use rule induction on $e \Downarrow v$. *(10 marks)*
 
