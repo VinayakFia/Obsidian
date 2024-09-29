@@ -58,7 +58,9 @@ stateDiagram-v2
 ```
 
 ### 2
+> Define an equivalent big-step semantics for L. *(5 marks)*
 
+$$\frac{c \Downarrow v' \ \ \ t' \Downarrow t \ \ \ e^3 \Downarrow v^3}{(\text{If} )}$$
 
 
 
