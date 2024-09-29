@@ -27,8 +27,11 @@ Kant, in his second formulation, states that we must never treat humans as a mer
 
 **Good**
 **REWORD**
-Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Further Kantian ethics' uniquely considers the individual's preference, leading to an ethical framework consistent with the diversity of beliefs in the 21st century. Ultimately deciding whether one chooses a maxim to become universal law is based on their own will. As such, each person, when considering their own actions, is free to choose their morality. Moreover, the actions of others, regardless of one's own beliefs, must also be respected, as one must respect human rationality.
+Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Further Kantian ethics uniquely considers the individual's preference, leading to an ethical framework consistent with the diversity of beliefs in the 21st century. Ultimately deciding whether one chooses a maxim to become universal law is based on their own will. As such, each person, when considering their own actions, is free to choose their morality. Moreover, the actions of others, regardless of one's own beliefs, must also be respected, as one must respect human rationality. This enables a society of varying, even opposing, beliefs that exist in harmony.
 
+**BAD??**
+
+**Automation**
 I will consider two approaches for the automation of Kantian ethics. Firstly, end-to-end automation through the creation of a Kantian artificial moral agent. Secondly, we will explore automation through formalisation of the Categorial imperative into proof software, which a moral agent utilises to prove the ethicality of a maxim.
 
 **FORMAL AUTOMATION using proofs, a reasonable avenue, risks, emphasise limited scope as human still has to do lot of work**
