@@ -13,22 +13,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md",
+                "file": "COMP4920/Tute 02.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7c70bf0c1c680cbb",
+            "id": "eacc4fa136a950cb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "image",
+              "state": {
+                "file": "attachments/Pasted image 20240920154610.png"
+              }
             }
           },
           {
-            "id": "f9aaf668e300107f",
+            "id": "ef9b32bbaaf3e98b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "COMP3161/Assignment 1 - Vinayak Fialok.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17158850eed9cb32",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -106,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP3161/Assignment 1 - Vinayak Fialok.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP3161/Assignment 1 - Vinayak Fialok.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 1.md"
+                "file": "COMP3161/Assignment 1 - Vinayak Fialok.md"
               }
             }
           },
@@ -163,7 +177,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,44 +192,46 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f9aaf668e300107f",
+  "active": "ef9b32bbaaf3e98b",
   "lastOpenFiles": [
-    "COMP3161/Assignment 1 - Vinayak Fialok.md",
-    "conflict-files-obsidian-git.md",
-    "Excalidraw/System Model - Vinayak Fialok 2024-09-20 13.14.20.excalidraw.md",
-    "COMP4920/Tute 02.md",
-    "COMP4920/Assignment 1.md",
     "COMP4920/COMP4920.md",
-    "attachments/Pasted image 20240920154610.png",
-    "Tasks.md",
+    "COMP4920/Assignment 1.md",
+    "attachments/Pasted image 20240920151514.png",
+    "attachments/Pasted image 20240920151344.png",
+    "COMP3161/Assignment 1 - Vinayak Fialok.md",
     "COMP3161",
-    "COMP3153/System Model - Vinayak Fialok.md",
+    "attachments/Pasted image 20240920154610.png",
+    "COMP4920/Tute 02.md",
     "attachments/Pasted image 20240920152500.png",
     "attachments/Pasted image 20240920152002.png",
     "attachments/Pasted image 20240920151840.png",
-    "attachments/Pasted image 20240920151514.png",
-    "attachments/Pasted image 20240920151344.png",
-    "Pasted image 20240920152002.png",
-    "Pasted image 20240920151840.png",
-    "Pasted image 20240920151514.png",
-    "Pasted image 20240920151344.png",
-    "Excalidraw",
-    "COMP3153/Spin/Spin-version-6.5.2/optional_gui/ispin.tcl",
-    "COMP3153/Spin/Spin-version-6.5.2/optional_gui",
-    "COMP3153/Spin/Spin-version-6.5.2/Man/spin.1",
-    "COMP3153/Spin/Spin-version-6.5.2/Man/README.md",
-    "COMP3153/Spin/Spin-version-6.5.2/Man/html_manual_pages.tar.gz",
-    "COMP3153/Spin/Spin-version-6.5.2/Man",
-    "COMP4920/installspin.sh",
-    "COMP3153/task.pml",
-    "COMP3153/Spin/version-6.5.2.tar.gz",
-    "COMP3153/COMP3153 Exalidraw.excalidraw.md",
     "COMP4920/Tute 01.md",
+    "COMP3153/System Model - Vinayak Fialok.md",
+    "COMP3153/COMP3153 Exalidraw.excalidraw.md",
+    "Excalidraw/System Model - Vinayak Fialok 2024-09-20 13.14.20.excalidraw.md",
+    "Excalidraw",
+    "COMP3153/task.pml",
+    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/zune.pml",
+    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/train.pml",
+    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/salesman2.pml",
+    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/salesman1.pml",
+    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/pftp.pml",
+    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/petersonN.pml",
+    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/patterns.pml",
+    "COMP3153/Spin/Spin-version-6.5.2/Man/README.md",
+    "COMP3153/Spin/Spin-version-6.5.2/README.md",
+    "COMP4920/Spin/Spin-version-6.5.2/Man/README.md",
+    "COMP4920/Spin/Spin-version-6.5.2/README.md",
+    "attachments/Pasted image 20240913150705.png",
+    "attachments/Pasted image 20240913153727.png",
+    "attachments/Pasted image 20240913153718.png",
+    "Tasks.md",
     "CompClub T3 Workshop.md",
     "Archive/BABS1111 - Assessment 3.md",
     "COMP3153/Preliminary Proposal - Vinayak Fialok.md",
     "Algo/Algo Bot.md",
     "Algo/Breakout Strategies.md",
+    "attachments/Alice and Healthy Person Glucose Concentration.png.png",
     "Algo/Kanban.md",
     "G.md",
     "Pasted image 20240727075114.png.md"
