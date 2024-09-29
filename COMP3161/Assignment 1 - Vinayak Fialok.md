@@ -11,17 +11,18 @@ $$\frac{}{True}, \frac{}{False}, \frac{p \space P}{\neg p}, \frac{p \space P}{(p
 `!(...) and (!...)`
 
 $$\frac{}{True \ P_{atom}}, \frac{}{False \ P_{atom}}$$
-$$\frac{p \ P_{atom}}{p \ P_{and}}, \frac{p_1 \ P_{atom} \ p_2 \ P_{and}}{p_2 \wedge p_2 \ P_{and}}$$
-$$\frac{p \ P_{not}}{p \ P}, \frac{p \ P_{brac}}{\neg p \ P_{not}}$$
-$$\frac{p \ P_{not}}{p \ P}, \frac{p \ P_{not}}{(p) P}$$
+$$\frac{p \ P_{atom}}{p \ P_{brac}}, \frac{p \ P_{atom}}{(p) P_{brac}}$$
+$$\frac{p \ P_{brac}}{p \ P_{and}}, \frac{p_1 \ P_{brac} \ p_2 \ P_{and}}{p_2 \wedge p_2 \ P_{and}}$$
+$$\frac{p \ P_{and}}{p \ P_{not}}, \frac{p \ P_{and}}{\neg p \ P_{not}}$$
 
 ### 3
 > Here is an abstract syntax B for the same language: `B ::= Not B | And B B | True | False` Write an inductive definition for the parsing relation connecting your unambiguous judgements to this abstract syntax. *(5 marks)*
 
-$$\frac{}{True \ P_{atom} \longleftrightarrow True \ B}, \frac{}{False \ P_{atom} \longleftrightarrow False \ B}$$
-$$\frac{p \ P_{atom} \longleftrightarrow b \ B}{p \ P_{and} \longleftrightarrow b \ B}, \frac{p_1 \ P_{atom} \ p_2 \ P_{and} \longleftrightarrow a \ B \ b \ B}{p_2 \wedge p_2 \ P_{and} \longleftrightarrow AND \ a \ b \ B}$$
-$$\frac{p \ P_{and} \longleftrightarrow b \ B}{p \ P_{brac} \longleftrightarrow b \ B}, \frac{p \ P_{and} \longleftrightarrow b \ B}{(p) P_{brac} \longleftrightarrow b \ B}$$
-$$\frac{p \ P_{brac} \longleftrightarrow b \ B}{p \ P \longleftrightarrow b \ B}, \frac{p \ P_{brac} \longleftrightarrow b \ B}{\neg p \ P \longleftrightarrow NOT \ b \ B}$$
+## TODOOO
+$$\frac{}{True \ P_{atom}}, \frac{}{False \ P_{atom}}$$
+$$\frac{p \ P_{atom}}{p \ P_{brac}}, \frac{p \ P_{atom}}{(p) P_{brac}}$$
+$$\frac{p \ P_{brac}}{p \ P_{and}}, \frac{p_1 \ P_{brac} \ p_2 \ P_{and}}{p_2 \wedge p_2 \ P_{and}}$$
+$$\frac{p \ P_{and}}{p \ P_{not}}, \frac{p \ P_{and}}{\neg p \ P_{not}}$$
 ### 4
 #### a)
 > Show the evaluation of `And (Not (And True False)) False` with a derivation tree (arguably this belongs in Part B). (5 marks)
