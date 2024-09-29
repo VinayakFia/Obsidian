@@ -20,5 +20,8 @@ $$\frac{p \ P_{brac}}{p \ P}, \frac{p \ P_{brac}}{\neg p \ P}$$
 
 $$\frac{}{True \ P_{atom} \longleftrightarrow True \ B}, \frac{}{False \ P_{atom} \longleftrightarrow False \ B}$$
 $$\frac{p \ P_{atom} \longleftrightarrow b \ B}{p \ P_{and} \longleftrightarrow b \ B}, \frac{p_1 \ P_{atom} \ p_2 \ P_{and} \longleftrightarrow a \ B \ b \ B}{p_2 \wedge p_2 \ P_{and} \longleftrightarrow AND \ a \ b \ B}$$
-$$\frac{p \ P_{and}}{p \ P_{brac} \longleftrightarrow}, \frac{p \ P_{and}}{(p) P_{brac}}$$
-$$\frac{p \ P_{brac}}{p \ P}, \frac{p \ P_{brac}}{\neg p \ P}$$
+$$\frac{p \ P_{and} \longleftrightarrow b \ B}{p \ P_{brac} \longleftrightarrow b \ B}, \frac{p \ P_{and} \longleftrightarrow b \ B}{(p) P_{brac} \longleftrightarrow b \ B}$$
+$$\frac{p \ P_{brac} \longleftrightarrow b \ B}{p \ P \longleftrightarrow b \ B}, \frac{p \ P_{brac} \longleftrightarrow b \ B}{\neg p \ P \longleftrightarrow NOT \ b \ B}$$
+### 4
+#### a
+
