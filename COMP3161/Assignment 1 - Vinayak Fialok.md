@@ -29,5 +29,15 @@ $$\frac{p \ P_{and}}{p \ P_{not}}, \frac{p \ P_{and}}{\neg p \ P_{not}}$$
 
 ```mermaid
 stateDiagram-v2
-	AND
+	And1: And
+	And2: And
+	False2: False
+	
+	And1 --> Not
+	And1 --> False
+	Not --> And2
+	And2 --> True
+	And2 --> False2
 ```
+
+
