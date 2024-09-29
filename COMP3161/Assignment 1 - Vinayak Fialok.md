@@ -18,7 +18,7 @@ $$\frac{p \ P_{brac}}{p \ P}, \frac{p \ P_{brac}}{\neg p \ P}$$
 ### 3
 > Here is an abstract syntax B for the same language: `B ::= Not B | And B B | True | False` Write an inductive definition for the parsing relation connecting your unambiguous judgements to this abstract syntax. *(5 marks)*
 
-$$\frac{}{True \ P_{atom} \longleftrightarrow True}, \frac{}{False \ P_{atom} \longleftrightarrow False \ B}$$
-$$\frac{p \ P_{atom}}{p \ P_{and} \longleftrightarrow b \ B}, \frac{p_1 \ P_{atom} \ p_2 \ P_{and}}{p_2 \wedge p_2 \ P_{and}}$$
-$$\frac{p \ P_{and}}{p \ P_{brac}}, \frac{p \ P_{and}}{(p) P_{brac}}$$
+$$\frac{}{True \ P_{atom} \longleftrightarrow True \ B}, \frac{}{False \ P_{atom} \longleftrightarrow False \ B}$$
+$$\frac{p \ P_{atom} \longleftrightarrow b \ B}{p \ P_{and} \longleftrightarrow b \ B}, \frac{p_1 \ P_{atom} \ p_2 \ P_{and} \longleftrightarrow a \ B}{p_2 \wedge p_2 \ P_{and} \longleftrightarrow AND \ a \ b \ B}$$
+$$\frac{p \ P_{and}}{p \ P_{brac} \longleftrightarrow}, \frac{p \ P_{and}}{(p) P_{brac}}$$
 $$\frac{p \ P_{brac}}{p \ P}, \frac{p \ P_{brac}}{\neg p \ P}$$
