@@ -45,6 +45,14 @@ stateDiagram-v2
 > $$False^{-1} = True$$
 > Is this rule derivable? Is it admissible? Justify your answers. *(5 marks)*
 
+> [!error] TODO
+
+## Part B
+### 1
+> Show the full evaluation of the term `(If True (If False True False) False)`. *(5 marks)*
+
+
+
 
 
 
