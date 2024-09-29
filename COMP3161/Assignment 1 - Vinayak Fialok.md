@@ -40,6 +40,11 @@ stateDiagram-v2
 ```
 
 #### b)
-> Consider the following inference rule: $$\frac{x ⇓ v}{Not \ x ⇓ v^{-1}}$$ where we understand $v^{-1}$ to be defined by the following equations: $$True^{-1} = False$$$$False^{-1} = True$$ Is this rule derivable? Is it admissible? Justify your answers. (5 marks)
+> Consider the following inference rule: $$\frac{x ⇓ v}{Not \ x ⇓ v^{-1}}$$ where we understand $v^{-1}$ to be defined by the following equations:
+> $$True^{-1} = False$$
+> $$False^{-1} = True$$
+> Is this rule derivable? Is it admissible? Justify your answers. *(5 marks)*
+
+
 
 
