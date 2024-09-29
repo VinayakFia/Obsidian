@@ -51,7 +51,10 @@ stateDiagram-v2
 ### 1
 > Show the full evaluation of the term `(If True (If False True False) False)`. *(5 marks)*
 
+```haskell
+(If True (If False True False) False)
 
+```
 
 
 
