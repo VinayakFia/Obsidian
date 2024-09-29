@@ -23,5 +23,10 @@ $$\frac{p \ P_{atom} \longleftrightarrow b \ B}{p \ P_{and} \longleftrightarrow 
 $$\frac{p \ P_{and} \longleftrightarrow b \ B}{p \ P_{brac} \longleftrightarrow b \ B}, \frac{p \ P_{and} \longleftrightarrow b \ B}{(p) P_{brac} \longleftrightarrow b \ B}$$
 $$\frac{p \ P_{brac} \longleftrightarrow b \ B}{p \ P \longleftrightarrow b \ B}, \frac{p \ P_{brac} \longleftrightarrow b \ B}{\neg p \ P \longleftrightarrow NOT \ b \ B}$$
 ### 4
-#### a
-> Show the evaluation of And (Not (And True False)) False with a derivation tree (arguably this belongs in Part B). (5 marks)
+#### a)
+> Show the evaluation of `And (Not (And True False)) False` with a derivation tree (arguably this belongs in Part B). (5 marks)
+
+```mermaid
+stateDiagram-v2
+	AND
+```
