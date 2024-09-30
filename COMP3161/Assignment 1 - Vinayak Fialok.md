@@ -46,11 +46,10 @@ stateDiagram-v2
 > Is this rule derivable? Is it admissible? Justify your answers. *(5 marks)*
 
 Suppose $x$ evaluates to $True$. Then
-$$\frac{x \Downarrow  v =True}{Not \ x \Downarrow v^{-1} = False}$$
+$$\frac{x \Downarrow  v = True}{Not \ x \Downarrow v^{-1} = False}$$
 Suppose $x$ evaluates to $False$. Then
-$$\frac{x \Downarrow  v =True}{Not \ x \Downarrow v^{-1} = False}$$
-
-> [!error] TODO
+$$\frac{x \Downarrow  v = False}{Not \ x \Downarrow v^{-1} = True}$$
+So in all cases, we may derive the inference rule from the given big steps semantics. As such, it is derivable and admissable.
 
 ## Part B
 ### 1
