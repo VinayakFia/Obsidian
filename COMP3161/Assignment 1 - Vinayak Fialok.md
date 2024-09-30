@@ -1,5 +1,8 @@
 > [!link] https://cgi.cse.unsw.edu.au/~cs3161/24T3/Assignment%200/Spec.pdf
 
+> [!warning] TODOS
+> - [ ] 📅 2024-10-01 Figure out induction
+> - [ ] 
 ## Part A
 ### 1
 > Write down a set of inference rules that define the set P. The rules may be ambiguous. *(5 marks)*
@@ -129,12 +132,20 @@ d False = F
 d (Not b) = (d b) F T
 d (And a b) = (d a) ((d b) T F) F
 
-e.g.
+e.g. B = (Not (And True False))
 
 d (Not (And True False))
 = (d (And True False)) F T
-= (d (And True False)) 
+= ((d True) ((d False) T F) F) F T
+= (T (F T F) F) F T
+= (T F F) F T
+= F F T
+= T
 ```
+
+### 3
+> [!danger] TODO
+> Prove that for all e such that e ⇓ v it holds that d (e) ≡αβη v′, where v′ is the λ-calculus encoding of v. *(10 marks)*
 
 ## E
 ### 1
