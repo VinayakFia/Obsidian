@@ -70,19 +70,28 @@ $$\frac{c \Downarrow \text{True} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text
 
 
 ### 3
+> [!danger] TODO
 > Prove that if $e \Downarrow v$ then $e \overset{*}{\mapsto} v$, where $\Downarrow$ is the big-step semantics you defined in the previous question, and $\overset{*}{\mapsto}$ is the reflexive and transitive closure of $\mapsto$. Use rule induction on $e \Downarrow v$. *(10 marks)*
 
 The base case is the reflexive case if $e \Downarrow e$ then $e \overset{*}{\mapsto} e$. We have cases $e = \text{False}$, $e = \text{True}$, for which there are no steps in big step and small step semantics.
 
 The inductive case is if $e \Downarrow v$ then $$\frac{e_1 \mapsto e_2 \ \ \ \ \ \ e_2 \overset{*}{\mapsto} e_3}{e_1 \overset{*}{\mapsto} e_3}$$
-> [!danger] todo
 
 ## C
 ### 1
+> [!danger] This is correct but the formatting is certainly not
 > Define a recursive compilation function c : B → L which converts expressions in B to expressions in L. *(5 marks)*
 
 ``` haskell
 c :: B -> L
 c (Not b) = (If b (not b) b)
-c (And a b) = (If a (If b True False))
+c (And a b) = (If a (If b True False) False)
+c (True) = (True)
+c (False) = (False)
 ```
+
+### 2
+> [!danger] TODO
+> Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
+
+
