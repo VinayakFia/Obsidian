@@ -22,5 +22,5 @@
   "primary-theme@@h1-border-width": "0px",
   "primary-theme@@h2-border-width": "0px 0px 2px 0px",
   "primary-theme@@h2-border-radius": "4px",
-  "primary-theme@@h3-border-width": "0px 0px 0"
+  "primary-theme@@h3-border-width": "0px "
 }
