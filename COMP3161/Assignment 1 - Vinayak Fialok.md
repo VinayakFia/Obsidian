@@ -133,7 +133,7 @@ e.g.
 
 d (Not (And True False))
 = (d (And True False)) F T
-= (d (And True False)) False True
+= (d (And True False)) 
 ```
 
 ## E
