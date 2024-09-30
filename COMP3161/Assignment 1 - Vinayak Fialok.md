@@ -2,7 +2,7 @@
 
 > [!warning] TODOS
 > - [ ] 📅 2024-10-01 Figure out induction
-> - [ ] 
+> - [ ] 📅 2024-10-04 
 ## Part A
 ### 1
 > Write down a set of inference rules that define the set P. The rules may be ambiguous. *(5 marks)*
