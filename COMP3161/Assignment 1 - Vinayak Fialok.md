@@ -45,6 +45,8 @@ stateDiagram-v2
 > $$False^{-1} = True$$
 > Is this rule derivable? Is it admissible? Justify your answers. *(5 marks)*
 
+
+
 > [!error] TODO
 
 ## Part B
