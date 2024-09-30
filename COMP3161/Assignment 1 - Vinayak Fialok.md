@@ -64,8 +64,8 @@ So in all cases, we may derive the inference rule from the given big steps seman
 ### 2
 > Define an equivalent big-step semantics for L. *(5 marks)*
 
-$$\frac{t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ \text{False} \ t \ f) \Downarrow f}$$
-$$\frac{t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ \text{True} \ t \ f) \Downarrow t}$$
+$$\frac{c \Downarrow \text{False} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f}$$
+$$\frac{c \Downarrow \text{true} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ \text{True} \ t \ f) \Downarrow t}$$
 
 
 ### 3
