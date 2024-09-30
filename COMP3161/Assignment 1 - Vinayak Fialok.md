@@ -102,8 +102,9 @@ c (False) = (False)
 
 ```haskell
 	(λn. λf. λx. (n f (f x))) (λf. λx. f x)
-->B (λf. λx. ((λf. λx. f x) f (f x)))
-->B (λf. λx. ((λx. f x) (f x)))
+->A (λn. λf. λx. (n f (f x))) (λg. λp. g p)
+->B (λf. λx. ((λg. λp. g p) f (f x)))
+->B (λf. λx. ((λp. f p) (f x)))
 ->B (λf. λx. (f (f x))
 ```
 ### b)
