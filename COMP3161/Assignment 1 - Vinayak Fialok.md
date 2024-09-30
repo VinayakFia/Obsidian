@@ -111,7 +111,10 @@ c (False) = (False)
 
 η-reducible refers to reduction using `(λx. f x) 7 ->η f`. Lets now apply this to our reduction from part a.
 
-```
+```haskell
+	(λf. λx. (f (f x))
+==  (λf. (λx. (f (f x)))
+->n (λf. (λx. (f (f x))))
 ```
 
 ## E
