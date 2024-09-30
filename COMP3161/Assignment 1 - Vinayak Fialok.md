@@ -109,14 +109,7 @@ c (False) = (False)
 ### b)
 > Identify an η-reducible expression in the above (unreduced) term. **(5 marks)**
 
-η-reducible refers to reduction using `(λx. f x) 7 ->η f`. Lets now apply this to our reduction from part a.
-
-```haskell
-	(λf. λx. (f (f x))
-==  (λf. (λx. (f (f x)))
-->n (λf. (λx. (f (f x))))
-```
-
+η-reducible refers to reduction using `(λx. f x) 7 ->η f`. This can be appli
 ## E
 ### 1
 > [!danger] TODO
