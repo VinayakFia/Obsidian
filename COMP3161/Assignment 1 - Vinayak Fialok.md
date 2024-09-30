@@ -119,7 +119,14 @@ c (False) = (False)
 ```
 
 ### 2
-### 
+> Recall that in λ-calculus, booleans can be encoded as binary functions that return one of their arguments: $$T ≡ (λx. λy. x)$$$$F ≡ (λx. λy. y)$$
+> Either via L or directly, define a function d : B → λ which converts expressions in B to λ-calculus. *(5 marks)*
+
+```haskell
+d :: B -> λ
+Not b :: 
+```
+
 ## E
 ### 1
 > [!danger] TODO
