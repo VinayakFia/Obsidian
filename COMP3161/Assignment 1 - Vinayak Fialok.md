@@ -129,11 +129,16 @@ c (And a b) = (If a (If b True False) False)
 c (True) = (True)
 c (False) = (False)
 
-T :: Bool -> Bool -> Bo
+T :: Bool -> Bool -> Bool
+T a b = a
+
+F :: Bool -> Bool -> Bool
+F a b = b
 
 d :: B -> λ
-d (Not True) -> F
-d (Not False) -> T
+d (Not True) = F
+d (Not False) = T
+d (And a b) = T T a
 ```
 
 ## E
