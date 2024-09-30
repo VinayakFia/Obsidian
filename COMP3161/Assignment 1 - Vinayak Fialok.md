@@ -100,8 +100,12 @@ c (False) = (False)
 #### a)
 > Fully β-reduce the above λ-term. Show all intermediate beta reduction steps. *(5 marks)*
 
-$$(λn. λf. λx. (n f (f x))) (λf. λx. f x)$$
-$$\mapsto_{\beta} (\lambda f. \lambda x. (\lambda f'. \lambda x. fx \ f))$$
+```haskell
+	(λn. λf. λx. (n f (f x))) (λf. λx. f x)
+->B (λf. λx. ((λf. λx. f x) f (f x)))
+->B (λf. λx. ((λx. f x) (f x)))
+->B (λf. λx. ((λx. f x) (f x)))
+```
 ## E
 ### 1
 > [!danger] TODO
