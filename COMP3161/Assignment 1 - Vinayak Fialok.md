@@ -94,6 +94,13 @@ c (False) = (False)
 > [!danger] TODO
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
+## D
+### 1
+> Here is a term in λ-calculus: $$(λn. λf. λx. (n f (f x))) (λf. λx. f x)$$
+#### a)
+> Fully β-reduce the above λ-term. Show all intermediate beta reduction steps. *(5 marks)*
+
+
 ## E
 ### 1
 > [!danger] TODO
@@ -101,10 +108,12 @@ c (False) = (False)
 
 > [!question] what does it mean by 'explicit strings'?
 
-**Old Inference Rules:**
+**Inference Rules:**
 $$\frac{}{True}, \frac{}{False}, \frac{p \space P}{\neg p}, \frac{p \space P}{(p)}, \frac{p_1 \space P \space p_2 \space P}{p_1 \wedge p_2}$$
-**Extra inference rules:**
+**New inference rules:**
 	$$\frac{p_1 \ P \ \ \ p_2 \ P}{\textbf{let} \ \text{ident}\textbf{(}\text{ident}\textbf{)} = p_1 \ \textbf{in} \ p_2 \ \textbf{end}}$$
 $$\frac{p \ P}{\text{ident}(p)}$$
 $$\frac{}{\text{ident}}$$
 
+### 2
+> [!danger] TODO
