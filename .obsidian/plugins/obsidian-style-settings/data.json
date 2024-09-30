@@ -8,5 +8,6 @@
   "shimmering-focus@@bg-hue-light": 230,
   "shimmering-focus@@mac-os-native": false,
   "shimmering-focus@@bg-hue-dark": 230,
-  "shimmering-focus@@highlight-hue-1": 280
+  "shimmering-focus@@highlight-hue-1": 280,
+  "primary-theme@@zero-tab-anim": true
 }
