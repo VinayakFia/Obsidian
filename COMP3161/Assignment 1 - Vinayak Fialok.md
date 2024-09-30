@@ -81,3 +81,8 @@ The inductive case is if $e \Downarrow v$ then $$\frac{e_1 \mapsto e_2 \ \ \ \ \
 ### 1
 > Define a recursive compilation function c : B → L which converts expressions in B to expressions in L. *(5 marks)*
 
+``` haskell
+c :: B -> L
+c (Not b) = (If b (not b) b)
+c (And a b) = (If a (If b True False))
+```

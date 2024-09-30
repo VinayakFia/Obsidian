@@ -20,14 +20,6 @@
             }
           },
           {
-            "id": "7c70bf0c1c680cbb",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "f9aaf668e300107f",
             "type": "leaf",
             "state": {
@@ -40,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,10 +172,10 @@
   "active": "f9aaf668e300107f",
   "lastOpenFiles": [
     "COMP3153/System Model - Vinayak Fialok.md",
+    "COMP3161/Assignment 1 - Vinayak Fialok.md",
     "attachments/Pasted image 20240930192553.png",
     "COMP4920/COMP4920.md",
     "COMP3153/COMP3153 Exalidraw.excalidraw.md",
-    "COMP3161/Assignment 1 - Vinayak Fialok.md",
     "COMP4920/Assignment 1.md",
     "COMP4920/Tute 01.md",
     "CompClub T3 Workshop.md",
