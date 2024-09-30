@@ -80,7 +80,7 @@ The base case is the reflexive case if $e \Downarrow e$ then $e \overset{*}{\map
 
 The inductive case is if $e \Downarrow v$ then $$\frac{e_1 \mapsto e_2 \ \ \ \ \ \ e_2 \overset{*}{\mapsto} e_3}{e_1 \overset{*}{\mapsto} e_3}$$
 
-## C
+## Part C
 ### 1
 > [!danger] This is correct but the formatting is certainly not
 > Define a recursive compilation function c : B → L which converts expressions in B to expressions in L. *(5 marks)*
@@ -97,7 +97,7 @@ c (False) = (False)
 > [!danger] TODO
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
-## D
+## Part D
 ### 1
 > Here is a term in λ-calculus: $$(λn. λf. λx. (n f (f x))) (λf. λx. f x)$$
 #### a)
@@ -147,7 +147,7 @@ d (Not (And True False))
 > [!danger] TODO
 > Prove that for all e such that e ⇓ v it holds that d (e) ≡αβη v′, where v′ is the λ-calculus encoding of v. *(10 marks)*
 
-## E
+## Part E
 ### 1
 > [!danger] TODO
 > Extend the abstract syntax for B from question A.3 so that it supports the features used in the above example. Use first-order abstract syntax with explicit strings. You don’t have to extend the parsing relation. *(5 marks)*
