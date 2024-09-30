@@ -46,7 +46,9 @@ stateDiagram-v2
 > Is this rule derivable? Is it admissible? Justify your answers. *(5 marks)*
 
 Suppose $x$ evaluates to $True$. Then
-
+$$\frac{x \Downarrow  v =True}{Not \ x \Downarrow v^{-1} = False}$$
+Suppose $x$ evaluates to $False$. Then
+$$\frac{x \Downarrow  v =True}{Not \ x \Downarrow v^{-1} = False}$$
 
 > [!error] TODO
 
