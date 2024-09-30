@@ -75,3 +75,9 @@ $$\frac{c \Downarrow \text{True} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text
 The base case is the reflexive case if $e \Downarrow e$ then $e \overset{*}{\mapsto} e$. We have cases $e = \text{False}$, $e = \text{True}$, for which there are no steps in big step and small step semantics.
 
 The inductive case is if $e \Downarrow v$ then $$\frac{e_1 \mapsto e_2 \ \ \ \ \ \ e_2 \overset{*}{\mapsto} e_3}{e_1 \overset{*}{\mapsto} e_3}$$
+> [!danger] todo
+
+## C
+### 1
+> Define a recursive compilation function c : B → L which converts expressions in B to expressions in L. *(5 marks)*
+
