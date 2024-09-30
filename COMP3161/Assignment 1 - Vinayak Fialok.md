@@ -52,23 +52,24 @@ $$\frac{x \Downarrow  v = False}{Not \ x \Downarrow v^{-1} = True}$$
 So in all cases, we may derive the inference rule from the given big steps semantics. As such, it is derivable and admissable.
 
 ## Part B
+![[Pasted image 20240930192553.png]]
 ### 1
 > Show the full evaluation of the term `(If True (If False True False) False)`. *(5 marks)*
 
 ```python
-	-> (If True (If False True False) False)
-(2) -> (If False True False)
-(3) -> (False)
+		-> (If True (If False True False) False)
+using 1 -> (If False True False)
+using 3 -> (False)
 ```
 
 ### 2
 > Define an equivalent big-step semantics for L. *(5 marks)*
 
 $$\frac{c \Downarrow \text{False} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f}$$
-$$\frac{c \Downarrow \text{true} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t}$$
+$$\frac{c \Downarrow \text{True} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t}$$
 
 
 ### 3
 > Prove that if $e \Downarrow v$ then $e \overset{*}{\mapsto} v$, where $\Downarrow$ is the big-step semantics you defined in the previous question, and $\overset{*}{\mapsto}$ is the reflexive and transitive closure of $\mapsto$. Use rule induction on $e \Downarrow v$. *(10 marks)*
 
-The base case is the reflexive case $$e \overset{*}{\mapsto} v$$
+The base case is the reflexive case $$e \overset{*}{\mapsto} e$$
