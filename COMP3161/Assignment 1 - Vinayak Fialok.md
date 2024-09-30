@@ -124,10 +124,10 @@ c (False) = (False)
 
 ``` haskell
 c :: B -> L
-c (Not b) = (If b False True)
-c (And a b) = (If a (If b True False) False)
 c (True) = (True)
 c (False) = (False)
+c (Not b) = (If b False True)
+c (And a b) = (If a (If b True False) False)
 
 T :: Bool -> Bool -> Bool
 T a b = a
@@ -136,9 +136,10 @@ F :: Bool -> Bool -> Bool
 F a b = b
 
 d :: B -> λ
-d (Not True) = F
-d (Not False) = T
-d (And a b) = T T a
+d True = T
+d False = F
+d (Not b) = λb. b False True
+d (And a b) = (λa. λb. a b) a
 ```
 
 ## E
