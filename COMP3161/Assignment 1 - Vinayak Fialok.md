@@ -84,8 +84,8 @@ The inductive case is if $e \Downarrow v$ then $$\frac{e_1 \mapsto e_2 \ \ \ \ \
 
 ``` haskell
 c :: B -> L
-c (Not b) = (If b False True)
-c (And a b) = (If a (If b True False) False)
+c (Not b) = (If (c b) False True)
+c (And a b) = (If (c a) (If (c b) True False) False)
 c (True) = (True)
 c (False) = (False)
 ```
@@ -126,13 +126,14 @@ c (False) = (False)
 d :: B -> λ
 d True = T
 d False = F
-d (Not b) = λb. b False True
-d (And a b) = a (b True False) False
+d (Not b) = λb. (d b) False True
+d (And a b) = (d a) ((d b) True False) False
 
 e.g.
 
 d (Not (And True False))
-= (λ(And True False). b False True)
+= \b. (d (And True False)) False True
+= \b. (d (And True False)) False True
 ```
 
 ## E
