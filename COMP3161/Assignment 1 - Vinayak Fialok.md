@@ -96,13 +96,15 @@ c (False) = (False)
 
 ## E
 ### 1
-> [!question] what does it mean by 'explicit strings'?
-
 > [!danger] TODO
 > Extend the abstract syntax for B from question A.3 so that it supports the features used in the above example. Use first-order abstract syntax with explicit strings. You don’t have to extend the parsing relation. *(5 marks)*
+
+> [!question] what does it mean by 'explicit strings'?
 
 **Old Inference Rules:**
 $$\frac{}{True}, \frac{}{False}, \frac{p \space P}{\neg p}, \frac{p \space P}{(p)}, \frac{p_1 \space P \space p_2 \space P}{p_1 \wedge p_2}$$
 **Extra inference rules:**
-$$\frac{p_1 \ P \ \ \ p_2 \ P}{let \ \text{ident}'('\text{ident}) = p_1 \ \text{in} \ p_2}$$
-$$\frac{p \ P}{\text{ident}()}$$
+	$$\frac{p_1 \ P \ \ \ p_2 \ P}{\textbf{let} \ \text{ident}\textbf{(}\text{ident}\textbf{)} = p_1 \ \textbf{in} \ p_2 \ \textbf{end}}$$
+$$\frac{p \ P}{\text{ident}(p)}$$
+$$\frac{}{\text{ident}}$$
+
