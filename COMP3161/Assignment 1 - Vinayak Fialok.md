@@ -126,14 +126,14 @@ c (False) = (False)
 d :: B -> λ
 d True = T
 d False = F
-d (Not b) = λb. (d b) False True
-d (And a b) = (d a) ((d b) True False) False
+d (Not b) = (d b) F T
+d (And a b) = (d a) ((d b) T F) F
 
 e.g.
 
 d (Not (And True False))
-= \b. (d (And True False)) False True
-= \b. (d (And True False)) False True
+= (d (And True False)) F T
+= (d (And True False)) False True
 ```
 
 ## E
