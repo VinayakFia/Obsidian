@@ -96,4 +96,7 @@ c (False) = (False)
 
 ## E
 ### 1
-
+**Old Inference Rules:**
+$$\frac{}{True}, \frac{}{False}, \frac{p \space P}{\neg p}, \frac{p \space P}{(p)}, \frac{p_1 \space P \space p_2 \space P}{p_1 \wedge p_2}$$
+**Extra inference rules:**
+$$$$
