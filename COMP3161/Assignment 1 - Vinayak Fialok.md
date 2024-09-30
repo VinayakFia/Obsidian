@@ -99,4 +99,4 @@ c (False) = (False)
 **Old Inference Rules:**
 $$\frac{}{True}, \frac{}{False}, \frac{p \space P}{\neg p}, \frac{p \space P}{(p)}, \frac{p_1 \space P \space p_2 \space P}{p_1 \wedge p_2}$$
 **Extra inference rules:**
-$$$$
+$$\frac{p_1 \ P \ \ \ p_2 \ P}{let \ \text{ident}(\text{ident}) = p \ \text{in} \ p_22}$$
