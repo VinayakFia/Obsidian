@@ -104,8 +104,16 @@ c (False) = (False)
 	(λn. λf. λx. (n f (f x))) (λf. λx. f x)
 ->B (λf. λx. ((λf. λx. f x) f (f x)))
 ->B (λf. λx. ((λx. f x) (f x)))
-->B (λf. λx. ((λx. f x) (f x)))
+->B (λf. λx. (f (f x))
 ```
+### b)
+> Identify an η-reducible expression in the above (unreduced) term. **(5 marks)**
+
+η-reducible refers to reduction using `(λx. f x) 7 ->η f`. Lets now apply this to our reduction from part a.
+
+```
+```
+
 ## E
 ### 1
 > [!danger] TODO
