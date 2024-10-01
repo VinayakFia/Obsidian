@@ -76,7 +76,7 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 
 
 ### 3
-> [!danger] TODO
+> [!danger] TODO REWORD
 > Prove that if $e \Downarrow v$ then $e \overset{*}{\mapsto} v$, where $\Downarrow$ is the big-step semantics you defined in the previous question, and $\overset{*}{\mapsto}$ is the reflexive and transitive closure of $\mapsto$. Use rule induction on $e \Downarrow v$. *(10 marks)*
 
 - Let $P(e)$ be $e \Downarrow v \text{ implies } e \overset{*}{\mapsto} v$.
@@ -86,6 +86,8 @@ The base cases are $P(True)$ and $P(False)$.
 
 *Case 1*, $e = True$. Both big and small step semantics has no steps, so both evaluate to $True$.
 *Case 2*, $e = False$. Both big and small step semantics has no steps, so both evaluate to $False$.
+
+So $P(e)$ is true when $e \in \{True, False\}$.
 
 **Inductive Case**
 *Case 1*
@@ -102,7 +104,7 @@ Big step: $\text{If} \ \text{False} \ t \ f \Downarrow f'$. (Big step 4)
 
 $\text{If False} \ t \ f \mapsto f$ (Small step 2). Using the inductive hypothesis, we know $t \Downarrow f' \implies f \overset{*}{\mapsto} f'$. So $\text{If False} \ t \ f \overset{*}{\mapsto} f'$.
 
-So by induction, we know that in all cases,
+So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text{False} \ t \ f)$. Therefore, by induction, $P(e)$ is true in all cases.
 
 ## Part C
 ### 1
