@@ -120,11 +120,35 @@ c (And a b) = (If (c a) (If (c b) True False) False)
 c (True) = (True)
 c (False) = (False)
 
-// example for Not False
+// example for (Not False)
 	c (Not False)
 ->  (If (c False) False True)
 ->  (If False False True)
-->  
+->  True
+// So, c (Not False) evaluates to True (1)
+
+// example for (And True False)
+	c (And True False)
+->  (If (c True) (If (c False) True False) False)
+->  (If True (If False True False) False)
+->  (If True False False)
+->  False
+
+// example for (And False True)
+	c (And True False)
+->  (If (c True) (If (c False) True False) False)
+->  (If True (If False True False) False)
+->  (If True False False)
+->  False
+
+// example for (And True (Not False))
+	c (And True False)
+->  (If (c True) (If (c (Not False)) True False) False)
+... from 1 we know that c (Not False) evaluates to True
+->  (If (c True) (If True True False) False)
+->  (If True (If True True False) False)
+->  (If True True False)
+-> True
 ```
 
 ### 2
