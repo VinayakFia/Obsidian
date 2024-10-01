@@ -31,3 +31,4 @@ Kantian ethics is an effective foundation for rationalising decisions. However, 
 https://www.qil-qdi.org/kantian-ethics-age-artificial-intelligence-robotics/
 https://www.amazon.com.au/Computer-Power-Human-Reason-Calculation/dp/0716704633
 https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf
+https://usna.edu/CoreEthics/Essays/ONeil_Formula_of_Ends.pdf
