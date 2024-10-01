@@ -49,10 +49,10 @@ stateDiagram-v2
 > Is this rule derivable? Is it admissible? Justify your answers. *(5 marks)*
 
 Suppose $x$ evaluates to $True$. Then
-$$\frac{x \Downarrow  v = True}{Not \ x \Downarrow v^{-1} = False} = N_1$$
+$$\frac{x \Downarrow  v = True}{Not \ x \Downarrow v^{-1} = False} \equiv N_1$$
 Suppose $x$ evaluates to $False$. Then
-$$\frac{x \Downarrow  v = False}{Not \ x \Downarrow v^{-1} = True} = N_22$
-So in all cases, we may derive the inference rule from the given big steps semantics. As such, it is derivable and admissable.
+$$\frac{x \Downarrow  v = False}{Not \ x \Downarrow v^{-1} = True} \equiv N_2$$
+So in all cases, we may derive the inference rule from the given big steps semantics. As such, it is derivable and admissible.
 
 ## Part B
 ![[Pasted image 20240930192553.png]]
@@ -78,7 +78,7 @@ $$\frac{c \Downarrow \text{True} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text
 
 The base case is the reflexive case if $e \Downarrow e$ then $e \overset{*}{\mapsto} e$. We have cases $e = \text{False}$, $e = \text{True}$, for which there are no steps in big step and small step semantics.
 
-The inductive case is if $e \Downarrow v$ then $$\frac{e_1 \mapsto e_2 \ \ \ \ \ \ e_2 \overset{*}{\mapsto} e_3}{e_1 \overset{*}{\mapsto} e_3}$$
+The inductive case is if $e \Downarrow v$ then $$\$$
 
 ## Part C
 ### 1
