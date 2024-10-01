@@ -78,7 +78,7 @@ $$\frac{c \Downarrow \text{True} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text
 
 The base case is the reflexive case if $e \Downarrow e$ then $e \overset{*}{\mapsto} e$. We have cases $e = \text{False}$, $e = \text{True}$, for which there are no steps in big step and small step semantics.
 
-The inductive case is if $e \Downarrow v$ then $$\$$
+The inductive case is if $e \Downarrow v$ then
 
 ## Part C
 ### 1
