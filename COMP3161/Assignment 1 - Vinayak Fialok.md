@@ -71,8 +71,8 @@ using 3 -> (False)
 ### 2
 > Define an equivalent big-step semantics for L. *(5 marks)*
 
-$$\frac{c \Downarrow \text{False} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f'}$$
-$$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t'}$$
+$$\frac{c \Downarrow \text{False} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f'}(4)$$
+$$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t'}(5)$$
 
 
 ### 3
@@ -90,10 +90,11 @@ The base case is $P(\text{Bool})$.
 
 **Inductive Case**
 *Case 1*
-$P(\text{If} \ \text{True} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis
-1. $P(t)$
-2. $P(f)$.
-$\text{If} \ \text{True} \ t \ f \Downarrow t'$, 
+$P(\text{If} \ \text{True} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis $P(t)$.
+
+Big step: $\text{If} \ \text{True} \ t \ f \Downarrow t'$. (Big step 4)
+
+$\text{If True} \ t \ f \mapsto t$. (Small step 2) Using the inductive hypothesis, we know
 
 ## Part C
 ### 1
