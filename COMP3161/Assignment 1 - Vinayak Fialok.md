@@ -78,9 +78,8 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 > [!danger] TODO
 > Prove that if $e \Downarrow v$ then $e \overset{*}{\mapsto} v$, where $\Downarrow$ is the big-step semantics you defined in the previous question, and $\overset{*}{\mapsto}$ is the reflexive and transitive closure of $\mapsto$. Use rule induction on $e \Downarrow v$. *(10 marks)*
 
-The base case is the reflexive case if $e \Downarrow e$ then $e \overset{*}{\mapsto} e$. We have cases $e = \text{False}$, $e = \text{True}$, for which there are no steps in big step and small step semantics.
-
-The inductive case is if $e \Downarrow v$ then
+**Base Case**
+$P(c)$ where $c \in {True, False}$. 
 
 ## Part C
 ### 1
