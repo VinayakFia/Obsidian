@@ -63,15 +63,15 @@ So in all cases, we may derive the inference rule from the given big steps seman
 
 ```python
 		-> (If True (If False True False) False)
-using 1 -> (If False True False)
+using 2 -> (If False True False)
 using 3 -> (False)
 ```
 
 ### 2
 > Define an equivalent big-step semantics for L. *(5 marks)*
 
-$$\frac{c \Downarrow \text{False} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f}$$
-$$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t}$$
+$$\frac{c \Downarrow \text{False} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f'}$$
+$$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t'}$$
 
 
 ### 3
