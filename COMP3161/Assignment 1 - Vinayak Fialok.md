@@ -70,8 +70,8 @@ using 3 -> (False)
 ### 2
 > Define an equivalent big-step semantics for L. *(5 marks)*
 
-$$\frac{c \Downarrow \text{False} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f}$$
-$$\frac{c \Downarrow \text{True} \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t}$$
+$$\frac{c \Downarrow \text{False} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f}$$
+$$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t}$$
 
 
 ### 3
