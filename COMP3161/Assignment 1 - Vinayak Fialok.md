@@ -43,6 +43,7 @@ stateDiagram-v2
 ```
 
 #### b)
+> [!danger] Look at [Link](https://cgi.cse.unsw.edu.au/~cs3161/24T3/Week%2002/02-LMN-followup.pdf)
 > Consider the following inference rule: $$\frac{x ⇓ v}{Not \ x ⇓ v^{-1}}$$ where we understand $v^{-1}$ to be defined by the following equations:
 > $$True^{-1} = False$$
 > $$False^{-1} = True$$
@@ -104,6 +105,7 @@ Big step: $\text{If} \ \text{False} \ t \ f \Downarrow f'$. (Big step 4)
 
 $\text{If False} \ t \ f \mapsto f$ (Small step 2). Using the inductive hypothesis, we know $t \Downarrow f' \implies f \overset{*}{\mapsto} f'$. So $\text{If False} \ t \ f \overset{*}{\mapsto} f'$.
 
+**Conclusion**
 So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text{False} \ t \ f)$. Therefore, by induction, $P(e)$ is true in all cases.
 
 ## Part C
@@ -117,6 +119,12 @@ c (Not b) = (If (c b) False True)
 c (And a b) = (If (c a) (If (c b) True False) False)
 c (True) = (True)
 c (False) = (False)
+
+// example for Not False
+	c (Not False)
+->  (If (c False) False True)
+->  (If False False True)
+->  
 ```
 
 ### 2
