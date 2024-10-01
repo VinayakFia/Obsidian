@@ -84,7 +84,7 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 **Base Case**
 The base case is $P(\text{Bool})$.
 
-*Case 1*, True$. Both big and small step semantics has no steps, so both evaluate to $True$.
+*Case 1*, e = True$. Both big and small step semantics has no steps, so both evaluate to $True$.
 *Case 2*, $e = False$. Both big and small step semantics has no steps, so both evaluate to $False$.
 
 **Inductive Case**
