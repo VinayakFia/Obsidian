@@ -81,7 +81,7 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 **Base Case**
 $P(e)$ where $e \in \{True, False\}$, that is, $\forall e \in \{True, False\}, \ e \Downarrow v \text{ implies } e \overset{*}{\mapsto} v$.
 
-Case 1, $e = True$. There are no steps to take in big or small step semantic
+Case 1, $e = True$. There are no steps to take in
 
 ## Part C
 ### 1
