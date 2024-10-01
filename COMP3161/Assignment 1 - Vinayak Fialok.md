@@ -78,17 +78,19 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 > [!danger] TODO
 > Prove that if $e \Downarrow v$ then $e \overset{*}{\mapsto} v$, where $\Downarrow$ is the big-step semantics you defined in the previous question, and $\overset{*}{\mapsto}$ is the reflexive and transitive closure of $\mapsto$. Use rule induction on $e \Downarrow v$. *(10 marks)*
 
-Let $P(e)$ be $e \Downarrow v \text{ implies } e \overset{*}{\mapsto} v$.
+- Let $P(e)$ be $e \Downarrow v \text{ implies } e \overset{*}{\mapsto} v$.
+- Let $\text{Bool}$ represent $True \text{ or } False$.
 
 **Base Case**
-The base cases are $P(True)$ and $P(False)$.
+The base case is $P(\text{Bool})$.
 
-Case 1, $e = True$. Both big and small step semantics has no steps, so both evaluate to $True$.
-Case 1, $e = False$. Both big and small step semantics has no steps, so both evaluate to $False$.
+*Case 1*, True$. Both big and small step semantics has no steps, so both evaluate to $True$.
+*Case 2*, $e = False$. Both big and small step semantics has no steps, so both evaluate to $False$.
 
 **Inductive Case**
 *Case 1*
-$P(\text{If} \ \text{True} \ t \ f)$ 
+$P(\text{If} \ \text{True} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$.
+
 ## Part C
 ### 1
 > [!danger] This is correct but the formatting is certainly not
