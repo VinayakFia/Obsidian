@@ -38,3 +38,4 @@ https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf
 https://usna.edu/CoreEthics/Essays/ONeil_Formula_of_Ends.pdf
 http://www.sophia-project.org/uploads/1/3/9/5/13955288/kant_lying.pdf
 https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP4920/24T3/b09949bce1345dd8998cca71826a2f0b5d1014e9242357c1d9cadc8ecc8f3b82/WEEK_1_LECTURE_2_READINGS_4920_24T1.pdf
+https://www-jstor-org.wwwproxy1.library.unsw.edu.au/stable/2265252?seq=4
