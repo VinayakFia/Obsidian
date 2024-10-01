@@ -88,7 +88,7 @@ Case 1, $e = False$. Both big and small step semantics has no steps, so both eva
 
 **Inductive Case**
 *Case 1*
-$$P(e)$$
+$P(\text{If} \ \text{True} \ t \ f)$ 
 ## Part C
 ### 1
 > [!danger] This is correct but the formatting is certainly not
