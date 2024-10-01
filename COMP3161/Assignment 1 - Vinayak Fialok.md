@@ -79,7 +79,9 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 > Prove that if $e \Downarrow v$ then $e \overset{*}{\mapsto} v$, where $\Downarrow$ is the big-step semantics you defined in the previous question, and $\overset{*}{\mapsto}$ is the reflexive and transitive closure of $\mapsto$. Use rule induction on $e \Downarrow v$. *(10 marks)*
 
 **Base Case**
-$P(c)$ where $c \in {True, False}$
+$P(e)$ where $e \in \{True, False\}$, that is, $\forall e \in \{True, False\}, \ e \Downarrow v \text{ implies } e \overset{*}{\mapsto} v$.
+
+Case 1, $e = True$. There are no steps to take in big or small step semantic
 
 ## Part C
 ### 1
