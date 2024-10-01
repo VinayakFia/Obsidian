@@ -26,8 +26,6 @@ $$\frac{p \ P_{atom} \longleftrightarrow b \ B}{p \ P_{brac} \longleftrightarrow
 $$\frac{p \ P_{brac} \longleftrightarrow b \ B}{p \ P_{and} \longleftrightarrow b \ B}, \frac{p_1 \ P_{brac} \ p_2 \ P_{and} \longleftrightarrow a \ B \ b \ B}{p_2 \wedge p_2 \ P_{and} \longleftrightarrow AND \ a \ b \ B}$$
 $$\frac{p \ P_{and} \longleftrightarrow b \ B}{p \ P_{not} \longleftrightarrow b \ B}, \frac{p \ P_{and} \longleftrightarrow b \ B}{\neg p \ P_{not} \longleftrightarrow NOT \ b \ B}$$
 ### 4
-$$\frac{c → c′}{(If \ c \ t \ e) → (If c′ \ t \ e)}$$ $$\frac{}{(If \ True \ t \ e) → t}$$
-$$\frac{}{(If \ False \ t \ e) → e}$$
 #### a)
 > Show the evaluation of `And (Not (And True False)) False` with a derivation tree (arguably this belongs in Part B). (5 marks)
 
@@ -57,6 +55,8 @@ $$\frac{x \Downarrow  v = False}{Not \ x \Downarrow v^{-1} = True} \equiv N_2$$
 So in all cases, we may derive the inference rule from the given big steps semantics. As such, it is derivable and admissible.
 
 ## Part B
+$$\frac{c → c′}{(If \ c \ t \ e) → (If c′ \ t \ e)}$$ $$\frac{}{(If \ True \ t \ e) → t}$$
+$$\frac{}{(If \ False \ t \ e) → e}$$
 ![[Pasted image 20240930192553.png]]
 ### 1
 > Show the full evaluation of the term `(If True (If False True False) False)`. *(5 marks)*
