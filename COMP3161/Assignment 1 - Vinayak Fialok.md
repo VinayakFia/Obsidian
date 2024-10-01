@@ -55,8 +55,9 @@ $$\frac{x \Downarrow  v = False}{Not \ x \Downarrow v^{-1} = True} \equiv N_2$$
 So in all cases, we may derive the inference rule from the given big steps semantics. As such, it is derivable and admissible.
 
 ## Part B
-$$\frac{c → c′}{(If \ c \ t \ e) → (If c′ \ t \ e)}$$ $$\frac{}{(If \ True \ t \ e) → t}$$
-$$\frac{}{(If \ False \ t \ e) → e}$$
+$$\frac{c → c′}{(If \ c \ t \ e) → (If c′ \ t \ e)}(1)$$
+$$\frac{}{(If \ True \ t \ e) → t}(2)$$
+$$\frac{}{(If \ False \ t \ e) → e}(3)$$
 ![[Pasted image 20240930192553.png]]
 ### 1
 > Show the full evaluation of the term `(If True (If False True False) False)`. *(5 marks)*
@@ -84,12 +85,15 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 **Base Case**
 The base case is $P(\text{Bool})$.
 
-*Case 1*, e = True$. Both big and small step semantics has no steps, so both evaluate to $True$.
+*Case 1*, $e = True$. Both big and small step semantics has no steps, so both evaluate to $True$.
 *Case 2*, $e = False$. Both big and small step semantics has no steps, so both evaluate to $False$.
 
 **Inductive Case**
 *Case 1*
-$P(\text{If} \ \text{True} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$.
+$P(\text{If} \ \text{True} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis
+1. $P(t)$
+2. $P(f)$.
+$\text{If} \ \text{True} \ t \ f \Downarrow t'$, 
 
 ## Part C
 ### 1
