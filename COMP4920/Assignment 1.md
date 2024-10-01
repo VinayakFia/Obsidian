@@ -17,7 +17,11 @@ Kantian ethics is based on concept of the categorical imperative, which, in its 
 
 Kant, in his second formulation, states that we must never treat humans as a mere means, but always at the same time an end (Kant 2008 p29). As O'Neil expounds, to use someone as a mere means is to involve them in a scheme of action to which they could not in principle consent (O’Neill, 1986). The earlier proposed scheme of lying could indeed not be consented to by the deceived party, as the consenting party is unaware of the real maxim.
 
-Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each. Moreover, a key Further Kantian ethics uniquely considers the individual preference. Ultimately deciding whether one chooses a maxim to become universal law is based on their own will. Moreover, the actions of others, regardless of one's own beliefs, must be respected, as one must respect human rationality. This enables a society of varying, even opposing, beliefs that exist in harmony.
+Kantian ethics provides a practical framework for the modern individual to rationalise actions. Unlike utilitarianism's infinite computation of the hedonic calculus, one may reasonably form maxims, and reason the universality of each.
+
+Moreover Kantian ethics enables organisations and governments to make decisions that respect their shareholders. Kantian ethics requires that one respect each individual as a rational person with their own maxims. Beyond that, one may also seek to foster others’ plans and maxims by sharing some of their ends (O'Neill 1983 p162). Indeed, a decision making system founded on ethics enables its inhabitants to have hamoneously maintain opposing beliefs.
+
+, a key Further Kantian ethics uniquely considers the individual preference. Ultimately deciding whether one chooses a maxim to become universal law is based on their own will. Moreover, the actions of others, regardless of one's own beliefs, must be respected, as one must respect human rationality. This enables a society of varying, even opposing, beliefs that exist in harmony.
 
 I will consider two approaches for the automation of Kantian ethics. Firstly, end-to-end automation through the creation of a Kantian artificial moral agent. Secondly, we will explore automation through formalisation of the Categorial imperative into proof software, which a moral agent utilises to prove the ethicality of a maxim.
 
