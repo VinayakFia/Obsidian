@@ -37,3 +37,4 @@ https://www.amazon.com.au/Computer-Power-Human-Reason-Calculation/dp/0716704633
 https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf
 https://usna.edu/CoreEthics/Essays/ONeil_Formula_of_Ends.pdf
 http://www.sophia-project.org/uploads/1/3/9/5/13955288/kant_lying.pdf
+Bennett, C., 2015. _What is this thing called ethics?_. Routledge.
