@@ -233,7 +233,7 @@ Therefore, by induction, $\forall e, e \Downarrow v \text{ implies } c(e) \Downa
 ```haskell
 	(λf. λx. f x)
 =   (λf. (λx. f x)) <- adding brackets
-->n (λf. (f)) <- using n reduction
+->n (λf. (f)) <- using n reduction on (λx. f x)
 =   (λf. f)
 ```
 
@@ -246,7 +246,7 @@ d :: B -> λ
 d True = T <- d_1
 d False = F <- d_2
 d (Not b) = (d b) F T <- d_3
-d (And a b) = (d a) ((d b) T F) F <- d_4
+d (And a b) = (d a) (d b) F <- d_4
 
 e.g. B = (Not (And True False))
 
@@ -261,6 +261,8 @@ d (Not (And True False))
 
 ### 3
 > Prove that for all e such that $e \Downarrow v$ it holds that $d(e) \equiv_{abn}v′$, where $v′$ is the λ-calculus encoding of $v$. *(10 marks)*
+
+> [!danger] REDOOOO
 
 - Let $P(e)$ be $e \Downarrow v \text{ implies } d(e) \equiv_{abn} v'$ where $v'$ is the $\lambda$-calculus encoding of $v$.
 
