@@ -161,6 +161,7 @@ c (False) = (False)
 > [!danger] TODO
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
+**Base Case**
 ## Part D
 ### 1
 > Here is a term in λ-calculus: $$(λn. λf. λx. (n f (f x))) (λf. λx. f x)$$
