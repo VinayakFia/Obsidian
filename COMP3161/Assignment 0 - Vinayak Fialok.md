@@ -148,8 +148,6 @@ c False = False // c4
 ### 2
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
-> [!danger] REDOOOOOO
-
 - Let $P(e)$ be $e \Downarrow v \text{ implies } c(e) \Downarrow v$.
 
 **Base Case**
@@ -183,7 +181,7 @@ Prove $P(\text{And} \ a \ b)$  with Inductive hypothesis:
 1. Inductive hypothesis $P(a)$.
 2. Inductive hypothesis $P(b)$.
 
-
+Cases:
 1. when $a \Downarrow False$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$. So, we must show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
 c(And a b) = (If (c a) (c b) False) <- using c2
@@ -254,22 +252,10 @@ d True = T <- d_1
 d False = F <- d_2
 d (Not b) = (d b) F T <- d_3
 d (And a b) = (d a) (d b) F <- d_4
-
-e.g. B = (Not (And True False))
-
-d (Not (And True False))
-= (d (And True False)) F T
-= ((d True) ((d False) T F) F) F T
-= (T (F T F) F) F T
-= (T F F) F T
-= F F T
-= T
 ```
 
 ### 3
 > Prove that for all e such that $e \Downarrow v$ it holds that $d(e) \equiv_{abn}v′$, where $v′$ is the λ-calculus encoding of $v$. *(10 marks)*
-
-> [!danger] REDOOOO
 
 - Let $P(e)$ be $e \Downarrow v \text{ implies } d(e) \equiv_{abn} v'$ where $v'$ is the $\lambda$-calculus encoding of $v$.
 
@@ -307,45 +293,37 @@ Prove $P(\text{And} \ a \ b)$ with inductive hypothesis $P(a)$ and $P(b)$. We ha
 
 1. when $a \Downarrow False$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$ as below:
 ```haskell
-d(And a b) = (d a) ((d b) T F) F <- d_4
-		   = F ((d b) T F) F <- using inductive hypothesis P(a)
-		   = F (F T F) F <- using inductive hypothesis P(b)
-		   = F ((λx λy y) T F) F <- definition of F
-		   = F F F <- subtituting x with T and y with F
+d(And a b) = (d a) (d b) F <- d_4
+		   = F (d b) F <- using inductive hypothesis P(a)
+		   = F F F <- using inductive hypothesis P(b)
 		   = (λx λy y) F F <- definition of F
 		   = F <- substituting x with F and y with F
 ```
 
 2. when $a \Downarrow False$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$ as below:
 ```haskell
-d(And a b) = (d a) ((d b) T F) F <- d_4
-		   = F ((d b) T F) F <- using inductive hypothesis P(a)
-		   = F (T T F) F <- using inductive hypothesis P(b)
-		   = F ((λx λy x) T F) F <- definition of T
-		   = F T F <- subtituting x with T and y with F
+d(And a b) = (d a) (d b) F <- d_4
+		   = F (d b) F <- using inductive hypothesis P(a)
+		   = F T F <- using inductive hypothesis P(b)
 		   = (λx λy y) T F <- definition of F
 		   = F <- substituting x with T and y with F
 ```
 
 3. when $a \Downarrow True$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$ as below:
 ```haskell
-d(And a b) = (d a) ((d b) T F) F <- d_4
-		   = T ((d b) T F) F <- using inductive hypothesis P(a)
-		   = T (F T F) F <- using inductive hypothesis P(b)
-		   = T ((λx λy y) T F) F <- definition of F
-		   = T F F <- subtituting x with T and y with F
+d(And a b) = (d a) (d b) F <- d_4
+		   = T (d b) F <- using inductive hypothesis P(a)
+		   = T F F <- using inductive hypothesis P(b)
 		   = (λx λy x) F F <- definition of T
 		   = F <- substituting x with F and y with F
 ```
 
 4. when $a \Downarrow True$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow True$, so we must show $c(b) \equiv_{abn} T$ as below:
 ```haskell
-d(And a b) = (d a) ((d b) T F) F <- d_4
-		   = T ((d b) T F) F <- using inductive hypothesis P(a)
-		   = T (T T F) F <- using inductive hypothesis P(b)
-		   = T ((λx λy x) T F) F <- definition of T
-		   = T T F <- subtituting x with T and y with F
-		   = (λx λy x) F F <- definition of T
+d(And a b) = (d a) (d b) F <- d_4
+		   = T (d b) F <- using inductive hypothesis P(a)
+		   = T T F <- using inductive hypothesis P(b)
+		   = (λx λy x) T F <- definition of T
 		   = T <- substituting x with T and y with F
 ```
 
