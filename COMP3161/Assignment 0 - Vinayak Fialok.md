@@ -94,10 +94,10 @@ If $a = True$ then we know $a \Downarrow True$, and it must be true that after 0
 If $a = False$ then we know $a \Downarrow False$, and it must be true that after 0 or more steps $\text{If} \ False \ b \ c \overset{*}{\mapsto} \text{If} \ False \ b \ c$.
 
 *Inductive Hypothesis*
-Assume that if $a_n \Downarrow a$ then $\text{If} \ a_n \ b \ c \overset{*}{\mapsto} \text{If} \ a \ b \ c$.
+Assume that if $a \Downarrow a'$ then $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
 
 *Inductive Case*
-Prove that if $a_{n+1} \Downarrow a$ then $\text{If} \ a_{n+1} \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
+Prove that if $a_{-1} \Downarrow a'$, and $then $\text{If} \ a_{n+1} \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
 
 Lets start with expression $\text{If} \ a_{n+1} \ b \ c$
 
