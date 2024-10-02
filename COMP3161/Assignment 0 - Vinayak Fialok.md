@@ -1,7 +1,7 @@
 > [!link] https://cgi.cse.unsw.edu.au/~cs3161/24T3/Assignment%200/Spec.pdf
 
 > [!warning] TODOS
-> - [ ] 📅 2024-10-01 Figure out induction
+> - [x] 📅 2024-10-01 Figure out induction
 > - [ ] 📅 2024-10-04 Finish this damn assignment (COMP3161 ass 0)
 ## Part A
 ### 1
@@ -43,7 +43,6 @@ stateDiagram-v2
 ```
 
 #### b)
-> [!danger] Look at [Link](https://cgi.cse.unsw.edu.au/~cs3161/24T3/Week%2002/02-LMN-followup.pdf)
 > Consider the following inference rule: $$\frac{x ⇓ v}{Not \ x ⇓ v^{-1}}$$ where we understand $v^{-1}$ to be defined by the following equations:
 > $$True^{-1} = False$$
 > $$False^{-1} = True$$
@@ -77,7 +76,6 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 
 
 ### 3
-> [!danger] TODO REWORD
 > Prove that if $e \Downarrow v$ then $e \overset{*}{\mapsto} v$, where $\Downarrow$ is the big-step semantics you defined in the previous question, and $\overset{*}{\mapsto}$ is the reflexive and transitive closure of $\mapsto$. Use rule induction on $e \Downarrow v$. *(10 marks)*
 
 - Let $P(e)$ be $e \Downarrow v \text{ implies } e \overset{*}{\mapsto} v$.
@@ -110,7 +108,6 @@ So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text
 
 ## Part C
 ### 1
-> [!danger] This is correct but the formatting is certainly not
 > Define a recursive compilation function c : B → L which converts expressions in B to expressions in L. *(5 marks)*
 
 ``` haskell
@@ -158,7 +155,6 @@ c False = False // c4
 ```
 
 ### 2
-> [!danger] TODO
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
 - Let $P(e)$ be $e \Downarrow v \text{ implies } c(e) \Downarrow v$.
@@ -359,27 +355,24 @@ d(And a b) = (d a) ((d b) T F) F <- d_4
 		   = T ((λx λy y) T F) F <- definition of F
 		   = T F F <- subtituting x with T and y with F
 		   = (λx λy x) F F <- definition of T
-		   = F <- substituting x with T and y with F
+		   = F <- substituting x with F and y with F
 ```
 
-3. when $a \Downarrow True$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$
+4. when $a \Downarrow True$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow True$, so we must show $c(b) \equiv_{abn} T$ as below:
 ```haskell
-c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
-		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
-		   = (If True (If False True False) False) <- using inductive hypothesis 2
-		   = (If True False False) <- using language L small step 3
-		   = False <- using language L small step 2
+d(And a b) = (d a) ((d b) T F) F <- d_4
+		   = T ((d b) T F) F <- using inductive hypothesis P(a)
+		   = T (T T F) F <- using inductive hypothesis P(b)
+		   = T ((λx λy x) T F) F <- definition of T
+		   = T T F <- subtituting x with T and y with F
+		   = (λx λy x) F F <- definition of T
+		   = T <- substituting x with T and y with F
 ```
 
-4. when $a \Downarrow True$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow True$
-```haskell
-c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
-		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
-		   = (If True (If True True False) False) <- using inductive hypothesis 2
-		   = (If True True False) <- using language L small step 2
-		   = False <- using language L small step 2
-		   ```
+So if $P(a)$, and $P(b)$, $P(\text{And} \ a \ b) \equiv_{abn} v'$ where $v'$ is the $\lambda$-encoding of $v$.
 
+**Conclusion**
+Therefore, by induction, if $e \Downarrow v$ it holds that $d(e) \equiv_{abn}v′$, where $v′$ is the λ-calculus encoding of $v$.
 ## Part E
 ### 1
 > Extend the abstract syntax for B from question A.3 so that it supports the features used in the above example. Use first-order abstract syntax with explicit strings. You don’t have to extend the parsing relation. *(5 marks)*
