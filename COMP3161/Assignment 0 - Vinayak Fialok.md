@@ -79,8 +79,11 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 **Base Case**
 The base cases are $P(True)$ and $P(False)$.
 
-*Case 1*, $e = True$. Both big and small step semantics has no steps, so both evaluate to $True$.
-*Case 2*, $e = False$. Both big and small step semantics has no steps, so both evaluate to $False$.
+*Case 1*
+$e = True$. Both big and small step semantics have no steps, so both evaluate to $True$.
+
+*Case 2*
+$e = False$. Both big and small step semantics have no steps, so both evaluate to $False$.
 
 So $P(e)$ is true when $e \in \{True, False\}$.
 
@@ -88,9 +91,9 @@ So $P(e)$ is true when $e \in \{True, False\}$.
 Prove that if $a \Downarrow a'$ then $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
 
 *Base Case*
-If $a = True$ then we know $a \Downarrow True$, and it must be true that $\text{If} \ True \ b \ c \overset{*}{\mapsto} \text{If} \ True \ b \ c$.
+If $a = True$ then we know $a \Downarrow True$, and it must be true that $\text{If} \ True \ b \ c \overset{*}{\mapsto} \text{If} \ True \ b \ c$ after 0 steps.
 
-If $a = False$ then we know $a \Downarrow False$, and it must be true that after 0 $\text{If} \ False \ b \ c \overset{*}{\mapsto} \text{If} \ False \ b \ c$.
+If $a = False$ then we know $a \Downarrow False$, and it must be true that $\text{If} \ False \ b \ c \overset{*}{\mapsto} \text{If} \ False \ b \ c$ after 0 steps.
 
 *Inductive Hypothesis*
 Assume that if $a \Downarrow a'$ then $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
@@ -114,9 +117,9 @@ Therefore, by mathematical induction, if $a \Downarrow a'$ then $\text{If} \ a \
 > [!danger] instead `If True t f`, use `If e t f` where $e \Downarrow True$
 
 *Case 1*
-$P(\text{If} \ \text{True} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis $P(t)$, $P(f)$.
+$P(\text{If} \ e \ t \ f)$ when $e \Downarrow True$, $t \Downarrow t'$, and $f \Downarrow f'$. With inductive hypothesis, $P(e)$, $P(t)$, $P(f)$.
 
-Big step: $\text{If} \ \text{True} \ t \ f \Downarrow t'$. (Big step 4)
+In big step semantics, this expression evaluates to $\text{If} \ \text{True} \ t \ f \Downarrow t'$. (Big step 4)
 
 $\text{If True} \ t \ f \mapsto t$ (Small step 2). Using the inductive hypothesis, we know $t \Downarrow t' \implies t \overset{*}{\mapsto} t'$. So $\text{If True} \ t \ f \overset{*}{\mapsto} t'$.
 
