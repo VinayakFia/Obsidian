@@ -171,7 +171,10 @@ Prove $P(True)$ and $P(False)$.
 
 **Inductive Case**
 *Case 1*
-Prove $P(\text{Not} \ e)$ with inductive hypothesis $P(e)$.
+Prove $P(\text{Not} \ e)$ with inductive hypothesis $P(e)$, that is assume $e \Downarrow v \implies c(e) \Downarrow v$.
+
+$\text{Not} \ e \Downarrow e'$. If $e' = True$, $Not e \Downarrow$
+
 ```haskell
 c(Not e) = (If (c b) False True)
 		 = (If )
