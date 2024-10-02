@@ -166,7 +166,7 @@ c False = False
 **Base Case**
 Prove $P(True)$ and $P(False)$.
 
-$$
+1. $$
 $c(True) = True$, $c(False) = False$.
 
 ## Part D
