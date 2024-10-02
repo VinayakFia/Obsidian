@@ -101,8 +101,11 @@ Prove that if $a_{-1} \Downarrow a'$, and $a_{-1} \mapsto a$, then $\text{If} \ 
 Lets start with expression $$\text{If} \ a_{-1} \ b \ c$$
 It is given that $a_{-1} \mapsto a$, so we can apply small step rule 1
 $$\frac{a_{-1} \mapsto a}{\text{If} \ a_{-1} \ b \ c \mapsto \text{If} \ a \ b \ c}$$
-From our inductive hypothesis, we know that $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If}$
+From our inductive hypothesis, we know that $\text{If} \ a_{-1} \ b \ c \overset{*}{\mapsto} \text{If} \ a \ b \ c$.
 
+$$\frac{\text{If} \ a_{-1} \ b \ c \mapsto \text{If} \ a \ b \ c \ \ \ \ \ \ \text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c}{\text{If} \ a_{-1} \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c}$$
+*Conclusion Lemma 1*
+Hence if true for base case, and given
 
 **Inductive Case**
 > [!danger] instead `If True t f`, use `If e t f` where $e \Downarrow True$
