@@ -85,6 +85,9 @@ The base cases are $P(True)$ and $P(False)$.
 
 So $P(e)$ is true when $e \in \{True, False\}$.
 
+**Lemma 1**
+If $\text{If} \ a \ b \ c$
+
 **Inductive Case**
 > [!danger] instead `If True t f`, use `If e t f` where $e \Downarrow True$
 
