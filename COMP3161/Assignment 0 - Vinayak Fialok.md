@@ -324,7 +324,7 @@ d(Not b) = (d b) F T <- d_3
 		 = T <- subtituting x with F and y with T
 ```
 
-So 
+So if $P(b)$, 
 
 ## Part E
 ### 1
