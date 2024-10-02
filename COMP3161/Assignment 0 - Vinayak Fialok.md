@@ -340,4 +340,4 @@ B ::= Let String String B B | Var String | Call String B | Not B | And B B | Tru
 ```
 
 ### 2
-> [!danger] TODO
+$$\frac{}{}$$
