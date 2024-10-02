@@ -60,9 +60,9 @@ $$\frac{}{(If \ False \ t \ e) → e}(3)$$
 > Show the full evaluation of the term `(If True (If False True False) False)`. *(5 marks)*
 
 ```python
-		-> (If True (If False True False) False)
-using 2 -> (If False True False)
-using 3 -> (False)
+(If True (If False True False) False)
+(If False True False) <- using 2, simplify
+(False) <- using 3
 ```
 
 ### 2
