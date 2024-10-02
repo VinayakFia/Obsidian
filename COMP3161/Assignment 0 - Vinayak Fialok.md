@@ -161,7 +161,7 @@ c False = False // c4
 > [!danger] TODO
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
-- Let $P(e)$ be $e \Downarrow v \text{ implies } d(e) \Downarrow v$.
+- Let $P(e)$ be $e \Downarrow v \text{ implies } c(e) \Downarrow v$.
 
 **Base Case**
 Prove $P(True)$ and $P(False)$.
@@ -295,13 +295,18 @@ d (Not (And True False))
 ### 3
 > Prove that for all e such that $e \Downarrow v$ it holds that $d(e) \equiv_{abn}v′$, where $v′$ is the λ-calculus encoding of $v$. *(10 marks)*
 
+- Let $P(e)$ be $e \Downarrow v \text{ implies } d(e) \equiv_{abn} v'$ where $v'$ is the $\lambda$-calculus encoding of $v$.
+
 **Base Case**
 Prove $d(True) \Downarrow T$ and $d(False) \Downarrow F$.
 1. $d(True) = T$ using d_1
 2. $d(False) = F$ using d_2
 
 **Inductive Case**
+*Case 1*
+Prove $P(\text{Not} \ b)$ with inductive hypothesis $P(b)$.
 
+We know from language $B$ that $\text{Not} \ True \Downarrow False$. The equivelent to $False$ in $\lambda$-calculus encoding is $F$. Now lets evaluate $d(\text{Not} b)$.
 
 ## Part E
 ### 1
