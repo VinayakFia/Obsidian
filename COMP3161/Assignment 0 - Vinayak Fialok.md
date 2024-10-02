@@ -178,55 +178,44 @@ c(Not e) = (If (c e) False True) <- using c1
 
 So if $P(e)$, then $P(\text{Not} \ e)$.
 
-**TODO BELOW**
 *Case 2*
-Prove $P(\text{And} \ a \ b)$  with
+Prove $P(\text{And} \ a \ b)$  with Inductive hypothesis
 1. Inductive hypothesis $P(a)$.
 2. Inductive hypothesis $P(b)$.
 
-Big Step:
-2. when $a \Downarrow False$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
-3. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$.
-4. when $a \Downarrow True$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow True\ \text{using language B big step rule } N_6$.
-
-Function c:
-1. when $a \Downarrow False$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$. so we must show that $c(\text{And} \ a \ b) \Downarrow False$
+1. when $a \Downarrow False$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$. So, we must show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
-c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
-		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
-		   = (If False (If False True False) False) <- using inductive hypothesis 2
-		   = (If False False False) <- using language L small step 3
+c(And a b) = (If (c a) (c b) False) <- using c2
+		   = (If False (c b) False) <- using inductive hypothesis 1
+		   = (If False False False) <- using inductive hypothesis 2
 		   = False <- using language L small step 3
 ```
 
-2. when $a \Downarrow False$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow False$
+2. when $a \Downarrow False$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$. So, we must show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
-c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
-		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
-		   = (If False (If True True False) False) <- using inductive hypothesis 2
-		   = (If False True False) <- using language L small step 2
+c(And a b) = (If (c a) (c b) False) <- using c2
+		   = (If False (c b) False) <- using inductive hypothesis 1
+		   = (If False True False) <- using inductive hypothesis 2
 		   = False <- using language L small step 3
 ```
 
-3. when $a \Downarrow True$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$
+3. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$. So, we must show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
-c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
-		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
-		   = (If True (If False True False) False) <- using inductive hypothesis 2
-		   = (If True False False) <- using language L small step 3
+c(And a b) = (If (c a) (c b) False) <- using c2
+		   = (If True (c b) False) <- using inductive hypothesis 1
+		   = (If True False False) <- using inductive hypothesis 2
 		   = False <- using language L small step 2
 ```
 
-3. when $a \Downarrow True$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow True$
+4. when $a \Downarrow True$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow True\ \text{using language B big step rule } N_6$. So, we must show that $c(\text{And} \ a \ b) \Downarrow True$
 ```haskell
-c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
-		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
-		   = (If True (If True True False) False) <- using inductive hypothesis 2
-		   = (If True True False) <- using language L small step 2
+c(And a b) = (If (c a) (c b) False) <- using c2
+		   = (If True (c b) False) <- using inductive hypothesis 1
+		   = (If True True False) <- using inductive hypothesis 2
 		   = False <- using language L small step 2
 ```
 
-So if $P(a)$ and $P(b)$, then $P(\text{And} \ a \ b)$.
+So if $P(a)$ and $P(b)$, then in all cases $P(\text{And} \ a \ b)$.
 
 **Conclusion**
 Therefore, by induction, $\forall e, e \Downarrow v \text{ implies } c(e) \Downarrow v$.
