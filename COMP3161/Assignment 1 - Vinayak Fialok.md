@@ -206,17 +206,42 @@ Big Step:
 4. when $a \Downarrow True$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow True\ \text{using language B big step rule } N_6$.
 
 Function c:
-1. when $a \Downarrow False$, $b \Downarrow False$:
+1. when $a \Downarrow False$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
 c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
 		   = (If False (If False True False) False) <- using inductive hypothesis 2
-		   = (If False False False) <- using language L small step 
+		   = (If False False False) <- using language L small step 3
+		   = False <- using language L small step 3
 ```
 
-1. when $a \Downarrow False$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
-2. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$.
+2. when $a \Downarrow False$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
+```haskell
+c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
+		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
+		   = (If False (If True True False) False) <- using inductive hypothesis 2
+		   = (If False True False) <- using language L small step 2
+		   = False <- using language L small step 3
+```
+
+3. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$.
+```haskell
+c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
+		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
+		   = (If True (If False True False) False) <- using inductive hypothesis 2
+		   = (If True False False) <- using language L small step 3
+		   = False <- using language L small step 2
+```
+
 3. when $a \Downarrow True$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow True\ \text{using language B big step rule } N_6$.
+```haskell
+c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
+		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
+		   = (If True (If True True False) False) <- using inductive hypothesis 2
+		   = (If True True False) <- using language L small step 2
+		   = False <- using language L small step 2
+```
+
 ## Part D
 ### 1
 > Here is a term in λ-calculus: $$(λn. λf. λx. (n f (f x))) (λf. λx. f x)$$
