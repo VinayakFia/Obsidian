@@ -245,7 +245,7 @@ c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 So if $P(a)$ and $P(b)$, then $P(\text{And} \ a \ b)$.
 
 **Conclusion**
-Therefore, by induction, $\forall e, e \Downarrow $.
+Therefore, by induction, $\forall e, e \Downarrow v \text{ implies } c(e) \Downarrow v$.
 ## Part D
 ### 1
 > Here is a term in λ-calculus: $$(λn. λf. λx. (n f (f x))) (λf. λx. f x)$$
@@ -254,10 +254,10 @@ Therefore, by induction, $\forall e, e \Downarrow $.
 
 ```haskell
 	(λn. λf. λx. (n f (f x))) (λf. λx. f x)
-->A (λn. λf. λx. (n f (f x))) (λg. λp. g p)
-->B (λf. λx. ((λg. λp. g p) f (f x)))
-->B (λf. λx. ((λp. f p) (f x)))
-->B (λf. λx. (f (f x))
+->A (λn. λf. λx. (n f (f x))) (λg. λp. g p) <- renaming variables f and x to g and p
+->B (λf. λx. ((λg. λp. g p) f (f x))) <- replacing f with (λf. λx. f x)
+->B (λf. λx. ((λp. f p) (f x))) <- replacing g with f
+->B (λf. λx. (f (f x)) <- replacing p with (f x)
 ```
 ### b)
 > Identify an η-reducible expression in the above (unreduced) term. *(5 marks)*
@@ -265,9 +265,9 @@ Therefore, by induction, $\forall e, e \Downarrow $.
 η-reducible refers to reduction using `(λx. f x) 7 ->η f`. This can be applied to the expression `(λf. λx. f x)`, specifically to `(λx. f x)`.
 ```haskell
 	(λf. λx. f x)
-=   (λf. (λx. f x))
-->n (λf. (f))
-->n (λf. f)
+=   (λf. (λx. f x)) <- adding brackets
+->n (λf. (f)) <- using n reduction
+=   (λf. f)
 ```
 
 ### 2
