@@ -200,7 +200,8 @@ Prove $P(\text{And} \ a \ b)$  with
 2. Inductive hypothesis $P(b)$.
 
 Big Step:
-
+1. when $a \Downarrow False$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
+2. $b \Downarrow False$ $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
 
 ## Part D
 ### 1
