@@ -86,6 +86,8 @@ The base cases are $P(True)$ and $P(False)$.
 So $P(e)$ is true when $e \in \{True, False\}$.
 
 **Inductive Case**
+> [!danger] instead `If True t f`, use `If e t f` where $e \Downarrow True$
+
 *Case 1*
 $P(\text{If} \ \text{True} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis $P(t)$.
 
