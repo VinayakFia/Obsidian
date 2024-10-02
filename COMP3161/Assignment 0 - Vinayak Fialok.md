@@ -11,8 +11,7 @@ $$\frac{}{True}, \frac{}{False}, \frac{p \space P}{\neg p}, \frac{p \space P}{(p
 ### 2
 > The operator ¬ has the highest precedence, and logical and is right-associative. Define a set of simultaneous judgements to define the language without any ambiguity. *(5 marks)*
 
-$$\frac{}{True \ P_{atom}}, \frac{}{False \ P_{atom}}$$
-$$\frac{p \ P_{atom}}{p \ P_{brac}}, \frac{p \ P_{atom}}{(p) P_{brac}}$$
+$$\frac{}{True \ P_{atom}}, \frac{}{False \ P_{atom}}, \frac{p \ P_{and}}{(p) P_{atom}}$$
 $$\frac{p \ P_{atom}}{p \ P_{not}}, \frac{p \ P_{atom}}{\neg p \ P_{not}}$$
 $$\frac{p \ P_{not}}{p \ P_{and}}, \frac{p_1 \ P_{not} \ p_2 \ P_{and}}{p_2 \wedge p_2 \ P_{and}}$$
 
