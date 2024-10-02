@@ -192,7 +192,7 @@ c(Not e) = (If (c e) False True) <- using c1
 		 = True <- using language L small step (2)
 ```
 
-So in call cases $P(\text{Not} \ e)$ holds true.
+So if $P(e)$, then $P(\text{Not} \ e)$.
 
 *Case 2*
 Prove $P(\text{And} \ a \ b)$  with
@@ -215,7 +215,7 @@ c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 		   = False <- using language L small step 3
 ```
 
-2. when $a \Downarrow False$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
+2. when $a \Downarrow False$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
 c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
@@ -224,7 +224,7 @@ c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 		   = False <- using language L small step 3
 ```
 
-3. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$.
+3. when $a \Downarrow True$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
 c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
@@ -233,7 +233,7 @@ c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 		   = False <- using language L small step 2
 ```
 
-3. when $a \Downarrow True$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow True\ \text{using language B big step rule } N_6$.
+3. when $a \Downarrow True$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow True$
 ```haskell
 c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
@@ -242,6 +242,10 @@ c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 		   = False <- using language L small step 2
 ```
 
+So if $P(a)$ and $P(b)$, then $P(\text{And} \ a \ b)$.
+
+**Conclusion**
+Therefore, by induction, $\forall e, e \Downarrow $.
 ## Part D
 ### 1
 > Here is a term in λ-calculus: $$(λn. λf. λx. (n f (f x))) (λf. λx. f x)$$
