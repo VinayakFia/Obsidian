@@ -179,9 +179,10 @@ c(Not e) = (If (c e) False True) <- using c1
 So if $P(e)$, then $P(\text{Not} \ e)$.
 
 *Case 2*
-Prove $P(\text{And} \ a \ b)$  with Inductive hypothesis
+Prove $P(\text{And} \ a \ b)$  with Inductive hypothesis:
 1. Inductive hypothesis $P(a)$.
 2. Inductive hypothesis $P(b)$.
+
 
 1. when $a \Downarrow False$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$. So, we must show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
