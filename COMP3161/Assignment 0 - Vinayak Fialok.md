@@ -329,13 +329,14 @@ So if $P(b)$, $P(\text{Not} \ b) \equiv_{abn} v'$ where $v'$ is the $\lambda$-en
 *Case 2*
 Prove $P(\text{And} \ a \ b)$ with inductive hypothesis $P(a)$ and $P(b)$. We have 4 cases.
 
-1. when $a \Downarrow False$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$
+1. when $a \Downarrow False$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$:
 ```haskell
-c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
-		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
-		   = (If False (If False True False) False) <- using inductive hypothesis 2
-		   = (If False False False) <- using language L small step 3
-		   = False <- using language L small step 3
+d(And a b) = (d a) ((d b) T F) F <- d_4
+		    F ((d b) T F) F <- using inductive hypothesis P(a)
+		   = F (F T F) F <- using inductive hypothesis P(b)
+		   = F ((λx λy y) T F) F <- definition of F
+		   = F F F <- subtituting x with T and y with F
+		   = 
 ```
 
 2. when $a \Downarrow False$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow False$
