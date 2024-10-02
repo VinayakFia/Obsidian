@@ -102,6 +102,12 @@ Big step: $\text{If} \ \text{False} \ t \ f \Downarrow f'$. (Big step 4)
 
 $\text{If False} \ t \ f \mapsto f$ (Small step 2). Using the inductive hypothesis, we know $t \Downarrow f' \implies f \overset{*}{\mapsto} f'$. So $\text{If False} \ t \ f \overset{*}{\mapsto} f'$.
 
+```haskell
+(If False (If True True False) False)
+Assume (If True True False) -> t'
+Assume False -> f'
+```
+
 **Conclusion**
 So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text{False} \ t \ f)$. Therefore, by induction, $P(e)$ is true in all cases.
 
