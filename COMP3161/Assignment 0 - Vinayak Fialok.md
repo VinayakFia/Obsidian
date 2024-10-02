@@ -162,19 +162,14 @@ Prove $P(True)$ and $P(False)$.
 *Case 1*
 Prove $P(\text{Not} \ e)$ with inductive hypothesis $P(e)$, specifically, assume $e \Downarrow v \implies c(e) \Downarrow v$.
 
-Big Step:
-1. If $e \Downarrow True$, $\text{Not} \ e \Downarrow False$
-2. If $e \Downarrow False$, $\text{Not} \ e \Downarrow true$.
-
-Function c:
-1. If $e \Downarrow True$
+1. If $e \Downarrow True$, then $\text{Not} \ e \Downarrow False$, and $c(e)$:
 ```haskell
 c(Not e) = (If (c e) False True) <- using c1
 		 = (If True False True) <- using inductive hypothesis
 		 = False <- using language L small step (3)
 ```
 
-2. If $e \Downarrow False$
+2. If $e \Downarrow False$, $\text{Not} \ e \Downarrow False$, and 
 ```haskell
 c(Not e) = (If (c e) False True) <- using c1
 		 = (If False False True) <- using inductive hypothesis
