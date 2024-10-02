@@ -185,13 +185,12 @@ Prove $P(\text{And} \ a \ b)$  with
 2. Inductive hypothesis $P(b)$.
 
 Big Step:
-1. when $a \Downarrow False$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
 2. when $a \Downarrow False$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
 3. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$.
 4. when $a \Downarrow True$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow True\ \text{using language B big step rule } N_6$.
 
 Function c:
-1. when $a \Downarrow False$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$
+1. when $a \Downarrow False$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$. so we must show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
 c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
 		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
