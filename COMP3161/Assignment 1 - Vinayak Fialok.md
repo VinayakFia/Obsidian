@@ -117,8 +117,8 @@ So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text
 c :: B -> L
 c (Not b) = (If (c b) False True)
 c (And a b) = (If (c a) (If (c b) True False) False)
-c (True) = (True)
-c (False) = (False)
+c True = True
+c False = False
 
 // example for (Not False)
 	c (Not False)
@@ -161,7 +161,14 @@ c (False) = (False)
 > [!danger] TODO
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
+- Let $P(e)$ be $e \Downarrow v \text{ implies } c(e) \Downarrow v$.
+
 **Base Case**
+Prove $P(True)$ and $P(False)$.
+
+$$
+$c(True) = True$, $c(False) = False$.
+
 ## Part D
 ### 1
 > Here is a term in λ-calculus: $$(λn. λf. λx. (n f (f x))) (λf. λx. f x)$$
