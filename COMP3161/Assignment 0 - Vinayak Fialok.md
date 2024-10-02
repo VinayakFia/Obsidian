@@ -324,7 +324,46 @@ d(Not b) = (d b) F T <- d_3
 		 = T <- subtituting x with F and y with T
 ```
 
-So if $P(b)$, 
+So if $P(b)$, $P(\text{Not} \ b) \equiv_{abn} v'$ where $v'$ is the $\lambda$-encoding of $v$.
+
+*Case 2*
+Prove $P(\text{And} \ a \ b)$ with inductive hypothesis $P(a)$ and $P(b)$. We have 4 cases.
+
+1. when $a \Downarrow False$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$
+```haskell
+c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
+		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
+		   = (If False (If False True False) False) <- using inductive hypothesis 2
+		   = (If False False False) <- using language L small step 3
+		   = False <- using language L small step 3
+```
+
+2. when $a \Downarrow False$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow False$
+```haskell
+c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
+		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
+		   = (If False (If True True False) False) <- using inductive hypothesis 2
+		   = (If False True False) <- using language L small step 2
+		   = False <- using language L small step 3
+```
+
+3. when $a \Downarrow True$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$
+```haskell
+c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
+		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
+		   = (If True (If False True False) False) <- using inductive hypothesis 2
+		   = (If True False False) <- using language L small step 3
+		   = False <- using language L small step 2
+```
+
+4. when $a \Downarrow True$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow True$
+```haskell
+c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
+		   = (If True (If (c b) True False) False) <- using inductive hypothesis 1
+		   = (If True (If True True False) False) <- using inductive hypothesis 2
+		   = (If True True False) <- using language L small step 2
+		   = False <- using language L small step 2
+		   ```
 
 ## Part E
 ### 1
