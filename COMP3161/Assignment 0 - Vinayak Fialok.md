@@ -304,9 +304,14 @@ Prove $d(True) \Downarrow T$ and $d(False) \Downarrow F$.
 
 **Inductive Case**
 *Case 1*
-Prove $P(\text{Not} \ b)$ with inductive hypothesis $P(b)$.
+Prove $P(\text{Not} \ b)$ with inductive hypothesis $P(b)$. We have 2 cases, $b \Downarrow True$ and $b \Downarrow False$.
 
-We know from language $B$ that $\text{Not} \ True \Downarrow False$. The equivelent to $False$ in $\lambda$-calculus encoding is $F$. Now lets evaluate $d(\text{Not} b)$.
+1. We know from language $B$ given $b \Downarrow False$\text{Not} \ b \Downarrow False$. The equivalent to $False$ in $\lambda$-calculus encoding is $F$. Now lets evaluate $d(\text{Not} \ True)$.
+```haskell
+d(Not b) = (d b) F T <- d_3
+			= T F T <- inductive hypothesis
+			= (λx λy x) F T <- definition of 
+```
 
 ## Part E
 ### 1
