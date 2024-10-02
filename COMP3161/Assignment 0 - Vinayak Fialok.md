@@ -139,16 +139,16 @@ So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text
 
 ``` haskell
 c :: B -> L
-c (Not b) = (If (c b) False True) // c1
-c (And a b) = (If (c a) (c b) False) // c2
-c True = True // c3
-c False = False // c4
+c (Not b) = (If (c b) False True) <- c1
+c (And a b) = (If (c a) (c b) False) <- c2
+c True = True <- c3
+c False = False <- c4
 ```
 
 ### 2
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
-- Let $P(e)$ be $e \Downarrow v \text{ implies } c(e) \Downarrow v$.
+> [!info] Let $P(e)$ be $e \Downarrow v \text{ implies } c(e) \Downarrow v$.
 
 **Base Case**
 Prove $P(True)$ and $P(False)$.
@@ -257,7 +257,7 @@ d (And a b) = (d a) (d b) F <- d_4
 ### 3
 > Prove that for all e such that $e \Downarrow v$ it holds that $d(e) \equiv_{abn}v′$, where $v′$ is the λ-calculus encoding of $v$. *(10 marks)*
 
-- Let $P(e)$ be $e \Downarrow v \text{ implies } d(e) \equiv_{abn} v'$ where $v'$ is the $\lambda$-calculus encoding of $v$.
+> [!info] Let $P(e)$ be $e \Downarrow v \text{ implies } d(e) \equiv_{abn} v'$ where $v'$ is the $\lambda$-calculus encoding of $v$.
 
 **Base Case**
 Prove $d(True) \Downarrow T$ and $d(False) \Downarrow F$.
@@ -335,11 +335,8 @@ Therefore, by induction, if $e \Downarrow v$ it holds that $d(e) \equiv_{abn}v�
 ### 1
 > Extend the abstract syntax for B from question A.3 so that it supports the features used in the above example. Use first-order abstract syntax with explicit strings. You don’t have to extend the parsing relation. *(5 marks)*
 
-> [!question] what does it mean by 'explicit strings'?
-
-New rules:
 ```haskell
-data B = Let String String B B | Var String | Call String B | Not B | And B B | True | False
+B ::= Let String String B B | Var String | Call String B | Not B | And B B | True | False
 ```
 
 ### 2
