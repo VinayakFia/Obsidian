@@ -115,10 +115,10 @@ So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text
 
 ``` haskell
 c :: B -> L
-c (Not b) = (If (c b) False True)
-c (And a b) = (If (c a) (If (c b) True False) False)
-c True = True
-c False = False
+c (Not b) = (If (c b) False True) // c1
+c (And a b) = (If (c a) (If (c b) True False) False) // c2
+c True = True // c3
+c False = False // c4
 
 // example for (Not False)
 	c (Not False)
@@ -166,18 +166,22 @@ c False = False
 **Base Case**
 Prove $P(True)$ and $P(False)$.
 
-1. $True \Downarrow True$ and $c(True) = True$ so $P(True)$ is true.
-1. $False \Downarrow False$ and $c(False) = False$ so $P(False)$ is true.
+1. $True \Downarrow True$ and $c(True) = True$ (using c3) so $P(True)$ is true.
+1. $False \Downarrow False$ and $c(False) = False$ (using c4) so $P(False)$ is true.
 
 **Inductive Case**
 *Case 1*
-Prove $P(\text{Not} \ e)$ with inductive hypothesis $P(e)$, that is assume $e \Downarrow v \implies c(e) \Downarrow v$.
+Prove $P(\text{Not} \ e)$ with inductive hypothesis $P(e)$, specifically, assume $e \Downarrow e' \implies c(e) \Downarrow e'$.
 
-$\text{Not} \ e \Downarrow e'$. If $e' = True$, $Not e \Downarrow$
+Big Step:
+1. If $e \Downarrow True$, $\text{Not} \ e \Downarrow False$
+2. If $e \Downarrow False$, $\text{Not} e \Downarrow true$.
 
+Small Step:
+If $e \Downarrow True$
 ```haskell
-c(Not e) = (If (c b) False True)
-		 = (If )
+c(Not e) = (If (c e) False True) <- using c1
+		 = (If e' False True) <- using inductive hypothesis
 ```
 
 
