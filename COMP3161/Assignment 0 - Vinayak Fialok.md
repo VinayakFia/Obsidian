@@ -45,13 +45,11 @@ stateDiagram-v2
 > $$False^{-1} = True$$
 > Is this rule derivable? Is it admissible? Justify your answers. *(5 marks)*
 
-Lets 
-
-Suppose $x$ evaluates to $True$. Then
+Lets call this new inference rule $N_x$. Suppose $x$ evaluates to $True$. Then
 $$\frac{x \Downarrow  v = True}{Not \ x \Downarrow v^{-1} = False} \equiv N_1$$
 Suppose $x$ evaluates to $False$. Then
 $$\frac{x \Downarrow  v = False}{Not \ x \Downarrow v^{-1} = True} \equiv N_2$$
-So in all cases, the conclusion of 
+So in all cases, the conclusion of $N_x$ can be derived from rules $N_1$ and $N_2$, so $N_x$ is derivable.
 So in all cases, we may derive the inference rule from the given big steps semantics. As such, it is derivable and admissible.
 
 ## Part B
