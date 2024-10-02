@@ -86,7 +86,10 @@ The base cases are $P(True)$ and $P(False)$.
 So $P(e)$ is true when $e \in \{True, False\}$.
 
 **Lemma 1**
-If $\text{If} \ a \ b \ c$
+Prove that if $a \Downarrow a'$ then $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
+
+*Base Case*
+If $a = True$ then we know $a \Downarrow True$ $\text{If} \ True \ b \ c \overset{*}{\mapsto} $
 
 **Inductive Case**
 > [!danger] instead `If True t f`, use `If e t f` where $e \Downarrow True$
