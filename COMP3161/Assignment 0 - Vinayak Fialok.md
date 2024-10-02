@@ -340,4 +340,6 @@ B ::= Let String String B B | Var String | Call String B | Not B | And B B | Tru
 ```
 
 ### 2
-$$\frac{}{}$$
+$$\frac{\Gamma, y \ \text{bound} \vdash b_1 \text{ ok} \ \ \ \ \ \ \Gamma, x \ \text{bound} \vdash b_2 \text{ ok}}{\Gamma \vdash \text{Let} \ x \ y \ b_1 \ b_2 \ \text{ok}}$$
+$$\frac{x \text{ bound} \in \Gamma}{\gamma \vdash \text{Var } x \ \text{ok}}$$
+$$\frac{x \text{ bound} \in \Gamma \ \ \ \ \ \ \ \GG}{}$$
