@@ -162,6 +162,8 @@ c False = False // c4
 ### 2
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
+
+
 - Let $P(e)$ be $e \Downarrow v \text{ implies } c(e) \Downarrow v$.
 
 **Base Case**
