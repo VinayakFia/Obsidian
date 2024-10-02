@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "COMP3161/Assignment 0 - Vinayak Fialok.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "db5106ff0229022d",
