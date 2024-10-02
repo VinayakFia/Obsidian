@@ -354,7 +354,7 @@ Therefore, by induction, if $e \Downarrow v$ it holds that $d(e) \equiv_{abn}vâ€
 
 New rules:
 ```haskell
-data B ::= Let String String B B | Var String | FuncCall String B | â€¦ the old stuff
+data B = Let String String B B | Var String | Call String B | Not B | And B B | True | False
 ```
 
 ### 2
