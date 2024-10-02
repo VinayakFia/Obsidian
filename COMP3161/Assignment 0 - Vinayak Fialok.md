@@ -55,7 +55,6 @@ So in all cases, we may derive the inference rule from the given big steps seman
 $$\frac{c → c′}{(If \ c \ t \ e) → (If c′ \ t \ e)}(1)$$
 $$\frac{}{(If \ True \ t \ e) → t}(2)$$
 $$\frac{}{(If \ False \ t \ e) → e}(3)$$
-![[Pasted image 20240930192553.png]]
 ### 1
 > Show the full evaluation of the term `(If True (If False True False) False)`. *(5 marks)*
 
@@ -97,9 +96,12 @@ If $a = False$ then we know $a \Downarrow False$, and it must be true that after
 Assume that if $a \Downarrow a'$ then $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
 
 *Inductive Case*
-Prove that if $a_{-1} \Downarrow a'$, and $then $\text{If} \ a_{n+1} \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
+Prove that if $a_{-1} \Downarrow a'$, and $a_{-1} \mapsto a$, then $\text{If} \ a_{-1} \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
 
-Lets start with expression $\text{If} \ a_{n+1} \ b \ c$
+Lets start with expression $$\text{If} \ a_{-1} \ b \ c$$
+It is given that $a_{-1} \mapsto a$, so we can apply small step rule 1
+$$\frac{a_{-1} \mapsto a}{\text{If} \ a_{-1} \ b \ c \mapsto \text{If} \ a \ b \ c}$$
+From our inductive hypothesis, we know that $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If}$
 
 
 **Inductive Case**
