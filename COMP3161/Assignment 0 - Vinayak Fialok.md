@@ -352,12 +352,10 @@ Therefore, by induction, if $e \Downarrow v$ it holds that $d(e) \equiv_{abn}vâ€
 
 > [!question] what does it mean by 'explicit strings'?
 
-**Inference Rules:**
-$$\frac{}{True}, \frac{}{False}, \frac{p \space P}{\neg p}, \frac{p \space P}{(p)}, \frac{p_1 \space P \space p_2 \space P}{p_1 \wedge p_2}$$
-**New inference rules:**
-	$$\frac{p_1 \ P \ \ \ p_2 \ P}{\textbf{let} \ \text{ident}\textbf{(}\text{ident}\textbf{)} = p_1 \ \textbf{in} \ p_2 \ \textbf{end}}$$
-$$\frac{p \ P}{\text{ident}(p)}$$
-$$\frac{}{\text{ident}}$$
+New rules:
+```haskell
+data B ::= Let String String B B | Var String | FuncCall String B | â€¦ the old stuff
+```
 
 ### 2
 > [!danger] TODO
