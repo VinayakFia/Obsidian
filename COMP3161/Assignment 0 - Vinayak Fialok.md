@@ -117,11 +117,14 @@ Therefore, by mathematical induction, if $a \Downarrow a'$ then $\text{If} \ a \
 > [!danger] instead `If True t f`, use `If e t f` where $e \Downarrow True$
 
 *Case 1*
-$P(\text{If} \ e \ t \ f)$ when $e \Downarrow True$, $t \Downarrow t'$, and $f \Downarrow f'$. With inductive hypothesis, $P(e)$, $P(t)$, $P(f)$.
+$P(\text{If} \ e \ t \ f)$ when $e \Downarrow True$, $t \Downarrow t'$, and $f \Downarrow f'$. With inductive hypothesis, $P(t)$, $P(f)$.
 
-In big step semantics, this expression evaluates to $\text{If} \ \text{True} \ t \ f \Downarrow t'$. (Big step 4)
+In big step semantics, this expression evaluates to $\text{If} \ \text{True} \ t \ f \Downarrow t'$ using (4).
 
-$\text{If True} \ t \ f \mapsto t$ (Small step 2). Using the inductive hypothesis, we know $t \Downarrow t' \implies t \overset{*}{\mapsto} t'$. So $\text{If True} \ t \ f \overset{*}{\mapsto} t'$.
+We know from lemma 1 that given $e \Downarrow True$, then $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f$.
+
+Next, $\text{If True} \ t \ f \mapsto t$ using small step 2. Using the inductive hypothesis $P(t)$, we know $t \Downarrow t' \implies t \overset{*}{\mapsto} t'$. So
+$$\frac{\text{If} \ a_{-1} \ b \ c \mapsto \text{If} \ a \ b \ c \ \ \ \ \ \ \text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c}{\text{If} \ a_{-1} \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c}$$
 
 *Case 2*
 $P(\text{If} \ \text{False} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis $P(f)$, $P(t)$.
