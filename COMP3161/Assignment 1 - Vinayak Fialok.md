@@ -166,8 +166,17 @@ c False = False
 **Base Case**
 Prove $P(True)$ and $P(False)$.
 
-1. $$
-$c(True) = True$, $c(False) = False$.
+1. $True \Downarrow True$ and $c(True) = True$ so $P(True)$ is true.
+1. $False \Downarrow False$ and $c(False) = False$ so $P(False)$ is true.
+
+**Inductive Case**
+*Case 1*
+Prove $P(\text{Not} \ e)$ with inductive hypothesis $P(e)$.
+```haskell
+c(Not e) = (If (c b) False True)
+		 = (If )
+```
+
 
 ## Part D
 ### 1
