@@ -118,6 +118,8 @@ Therefore, by mathematical induction, if $a \Downarrow a'$ then $\text{If} \ a \
 **TODO, rewrite so we dont have $t \Downarrow t'$ in the first line**
 $P(\text{If} \ e \ t \ f)$ when $e \Downarrow True$, $t \Downarrow t'$, and $f \Downarrow f'$. With inductive hypothesis, $P(t)$, $P(f)$.
 
+First lets evaluate this expression using big step semantic 4
+$$t \Downarrow t'$$
 In big step semantics, this expression evaluates to $\text{If} \ \text{True} \ t \ f \Downarrow t'$ using (4).
 
 We know from lemma 1 that given $e \Downarrow True$, then $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f$. Next, $\text{If True} \ t \ f \mapsto t$ using small step 2. Using the inductive hypothesis $P(t)$, we know $t \Downarrow t' \implies t \overset{*}{\mapsto} t'$. Since $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f \mapsto t \overset{*}{\mapsto} t'$, and $\overset{*}{\mapsto}$ is transitive, we know that $\text{If} \ e \ t \ f \overset{*}{\mapsto} t'$. Therefore, $P(\text{If} \ e \ t \ f)$.
