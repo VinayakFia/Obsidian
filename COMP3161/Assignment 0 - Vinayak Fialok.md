@@ -89,7 +89,15 @@ So $P(e)$ is true when $e \in \{True, False\}$.
 Prove that if $a \Downarrow a'$ then $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
 
 *Base Case*
-If $a = True$ then we know $a \Downarrow True$ $\text{If} \ True \ b \ c \overset{*}{\mapsto} $
+If $a = True$ then we know $a \Downarrow True$, and it must be true that after 0 or more steps $\text{If} \ True \ b \ c \overset{*}{\mapsto} \text{If} \ True \ b \ c$.
+
+If $a = False$ then we know $a \Downarrow False$, and it must be true that after 0 or more steps $\text{If} \ False \ b \ c \overset{*}{\mapsto} \text{If} \ False \ b \ c$.
+
+*Inductive Hypothesis*
+Assume that if $a_n \Downarrow a_n$ that $$
+
+*Inductive Case*
+Prove that if $a \Downarrow a'$ then $\text{If} \ a \ b \ \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
 
 **Inductive Case**
 > [!danger] instead `If True t f`, use `If e t f` where $e \Downarrow True$
