@@ -171,18 +171,35 @@ Prove $P(True)$ and $P(False)$.
 
 **Inductive Case**
 *Case 1*
-Prove $P(\text{Not} \ e)$ with inductive hypothesis $P(e)$, specifically, assume $e \Downarrow e' \implies c(e) \Downarrow e'$.
+Prove $P(\text{Not} \ e)$ with inductive hypothesis $P(e)$, specifically, assume $e \Downarrow v \implies c(e) \Downarrow v$.
 
 Big Step:
 1. If $e \Downarrow True$, $\text{Not} \ e \Downarrow False$
-2. If $e \Downarrow False$, $\text{Not} e \Downarrow true$.
+2. If $e \Downarrow False$, $\text{Not} \ e \Downarrow true$.
 
 Small Step:
-If $e \Downarrow True$
+1. If $e \Downarrow True$
 ```haskell
 c(Not e) = (If (c e) False True) <- using c1
-		 = (If e' False True) <- using inductive hypothesis
+		 = (If True False True) <- using inductive hypothesis
+		 = False <- using language L small step (3)
 ```
+
+2. If $e \Downarrow False$
+```haskell
+c(Not e) = (If (c e) False True) <- using c1
+		 = (If False False True) <- using inductive hypothesis
+		 = True <- using language L small step (2)
+```
+
+So in call cases $P(\text{Not} \ e)$ holds true.
+
+*Case 2*
+Prove $P(\text{And} \ a \ b)$  with
+1. Inductive hypothesis $P(a)$.
+2. Inductive hypothesis $P(b)$.
+
+Big Step:
 
 
 ## Part D
