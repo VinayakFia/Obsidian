@@ -61,7 +61,7 @@ $$\frac{}{(If \ False \ t \ e) → e}(3)$$
 
 ```python
 (If True (If False True False) False)
-(If False True False) <- using 2, simplify
+(If False True False) <- using 2, evaluate (If False True False) to True
 (False) <- using 3
 ```
 
