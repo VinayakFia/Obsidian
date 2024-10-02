@@ -161,7 +161,7 @@ c False = False // c4
 > [!danger] TODO
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
-- Let $P(e)$ be $e \Downarrow v \text{ implies } c(e) \Downarrow v$.
+- Let $P(e)$ be $e \Downarrow v \text{ implies } d(e) \Downarrow v$.
 
 **Base Case**
 Prove $P(True)$ and $P(False)$.
@@ -276,10 +276,10 @@ Therefore, by induction, $\forall e, e \Downarrow v \text{ implies } c(e) \Downa
 
 ``` haskell
 d :: B -> λ
-d True = T
-d False = F
-d (Not b) = (d b) F T
-d (And a b) = (d a) ((d b) T F) F
+d True = T <- d_1
+d False = F <- d_2
+d (Not b) = (d b) F T <- d_3
+d (And a b) = (d a) ((d b) T F) F <- d_4
 
 e.g. B = (Not (And True False))
 
@@ -295,7 +295,13 @@ d (Not (And True False))
 ### 3
 > Prove that for all e such that $e \Downarrow v$ it holds that $d(e) \equiv_{abn}v′$, where $v′$ is the λ-calculus encoding of $v$. *(10 marks)*
 
-Prove t
+**Base Case**
+Prove $d(True) \Downarrow T$ and $d(False) \Downarrow F$.
+1. $d(True) = T$ using d_1
+2. $d(False) = F$ using d_2
+
+**Inductive Case**
+
 
 ## Part E
 ### 1
