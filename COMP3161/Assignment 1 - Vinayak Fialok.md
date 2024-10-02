@@ -177,7 +177,7 @@ Big Step:
 1. If $e \Downarrow True$, $\text{Not} \ e \Downarrow False$
 2. If $e \Downarrow False$, $\text{Not} \ e \Downarrow true$.
 
-Small Step:
+Function c:
 1. If $e \Downarrow True$
 ```haskell
 c(Not e) = (If (c e) False True) <- using c1
@@ -201,8 +201,22 @@ Prove $P(\text{And} \ a \ b)$  with
 
 Big Step:
 1. when $a \Downarrow False$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
-2. $b \Downarrow False$ $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
+2. when $a \Downarrow False$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
+3. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$.
+4. when $a \Downarrow True$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow True\ \text{using language B big step rule } N_6$.
 
+Function c:
+1. when $a \Downarrow False$, $b \Downarrow False$:
+```haskell
+c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
+		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
+		   = (If False (If False True False) False) <- using inductive hypothesis 2
+		   = (If False False False) <- using language L small step 
+```
+
+1. when $a \Downarrow False$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$.
+2. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$.
+3. when $a \Downarrow True$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow True\ \text{using language B big step rule } N_6$.
 ## Part D
 ### 1
 > Here is a term in λ-calculus: $$(λn. λf. λx. (n f (f x))) (λf. λx. f x)$$
