@@ -45,10 +45,13 @@ stateDiagram-v2
 > $$False^{-1} = True$$
 > Is this rule derivable? Is it admissible? Justify your answers. *(5 marks)*
 
+Lets 
+
 Suppose $x$ evaluates to $True$. Then
 $$\frac{x \Downarrow  v = True}{Not \ x \Downarrow v^{-1} = False} \equiv N_1$$
 Suppose $x$ evaluates to $False$. Then
 $$\frac{x \Downarrow  v = False}{Not \ x \Downarrow v^{-1} = True} \equiv N_2$$
+So in all cases, the conclusion of 
 So in all cases, we may derive the inference rule from the given big steps semantics. As such, it is derivable and admissible.
 
 ## Part B
@@ -115,7 +118,6 @@ Therefore, by mathematical induction, if $a \Downarrow a'$ then $\text{If} \ a \
 
 **Inductive Case**
 *Case 1*
-**TODO, rewrite so we dont have $t \Downarrow t'$ in the first line**
 $P(\text{If} \ e \ t \ f)$ when $e \Downarrow True$. With inductive hypothesis $P(t)$ and $P(f)$.
 
 First lets evaluate this expression using big step semantic 4
@@ -130,11 +132,10 @@ $P(\text{If} \ e \ t \ f)$ when $e \Downarrow False$. With inductive hypothesis 
 First lets evaluate this expression using big step semantic 5
 $$\frac{e \Downarrow \text{False} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ e \ t \ f) \Downarrow f'}(4)$$
 
-We know from *lemma 1* that given $e \Downarrow False$, then $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ False \ t \ f$. Next, $\text{If False} \ t \ f \mapsto f$ using small step 3. Using the inductive hypothesis $P(f)$, we know $t \Downarrow f' \implies f \overset{*}{\mapsto} f'$. Since $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f \mapsto t \overset{*}{\mapsto} t'$, and $\overset{*}{\mapsto}$ is transitive, we know that $\text{If} \ e \ t \ f \overset{*}{\mapsto} t'$. Therefore, $P(\text{If} \ e \ t \ f)$ holds true when $e \Downarrow True$.
-$P(\text{If} \ e \ t \ f)$ when $e \Downarrow False$, $t \Downarrow t'$, and $f \Downarrow f'$. With inductive hypothesis, $P(t)$, $P(f)$.
+We know from *lemma 1* that given $e \Downarrow False$, then $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ False \ t \ f$. Next, $\text{If False} \ t \ f \mapsto f$ using small step 3. Using the inductive hypothesis $P(f)$, we know $t \Downarrow f' \implies f \overset{*}{\mapsto} f'$. Since $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ False \ t \ f \mapsto f \overset{*}{\mapsto} f'$, and $\overset{*}{\mapsto}$ is transitive, we know that $\text{If} \ e \ t \ f \overset{*}{\mapsto} f'$. Therefore, $P(\text{If} \ e \ t \ f)$ holds true when $e \Downarrow False$.
 
 **Conclusion**
-So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text{False} \ t \ f)$. Therefore, by induction, $P(e)$ is true in all cases.
+So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text{False} \ t \ f)$. Therefore, by induction, $P(e)$ holds in all cases.
 
 ## Part C
 ### 1
