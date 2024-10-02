@@ -329,23 +329,37 @@ So if $P(b)$, $P(\text{Not} \ b) \equiv_{abn} v'$ where $v'$ is the $\lambda$-en
 *Case 2*
 Prove $P(\text{And} \ a \ b)$ with inductive hypothesis $P(a)$ and $P(b)$. We have 4 cases.
 
-1. when $a \Downarrow False$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$:
+1. when $a \Downarrow False$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$ as below:
 ```haskell
 d(And a b) = (d a) ((d b) T F) F <- d_4
-		    F ((d b) T F) F <- using inductive hypothesis P(a)
+		   = F ((d b) T F) F <- using inductive hypothesis P(a)
 		   = F (F T F) F <- using inductive hypothesis P(b)
 		   = F ((λx λy y) T F) F <- definition of F
 		   = F F F <- subtituting x with T and y with F
-		   = 
+		   = (λx λy y) F F <- definition of F
+		   = F <- substituting x with F and y with F
 ```
 
-2. when $a \Downarrow False$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow False$
+2. when $a \Downarrow False$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$ as below:
 ```haskell
-c(And a b) = (If (c a) (If (c b) True False) False) <- using c2
-		   = (If False (If (c b) True False) False) <- using inductive hypothesis 1
-		   = (If False (If True True False) False) <- using inductive hypothesis 2
-		   = (If False True False) <- using language L small step 2
-		   = False <- using language L small step 3
+d(And a b) = (d a) ((d b) T F) F <- d_4
+		   = F ((d b) T F) F <- using inductive hypothesis P(a)
+		   = F (T T F) F <- using inductive hypothesis P(b)
+		   = F ((λx λy x) T F) F <- definition of T
+		   = F T F <- subtituting x with T and y with F
+		   = (λx λy y) T F <- definition of F
+		   = F <- substituting x with T and y with F
+```
+
+3. when $a \Downarrow True$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$ as below:
+```haskell
+d(And a b) = (d a) ((d b) T F) F <- d_4
+		   = T ((d b) T F) F <- using inductive hypothesis P(a)
+		   = T (F T F) F <- using inductive hypothesis P(b)
+		   = T ((λx λy y) T F) F <- definition of F
+		   = T F F <- subtituting x with T and y with F
+		   = (λx λy x) F F <- definition of T
+		   = F <- substituting x with T and y with F
 ```
 
 3. when $a \Downarrow True$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$
