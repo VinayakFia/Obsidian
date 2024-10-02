@@ -307,12 +307,24 @@ Prove $d(True) \Downarrow T$ and $d(False) \Downarrow F$.
 Prove $P(\text{Not} \ b)$ with inductive hypothesis $P(b)$. We have 2 cases, $b \Downarrow True$ and $b \Downarrow False$.
 
 1. Consider $b \Downarrow True$:
-Given $b \Downarrow True$ we know that $\text{Not} \ b \Downarrow False$. The equivalent to $False$ in $\lambda$-calculus encoding is $F$. Now lets evaluate $d(\text{Not} \ b)$.
+Given $b \Downarrow True$ we know that $\text{Not} \ b \Downarrow False$. The equivalent to $False$ in $\lambda$-calculus encoding is $F$, so we must prove $d(\text{Not} \ b) \equiv F$. Now lets evaluate $d(\text{Not} \ b)$.
 ```haskell
 d(Not b) = (d b) F T <- d_3
-			= T F T <- using inductive hypothesis, since b ↓ True, b ≡ T in 
-			= (λx λy x) F T <- definition of 
+		 = T F T <- using inductive hypothesis, since b ↓ True, b ≡ T in λ-calculus.
+		 = (λx λy x) F T <- definition of T
+		 = F <- substituting x with F and y with T
 ```
+
+1. Consider $b \Downarrow False$:
+Given $b \Downarrow False$ we know that $\text{Not} \ b \Downarrow True$. The equivalent to $True$ in $\lambda$-calculus encoding is $T$, so we must prove $d(\text{Not} \ b) \equiv T$. Now lets evaluate $d(\text{Not} \ b)$.
+```haskell
+d(Not b) = (d b) F T <- d_3
+		 = F F T <- using inductive hypothesis, since b ↓ False, b ≡ F in λ-calculus.
+		 = (λx λy y) F T <- definition of F
+		 = T <- subtituting x with F and y with T
+```
+
+So 
 
 ## Part E
 ### 1
