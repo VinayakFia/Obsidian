@@ -293,13 +293,12 @@ d (Not (And True False))
 ```
 
 ### 3
-> [!danger] TODO
 > Prove that for all e such that $e \Downarrow v$ it holds that $d(e) \equiv_{abn}v′$, where $v′$ is the λ-calculus encoding of $v$. *(10 marks)*
 
+Prove t
 
 ## Part E
 ### 1
-> [!danger] TODO
 > Extend the abstract syntax for B from question A.3 so that it supports the features used in the above example. Use first-order abstract syntax with explicit strings. You don’t have to extend the parsing relation. *(5 marks)*
 
 > [!question] what does it mean by 'explicit strings'?
