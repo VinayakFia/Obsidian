@@ -115,12 +115,14 @@ Therefore, by mathematical induction, if $a \Downarrow a'$ then $\text{If} \ a \
 
 **Inductive Case**
 *Case 1*
-$P(\text{If} \ e \ t \ f)$ when $e \Downarrow True$. With inductive hypothesis, $P(t)$, $P(f)$.
+**TODO, rewrite so we dont have $t \Downarrow t'$ in the first line**
+$P(\text{If} \ e \ t \ f)$ when $e \Downarrow True$, $t \Downarrow t'$, and $f \Downarrow f'$. With inductive hypothesis, $P(t)$, $P(f)$.
 
-In big step semantics we have $$t \Downarrow t'$$ and $f \Downarrow f'$, this expression evaluates to $\text{If} \ \text{True} \ t \ f \Downarrow t'$ using (4).
+In big step semantics, this expression evaluates to $\text{If} \ \text{True} \ t \ f \Downarrow t'$ using (4).
 
 We know from lemma 1 that given $e \Downarrow True$, then $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f$. Next, $\text{If True} \ t \ f \mapsto t$ using small step 2. Using the inductive hypothesis $P(t)$, we know $t \Downarrow t' \implies t \overset{*}{\mapsto} t'$. Since $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f \mapsto t \overset{*}{\mapsto} t'$, and $\overset{*}{\mapsto}$ is transitive, we know that $\text{If} \ e \ t \ f \overset{*}{\mapsto} t'$. Therefore, $P(\text{If} \ e \ t \ f)$.
 
+**TODO BELOW**
 *Case 2*
 $P(\text{If} \ e \ t \ f)$ when $e \Downarrow False$, $t \Downarrow t'$, and $f \Downarrow f'$. With inductive hypothesis, $P(t)$, $P(f)$.
 
