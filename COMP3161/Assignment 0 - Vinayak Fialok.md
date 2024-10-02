@@ -49,8 +49,7 @@ Lets call this new inference rule $N_x$. Suppose $x$ evaluates to $True$. Then
 $$\frac{x \Downarrow  v = True}{Not \ x \Downarrow v^{-1} = False} \equiv N_1$$
 Suppose $x$ evaluates to $False$. Then
 $$\frac{x \Downarrow  v = False}{Not \ x \Downarrow v^{-1} = True} \equiv N_2$$
-So in all cases, the conclusion of $N_x$ can be derived from rules $N_1$ and $N_2$, so $N_x$ is derivable.
-So in all cases, we may derive the inference rule from the given big steps semantics. As such, it is derivable and admissible.
+So in all cases, the conclusion of $N_x$ can be derived from rules $N_1$ and $N_2$, so $N_x$ is derivable. Thus, it must also be admissible.
 
 ## Part B
 $$\frac{c → c′}{(If \ c \ t \ e) → (If c′ \ t \ e)}(1)$$
@@ -75,7 +74,7 @@ $$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 ### 3
 > Prove that if $e \Downarrow v$ then $e \overset{*}{\mapsto} v$, where $\Downarrow$ is the big-step semantics you defined in the previous question, and $\overset{*}{\mapsto}$ is the reflexive and transitive closure of $\mapsto$. Use rule induction on $e \Downarrow v$. *(10 marks)*
 
-- Let $P(e)$ be $e \Downarrow v \text{ implies } e \overset{*}{\mapsto} v$.
+> [!info] Let $P(e)$ be $e \Downarrow v \text{ implies } e \overset{*}{\mapsto} v$.
 
 **Base Case**
 The base cases are $P(True)$ and $P(False)$.
@@ -123,7 +122,6 @@ $$\frac{e \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\
 
 We know from *lemma 1* that given $e \Downarrow True$, then $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f$. Next, $\text{If True} \ t \ f \mapsto t$ using small step 2. Using the inductive hypothesis $P(t)$, we know $t \Downarrow t' \implies t \overset{*}{\mapsto} t'$. Since $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f \mapsto t \overset{*}{\mapsto} t'$, and $\overset{*}{\mapsto}$ is transitive, we know that $\text{If} \ e \ t \ f \overset{*}{\mapsto} t'$. Therefore, $P(\text{If} \ e \ t \ f)$ holds true when $e \Downarrow True$.
 
-**TODO BELOW**
 *Case 2*
 $P(\text{If} \ e \ t \ f)$ when $e \Downarrow False$. With inductive hypothesis $P(t)$ and $P(f)$.
 
