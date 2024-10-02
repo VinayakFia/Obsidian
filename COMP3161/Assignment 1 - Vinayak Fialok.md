@@ -294,7 +294,7 @@ d (Not (And True False))
 
 ### 3
 > [!danger] TODO
-> Prove that for all e such that e ⇓ v it holds that d (e) ≡αβη v′, where v′ is the λ-calculus encoding of v. *(10 marks)*
+> Prove that for all e such that $e \Downarrow v$ it holds that $d(e) \equiv_{abn}v′$, where $v′$ is the λ-calculus encoding of $v$. *(10 marks)*
 
 ## Part E
 ### 1
