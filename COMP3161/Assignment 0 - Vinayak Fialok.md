@@ -118,51 +118,15 @@ So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text
 ``` haskell
 c :: B -> L
 c (Not b) = (If (c b) False True) // c1
-c (And a b) = (If (c a) (If (c b) True False) False) // c2
+c (And a b) = (If (c a) (c b) False) // c2
 c True = True // c3
 c False = False // c4
-
-// example for (Not False)
-	c (Not False)
-->  (If (c False) False True)
-->  (If False False True)
-->  True
-// So, c (Not False) evaluates to True (1)
-
-// example for (Not True)
-	c (Not True)
-->  (If (c True) False True)
-->  (If True False True)
-->  False 
-
-// example for (And True False)
-	c (And True False)
-->  (If (c True) (If (c False) True False) False)
-->  (If True (If False True False) False)
-->  (If True False False)
-->  False
-
-// example for (And False True)
-	c (And False True)
-->  (If (c False) (If (c True) True False) False)
-->  (If False (If True True False) False)
-->  (If False True False)
-->  False
-
-// example for (And True (Not False))
-	(And True (Not False))
-->  (If (c True) (If (c (Not False)) True False) False)
-... from 1 we know that c (Not False) evaluates to True
-->  (If (c True) (If True True False) False)
-->  (If True (If True True False) False)
-->  (If True True False)
-->  True
 ```
 
 ### 2
 > Prove that $\forall e, \ e \Downarrow v \ \text{implies} \ c(e) ⇓ v$, by rule induction on the assumption that $e \Downarrow v$. *(10 marks)*
 
-
+> [!danger] REDOOOOOO
 
 - Let $P(e)$ be $e \Downarrow v \text{ implies } c(e) \Downarrow v$.
 
