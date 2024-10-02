@@ -89,18 +89,24 @@ So $P(e)$ is true when $e \in \{True, False\}$.
 > [!danger] instead `If True t f`, use `If e t f` where $e \Downarrow True$
 
 *Case 1*
-$P(\text{If} \ \text{True} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis $P(t)$.
+$P(\text{If} \ \text{True} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis $P(t)$, $P(f)$.
 
 Big step: $\text{If} \ \text{True} \ t \ f \Downarrow t'$. (Big step 4)
 
 $\text{If True} \ t \ f \mapsto t$ (Small step 2). Using the inductive hypothesis, we know $t \Downarrow t' \implies t \overset{*}{\mapsto} t'$. So $\text{If True} \ t \ f \overset{*}{\mapsto} t'$.
 
 *Case 2*
-$P(\text{If} \ \text{False} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis $P(f)$.
+$P(\text{If} \ \text{False} \ t \ f)$ with $t \Downarrow t'$ and $f \Downarrow f'$. With inductive hypothesis $P(f)$, $P(t)$.
 
 Big step: $\text{If} \ \text{False} \ t \ f \Downarrow f'$. (Big step 4)
 
 $\text{If False} \ t \ f \mapsto f$ (Small step 2). Using the inductive hypothesis, we know $t \Downarrow f' \implies f \overset{*}{\mapsto} f'$. So $\text{If False} \ t \ f \overset{*}{\mapsto} f'$.
+
+```haskell
+(If False (If True True False) False)
+Assume (If True True False) -> t'
+Assume False -> f'
+```
 
 **Conclusion**
 So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text{False} \ t \ f)$. Therefore, by induction, $P(e)$ is true in all cases.
