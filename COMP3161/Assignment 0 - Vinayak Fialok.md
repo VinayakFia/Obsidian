@@ -1,8 +1,3 @@
-> [!link] https://cgi.cse.unsw.edu.au/~cs3161/24T3/Assignment%200/Spec.pdf
-
-> [!warning] TODOS
-> - [x] 📅 2024-10-01 Figure out induction
-> - [x] 📅 2024-10-04 Finish this damn assignment (COMP3161 ass 0)
 ## Part A
 ### 1
 > Write down a set of inference rules that define the set P. The rules may be ambiguous. *(5 marks)*
@@ -58,10 +53,10 @@ $$\frac{}{(If \ False \ t \ e) → e}(3)$$
 ### 1
 > Show the full evaluation of the term `(If True (If False True False) False)`. *(5 marks)*
 
-```python
+```haskell
 (If True (If False True False) False)
-(If False True False) <- using 2, evaluate (If False True False) to True
-(False) <- using 3
+(If False True False) -- using 2, evaluate (If False True False) to True
+(False) -- using 3
 ```
 
 ### 2
