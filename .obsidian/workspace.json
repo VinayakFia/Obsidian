@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP3153/System Model - Vinayak Fialok.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP3153/System Model - Vinayak Fialok.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 1.md"
+                "file": "COMP3153/System Model - Vinayak Fialok.md"
               }
             }
           },
@@ -170,8 +169,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f9aaf668e300107f",
+  "active": "26d143ff163b7ddd",
   "lastOpenFiles": [
+    "COMP4920/Assignment 1.md",
     "COMP3161/Assignment 0 - Vinayak Fialok.md",
     "attachments/Alice and Healthy Person Glucose Concentration.png.png",
     "attachments/Pasted image 20240913150705.png",
@@ -183,7 +183,6 @@
     "attachments/Pasted image 20240920152002.png",
     "attachments/Pasted image 20240920152500.png",
     "attachments/Pasted image 20240920154610.png",
-    "COMP4920/Assignment 1.md",
     "COMP3153/System Model - Vinayak Fialok.md",
     "COMP3153/COMP3153 Exalidraw.excalidraw.md",
     "Archive/CompClub T3 Workshop.md",
