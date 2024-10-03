@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md",
+                "file": "COMP3161/Assignment 0 - Vinayak Fialok.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 320.0086555480957
   },
   "right": {
     "id": "db5106ff0229022d",
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md",
+                "file": "COMP3161/Assignment 0 - Vinayak Fialok.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md",
+                "file": "COMP3161/Assignment 0 - Vinayak Fialok.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP3153/System Model - Vinayak Fialok.md"
+                "file": "COMP3161/Assignment 0 - Vinayak Fialok.md"
               }
             }
           },
@@ -171,6 +171,7 @@
   },
   "active": "26d143ff163b7ddd",
   "lastOpenFiles": [
+    "COMP3153/System Model - Vinayak Fialok.md",
     "COMP4920/Assignment 1.md",
     "COMP3161/Assignment 0 - Vinayak Fialok.md",
     "attachments/Alice and Healthy Person Glucose Concentration.png.png",
@@ -183,7 +184,6 @@
     "attachments/Pasted image 20240920152002.png",
     "attachments/Pasted image 20240920152500.png",
     "attachments/Pasted image 20240920154610.png",
-    "COMP3153/System Model - Vinayak Fialok.md",
     "COMP3153/COMP3153 Exalidraw.excalidraw.md",
     "Archive/CompClub T3 Workshop.md",
     "Archive/BABS1111 - Assessment 3.md",
