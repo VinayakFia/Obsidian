@@ -2,13 +2,13 @@
 ### 1
 > Write down a set of inference rules that define the set P. The rules may be ambiguous. *(5 marks)*
 
-$$\frac{}{True \ P} \qquad \frac{}{False \ P} \qquad \frac{p \space P}{\neg p \ P} \qquad \frac{p \space P}{(p) \ P} \qquad \frac{p_1 \space P \space p_2 \space P}{p_1 \wedge p_2 \ P}$$
+$$\frac{}{True \ P}, \qquad \frac{}{False \ P}, \qquad \frac{p \space P}{\neg p \ P}, \qquad \frac{p \space P}{(p) \ P}, \qquad \frac{p_1 \space P \space p_2 \space P}{p_1 \wedge p_2 \ P}$$
 ### 2
 > The operator ¬ has the highest precedence, and logical and is right-associative. Define a set of simultaneous judgements to define the language without any ambiguity. *(5 marks)*
 
-$$\frac{}{True \ P_{atom}} \qquad \frac{}{False \ P_{atom}} \qquad \frac{p \ P_{and}}{(p) P_{atom}}$$
-$$\frac{p \ P_{atom}}{p \ P_{not}} \qquad \frac{p \ P_{atom}}{\neg p \ P_{not}}$$
-$$\frac{p \ P_{not}}{p \ P_{and}} \qquad \frac{p_1 \ P_{not} \qquad p_2 \ P_{and}}{p_2 \wedge p_2 \ P_{and}}$$
+$$\frac{}{True \ P_{atom}}, \qquad \frac{}{False \ P_{atom}}, \qquad \frac{p \ P_{and}}{(p) P_{atom}}$$
+$$\frac{p \ P_{atom}}{p \ P_{not}}, \qquad \frac{p \ P_{atom}}{\neg p \ P_{not}}$$
+$$\frac{p \ P_{not}}{p \ P_{and}}, \qquad \frac{p_1 \ P_{not} \qquad p_2 \ P_{and}}{p_2 \wedge p_2 \ P_{and}}$$
 
 ### 3
 > Here is an abstract syntax B for the same language: `B ::= Not B | And B B | True | False` Write an inductive definition for the parsing relation connecting your unambiguous judgements to this abstract syntax. *(5 marks)*
