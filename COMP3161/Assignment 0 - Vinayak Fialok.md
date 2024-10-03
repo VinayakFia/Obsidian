@@ -134,10 +134,10 @@ So if $P(e)$, then $P(\text{If} \ \text{True} \ t \ f)$ and $P(\text{If} \ \text
 
 ``` haskell
 c :: B -> L
-c (Not b) = (If (c b) False True) <- c1
-c (And a b) = (If (c a) (c b) False) <- c2
-c True = True <- c3
-c False = False <- c4
+c (Not b) = (If (c b) False True) -- c1
+c (And a b) = (If (c a) (c b) False) -- c2
+c True = True -- c3
+c False = False -- c4
 ```
 
 ### 2
@@ -157,16 +157,16 @@ Prove $P(\text{Not} \ e)$ with inductive hypothesis $P(e)$, specifically, assume
 
 1. If $e \Downarrow True$, then $\text{Not} \ e \Downarrow False$, and $c(\text{Not} \ e)$:
 ```haskell
-c(Not e) = (If (c e) False True) <- using c1
-		 = (If True False True) <- using inductive hypothesis
-		 = False <- using language L small step (3)
+c(Not e) = (If (c e) False True) -- using c1
+		 = (If True False True) -- using inductive hypothesis
+		 = False -- using language L small step (3)
 ```
 
 2. If $e \Downarrow False$, $\text{Not} \ e \Downarrow True$, and $c(\text{Not} \ e)$:
 ```haskell
-c(Not e) = (If (c e) False True) <- using c1
-		 = (If False False True) <- using inductive hypothesis
-		 = True <- using language L small step (2)
+c(Not e) = (If (c e) False True) -- using c1
+		 = (If False False True) -- using inductive hypothesis
+		 = True -- using language L small step (2)
 ```
 
 So if $P(e)$, then $P(\text{Not} \ e)$.
@@ -179,18 +179,18 @@ Prove $P(\text{And} \ a \ b)$  with Inductive hypothesis:
 Cases:
 1. when $a \Downarrow False$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$. So, we must show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
-c(And a b) = (If (c a) (c b) False) <- using c2
-		   = (If False (c b) False) <- using inductive hypothesis 1
-		   = (If False False False) <- using inductive hypothesis 2
-		   = False <- using language L small step 3
+c(And a b) = (If (c a) (c b) False) -- using c2
+		   = (If False (c b) False) -- using inductive hypothesis 1
+		   = (If False False False) -- using inductive hypothesis 2
+		   = False -- using language L small step 3
 ```
 
 2. when $a \Downarrow False$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_5$. So, we must show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
-c(And a b) = (If (c a) (c b) False) <- using c2
-		   = (If False (c b) False) <- using inductive hypothesis 1
-		   = (If False True False) <- using inductive hypothesis 2
-		   = False <- using language L small step 3
+c(And a b) = (If (c a) (c b) False) -- using c2
+		   = (If False (c b) False) -- using inductive hypothesis 1
+		   = (If False True False) -- using inductive hypothesis 2
+		   = False -- using language L small step 3
 ```
 
 3. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$. So, we must show that $c(\text{And} \ a \ b) \Downarrow False$
@@ -221,10 +221,10 @@ Therefore, by induction, $\forall e, e \Downarrow v \text{ implies } c(e) \Downa
 
 ```haskell
 	(λn. λf. λx. (n f (f x))) (λf. λx. f x)
-->A (λn. λf. λx. (n f (f x))) (λg. λp. g p) <- renaming variables f and x to g and p
-->B (λf. λx. ((λg. λp. g p) f (f x))) <- replacing f with (λf. λx. f x)
-->B (λf. λx. ((λp. f p) (f x))) <- replacing g with f
-->B (λf. λx. (f (f x)) <- replacing p with (f x)
+->A (λn. λf. λx. (n f (f x))) (λg. λp. g p) -- renaming variables f and x to g and p
+->B (λf. λx. ((λg. λp. g p) f (f x))) -- replacing f with (λf. λx. f x)
+->B (λf. λx. ((λp. f p) (f x))) -- replacing g with f
+->B (λf. λx. (f (f x)) -- replacing p with (f x)
 ```
 ### b)
 > Identify an η-reducible expression in the above (unreduced) term. *(5 marks)*
@@ -232,8 +232,8 @@ Therefore, by induction, $\forall e, e \Downarrow v \text{ implies } c(e) \Downa
 η-reducible refers to reduction using `(λx. f x) 7 ->η f`. **This can be applied to the expression `(λf. λx. f x)`, specifically to `(λx. f x)`.**
 ```haskell
 	(λf. λx. f x)
-=   (λf. (λx. f x)) <- adding brackets
-->n (λf. (f)) <- using n reduction on (λx. f x)
+=   (λf. (λx. f x)) -- adding brackets
+->n (λf. (f)) -- using n reduction on (λx. f x)
 =   (λf. f)
 ```
 
@@ -243,10 +243,10 @@ Therefore, by induction, $\forall e, e \Downarrow v \text{ implies } c(e) \Downa
 
 ``` haskell
 d :: B -> λ
-d True = T <- d_1
-d False = F <- d_2
-d (Not b) = (d b) F T <- d_3
-d (And a b) = (d a) (d b) F <- d_4
+d True = T -- d_1
+d False = F -- d_2
+d (Not b) = (d b) F T -- d_3
+d (And a b) = (d a) (d b) F -- d_4
 ```
 
 ### 3
@@ -266,19 +266,19 @@ Prove $P(\text{Not} \ b)$ with inductive hypothesis $P(b)$. We have 2 cases, $b 
 1. Consider $b \Downarrow True$:
 Given $b \Downarrow True$ we know that $\text{Not} \ b \Downarrow False$. The equivalent to $False$ in $\lambda$-calculus encoding is $F$, so we must prove $d(\text{Not} \ b) \equiv F$. Now lets evaluate $d(\text{Not} \ b)$.
 ```haskell
-d(Not b) = (d b) F T <- d_3
-		 = T F T <- using inductive hypothesis, since b ↓ True, b ≡ T in λ-calculus.
-		 = (λx λy x) F T <- definition of T
-		 = F <- substituting x with F and y with T
+d(Not b) = (d b) F T -- d_3
+		 = T F T -- using inductive hypothesis, since b ↓ True, b ≡ T in λ-calculus.
+		 = (λx λy x) F T -- definition of T
+		 = F -- substituting x with F and y with T
 ```
 
 1. Consider $b \Downarrow False$:
 Given $b \Downarrow False$ we know that $\text{Not} \ b \Downarrow True$. The equivalent to $True$ in $\lambda$-calculus encoding is $T$, so we must prove $d(\text{Not} \ b) \equiv T$. Now lets evaluate $d(\text{Not} \ b)$.
 ```haskell
-d(Not b) = (d b) F T <- d_3
-		 = F F T <- using inductive hypothesis, since b ↓ False, b ≡ F in λ-calculus.
-		 = (λx λy y) F T <- definition of F
-		 = T <- subtituting x with F and y with T
+d(Not b) = (d b) F T -- d_3
+		 = F F T -- using inductive hypothesis, since b ↓ False, b ≡ F in λ-calculus.
+		 = (λx λy y) F T -- definition of F
+		 = T -- subtituting x with F and y with T
 ```
 
 So if $P(b)$, $P(\text{Not} \ b) \equiv_{abn} v'$ where $v'$ is the $\lambda$-encoding of $v$.
@@ -288,38 +288,38 @@ Prove $P(\text{And} \ a \ b)$ with inductive hypothesis $P(a)$ and $P(b)$. We ha
 
 1. when $a \Downarrow False$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$ as below:
 ```haskell
-d(And a b) = (d a) (d b) F <- d_4
-		   = F (d b) F <- using inductive hypothesis P(a)
-		   = F F F <- using inductive hypothesis P(b)
-		   = (λx λy y) F F <- definition of F
-		   = F <- substituting x with F and y with F
+d(And a b) = (d a) (d b) F -- d_4
+		   = F (d b) F -- using inductive hypothesis P(a)
+		   = F F F -- using inductive hypothesis P(b)
+		   = (λx λy y) F F -- definition of F
+		   = F -- substituting x with F and y with F
 ```
 
 2. when $a \Downarrow False$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$ as below:
 ```haskell
-d(And a b) = (d a) (d b) F <- d_4
-		   = F (d b) F <- using inductive hypothesis P(a)
-		   = F T F <- using inductive hypothesis P(b)
-		   = (λx λy y) T F <- definition of F
-		   = F <- substituting x with T and y with F
+d(And a b) = (d a) (d b) F -- d_4
+		   = F (d b) F -- using inductive hypothesis P(a)
+		   = F T F -- using inductive hypothesis P(b)
+		   = (λx λy y) T F -- definition of F
+		   = F -- substituting x with T and y with F
 ```
 
 3. when $a \Downarrow True$, $b \Downarrow False$, show that $c(\text{And} \ a \ b) \Downarrow False$, so we must show $c(b) \equiv_{abn} F$ as below:
 ```haskell
-d(And a b) = (d a) (d b) F <- d_4
-		   = T (d b) F <- using inductive hypothesis P(a)
-		   = T F F <- using inductive hypothesis P(b)
-		   = (λx λy x) F F <- definition of T
-		   = F <- substituting x with F and y with F
+d(And a b) = (d a) (d b) F -- d_4
+		   = T (d b) F -- using inductive hypothesis P(a)
+		   = T F F -- using inductive hypothesis P(b)
+		   = (λx λy x) F F -- definition of T
+		   = F -- substituting x with F and y with F
 ```
 
 4. when $a \Downarrow True$, $b \Downarrow True$, show that $c(\text{And} \ a \ b) \Downarrow True$, so we must show $c(b) \equiv_{abn} T$ as below:
 ```haskell
-d(And a b) = (d a) (d b) F <- d_4
-		   = T (d b) F <- using inductive hypothesis P(a)
-		   = T T F <- using inductive hypothesis P(b)
-		   = (λx λy x) T F <- definition of T
-		   = T <- substituting x with T and y with F
+d(And a b) = (d a) (d b) F -- d_4
+		   = T (d b) F -- using inductive hypothesis P(a)
+		   = T T F -- using inductive hypothesis P(b)
+		   = (λx λy x) T F -- definition of T
+		   = T -- substituting x with T and y with F
 ```
 
 So if $P(a)$, and $P(b)$, $P(\text{And} \ a \ b) \equiv_{abn} v'$ where $v'$ is the $\lambda$-encoding of $v$.
