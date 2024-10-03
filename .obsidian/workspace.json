@@ -198,7 +198,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,12 +213,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a8c7d6a09240db97",
+  "active": "c7164d512e1c698e",
   "lastOpenFiles": [
+    "COMP4920/COMP4920.md",
+    "COMP3161/Assignment 0 - Vinayak Fialok.md",
     "COMP4920/Assignment 1.md",
     "conflict-files-obsidian-git.md",
-    "COMP3161/Assignment 0 - Vinayak Fialok.md",
-    "COMP4920/COMP4920.md",
     "Excalidraw/Drawing 2024-10-04 09.25.44.excalidraw.md",
     "Excalidraw",
     "COMP4920/Tute 01.md"
