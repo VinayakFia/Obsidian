@@ -68,7 +68,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP3161/Assignment 0 - Vinayak Fialok.md",
                 "mode": "source",
                 "source": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP3161/Assignment 0 - Vinayak Fialok.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 1.md",
+                "file": "COMP3161/Assignment 0 - Vinayak Fialok.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 1.md"
+                "file": "COMP3161/Assignment 0 - Vinayak Fialok.md"
               }
             }
           },
@@ -198,7 +198,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,13 +213,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a8c7d6a09240db97",
+  "active": "c7164d512e1c698e",
   "lastOpenFiles": [
-    "COMP3153/System Model - Vinayak Fialok.md",
-    "COMP3153/COMP3153 Exalidraw.excalidraw.md",
+    "Tasks.md",
     "COMP3161/Assignment 0 - Vinayak Fialok.md",
     "COMP4920/COMP4920.md",
     "COMP4920/Assignment 1.md",
+    "COMP3153/System Model - Vinayak Fialok.md",
+    "COMP3153/COMP3153 Exalidraw.excalidraw.md",
     "conflict-files-obsidian-git.md",
     "Excalidraw/Drawing 2024-10-04 09.25.44.excalidraw.md",
     "Excalidraw",

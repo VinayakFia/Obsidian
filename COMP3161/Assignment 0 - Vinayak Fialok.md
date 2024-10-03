@@ -62,8 +62,8 @@ $$\frac{}{(If \ False \ t \ e) → e}(3)$$
 ### 2
 > Define an equivalent big-step semantics for L. *(5 marks)*
 
-$$\frac{c \Downarrow \text{False} \quad t \Downarrow t' \quad f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f'}(4)$$
-$$\frac{c \Downarrow \text{True} \quad t \Downarrow t' \quad f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t'}(5)$$
+$$\frac{c \Downarrow \text{False} \quad f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f'}(4)$$
+$$\frac{c \Downarrow \text{True} \quad t \Downarrow t'}{(\text{If} \ c \ t \ f) \Downarrow t'}(5)$$
 
 
 ### 3
@@ -110,18 +110,18 @@ Therefore, by mathematical induction, if $a \Downarrow a'$ then $\text{If} \ a \
 
 **Inductive Case**
 *Case 1*
-$P(\text{If} \ e \ t \ f)$ when $e \Downarrow True$. With inductive hypothesis $P(t)$ and $P(f)$.
+$P(\text{If} \ e \ t \ f)$ when $e \Downarrow True$. With inductive hypothesis $P(t)$.
 
 First lets evaluate this expression using big step semantic 4
-$$\frac{e \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ e \ t \ f) \Downarrow t'}(4)$$
+$$\frac{e \Downarrow \text{True} \quad t \Downarrow t'}{(\text{If} \ e \ t \ f) \Downarrow t'}(5)$$
 
 We know from *lemma 1* that given $e \Downarrow True$, then $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f$. Next, $\text{If True} \ t \ f \mapsto t$ using small step 2. Using the inductive hypothesis $P(t)$, we know $t \Downarrow t' \implies t \overset{*}{\mapsto} t'$. Since $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ True \ t \ f \mapsto t \overset{*}{\mapsto} t'$, and $\overset{*}{\mapsto}$ is transitive, we know that $\text{If} \ e \ t \ f \overset{*}{\mapsto} t'$. Therefore, $P(\text{If} \ e \ t \ f)$ holds true when $e \Downarrow True$.
 
 *Case 2*
-$P(\text{If} \ e \ t \ f)$ when $e \Downarrow False$. With inductive hypothesis $P(t)$ and $P(f)$.
+$P(\text{If} \ e \ t \ f)$ when $e \Downarrow False$. With inductive hypothesis $P(f)$.
 
 First lets evaluate this expression using big step semantic 5
-$$\frac{e \Downarrow \text{False} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ e \ t \ f) \Downarrow f'}(4)$$
+$$\frac{e \Downarrow \text{False} \quad f \Downarrow f'}{(\text{If} \ e \ t \ f) \Downarrow f'}(4)$$
 
 We know from *lemma 1* that given $e \Downarrow False$, then $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ False \ t \ f$. Next, $\text{If False} \ t \ f \mapsto f$ using small step 3. Using the inductive hypothesis $P(f)$, we know $t \Downarrow f' \implies f \overset{*}{\mapsto} f'$. Since $\text{If} \ e \ t \ f \overset{*}{\mapsto} \text{If} \ False \ t \ f \mapsto f \overset{*}{\mapsto} f'$, and $\overset{*}{\mapsto}$ is transitive, we know that $\text{If} \ e \ t \ f \overset{*}{\mapsto} f'$. Therefore, $P(\text{If} \ e \ t \ f)$ holds true when $e \Downarrow False$.
 
