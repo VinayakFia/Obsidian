@@ -33,12 +33,14 @@ Complete automation of Kantian ethics, regardless of implementation, is incompat
 Finally, we must acknowledge that as AI becomes more powerful, prevalent, and independent, it must be equipped with ethical reasoning (L. Singh p12). Systems such as chatbots and lethal autonomous weapons systems are increasingly used, and lack ethical regulation. The greatest opportunity of automated ethics lies in regulating such systems as they grow increasingly prevalent in our lives. Complete automation of Kantian ethics is not possible, however, an impure artificial agent capable of generating maxims in conjunction with formal maxim proof software as created by Singh would be a step towards regulation and safety of such critical systems. 
 
 ## References
-https://www.amazon.com.au/Computer-Power-Human-Reason-Calculation/dp/0716704633
 Weizenbaum, J 1976, *Computer Power and Human Reason: From Judgement to Calculation* W.H. Freeman And Company, Calafornia.
-https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf
 
-https://usna.edu/CoreEthics/Essays/ONeil_Formula_of_Ends.pdf
-http://www.sophia-project.org/uploads/1/3/9/5/13955288/kant_lying.pdf
-https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP4920/24T3/b09949bce1345dd8998cca71826a2f0b5d1014e9242357c1d9cadc8ecc8f3b82/WEEK_1_LECTURE_2_READINGS_4920_24T1.pdf
+Kant, I. (1785). _Groundwork for the Metaphysic of Morals_. [online] Available at: https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf.
+
+O'neill, O. (n.d.). _A Simplified Account of Kant’s Ethics_. [online] Available at: https://usna.edu/CoreEthics/Essays/ONeil_Formula_of_Ends.pdf.
+
+Kant, I. (1797). _On the Supposed Right to Lie From Benevolent Motives_. [online] Available at: http://www.sophia-project.org/uploads/1/3/9/5/13955288/kant_lying.pdf.
+Bennet, C. 2015: *What is this thing called ethics*, second
+edition, Routledge
 https://www-jstor-org.wwwproxy1.library.unsw.edu.au/stable/2265252?seq=4
 https://www-jstor-org.wwwproxy1.library.unsw.edu.au/stable/40041154?searchText=%28kantian+ethics+maxim%29+AND+%28Kant+abortion%29&seq=1
