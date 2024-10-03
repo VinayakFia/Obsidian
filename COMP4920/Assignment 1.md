@@ -1,8 +1,8 @@
 > [!warning] TODO
 > - [ ] COMP4920 - Assignment 1
 > - [ ] 📅 2024-10-03 Proof Read
-> - [ ] 📅 2024-10-03 Fix references
-> - [ ] 📅 2024-10-02 Finish Draft
+> - [x] 📅 2024-10-03 Fix references
+> - [x] 📅 2024-10-02 Finish Draft
 > - [ ] 📅 2024-10-02 Edit
 
 > [!info] Expound and assess rule-based/Kantian ethics. Analyse the extent to which such an ethics might be used to design an automated ethics as per the readings in section 1.2 below. What do you think that the risks and opportunities of such an automated ethics might be? Why? Justify your answer with explicit, detailed, expositional reference to at least one of the suggested readings in section 1.2 below.
@@ -43,6 +43,6 @@ Korsgaard, C.M., 1986. The right to lie: Kant on dealing with evil. _Philosophy 
 Denis, L., 2008. Animality and agency: A Kantian approach to abortion. _Philosophy and Phenomenological Research_, 76(1), pp.117-137. Available at: http://www.jstor.org/stable/40041154.
 Manna, R. and Nath, R. (2021): *Kantian Moral Agency and the Ethics of Artificial Intelligence*, Problemos vol. 100, pp. 139–151.
 Nath, R., and Sahu, V. (2021): *The problem of machine ethics in artificial intelligence, AI &Society*, 35:103–111.
-Tonkens, R. (2009): A Challenge for Machine Ethics, Minds & Machines (2009) 19:421–438.
+Tonkens, R. (2009): *A Challenge for Machine Ethics, Minds & Machines* (2009) 19:421–438.
 Singh, L. (2022): Automated Kantian Ethics: A Faithful Implementation.
 Online at https://github.com/lsingh123/automatedkantianethics
