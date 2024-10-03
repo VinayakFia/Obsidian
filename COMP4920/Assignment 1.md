@@ -34,7 +34,9 @@ Finally, we must acknowledge that as AI becomes more powerful, prevalent, and in
 
 ## References
 https://www.amazon.com.au/Computer-Power-Human-Reason-Calculation/dp/0716704633
+Weizenbaum, J 1976, *Computer Power and Human Reason: From Judgement to Calculation* W.H. Freeman And Company, Calafornia.
 https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf
+
 https://usna.edu/CoreEthics/Essays/ONeil_Formula_of_Ends.pdf
 http://www.sophia-project.org/uploads/1/3/9/5/13955288/kant_lying.pdf
 https://webcms3.cse.unsw.edu.au/static/uploads/course/COMP4920/24T3/b09949bce1345dd8998cca71826a2f0b5d1014e9242357c1d9cadc8ecc8f3b82/WEEK_1_LECTURE_2_READINGS_4920_24T1.pdf
