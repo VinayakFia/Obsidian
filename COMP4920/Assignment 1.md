@@ -1,20 +1,4 @@
-> [!warning] TODO
-> - [ ] COMP4920 - Assignment 1
-> - [ ] 📅 2024-10-03 Proof Read
-> - [x] 📅 2024-10-03 Fix references
-> - [x] 📅 2024-10-02 Finish Draft
-> - [ ] 📅 2024-10-02 Edit
-
 > [!info] Expound and assess rule-based/Kantian ethics. Analyse the extent to which such an ethics might be used to design an automated ethics as per the readings in section 1.2 below. What do you think that the risks and opportunities of such an automated ethics might be? Why? Justify your answer with explicit, detailed, expositional reference to at least one of the suggested readings in section 1.2 below.
-
-*Coeckelbergh, M. (2021): How to Use Virtue Ethics for Thinking About the Moral Standing of Social Robots: A Relational Interpretation in Terms of Practices, Habits, and Performance, International Journal of Social Robotics, 13:31–40.*
-
-*Sparrow, S. (2021): Virtue and Vice in Our Relationships with Robots: Is There an Asymmetry and How Might it be Explained? International Journal of Social Robotics (2021) 13:23–29.*
-
-*Coeckelbergh, M. (2021): Does kindness towards robots lead to virtue? A reply to Sparrow’s asymmetry argument, Ethics and Information Technology (2021) 23:649–656.*
-
-*Coeckelbergh, M. (2021): Should We Treat Teddy Bear 2.0 as a Kantian Dog? Four Arguments for the Indirect Moral Standing of Personal Social Robots, with Implications for Thinking About Animals and Humans, Minds and Machines (2021) 31:337–360.*
-
 ## Draft 1
 Kantian ethics is a deontological ethical framework based upon the categorical imperative. Kantian ethics is effective for the modern individual to apply in daily life, and serves as an effective tool for organisations to make decisions. The extent to which ethics can be automated refers to the amount of the ethical decision making process that may be handled by a machine. Kantian ethics cannot be automated to the extent of requiring no human interaction, which I will refer to as complete automation, as it fundamentally violates the categorical imperative. However, Kantian ethics can be automated to the extent of a proof assistant with no risk. Finally, I will discuss that, although impure to Kant, a system combining formal maxim proof with other technologies is a practical approach to modern ethics.
 
