@@ -1,48 +1,34 @@
 {
   "main": {
-    "id": "95d73e7f8411a553",
+    "id": "f4300af8f64c8d22",
     "type": "split",
     "children": [
       {
-        "id": "2fd1226dc1813112",
+        "id": "e9b11c402f54cca9",
         "type": "tabs",
         "children": [
           {
-            "id": "26d143ff163b7ddd",
+            "id": "d2e2ac5ed8ce88ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/Tute 02.md",
+                "file": "COMP4920/COMP4920.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "eacc4fa136a950cb",
+            "id": "dbcc3e9aace92234",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "attachments/Pasted image 20240920154610.png"
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
-            "id": "ef9b32bbaaf3e98b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "COMP3161/Assignment 1 - Vinayak Fialok.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "17158850eed9cb32",
+            "id": "0988438082204461",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -52,23 +38,46 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b951b59dbb799c13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "COMP4920/Assignment 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5775690e0238e2a3",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "staged": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "e9393c4956f2012c",
+    "id": "a33d810780db029a",
     "type": "split",
     "children": [
       {
-        "id": "03b12b626eb91e67",
+        "id": "b3c7735b2a532fa5",
         "type": "tabs",
         "children": [
           {
-            "id": "4de4277901e9392f",
+            "id": "3cd9489ab73749e7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -78,7 +87,7 @@
             }
           },
           {
-            "id": "a11e6fd7ba56699f",
+            "id": "16ed30b43f822a5f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -93,7 +102,7 @@
             }
           },
           {
-            "id": "d4694e7edb2b19fe",
+            "id": "3ab8720089cc0e19",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -107,20 +116,19 @@
     "width": 300
   },
   "right": {
-    "id": "db5106ff0229022d",
+    "id": "dae09006ef580b75",
     "type": "split",
     "children": [
       {
-        "id": "da5b0b1927eba0e0",
+        "id": "b075daa6e4f42385",
         "type": "tabs",
         "children": [
           {
-            "id": "14865180344bf0d4",
+            "id": "6138b40cd7043fed",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP3161/Assignment 1 - Vinayak Fialok.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,19 +140,18 @@
             }
           },
           {
-            "id": "2c4778bc829bc7c4",
+            "id": "c9070f926afe869e",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP3161/Assignment 1 - Vinayak Fialok.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "9123c4eaad217c63",
+            "id": "205cd158f6597397",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -155,17 +162,15 @@
             }
           },
           {
-            "id": "f4d2591b0260f90d",
+            "id": "2d57d20533d6a7b8",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "COMP3161/Assignment 1 - Vinayak Fialok.md"
-              }
+              "state": {}
             }
           },
           {
-            "id": "23a57abe309e8c1f",
+            "id": "c7164d512e1c698e",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -177,66 +182,27 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ef9b32bbaaf3e98b",
+  "active": "5775690e0238e2a3",
   "lastOpenFiles": [
-    "Archive/CompClub T3 Workshop.md",
-    "Archive/Algo/assets/plot 2.png",
-    "Archive/Algo/assets",
-    "Archive/Algo/Breakout Strategies.md",
-    "Archive/Algo/Algo Bot.md",
-    "Archive/Algo",
-    "attachments/Pasted image 20240930192553.png",
-    "COMP4920/COMP4920.md",
+    "conflict-files-obsidian-git.md",
     "COMP4920/Assignment 1.md",
-    "attachments/Pasted image 20240920151514.png",
-    "attachments/Pasted image 20240920151344.png",
-    "COMP3161/Assignment 1 - Vinayak Fialok.md",
-    "COMP3161",
-    "attachments/Pasted image 20240920154610.png",
-    "COMP4920/Tute 02.md",
-    "attachments/Pasted image 20240920152500.png",
-    "attachments/Pasted image 20240920152002.png",
-    "attachments/Pasted image 20240920151840.png",
-    "COMP4920/Tute 01.md",
-    "COMP3153/System Model - Vinayak Fialok.md",
-    "COMP3153/COMP3153 Exalidraw.excalidraw.md",
-    "Excalidraw/System Model - Vinayak Fialok 2024-09-20 13.14.20.excalidraw.md",
+    "COMP4920/COMP4920.md",
+    "Excalidraw/Drawing 2024-10-04 09.25.44.excalidraw.md",
     "Excalidraw",
-    "COMP3153/task.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/zune.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/train.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/salesman2.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/salesman1.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Examples/LTL/pftp.pml",
-    "COMP3153/Spin/Spin-version-6.5.2/Man/README.md",
-    "COMP3153/Spin/Spin-version-6.5.2/README.md",
-    "COMP4920/Spin/Spin-version-6.5.2/Man/README.md",
-    "COMP4920/Spin/Spin-version-6.5.2/README.md",
-    "attachments/Pasted image 20240913150705.png",
-    "attachments/Pasted image 20240913153727.png",
-    "Tasks.md",
-    "CompClub T3 Workshop.md",
-    "Archive/BABS1111 - Assessment 3.md",
-    "COMP3153/Preliminary Proposal - Vinayak Fialok.md",
-    "Algo/Algo Bot.md",
-    "Algo/Breakout Strategies.md",
-    "Algo/Kanban.md",
-    "G.md",
-    "Pasted image 20240727075114.png.md"
+    "COMP4920/Tute 01.md"
   ]
 }
