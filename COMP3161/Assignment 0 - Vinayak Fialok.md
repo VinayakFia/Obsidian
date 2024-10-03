@@ -234,7 +234,7 @@ Therefore, by induction, $\forall e, e \Downarrow v \text{ implies } c(e) \Downa
 ### b)
 > Identify an η-reducible expression in the above (unreduced) term. *(5 marks)*
 
-η-reducible refers to reduction using `(λx. f x) 7 ->η f`. This can be applied to the expression `(λf. λx. f x)`, specifically to `(λx. f x)`.
+η-reducible refers to reduction using `(λx. f x) 7 ->η f`. **This can be applied to the expression `(λf. λx. f x)`, specifically to `(λx. f x)`.**
 ```haskell
 	(λf. λx. f x)
 =   (λf. (λx. f x)) <- adding brackets
