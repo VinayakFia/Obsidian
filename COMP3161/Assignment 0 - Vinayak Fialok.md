@@ -15,8 +15,8 @@ Note that brackets has highest precedence. We assure right associativity by sett
 
 $$\frac{}{True \ P_{atom} \longleftrightarrow True \ B} \qquad \frac{}{False \ P_{atom} \longleftrightarrow False \ B}$$
 $$\frac{p \ P_{atom} \longleftrightarrow b \ B}{p \ P_{brac} \longleftrightarrow b \ B} \qquad \frac{p \ P_{atom} \longleftrightarrow b \ B}{(p) \ P_{brac} \longleftrightarrow b \ B}$$
-$$\frac{p \ P_{brac} \longleftrightarrow b \ B}{p \ P_{and} \longleftrightarrow b \ B}\qquad \frac{p_1 \ P_{brac} \quad p_2 \ P_{and} \longleftrightarrow a \ B \quad b \ B}{p_2 \wedge p_2 \ P_{and} \longleftrightarrow AND \ a \ b \ B}$$
-$$\frac{p \ P_{and} \longleftrightarrow b \ B}{p \ P_{not} \longleftrightarrow b \ B} \qquad \frac{p \ P_{and} \longleftrightarrow b \ B}{\neg p \ P_{not} \longleftrightarrow NOT \ b \ B}$$
+$$\frac{p \ P_{brac} \longleftrightarrow b \ B}{p \ P_{and} \longleftrightarrow b \ B}\qquad \frac{p_1 \ P_{brac} \quad p_2 \ P_{and} \longleftrightarrow a \ B \quad b \ B}{p_2 \wedge p_2 \ P_{and} \longleftrightarrow (\text{AND} \ a \ b) \ B}$$
+$$\frac{p \ P_{and} \longleftrightarrow b \ B}{p \ P_{not} \longleftrightarrow b \ B} \qquad \frac{p \ P_{and} \longleftrightarrow b \ B}{\neg p \ P_{not} \longleftrightarrow (\text{NOT} \ b) \ B}$$
 ### 4
 #### a)
 > Show the evaluation of `And (Not (And True False)) False` with a derivation tree (arguably this belongs in Part B). (5 marks)
