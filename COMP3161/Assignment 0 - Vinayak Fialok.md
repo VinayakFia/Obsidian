@@ -8,13 +8,13 @@ $$\frac{}{True \ P} \qquad \frac{}{False \ P} \qquad \frac{p \space P}{\neg p \ 
 
 $$\frac{}{True \ P_{atom}} \qquad \frac{}{False \ P_{atom}} \qquad \frac{p \ P_{and}}{(p) P_{atom}}$$
 $$\frac{p \ P_{atom}}{p \ P_{not}} \qquad \frac{p \ P_{atom}}{\neg p \ P_{not}}$$
-$$\frac{p \ P_{not}}{p \ P_{and}}, \frac{p_1 \ P_{not} \qquad p_2 \ P_{and}}{p_2 \wedge p_2 \ P_{and}}$$
+$$\frac{p \ P_{not}}{p \ P_{and}} \qquad \frac{p_1 \ P_{not} \qquad p_2 \ P_{and}}{p_2 \wedge p_2 \ P_{and}}$$
 
 ### 3
 > Here is an abstract syntax B for the same language: `B ::= Not B | And B B | True | False` Write an inductive definition for the parsing relation connecting your unambiguous judgements to this abstract syntax. *(5 marks)*
 
-$$\frac{}{True \ P_{atom} \longleftrightarrow True \ B}, \frac{}{False \ P_{atom} \longleftrightarrow False \ B}$$
-$$\frac{p \ P_{atom} \longleftrightarrow b \ B}{p \ P_{brac} \longleftrightarrow b \ B}, \frac{p \ P_{atom} \longleftrightarrow b \ B}{(p) \ P_{brac} \longleftrightarrow b \ B}$$
+$$\frac{}{True \ P_{atom} \longleftrightarrow True \ B} \qquad \frac{}{False \ P_{atom} \longleftrightarrow False \ B}$$
+$$\frac{p \ P_{atom} \longleftrightarrow b \ B}{p \ P_{brac} \longleftrightarrow b \ B} \qquad \frac{p \ P_{atom} \longleftrightarrow b \ B}{(p) \ P_{brac} \longleftrightarrow b \ B}$$
 $$\frac{p \ P_{brac} \longleftrightarrow b \ B}{p \ P_{and} \longleftrightarrow b \ B}, \frac{p_1 \ P_{brac} \ p_2 \ P_{and} \longleftrightarrow a \ B \ b \ B}{p_2 \wedge p_2 \ P_{and} \longleftrightarrow AND \ a \ b \ B}$$
 $$\frac{p \ P_{and} \longleftrightarrow b \ B}{p \ P_{not} \longleftrightarrow b \ B}, \frac{p \ P_{and} \longleftrightarrow b \ B}{\neg p \ P_{not} \longleftrightarrow NOT \ b \ B}$$
 ### 4
