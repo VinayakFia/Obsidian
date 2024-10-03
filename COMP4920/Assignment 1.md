@@ -32,8 +32,6 @@ Complete automation of Kantian ethics, regardless of implementation, is incompat
 
 Finally, we must acknowledge that as AI becomes more powerful, prevalent, and independent, it must be equipped with ethical reasoning (L. Singh p12). Systems such as chatbots and lethal autonomous weapons systems are increasingly used, and lack ethical regulation. The greatest opportunity of automated ethics lies in regulating such systems as they grow increasingly prevalent in our lives. Complete automation of Kantian ethics is not possible, however, an impure artificial agent capable of generating maxims in conjunction with formal maxim proof software as created by Singh would be a step towards regulation and safety of such critical systems. 
 
-Kantian ethics is an effective foundation for rationalising decisions. However, its distinct lack of human qualities required of a moral agent make it unsuitable for complete automation. Kantian proof systems in contrast serve as effective tools for humans to formalise the morality of maxims.
-
 ## References
 https://www.qil-qdi.org/kantian-ethics-age-artificial-intelligence-robotics/
 https://www.amazon.com.au/Computer-Power-Human-Reason-Calculation/dp/0716704633
