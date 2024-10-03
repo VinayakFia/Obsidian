@@ -342,10 +342,10 @@ B ::= Let String String B B | Var String | Call String B | Not B | And B B | Tru
 ### 2
 $\Gamma$ will consist of assumptions written $x$ bound , that indicates that $x$ is in scope.
 $$\frac{\Gamma, y \ \text{bound} \vdash b_1 \text{ ok} \ \ \ \ \ \ \Gamma, x \ \text{bound} \vdash b_2 \text{ ok}}{\Gamma \vdash \text{Let} \ x \ y \ b_1 \ b_2 \ \text{ok}}$$
-$$\frac{x \text{ bound} \in \Gamma}{\gamma \vdash \text{Var } x \ \text{ok}}$$
+$$\frac{x \text{ bound} \in \Gamma}{\Gamma \vdash \text{Var } x \ \text{ok}}$$
 $$\frac{x \text{ bound} \in \Gamma \ \ \ \ \ \ \ \Gamma \vdash b \text{ ok}}{\Gamma \vdash \text{Call } x \ b \text{ ok}}$$
 $$\frac{\Gamma \vdash b \text{ ok}}{\Gamma \vdash \text{Not } b \text{ ok}}$$
-$$\frac{\Gamma \vdash b_1 \text{ ok} \ \ \ \ \ \Gamma \vdash b_2 \text{ ok}}{\Gamma \vdash \text{And } b_1 \ b_1 \text{ ok}}$$
+$$\frac{\Gamma \vdash b_1 \text{ ok} \ \ \ \ \ \Gamma \vdash b_2 \text{ ok}}{\Gamma \vdash \text{And } b_1 \ b_2 \text{ ok}}$$
 $$\frac{}{\Gamma \vdash \text{True ok}}, \frac{}{\Gamma \vdash \text{False ok}}$$
 
 If the same string is used to denote both a function name and a variable in the same scope, this is accepted by my scope judgement.
