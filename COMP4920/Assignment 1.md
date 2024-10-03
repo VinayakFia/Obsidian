@@ -34,13 +34,15 @@ Finally, we must acknowledge that as AI becomes more powerful, prevalent, and in
 
 ## References
 Weizenbaum, J 1976, *Computer Power and Human Reason: From Judgement to Calculation* W.H. Freeman And Company, Calafornia.
-
 Kant, I. (1785). _Groundwork for the Metaphysic of Morals_. [online] Available at: https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf.
-
 O'neill, O. (n.d.). _A Simplified Account of Kant’s Ethics_. [online] Available at: https://usna.edu/CoreEthics/Essays/ONeil_Formula_of_Ends.pdf.
-
 Kant, I. (1797). _On the Supposed Right to Lie From Benevolent Motives_. [online] Available at: http://www.sophia-project.org/uploads/1/3/9/5/13955288/kant_lying.pdf.
 Bennet, C. 2015: *What is this thing called ethics*, second
 edition, Routledge
-https://www-jstor-org.wwwproxy1.library.unsw.edu.au/stable/2265252?seq=4
-https://www-jstor-org.wwwproxy1.library.unsw.edu.au/stable/40041154?searchText=%28kantian+ethics+maxim%29+AND+%28Kant+abortion%29&seq=1
+Korsgaard, C.M., 1986. The right to lie: Kant on dealing with evil. _Philosophy & Public Affairs_, 15(4), pp.325-349. Available at: http://www.jstor.org/stable/2265252
+Denis, L., 2008. Animality and agency: A Kantian approach to abortion. _Philosophy and Phenomenological Research_, 76(1), pp.117-137. Available at: http://www.jstor.org/stable/40041154.
+Manna, R. and Nath, R. (2021): *Kantian Moral Agency and the Ethics of Artificial Intelligence*, Problemos vol. 100, pp. 139–151.
+Nath, R., and Sahu, V. (2021): *The problem of machine ethics in artificial intelligence, AI &Society*, 35:103–111.
+Tonkens, R. (2009): A Challenge for Machine Ethics, Minds & Machines (2009) 19:421–438.
+Singh, L. (2022): Automated Kantian Ethics: A Faithful Implementation.
+Online at https://github.com/lsingh123/automatedkantianethics
