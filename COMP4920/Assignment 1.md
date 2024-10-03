@@ -31,3 +31,15 @@ Tonkens, R. (2009): *A Challenge for Machine Ethics, Minds & Machines* (2009) 19
 Singh, L. (2022): Automated Kantian Ethics: A Faithful Implementation.
 Online at https://github.com/lsingh123/automatedkantianethics
 Johnson, R. and Cureton, A. (2022). _Kant’s Moral Philosophy_. [online] Stanford Encyclopedia of Philosophy. Available at: https://plato.stanford.edu/entries/kant-moral/
+
+```mermaid
+stateDiagram-v2
+	DevExec --> Workshop
+	Workshop --> WorkshopDirector1
+	Workshop --> WorkshopDirector2
+	DevExec --> Web
+	Web --> WebDirector1
+	Web --> WebDirector2
+	Web --> WebDirector3
+```
+
