@@ -200,18 +200,18 @@ c(And a b) = (If (c a) (c b) False) <- using c2
 
 3. when $a \Downarrow True$, $b \Downarrow False$, $\text{And} \ a \ b \Downarrow False \ \text{using language B big step rule } N_6$. So, we must show that $c(\text{And} \ a \ b) \Downarrow False$
 ```haskell
-c(And a b) = (If (c a) (c b) False) <- using c2
-		   = (If True (c b) False) <- using inductive hypothesis 1
-		   = (If True False False) <- using inductive hypothesis 2
-		   = False <- using language L small step 2
+c(And a b) = (If (c a) (c b) False) -- using c2
+		   = (If True (c b) False) -- using inductive hypothesis 1
+		   = (If True False False) -- using inductive hypothesis 2
+		   = False -- using language L small step 2
 ```
 
 4. when $a \Downarrow True$, $b \Downarrow True$, $\text{And} \ a \ b \Downarrow True\ \text{using language B big step rule } N_6$. So, we must show that $c(\text{And} \ a \ b) \Downarrow True$
 ```haskell
-c(And a b) = (If (c a) (c b) False) <- using c2
-		   = (If True (c b) False) <- using inductive hypothesis 1
-		   = (If True True False) <- using inductive hypothesis 2
-		   = False <- using language L small step 2
+c(And a b) = (If (c a) (c b) False) -- using c2
+		   = (If True (c b) False) -- using inductive hypothesis 1
+		   = (If True True False) -- using inductive hypothesis 2
+		   = False -- using language L small step 2
 ```
 
 So if $P(a)$ and $P(b)$, then in all cases $P(\text{And} \ a \ b)$.
