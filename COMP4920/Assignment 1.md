@@ -46,3 +46,4 @@ Nath, R., and Sahu, V. (2021): *The problem of machine ethics in artificial inte
 Tonkens, R. (2009): *A Challenge for Machine Ethics, Minds & Machines* (2009) 19:421–438.
 Singh, L. (2022): Automated Kantian Ethics: A Faithful Implementation.
 Online at https://github.com/lsingh123/automatedkantianethics
+Johnson, R. and Cureton, A. (2022). _Kant’s Moral Philosophy_. [online] Stanford Encyclopedia of Philosophy. Available at: https://plato.stanford.edu/entries/kant-moral/
