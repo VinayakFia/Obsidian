@@ -86,9 +86,10 @@ So $P(e)$ is true when $e \in \{True, False\}$.
 Prove that if $a \Downarrow a'$ then $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
 
 *Base Case*
-If $a = True$ then we know $a \Downarrow True$, and it must be true that $\text{If} \ True \ b \ c \overset{*}{\mapsto} \text{If} \ True \ b \ c$ after 0 steps.
+If $a = True$ then we know $a \Downarrow True$, and it must be true that $\textIf} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ True \ b \ c$ since $\overset{*}{\mapst}$.
 
-If $a = False$ then we know $a \Downarrow False$, and it must be true that $\text{If} \ False \ b \ c \overset{*}{\mapsto} \text{If} \ False \ b \ c$ since $\overset{*}{\mapsto}$ is reflexive.
+
+If $a = False$ then we know $a \Downarrow False$, and it must be true that $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ False \ b \ c$ since $\overset{*}{\mapsto}$ is reflexive.
 
 *Inductive Hypothesis*
 Assume that if $a \Downarrow a'$ then $\text{If} \ a \ b \ c \overset{*}{\mapsto} \text{If} \ a' \ b \ c$.
