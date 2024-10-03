@@ -62,8 +62,8 @@ $$\frac{}{(If \ False \ t \ e) → e}(3)$$
 ### 2
 > Define an equivalent big-step semantics for L. *(5 marks)*
 
-$$\frac{c \Downarrow \text{False} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f'}(4)$$
-$$\frac{c \Downarrow \text{True} \ \ \ t \Downarrow t' \ \ \ f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t'}(5)$$
+$$\frac{c \Downarrow \text{False} \quad t \Downarrow t' \quad f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow f'}(4)$$
+$$\frac{c \Downarrow \text{True} \quad t \Downarrow t' \quad f \Downarrow f'}{(\text{If} \ c \ t \ f) \Downarrow t'}(5)$$
 
 
 ### 3
