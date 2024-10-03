@@ -343,6 +343,6 @@ $$\frac{\Gamma \vdash b \text{ ok}}{\Gamma \vdash \text{Not } b \text{ ok}}$$
 $$\frac{\Gamma \vdash b_1 \text{ ok} \ \ \ \ \ \Gamma \vdash b_2 \text{ ok}}{\Gamma \vdash \text{And } b_1 \ b_2 \text{ ok}}$$
 $$\frac{}{\Gamma \vdash \text{True ok}}, \frac{}{\Gamma \vdash \text{False ok}}$$
 
-If the same string is used to denote both a function name and a variable in the same scope, this is accepted by my scope judgement. I have made this decision as the compiler may judge the 
+If the same string is used to denote both a function name and a variable in the same scope, this is accepted by my scope judgement. I have made
 
 If the same string is used to denote another function name or variable as previously declared, this is also accepted by my scope judgement.
