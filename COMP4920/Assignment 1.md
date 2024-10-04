@@ -16,8 +16,7 @@ Complete automation of Kantian ethics, regardless of implementation, is incompat
 
 Future implementations of Kantian ethics can address rising safety concerns of critical AI systems. As AI becomes more powerful, prevalent, and independent, it must be equipped with ethical reasoning (L. Singh p12), specifically in regards to critical systems in healthcare, automobiles, and weapons. We have shown that a complete automation of Kantian ethics is not possible. However, lets consider the implications of an impure Kantian agent, specifically an agent that bridges the situation too maxim evaluation with some "moral closeness" heuristic (L.Sing p10). I believe, based upon my evaluation of Kantian ethics on the individual and organisational levels, that such an agent would provide a significant level of safety to critical systems.
 
-Complete automation of Kantian ethics is impossible, however, an impure artificial agent capable of procuring maxims in conjunction with formal maxim proof as created by Singh could be a step towards regulation and safety of such critical systems.
-
+In conclusion, we have assessed the soundness of Kantian ethics, then the extent to which it can be automated whilst still remaining true to Kant, and finally addressed the opportunity of an impure Kantian agent to address rising concerns of AI systems.
 ## References
 Weizenbaum, J 1976, *Computer Power and Human Reason: From Judgement to Calculation* W.H. Freeman And Company, Calafornia.
 Kant, I. (1785). _Groundwork for the Metaphysic of Morals_. [online] Available at: https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf.
