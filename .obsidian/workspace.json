@@ -52,17 +52,6 @@
             }
           },
           {
-            "id": "5775690e0238e2a3",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "staged": false
-              }
-            }
-          },
-          {
             "id": "a8c7d6a09240db97",
             "type": "leaf",
             "state": {
@@ -75,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
