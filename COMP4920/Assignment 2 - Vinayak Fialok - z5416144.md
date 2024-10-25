@@ -3,5 +3,3 @@
 
 ## Possible Thesis
 Automated decision making may be broken 
-
-![[Drawing 2024-10-25 14.21.33.excalidraw|10000px]]
