@@ -69,12 +69,12 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf"
+                "file": "COMP4920/Pdfs/Week 4 Thursday Reading.pdf"
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -103,7 +103,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#excalidraw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf"
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md"
               }
             }
           },
@@ -212,12 +212,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3cd9489ab73749e7",
+  "active": "a8c7d6a09240db97",
   "lastOpenFiles": [
-    "COMP4920/Pdfs",
+    "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
     "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
-    "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
     "COMP4920/Assignment 1 - Vinayak Fialok - z5416144.md",
+    "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
+    "COMP4920/Pdfs",
     "Excalidraw/Drawing 2024-10-25 14.21.33.excalidraw.md",
     "COMP3161/Assignment 0 - Vinayak Fialok.md",
     "COMP4920/COMP4920.md",
