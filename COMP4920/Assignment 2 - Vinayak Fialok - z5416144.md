@@ -4,7 +4,7 @@
 ## Possible Thesis
 
 ### 2.0 The Decision Making Triad
-First, we must discuss the emphasis upon *fairness*, *accountability*, and *transparency*. 
+A consistent decision, that is, a decision that is 
 
 ### 2.1 Accountability
 We define the identify a decision as an ''
