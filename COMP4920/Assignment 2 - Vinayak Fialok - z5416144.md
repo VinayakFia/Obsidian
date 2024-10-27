@@ -7,7 +7,11 @@
 	1. Intentions/ decisions are based upon beliefs/desires
 	2. Accountability, fairness and transparency are properties upon a decision
 	3. A decision is accountable if it is explicable
-	4. Decisions may be explained through an agen'
+	4. Decisions may be explained through an agen't beliefs and desires
+	5. A decision is fair if its explination is nomatively salient\
+	6. Normative salience is a property on an explanation or reason that identifies that a decision aligns with ethical standards
+	7. a decision is transparent if its explanation is reportable and accessible.
+	8. Human decision making can then be
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
