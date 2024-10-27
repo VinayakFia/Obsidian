@@ -16,7 +16,8 @@
 2. ADM
 	1. What is ADM
 	3. ADM through causal does not work
-	4. explore ADM through other frameworks foe xpl
+	4. explore ADM through other frameworks of explanation
+	5. 
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
