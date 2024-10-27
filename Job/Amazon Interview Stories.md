@@ -7,4 +7,4 @@
 	- For the following weeks, I researched the patterns I would teach, and found ways of teaching I felt were easier to understand, and more intuitively lead to the desired pattern. I wanted my students to feel like they were discovering the pattern themselves.
 	- One example was teaching the decorator pattern. I implemented an armour system for Minecraft with many obvious and subtle code smells. I would ask students what code smells there are and how they could be improved and we would slowly work towards a system that used the decorator pattern. I would then formally explain the decorator pattern.
 - Result
-	- Tutorials become much more interactive. Students were more engaged and better understood the content. I also discussed my approaches with other tutors which also
+	- Tutorials become much more interactive. Students were more engaged and better understood the content. I had great feedback as well.
