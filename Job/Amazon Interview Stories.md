@@ -5,4 +5,5 @@
 	- Even though I had run my tutorial as was taught to me in training sessions, I felt that I was not satisfied with my teaching, and I needed to engage my class my class more.
 - Action
 	- For the following weeks, I researched the patterns I would teach, and found ways of teaching I felt were easier to understand, and more intuitively lead to the desired pattern. I wanted my students to feel like they were discovering the pattern themselves.
+	- One example was teaching the decorator pattern. I implemented a armour system for minecraft with many code smells. 
 	- Tutorials become much more interactive. I would present a engaging situation and ask students questions like "what is the problem here?" and "how can this be improved"?
