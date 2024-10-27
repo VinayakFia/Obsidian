@@ -10,6 +10,7 @@
 	- Tutorials become much more interactive. Students were more engaged and better understood the content. I had great feedback as well.
 
 - Customer Obsession
+- Ownership
 - 
 
 **2. **
