@@ -4,7 +4,7 @@
 ## Possible Thesis
 
 ### 2.0 The Decision Making Triad
-First, we must understand the importance of *fairness*, *accountability*, and *transparency*. 
+First, we must discuss the emphasis upon *fairness*, *accountability*, and *transparency*. 
 
 ### 2.1 Accountability
 We define the identify a decision as an ''
