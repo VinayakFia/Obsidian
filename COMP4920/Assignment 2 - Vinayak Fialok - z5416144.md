@@ -4,7 +4,8 @@
 ## Possible Thesis
 
 1. Why are we worried about accountability, fairness and transparency
-	1. Intent
+	1. Intentions/ decisions are based upon beliefs/desires
+	2. 
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
