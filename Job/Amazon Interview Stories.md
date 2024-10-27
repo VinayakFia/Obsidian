@@ -8,3 +8,5 @@
 	- One example was teaching the decorator pattern. I implemented an armour system for Minecraft with many obvious and subtle code smells. I would ask students what code smells there are and how they could be improved and we would slowly work towards a system that used the decorator pattern. I would then formally explain the decorator pattern.
 - Result
 	- Tutorials become much more interactive. Students were more engaged and better understood the content. I had great feedback as well.
+
+**2. **
