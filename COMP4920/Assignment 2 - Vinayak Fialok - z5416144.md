@@ -19,7 +19,7 @@
 	3. ADM through causal does not work
 		1. COMPAS recidivism
 		2. LLM detection
-		3. Specifically discuss the shortcomingsw
+		3. Specifically discuss the shortcomings
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
 
