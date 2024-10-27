@@ -15,8 +15,11 @@
 	9. Human decision making is accepted by its accountability, fairness and transparency
 2. ADM
 	1. What is ADM
-	3. ADM through causal does not work
-	4. explore ADM through other frameworks of explanation
+	2. ADM through causal does not work
+		1. COMPAS recidivism
+		2. LLM detection
+		3. Specifically dicuss the shortcomings
+	4. Explore ADM through other frameworks of explanation
 	5. 
 
 ### 2.1 Belief Desire Intention (BDI) agent model

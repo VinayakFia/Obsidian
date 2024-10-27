@@ -13,28 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP4920/COMP4920.md",
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "dbcc3e9aace92234",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "5775690e0238e2a3",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "staged": false
               }
             }
           },
@@ -42,16 +23,13 @@
             "id": "a8c7d6a09240db97",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
-                "mode": "source",
-                "source": false
+                "file": "COMP4920/Pdfs/Pragmatic.pdf"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,15 +167,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a8c7d6a09240db97",
+  "active": "d2e2ac5ed8ce88ac",
   "lastOpenFiles": [
+    "COMP4920/Assignment 1 - Vinayak Fialok - z5416144.md",
+    "COMP4920/COMP4920.md",
+    "COMP4920/Pdfs/Pragmatic.pdf",
+    "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
     "COMP4920/Tute 01.md",
     "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
-    "COMP4920/Assignment 1 - Vinayak Fialok - z5416144.md",
     "COMP3161/Assignment 0 - Vinayak Fialok.md",
-    "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
     "conflict-files-obsidian-git.md",
-    "COMP4920/COMP4920.md",
     "Excalidraw/Drawing 2024-10-25 14.21.33.excalidraw.md",
     "Excalidraw",
     "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
