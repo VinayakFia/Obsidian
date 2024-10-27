@@ -4,9 +4,9 @@
 ## Possible Thesis
 
 ### 2.0 The Decision Making Triad
-Grayson approaches human decision making through the belief/ desire psychological model. In this essay I will utilise the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions.
+Grayson approaches human decision making through the belief/ desire psychological model, which I will extend to the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions.
 
-Beliefs are the set of true statements understood by the agent, such as "there is coffee in the fridge". Desires are an agent's goals, preferences and values, such as "I want to "
+Beliefs are the set of true statements understood by the agent, such as "there is coffee in the fridge". Desires are an agent's goals, preferences and values, such as "I want to feel less tired in the mornings". Beliefs and desires are independent of each other. An intention is formed if and only if sufficient beliefs and desires exist. The coexistance of the aforementioned belief and desire would culminate in the intention of ""
 
 ### 2.1 Accountability
 We define the identify a decision as an ''
