@@ -8,7 +8,7 @@
 	2. Accountability, fairness and transparency are properties upon a decision
 	3. A decision is accountable if it is explicable
 	4. Decisions may be explained through an agen't beliefs and desires
-	5. A decision is fair if its explination is nomatively salient\
+	5. A decision is fair if its explination is nomatively salient
 	6. Normative salience is a property on an explanation or reason that identifies that a decision aligns with ethical standards
 	7. a decision is transparent if its explanation is reportable and accessible.
 	8. Humans are partial to causal explanation
