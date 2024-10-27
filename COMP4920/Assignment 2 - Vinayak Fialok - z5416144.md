@@ -8,4 +8,4 @@ Grayson approaches human decision making through the belief/ desire psychologica
 
 Beliefs are the set of true statements understood by the agent, such as "there is coffee in the fridge". Desires are an agent's goals, preferences and values, such as "I feel groggy and tired". Beliefs and desires are independent of each other. An intention is a plan, scheme or strategy formed in pursuit of an agent's desires, and based upon an agent's beliefs. The coexistence of the aforementioned belief and desire, and the lack of opposing desires such as "I want to stay in bed", would culminate in the intention of "I will go to the kitchen and drink coffee".
 ### 2.2 Accountability
-Borrowing from Grayson, we identify that accountability requires reasons (Grayson 2024 p5). It is because a decision may be explained that it is accountable. This gives rise to the question of 
+Borrowing from Grayson, we identify that accountability requires reasons (Grayson 2024 p5). It is because a decision may be explained that it is accountable.
