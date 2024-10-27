@@ -44,25 +44,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP3161/Assignment 0 - Vinayak Fialok.md",
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "12fe8ecd6b181fed",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -128,6 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,6 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +156,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md"
+              }
             }
           },
           {
@@ -181,7 +174,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,10 +189,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "12fe8ecd6b181fed",
+  "active": "a8c7d6a09240db97",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "COMP3161/Assignment 0 - Vinayak Fialok.md",
+    "conflict-files-obsidian-git.md",
     "COMP4920/COMP4920.md",
     "Excalidraw/Drawing 2024-10-25 14.21.33.excalidraw.md",
     "Excalidraw",
