@@ -6,7 +6,8 @@
 ### 2.0 The Decision Making Triad
 Grayson approaches human decision making through the belief/ desire psychological model, which I will extend to the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions.
 
-Beliefs are the set of true statements understood by the agent, such as "there is coffee in the fridge". Desires are an agent's goals, preferences and values, such as "I want to feel less tired in the mornings". Beliefs and desires are independent of each other. An intention is formed if and only if sufficient beliefs and desires exist. The coexistance of the aforementioned belief and desire would culminate in the intention of ""
+Beliefs are the set of true statements understood by the agent, such as "there is coffee in the fridge". Desires are an agent's goals, preferences and values, such as "I feel groggy and tired". Beliefs and desires are independent of each other. An intention is a plan, scheme or strategy formed if and only if sufficient beliefs and desires exist. The coexistence of the aforementioned belief and desire would culminate in the intention of "I will go to the kitchen and drink coffee".
 
+We can formalise the decision making process of humans to 
 ### 2.1 Accountability
 We define the identify a decision as an ''
