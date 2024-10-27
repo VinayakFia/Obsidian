@@ -11,8 +11,12 @@
 	5. A decision is fair if its explination is nomatively salient\
 	6. Normative salience is a property on an explanation or reason that identifies that a decision aligns with ethical standards
 	7. a decision is transparent if its explanation is reportable and accessible.
-	8. Human decision making can then be
-2. Formalisation
+	8. Humans are partial to causal explanation
+	9. Human decision making is accepted by its accountability, fairness and transparency
+2. ADM
+	1. What is ADM
+	3. ADM through causal does not work
+	4. explore ADM through other frameworks foe xpl
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
