@@ -4,7 +4,7 @@
 ## Possible Thesis
 
 ### 2.0 The Decision Making Triad
-A consistent decision, that is, a decision that is 
+Grayson approaches human decision making through the 
 
 ### 2.1 Accountability
 We define the identify a decision as an ''
