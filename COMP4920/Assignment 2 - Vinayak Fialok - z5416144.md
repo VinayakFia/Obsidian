@@ -4,7 +4,7 @@
 ## Possible Thesis
 
 ### 2.0 The Decision Making Triad
-A consistent decision is one that satisfies A decision is consistent if it satisfies the principals of fairness, accountability and transparency.
+First, we must understand the importance of *fairness*, *accountability*, and *transparency*. 
 
 ### 2.1 Accountability
 We define the identify a decision as an ''
