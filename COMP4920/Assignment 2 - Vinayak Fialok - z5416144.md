@@ -15,7 +15,8 @@
 	9. Human decision making is accepted by its accountability, fairness and transparency
 2. ADM
 	1. What is ADM
-	2. ADM through causal does not work
+	2. What makes a decision fair, accountable and transparent
+	3. ADM through causal does not work
 		1. COMPAS recidivism
 		2. LLM detection
 		3. Specifically dicuss the shortcomings
