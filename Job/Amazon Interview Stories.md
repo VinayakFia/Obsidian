@@ -75,5 +75,7 @@ LPS:
 
 **7.  Vue work**
 - Situation
-	- I had just joined a new team at work and I was assigned a task to implement chargeable overrides, something that is deeply integrating into the rating logic. I was new to both this team's codebase and this team's domain, 
-- 
+	- I had just joined a new team at work and I was assigned a task to implement chargeable overrides, something that is deeply integrating into the rating logic. I was new to both this team's codebase and this team's domain.
+- Task
+	- I needed to learn the rating domain well enough to complete my task.
+	- 
