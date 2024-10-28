@@ -24,11 +24,12 @@
 ## 2.2. Accountability, Fairness, and Transparency
 Accountability, fairness and transparency are properties of a decision. Firstly, let's define what these properties mean.
 
-Borrowing from Grayson, we identify that accountability requires reasons. That is, an accountable decision is one that is reasonable. Reasonableness is a function of normatively rational salience (Grayson 2024 p5). For a reason to be normatively salient, a reason must be considered grounded in norms or morally "right" or "fair" within a given context. So we derive our property of fairness as possessing reasons that are considered morally salient. A decisions reasonableness also requires reportability, that is the reasons for a decision must also be understandable and accessible to its stakeholders. So we have our last derived property of transparency which refers to the reportability of our decision.
+Borrowing from Grayson, we identify that accountability requires reasons. That is, an accountable decision is one that is reasonable. Reasonableness is a function of normatively rational salience (Grayson 2024 p5). For a reason to be normatively salient, a reason must be considered grounded in norms or morally "right" or "fair" within a given context. So we derive our property of fairness as possessing reasons that are considered morally salient. A decisions reasonableness also requires reportability, that is the reasons for a decision must also be understandable and accessible to its stakeholders. So we have our last derived property of transparency which refers to the reportability of our decision. Lets finally define that an acceptable decision is accountable, and so it is fair and transparent.
 
 TODO: maybe define why these are important
 
-Resonability is
+## 2.3 Reasonableness
+Reasonableness is at the centre of a decision's acceptability. But, how may we reason 
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
