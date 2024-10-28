@@ -1,3 +1,6 @@
+Why do you want to work at amazon?
+
+
 **1. Tutoring resources** A TIER
 - Situation
 	- Tutoring OOP at UNSW. I noticed after my first tutorial that students did not feel engaged, and had not completely learnt all the content I had covered in class. I also felt that the given resources were not the best examples of using OOP, and it wasn't clear why a more complicated OOP solution would be used over if or switch statements.
@@ -59,4 +62,3 @@ LPS:
 - Result
 	- After a few days, I re-reviewed some of his assignment marking, and we both now had constructive and consistent marking.
 
-**6. **
