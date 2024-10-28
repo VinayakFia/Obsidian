@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "e9b11c402f54cca9",
+        "id": "8bd74566ceebdf98",
         "type": "tabs",
         "children": [
           {
@@ -16,16 +16,6 @@
                 "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "a8c7d6a09240db97",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "COMP4920/Pdfs/Pragmatic.pdf"
               }
             }
           }
@@ -169,19 +159,19 @@
   },
   "active": "d2e2ac5ed8ce88ac",
   "lastOpenFiles": [
+    "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
+    "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
+    "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
     "COMP4920/Assignment 1 - Vinayak Fialok - z5416144.md",
     "Job/Amazon Interview Stories.md",
-    "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
     "Job",
     "COMP4920/COMP4920.md",
     "COMP4920/Pdfs/Pragmatic.pdf",
     "COMP4920/Tute 01.md",
-    "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
     "COMP3161/Assignment 0 - Vinayak Fialok.md",
     "conflict-files-obsidian-git.md",
     "Excalidraw/Drawing 2024-10-25 14.21.33.excalidraw.md",
     "Excalidraw",
-    "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
     "COMP4920/Pdfs",
     "Tasks.md",
     "COMP4920/Assignment 1.md",
