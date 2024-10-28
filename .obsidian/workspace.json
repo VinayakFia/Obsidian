@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "Amazon Interview Stories"
             }
-          },
-          {
-            "id": "3b8871bfafe461a8",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.4"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,7 +175,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3b8871bfafe461a8",
+  "active": "d2e2ac5ed8ce88ac",
   "lastOpenFiles": [
     "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
     "COMP4920/COMP4920.md",
