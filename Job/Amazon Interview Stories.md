@@ -22,10 +22,16 @@
 - Result
 	- In the end, everything had been completed and deployed in time for the work shop. From this, we learnt that 2 weeks is insufficient time, and we communicated this with the internals team so that we could work together in the future.
 
-**3. Simplifying Deployment**
+**3. Simplifying Deployment** B TIER
 - Situation
 	- Handed over from last year, the compclub website required a manual compilation step for the sass before deployment and viewing. This lead to delays and confusion for developers, and mistakes in deployment.
 - Task
 	- I wanted to make the process of working with sass easier for developers and for deployment.
 - Action
-	- I created a simple deployment script that compiles the sass and runs live-server.
+	- I created a simple run script that compiles the sass and runs live-server. I also added a compilation step to the cloud flare deployment. The solutions here were both simple, but were both overlooked by the previous team.
+- Result
+	- We didn't have any more deployment mistakes relating to sass after this, and our subcommittee were easily able to use the run script to test their work.
+
+**4. Learning** A Tier
+- Situation
+	- I was assigned a task that required some new data to be fetched. There are 3 ways to fetch data. We can use a library called Breezejs which is simplest, we can create a new api 
