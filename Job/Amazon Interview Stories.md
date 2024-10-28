@@ -11,6 +11,5 @@
 
 - Customer Obsession
 - Ownership
-- 
 
 **2. **
