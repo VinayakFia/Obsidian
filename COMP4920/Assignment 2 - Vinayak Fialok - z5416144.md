@@ -22,9 +22,10 @@
 		3. Specifically discus the shortcomings
 
 ## 2.2. Accountability, Fairness, and Transparency
-Borrowing from Grayson, we identify that accountability requires reasons. For a decision to be accountable, it must have explicable with reasons. This begs the question, how may a decision be explained? This will be discussed later in the essay.
+Accountability, fairness and transparency are properties of a decision. Firstly, let's define what these properties mean, then, let's discuss why they are desired.
 
-Next, fairness is
+**Accountability**
+Borrowing from Grayson, we identify that accountability requires reasons (Grayson 2024 p5). For a decision to be accountable, it must have explicable with reasons. This begs the question, how may a decision be explained? This will be discussed later in the essay.
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
