@@ -28,7 +28,7 @@ Borrowing from Grayson, we identify that accountability requires reasons. That i
 
 TODO: maybe define why these are important
 
-Essential to reaso
+Resonability is
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
