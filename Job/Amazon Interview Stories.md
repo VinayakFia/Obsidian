@@ -44,7 +44,15 @@
 	- In the end, I used breezejs as suggested, as it was indeed the simplest and fastest solution in terms of developer time, which is for this project what is most important at the moment.
 - Result
 	- I was able to complete my task quickly and efficiently, but I also learnt a lot about the different approaches within the company.
-	- It was not part of a task I was assigned, but I also started making some refactoring suggestion docs for a potential project restructure that the senior developer suggested will be upcoming. This primarily consisted of migrating to only use the composition api for vue, and to primarily utilise glow/ dev apis due to their speed, separation of concerns, and access to business logic. I don't expect this to be followed, but it is something that I will continue to work on and 
+	- It was not part of a task I was assigned, but I also started making some refactoring suggestion docs for a potential project restructure that the senior developer suggested will be upcoming. This primarily consisted of migrating to only use the composition api for vue, and to primarily utilise glow/ dev apis due to their speed, separation of concerns, and access to business logic. I don't expect this to be followed, but it is something that I will continue to work on and attempt to receive feedback for.
 
 LPS:
 - learn and be curious
+
+**5.  Assignment Marking**
+- Situation
+	- As a tutor, me and my lab assitant share the marking of assignments. To make sure our marking was consistent and fair, I decided to spend some time at the end of the lab reviewing each other's marking. I realised that my lab assistant was a very harsh marker, and did not give constructive feedback.
+- Task
+	- I needed to make sure that we both marked consistently.
+- Action
+	- After seeing his marking. I spent some
