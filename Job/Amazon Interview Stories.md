@@ -49,7 +49,7 @@
 LPS:
 - learn and be curious
 
-**5.  Assignment Marking**
+**5.  Assignment Marking** B TIER
 - Situation
 	- As a tutor, me and my lab assitant share the marking of assignments. To make sure our marking was consistent and fair, I decided to spend some time at the end of the lab reviewing each other's marking. I realised that my lab assistant was a very harsh marker, and did not give constructive feedback.
 - Task
@@ -57,4 +57,6 @@ LPS:
 - Action
 	- After seeing his marking. I asked if he was free for 10 to 15 minutes after the lab to dicuss assignment marking, to which he said he was. We both went over the marking guidelines together, and I explained my approach in determining marks for each section. My lab assistant also provided me with some valuable feedback on where I could too give more detail in my feedback, where rather than just stating the error, I should provide examples of where the student made the error.
 - Result
-	- In the end, I reviewed
+	- After a few days, I re-reviewed some of his assignment marking, and we both now had constructive and consistent marking.
+
+**6. **
