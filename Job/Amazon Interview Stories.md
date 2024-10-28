@@ -64,4 +64,9 @@ LPS:
 
 **6. Mastercard Intern Project**
 - Situation
-	- We were given a project with very little details regarding desired outcomes, s
+	- At my internship in mastercard, I was given a project with very little details regarding desired outcomes. We had to build a postman-esque website to enable users to interact with our API.
+- Task
+	- I needed to complete this project within a few weeks before the end of my internship. I needed to refine the specification, and work together with 2 other members to implement this project.
+- Action
+	- I spent some time talking with the product manager in our team, however he let me know he was quite overloaded at the moment and this project was of lower priority. I had some experience with the API at the time, and through discussion with the product manager, I understood that the customer of this tool was internal and geared towards onboarding of new developers.
+	- Using this, I was able to refine the requirements and decide on what to prioritise. I decided that UI design was no
