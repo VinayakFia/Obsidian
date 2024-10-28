@@ -12,4 +12,8 @@
 - Customer Obsession
 - Ownership
 
-**2. **
+**2. Workshops Overcommital**
+- Situation
+	- As a director at compclub, I was responsible for creating resources for high school workshops. For one of our workshops, I had overcommited myself and my team to a complex project involving pygame. The internals team, responsible for presenting the workshops, wanted the resources to be completed, but the dev subcommittee were still working on their tasks.
+- Task
+	- The workshop was on the up-comming weekend, and due to pygame being new for me and my subcom, many of my subcom had not completed their assigned tasks. I need to make sure that the workshops were completed, but also that
