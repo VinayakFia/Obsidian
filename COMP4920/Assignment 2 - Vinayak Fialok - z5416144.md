@@ -24,7 +24,9 @@
 ## 2.2. Accountability, Fairness, and Transparency
 Accountability, fairness and transparency are properties of a decision. Firstly, let's define what these properties mean, then, let's discuss why they are desired.
 
-Borrowing from Grayson, we identify that accountability requires reasons (Grayson 2024 p5). Specifically, an accountable decision must be reasonable, and reasonableness is a function of normatively rational salience (Grayson 2024. We will discuss the nature of these reasons and explanations later in this essay. 
+Borrowing from Grayson, we identify that accountability requires reasons. That is, an accountable decision is one that is reasonable. Reasonableness is a function of normatively rational salience (Grayson 2024 p5). Normative salience is the moral and ethical significance of a decisions reasons
+
+Borrowing from Grayson, we identify that accountability requires reasons. Specifically, an accountable decision must be reasonable, and reasonableness is a function of normatively rational salience (Grayson 2024 p5). We will discuss the nature of these reasons and explanations later in this essay. 
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
