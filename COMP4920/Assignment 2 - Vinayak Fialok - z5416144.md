@@ -24,7 +24,7 @@
 ## 2.2. Accountability, Fairness, and Transparency
 Accountability, fairness and transparency are properties of a decision. Firstly, let's define what these properties mean, then, let's discuss why they are desired.
 
-Borrowing from Grayson, we identify that accountability requires reasons. That is, an accountable decision is one that is reasonable. Reasonableness is a function of normatively rational salience (Grayson 2024 p5). For a reason to be normatively salient, a reason must be considered morally "right" or "fair" within a given context. Since an accountable decision must be reasonable, and to be reasonable is to posess reasons that are "fair", an a
+Borrowing from Grayson, we identify that accountability requires reasons. That is, an accountable decision is one that is reasonable. Reasonableness is a function of normatively rational salience (Grayson 2024 p5). For a reason to be normatively salient, a reason must be considered morally "right" or "fair" within a given context. We requires a decision to be reasonable through fair reasons to b. So, we have the property of fairness which must be present for a decision to be accountable.
 
 Borrowing from Grayson, we identify that accountability requires reasons. Specifically, an accountable decision must be reasonable, and reasonableness is a function of normatively rational salience (Grayson 2024 p5). We will discuss the nature of these reasons and explanations later in this essay. 
 
