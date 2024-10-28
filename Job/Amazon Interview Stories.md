@@ -12,8 +12,10 @@
 - Customer Obsession
 - Ownership
 
-**2. Workshops Overcommital**
+**2. Workshops Overcommital** B TIER
 - Situation
-	- As a director at compclub, I was responsible for creating resources for high school workshops. For one of our workshops, I had overcommited myself and my team to a complex project involving pygame. The internals team, responsible for presenting the workshops, wanted the resources to be completed, but the dev subcommittee were still working on their tasks.
+	- As a director at compclub, I was responsible for creating resources for high school workshops. For one of our workshops, I had overcommited myself and my team to a complex project involving pygame which internals team had proposed with only 2 weeks in a busy time of term. The internals team, responsible for presenting the workshops, wanted the resources to be completed, but the dev subcommittee were still working on their tasks.
 - Task
-	- The workshop was on the up-comming weekend, and due to pygame being new for me and my subcom, many of my subcom had not completed their assigned tasks. I need to make sure that the workshops were completed, but also that
+	- I needed to make sure that the solution code, starter code, and instructions were done before the weekend.
+- Action
+	- I organised an in person bonding and development day with my subcom. We spent about 5 hours together at uni working on these tasks whilst also talking and catching up. By making this a fun experience, the whole team was more excited to le
