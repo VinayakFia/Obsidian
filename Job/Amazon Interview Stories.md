@@ -34,7 +34,11 @@
 
 **4. Learning** B Tier
 - Situation
-	- I was assigned a task that required some new data to be fetched. There are 3 ways to fetch data. We can use a library called Breezejs which is simplest, we can create a new api in glow, which is fast but slightly more complex, or we an create a new api in dev, which is slightly slower, but more extensible. Glow and Breeze js only have access to the database. Dev has access to a wealth of existing business logic.
-	- At the time, I was only aware of the dev and glow options, not of breeze. In my pr I suggested a dev endpoint as it is more extensible with complex logic in the future. My pr comment from a senior dev was to investigate and use Breezejs.
+	- I was assigned a task that required some new data to be fetched. There are 3 ways to fetch data. We can use a library called Breezejs which is simplest but lacks proper imports and intellisense, we can create a new api in glow, which is fast but slightly more complex, or we an create a new api in dev, which is slightly slower, but more extensible. Glow and Breeze js only have access to the database. Dev has access to a wealth of existing business logic.
+	- At the time, I was only aware of the dev and glow options, not of breeze. In my pr I suggested a dev endpoint as it is more extensible with complex logic in the future. My pr comment from a senior dev was to use Breezejs.
+- Task
+	- I wasn't convinced that breeze was the best option. I wanted to discuss further to either convince my reviewer of my preference for a dev api, or to better understand why breeze was the best choice.
 - Action
-	- I wasn't convinced that breeze was the best option. I wanted to discuss further to either convince my reviewer of my preference for a dev api, or to better understand why
+	- I directly contacted the developer who left the comment with my thoughts. I clearly conveyed why in my opinion a dev pr was better due it its extensibility in a situation which I believe would be extended in the future.
+	- This gave way to the senior developer and I discussing the advantages and disadvantages of each approach. I was able to learn a lot about the history of these 3 options, where they have historically been used, and what the goal of these 3 end points is to be in the future.
+	- In the end, I use breezejs as suggested, as it was indeed the simplest and fastest solution in terms fo, which is for this project
