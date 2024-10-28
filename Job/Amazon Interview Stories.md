@@ -84,3 +84,11 @@ LPS:
 	- I spent time going through the Rating codebase, and was eventually able to find where the chargeable value was accessed. Through this, I was able to determine that we needed a config setting to be set for chargeable values to be used.
 - Result
 	- Through my investigation, I was able to implement the feature. I also found an issue with the logic of a previous pr regarding chargeable, which I also fixed here.
+
+**8. Extra for group**
+- Situation
+	- People in a uni group work course team were not correctly performing code reviews which was introducing bugs in our code early on.
+- Task
+	- I needed to find a way for code review quality to improve.
+- Solution
+	- I added a pipeline for linting to our project frontend, as well as 
