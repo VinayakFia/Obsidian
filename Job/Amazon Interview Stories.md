@@ -91,4 +91,4 @@ LPS:
 - Task
 	- I needed to find a way for code review quality to improve.
 - Solution
-	- I added a pipeline for linting to our project frontend, as well as 
+	- I added a pipeline for linting to our project frontend, as well as mandated that PR's require 2 reviews to be merged. The added eye of another reviewer made both reviewers more diligi
