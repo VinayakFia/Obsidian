@@ -1,6 +1,6 @@
 Why do you want to work at amazon?
-
-
+ - What really drives me at work is solving complex, challenging problems. I find myself performing at my best, learning the most, and receiving the best feedback when I'm given problems that force me to learn and really think critically. Amazon just seems like the perfect place to get that.
+ 
 **1. Tutoring resources** A TIER
 - Situation
 	- Tutoring OOP at UNSW. I noticed after my first tutorial that students did not feel engaged, and had not completely learnt all the content I had covered in class. I also felt that the given resources were not the best examples of using OOP, and it wasn't clear why a more complicated OOP solution would be used over if or switch statements.
