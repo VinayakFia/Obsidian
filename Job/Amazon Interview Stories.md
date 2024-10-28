@@ -32,6 +32,9 @@
 - Result
 	- We didn't have any more deployment mistakes relating to sass after this, and our subcommittee were easily able to use the run script to test their work.
 
-**4. Learning** A Tier
+**4. Learning** B Tier
 - Situation
-	- I was assigned a task that required some new data to be fetched. There are 3 ways to fetch data. We can use a library called Breezejs which is simplest, we can create a new api 
+	- I was assigned a task that required some new data to be fetched. There are 3 ways to fetch data. We can use a library called Breezejs which is simplest, we can create a new api in glow, which is fast but slightly more complex, or we an create a new api in dev, which is slightly slower, but more extensible. Glow and Breeze js only have access to the database. Dev has access to a wealth of existing business logic.
+	- At the time, I was only aware of the dev and glow options, not of breeze. In my pr I suggested a dev endpoint as it is more extensible with complex logic in the future. My pr comment from a senior dev was to investigate and use Breezejs.
+- Action
+	- I wasn't convinced that breeze was the best option. I wanted to discuss further to either convince my reviewer of my preference for a dev api, or to better understand why
