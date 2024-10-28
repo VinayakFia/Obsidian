@@ -55,4 +55,6 @@ LPS:
 - Task
 	- I needed to make sure that we both marked consistently.
 - Action
-	- After seeing his marking. I spent some
+	- After seeing his marking. I asked if he was free for 10 to 15 minutes after the lab to dicuss assignment marking, to which he said he was. We both went over the marking guidelines together, and I explained my approach in determining marks for each section. My lab assistant also provided me with some valuable feedback on where I could too give more detail in my feedback, where rather than just stating the error, I should provide examples of where the student made the error.
+- Result
+	- In the end, I reviewed
