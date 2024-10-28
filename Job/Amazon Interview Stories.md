@@ -69,4 +69,11 @@ LPS:
 	- I needed to complete this project within a few weeks before the end of my internship. I needed to refine the specification, and work together with 2 other members to implement this project.
 - Action
 	- I spent some time talking with the product manager in our team, however he let me know he was quite overloaded at the moment and this project was of lower priority. I had some experience with the API at the time, and through discussion with the product manager, I understood that the customer of this tool was internal and geared towards onboarding of new developers.
-	- Using this, I was able to refine the requirements and decide on what to prioritise. I decided that UI design was no
+	- Using this, I was able to refine the requirements and decide on what to prioritise. I decided that UI design was not important, and that the focus of this project should be on functionality. Given the limitated time frame and the existing skills of my team, I also decided on using react + MUI on the frontend, and python on the backend as a proxy.
+- Result
+	- We were able to complete the project, and when demoing this project to some form of upper management, they were very happy with it.
+
+**7.  Vue work**
+- Situation
+	- I had just joined a new team at work and I was assigned a task to implement chargeable overrides, something that is deeply integrating into the rating logic. I was new to both this team's codebase and this team's domain, 
+- 
