@@ -16,8 +16,16 @@
 - Situation
 	- As a director at compclub, I was responsible for creating resources for high school workshops. For one of our workshops, I had overcommited myself and my team to a complex project involving pygame which internals team had proposed and required to be completed within only 2 weeks. We were coming up the the deadline, and internals team needed the solution code to be completed in order to create their presentation materials.
 - Task
-	- I needed to make sure that the solution code, starter code, and instructions were done before the weekend, and that internals had ac
+	- I needed to make sure that the solution code, starter code, and instructions were done before the weekend, and that internals had access to the solution code so that they can create their own slides.
 - Action
 	- I organised an in person bonding and development day with my subcom. We spent about 5 hours together at uni working on these tasks whilst also talking and catching up. By making this a fun experience, the whole team was more excited to learn and work on this project. In the end, we weren't able to complete everything by the end, however, enough was completed for me and my co-director to jointly complete the remaining tasks within a few hours the following day.
 - Result
-	- In the end, everything had been completed and deployed in time for the work shop. From this, we learnt that 2 weeks is insufficient time for
+	- In the end, everything had been completed and deployed in time for the work shop. From this, we learnt that 2 weeks is insufficient time, and we communicated this with the internals team so that we could work together in the future.
+
+**3. Simplifying Deployment**
+- Situation
+	- Handed over from last year, the compclub website required a manual compilation step for the sass before deployment and viewing. This lead to delays and confusion for developers, and mistakes in deployment.
+- Task
+	- I wanted to make the process of working with sass easier for developers and for deployment.
+- Action
+	- I created a simple deployment script that compiles the sass and runs live-server.
