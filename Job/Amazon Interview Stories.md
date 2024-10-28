@@ -16,7 +16,7 @@
 - Situation
 	- As a director at compclub, I was responsible for creating resources for high school workshops. For one of our workshops, I had overcommited myself and my team to a complex project involving pygame which internals team had proposed and required to be completed within only 2 weeks. We were coming up the the deadline, and internals team needed the solution code to be completed in order to create their presentation materials.
 - Task
-	- I needed to make sure that the solution code, starter code, and instructions were done before the weekend.
+	- I needed to make sure that the solution code, starter code, and instructions were done before the weekend, and that internals had ac
 - Action
 	- I organised an in person bonding and development day with my subcom. We spent about 5 hours together at uni working on these tasks whilst also talking and catching up. By making this a fun experience, the whole team was more excited to learn and work on this project. In the end, we weren't able to complete everything by the end, however, enough was completed for me and my co-director to jointly complete the remaining tasks within a few hours the following day.
 - Result
