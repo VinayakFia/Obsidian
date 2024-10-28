@@ -77,5 +77,7 @@ LPS:
 - Situation
 	- I had just joined a new team at work and I was assigned a task to implement chargeable overrides, something that is deeply integrating into the rating logic. I was new to both this team's codebase and this team's domain.
 - Task
-	- I needed to learn the rating domain well enough to complete my task.
-	- 
+	- I needed to learn the rating domain and codebase well enough to complete my task.
+- Action
+	- I knew from my past experience in other teams where I could find the code for the frontend package. I was then able to locate the documentation for this project which enabled me to get set up with the right database. I then spent time going through a similar pr from the past to better understand where changes are typically made.
+	- I talked with a member of product to provide me with some test cases for my task, which I was able to implement on the backend. This not only gave me a way to
