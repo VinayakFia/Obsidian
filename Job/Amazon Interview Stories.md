@@ -40,10 +40,11 @@
 	- I wasn't convinced that breeze was the best option. I wanted to discuss further to either convince my reviewer of my preference for a dev api, or to better understand why breeze was the best choice.
 - Action
 	- I directly contacted the developer who left the comment with my thoughts. I clearly conveyed why in my opinion a dev pr was better due it its extensibility in a situation which I believe would be extended in the future.
-	- This gave way to the senior developer and I discussing the advantages and disadvantages of each approach. I was able to learn a lot about the history of these 3 options, where they have historically been used, and what the goal of these 3 end points is to be in the future. I learnt particularly that BreezeJs support is a key area of work, and typing, imports, and documentation should be more robust in the future. B
+	- This gave way to the senior developer and I discussing the advantages and disadvantages of each approach. I was able to learn a lot about the history of these 3 options, where they have historically been used, and what the goal of these 3 end points is to be in the future. I learnt particularly that BreezeJs support is a key area of work, and typing, imports, and documentation should be more robust in the future.
 	- In the end, I used breezejs as suggested, as it was indeed the simplest and fastest solution in terms of developer time, which is for this project what is most important at the moment.
 - Result
-	- I was able to complete my task quickly and efficiently, but I also learnt a lot about the different approaches within the company. I also started making some refactoring suggestion docs for a potential project restructure that the senior developer suggested will be upcoming.
+	- I was able to complete my task quickly and efficiently, but I also learnt a lot about the different approaches within the company.
+	- It was not part of a task I was assigned, but I also started making some refactoring suggestion docs for a potential project restructure that the senior developer suggested will be upcoming. This primarily consisted of migrating to only use the composition api for vue, and to primarily utilise glow/ dev apis due to their speed, separation of concerns, and access to business logic. I don't expect this to be followed, but it is something that I will continue to work on and 
 
 LPS:
 - learn and be curious
