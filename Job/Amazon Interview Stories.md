@@ -73,7 +73,7 @@ LPS:
 - Result
 	- We were able to complete the project, and when demoing this project to some form of upper management, they were very happy with it.
 
-**7.  Vue work**
+**7.  Chargeable work**
 - Situation
 	- I had just joined a new team at work and I was assigned a task to implement chargeable overrides, something that is deeply integrating into the rating logic. I was new to both this team's codebase and this team's domain.
 - Task
