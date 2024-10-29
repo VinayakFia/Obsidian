@@ -35,7 +35,7 @@ To discuss how AI may make acceptable decisions, lets first understand how human
 Grayson explore human decision making through the a model mirroring the belief-desire-intention (BDI) agent model developed by Michael Bratman. Beliefs are the set of true statements understood by the agent, such as "there is coffee in the fridge". Desires are an agent's goals, preferences and values, such as "I feel groggy and tired". Beliefs and desires are independent of each other. An intention is a plan, scheme or strategy formed in pursuit of an agent's desires, and based upon an agent's beliefs. The coexistence of the aforementioned belief and desire, and the lack of opposing desires such as "I want to stay in bed", would culminate in the intention of "I will go to the kitchen and drink coffee". This line of reasoning naturally aligns itself with causal reasoning. More specifically Grayson discusses counterfactual causal reasoning, which for the above situation would be phrased as "if I had not believed coffee lie in the fridge and I did not feel tired, then I would not have gone to get coffee". By explaining a decision through beliefs and desires, a human can be transparent about a decision. Following, beliefs and desires that are normatively salient makes a decision fair.
 
 ### 2.3.0. COMPAS recidivism prediction
-COMPAS (Correctional Offender Manage)
+COMPAS (Correctional Offender Management Profiling and Alternative Sanctions) is an algorithm that predicts recidivism of criminals in court. COMPAS aims to be used to assist the sentencing in court 
 
 ### 2.3.1. Reasoning to Explanation
 For an AI decision to be transparent, it must have minimal required translation between its reasoning and explanation.
