@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d2e2ac5ed8ce88ac",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "COMP4920/Pdfs/Week 4 Thursday Reading.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Week 4 Thursday Reading"
-            }
-          },
-          {
             "id": "b62bdca3295d0646",
             "type": "leaf",
             "state": {
@@ -33,8 +21,25 @@
               "title": "Assignment 2 - Vinayak Fialok - z5416144"
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "731b1c35764574e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d2e2ac5ed8ce88ac",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "COMP4920/Pdfs/Week 4 Thursday Reading.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Week 4 Thursday Reading"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
