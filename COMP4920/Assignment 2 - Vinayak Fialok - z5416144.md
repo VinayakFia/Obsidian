@@ -39,7 +39,7 @@ For an AI decision to be transparent, it must have minimal required translation 
 
 Reasoning is the process in which a human or machine come to a decision. An explanation is the conveying of our reasoning to others. We can think of the process of conveying reasoning as translation from logic into language. For human decision making, there is no required translation step. This is because the justification of a decision, that is the beliefs and desires of an agent are intuitively explicable through language.
 
-Now now borrow the AI machine from Grayson's recidivism example. Our judge has sentenced the defendant to 6 years with no parole through recommendation of our COMPAS AI agent. COMPAS uses
+Now now borrow the AI machine from Grayson's recidivism example. Our judge has sentenced the defendant to 6 years with no parole through recommendation of our COMPAS AI agent. COMPAS uses at least 15 factors with multiple items (Center for Criminology and Public Policy Research 2010, p10) as of 2010, which has undoubtedly increased in the last decade.
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
@@ -48,4 +48,4 @@ Grayson approaches human decision making through the belief/ desire psychologica
 Borrowing from Grayson, we identify that accountability requires reasons (Grayson 2024 p5). It is because a decision may be explained that it is accountable.
 
 
-Broward Sheriff’s Office 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
+Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
