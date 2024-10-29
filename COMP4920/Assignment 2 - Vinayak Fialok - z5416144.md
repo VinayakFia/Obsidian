@@ -29,9 +29,13 @@ Borrowing from Grayson, we identify that accountability requires reasons. That i
 The question of *How might fairness, accountability, and transparency be achieved collectively by an automated decision* may then be phrased as "How might an automated decision provide reasons that are ethical in a transparent manner". To understand the notion of reasoning, lets explore how Grayson argues human decisions are reasonable and transparent.
 
 ### 2.2. Human Decision Making
-Through the belief-desire-intention model and counterfactual causal reasoning, humans are capable of making decisions that are fair and transparent, and as such accountable and acceptable.
+// TODO: intro para
+To discuss how AI may make acceptable decisions, lets first understand how humans may do so. Through the belief-desire-intention model and counterfactual causal reasoning, humans are capable of making decisions that are fair and transparent, and as such accountable and acceptable.
 
 Grayson explore human decision making through the a model mirroring the belief-desire-intention (BDI) agent model developed by Michael Bratman. Beliefs are the set of true statements understood by the agent, such as "there is coffee in the fridge". Desires are an agent's goals, preferences and values, such as "I feel groggy and tired". Beliefs and desires are independent of each other. An intention is a plan, scheme or strategy formed in pursuit of an agent's desires, and based upon an agent's beliefs. The coexistence of the aforementioned belief and desire, and the lack of opposing desires such as "I want to stay in bed", would culminate in the intention of "I will go to the kitchen and drink coffee". This line of reasoning naturally aligns itself with causal reasoning. More specifically Grayson discusses counterfactual causal reasoning, which for the above situation would be phrased as "if I had not believed coffee lie in the fridge and I did not feel tired, then I would not have gone to get coffee". By explaining a decision through beliefs and desires, a human can be transparent about a decision. Following, beliefs and desires that are normatively salient makes a decision fair.
+
+### 2.3. Reasoning and Explanation
+Reasoning and explanat
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
