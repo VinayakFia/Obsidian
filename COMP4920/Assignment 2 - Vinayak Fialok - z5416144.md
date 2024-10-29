@@ -35,14 +35,17 @@ To discuss how AI may make acceptable decisions, lets first understand how human
 Grayson explore human decision making through the a model mirroring the belief-desire-intention (BDI) agent model developed by Michael Bratman. Beliefs are the set of true statements understood by the agent, such as "there is coffee in the fridge". Desires are an agent's goals, preferences and values, such as "I feel groggy and tired". Beliefs and desires are independent of each other. An intention is a plan, scheme or strategy formed in pursuit of an agent's desires, and based upon an agent's beliefs. The coexistence of the aforementioned belief and desire, and the lack of opposing desires such as "I want to stay in bed", would culminate in the intention of "I will go to the kitchen and drink coffee". This line of reasoning naturally aligns itself with causal reasoning. More specifically Grayson discusses counterfactual causal reasoning, which for the above situation would be phrased as "if I had not believed coffee lie in the fridge and I did not feel tired, then I would not have gone to get coffee". By explaining a decision through beliefs and desires, a human can be transparent about a decision. Following, beliefs and desires that are normatively salient makes a decision fair.
 
 ### 2.3. Reasoning to Explanation
-For an AI decision to be transparent, it must have minimal translation between its reasoning and explanation.
+For an AI decision to be transparent, it must have minimal required translation between its reasoning and explanation.
 
 Reasoning is the process in which a human or machine come to a decision. An explanation is the conveying of our reasoning to others. We can think of the process of conveying reasoning as translation from logic into language. For human decision making, there is no required translation step. This is because the justification of a decision, that is the beliefs and desires of an agent are intuitively explicable through language.
 
-
+Now now borrow the AI machine from Grayson's recidivism example. Our judge has sentenced the defendant to 6 years with no parole through recommendation of our COMPAS AI agent. Our agent
 
 ### 2.1 Belief Desire Intention (BDI) agent model
 Grayson approaches human decision making through the belief/ desire psychological model. A parallel and largely similar model is the belief-desire-intention (BDI) agent model developed by Michael Bratman to reason human decisions. **CHECK THIS**
 
 ### 2.2 Accountability
 Borrowing from Grayson, we identify that accountability requires reasons (Grayson 2024 p5). It is because a decision may be explained that it is accountable.
+
+
+https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf

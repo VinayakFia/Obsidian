@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "Assignment 2 - Vinayak Fialok - z5416144"
             }
+          },
+          {
+            "id": "e35919b2c9383662",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "COMP4920/Pdfs/Week 4 Thursday Reading.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Week 4 Thursday Reading"
+            }
           }
         ]
       }
@@ -177,12 +189,12 @@
   },
   "active": "d2e2ac5ed8ce88ac",
   "lastOpenFiles": [
+    "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
+    "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
+    "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
     "COMP4920/COMP4920.md",
     "Job/Amazon Interview Stories.md",
-    "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
     "Tasks.md",
-    "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
-    "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
     "COMP4920/Assignment 1 - Vinayak Fialok - z5416144.md",
     "Job",
     "COMP4920/Pdfs/Pragmatic.pdf",
