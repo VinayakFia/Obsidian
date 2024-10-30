@@ -77,7 +77,7 @@ Simplification of COMPAS into CORELS also does not diminish accuracy and so rema
 ## 4.3 Accuracy is insufficient for fairness
 Grayson states that accuracy allows COMPAS to achieve fairness, however, fairness is defined not in terms of the outcome, but in terms of the reasoning. For predictive ADM to remain fair, not only must they be accurate, but so too much their reasoning, that is, their internal logic and algorithm, be normatively salient.
 
-Suppose that COMPAS is highly accurate to a non-disputable extent and constructed through rule lists. Our judge has used COMPAS's prediction to sentence our defendant, however the defendant is unsatisfied and asks for an explanation of COMPAS's reasoning. The judge explains that COMPAS has decided they are high risk "because your age of 19, your location of x, ethnicity of y, sex of z, ...". However, we understand that it is not normatively 
+Suppose that COMPAS is highly accurate to a non-disputable extent and constructed through rule lists. Our judge has used COMPAS's prediction to sentence our defendant, however the defendant is unsatisfied and asks for an explanation of COMPAS's reasoning. The judge explains that COMPAS has decided they are high risk "because your age of 19, your location of x, ethnicity of y, sex of z, ...". This is an example of algorithmic discrimination against particular demographics. Certainly discrimination is considered against the norm.T
 
 COMPAS scores a mean accuracy of 66% whereas CORELS achieves 66.5% (Angelino et al 2024 p40). Studies show that "COMPAS (and so CORELS) is not significantly better than the crowd" (Derssel J, Farid H, 2018). 
 
