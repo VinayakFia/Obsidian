@@ -59,7 +59,9 @@ From our earlier example, event $c$ is "Bob feels tired and believes there is co
 
 Statistical explanation is based upon the probability of event $c$ causing event $e$. This takes the form "given Bob feels tired and believes there is coffee in the fridge, bob will almost certainly go to the fridge" (adapted from Howel p125). Causal and statistical explanation are similar in that they identify a causal even $c$ and link $c$ to resulting event $e$. However, the difference between even $e$ occuring and "almost certainly occuring" is critical. Statistical explanation only explain the likeliness of $e$, which is not sufficient to explain the $e$ itself.
 
-Deductive nomological explanation involves starting from general laws and circumstances, and then deducing the conclusion
+Deductive nomological explanation involves starting from general laws and circumstances, and then showing "how that the statement describing the result can be validly inferred" (Hempel 1962 p100). In contrast, causal reasoning starts from the outcome event, and considers and refines the causes of the event.
+
+TODO: compare and contrast
 
 ### 4.1 COMPAS Simplification
 As mentioned earlier, one approach to making COMPAS explicable is to simplify its reasoning. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal explanation. Let's see an example rule list below:
