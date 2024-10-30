@@ -70,7 +70,7 @@ else if (priors > 3) then predict yes
 else predict no
 ```
 
-If our criminal from our aforementioned case was aged 19 and male we could explain causally to him that "because you are 19 and male, we have decided that you will re-offend".
+If our criminal from our aforementioned case was aged 19 and male we could explain causally to him that "because you are 19 and male, we have decided that you will re-offend". Through rule-lists as above, 
 
 ### References
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
