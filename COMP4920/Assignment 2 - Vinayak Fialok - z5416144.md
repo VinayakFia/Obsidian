@@ -44,11 +44,14 @@ Reasoning is the process in which a human or machine come to a decision. An expl
 
 Lets borrow the AI machine from Grayson's recidivism example. Our judge has sentenced the defendant to 6 years with no parole through recommendation of our COMPAS AI agent. Our defendant then asks for an explanation, "why has it been decided that I am given such a long punishment without parole?". The COMPAS creators know that it is not feasible to explain COMPAS's algorithm because it is too complex (and it is proprietary). The COMPAS creators decide to translate their reasoning, that is their algorithm, into an explanation through the means of a large language model or some new algorithm.
 
-**A translation algorithm that is able to turn complex reasoning into digestible explanation requires that the resulting explanation is not faithful, or the algorithm itself can be simplified enough to be explicable.** Let's consider the former, where the COMPAS system produces the explanation that "you have offended once in the past and your demographic is deemed to be more likely to re-offend in the upcoming years". However, the defendant may then ask "how can I trust that this translation is true to the vastly complex COMPAS algorithm?". We will discuss the latter simplification case in the next section.
+**A translation algorithm that is able to turn complex reasoning into digestible explanation requires that the resulting explanation is not faithful, or the algorithm itself can be simplified enough to be explicable.** Let's consider the former, where the COMPAS system produces the explanation that "you have offended once in the past and your demographic is deemed to be more likely to re-offend in the upcoming years". However, the defendant may then ask "how can I trust that this translation is true to the vastly complex COMPAS algorithm?". We will discuss the latter simplification case in a later section.
 
 **Since significant translation from reasoning to explanation is in of itself opaque, we AI decisions must be utilise reasoning that is explicable, whilst also retaining accuracy to roaming morally salient.** Next, we will explore how this may be possible, and explore the nature of explanation whether causal or otherwise.
 
-### 3.1 Explicable simplification of COMPAS
+### 3.1 Ways of explanation
+
+
+### 4.1 Explicable simplification of COMPAS
 As mentioned earlier, one approach to making COMPAS explicable is to simplify its reasoning. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal explanation. Let's see an example rule list below:
 
 ```python
