@@ -71,10 +71,7 @@ else predict no
 
 If our criminal from our aforementioned case was aged 19 and male we could explain causally to him that "because you are 19 and male, we have decided that you will re-offend".
 
-### 2.2 Accountability
-Borrowing from Grayson, we identify that accountability requires reasons (Grayson 2024 p5). It is because a decision may be explained that it is accountable.
-
-
+### References
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
 
 Angelino et al, 2018, Learning Certifiably Optimal Rule Lists for Categorical Data, accessed 30th October 2024, <https://arxiv.org/pdf/1704.01701>
