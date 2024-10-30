@@ -12,7 +12,10 @@
 5. Reasoning is not explanation, explanation is rather made from reasoning
 6. A complex reasoning is hard to explain, and cannot be translated to a transparent accessible explanation without being non-accessible.
 7. We must find reasoning that is easily explicable, not explication that matches reasoning
-8. Causal explanation and deduct
+8. Causal explanation and deductive explanation are effective. Deductive explanation is reasoning in of itself, causal explanation requires support from other methods such as statistical reasoning.
+9. We can simplify compas using rule list model
+10. Rule lists are an example of reasoning that is easy to translate to both causal and deductive reasoning <- TRANSPARENCY
+11. We have discussed a method of reasoning, now lets discuss how reasoning may be normatively salient.
 
 ## 2.1. Accountability, Fairness, and Transparency
 Accountability, fairness and transparency are properties of a decision. Firstly, let's define what these properties mean.

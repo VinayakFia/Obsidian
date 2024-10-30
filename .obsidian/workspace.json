@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
+                "file": "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Assignment 2 - Vinayak Fialok - z5416144"
+              "title": "Backlinks for Week 4 Thursday Reading"
             }
           },
           {
@@ -130,12 +130,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
+                "file": "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Assignment 2 - Vinayak Fialok - z5416144"
+              "title": "Outgoing links from Week 4 Thursday Reading"
             }
           },
           {
@@ -157,10 +157,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md"
+                "file": "COMP4920/Pdfs/Week 4 Thursday Reading.pdf"
               },
               "icon": "lucide-list",
-              "title": "Outline of Assignment 2 - Vinayak Fialok - z5416144"
+              "title": "Outline of Week 4 Thursday Reading"
             }
           },
           {
@@ -193,10 +193,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b62bdca3295d0646",
+  "active": "d2e2ac5ed8ce88ac",
   "lastOpenFiles": [
-    "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
     "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
+    "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
     "COMP4920/Assignment 1 - Vinayak Fialok - z5416144.md",
     "Job/Amazon Interview Stories.md",
     "COMP4920/COMP4920.md",
