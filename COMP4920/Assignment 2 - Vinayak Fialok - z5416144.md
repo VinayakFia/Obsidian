@@ -77,7 +77,7 @@ Simplification of COMPAS into CORELS also does not diminish accuracy and so rema
 ## 4.3 Accuracy is insufficient for fairness
 Grayson states that accuracy allows COMPAS to achieve fairness, however, fairness is defined not in terms of the outcome, but in terms of the reasoning. For predictive ADM to remain fair, not only must they be accurate, but so too much their reasoning, that is, their internal logic and algorithm, be normatively salient.
 
-Suppose that COMPAS is highly accurate to a non-disputable extent and constructed through rule lists. Our judge has used COMPAS's prediction to sentence our defendant, however the defendant is unsatisfied and asks for an explanation of COMPAS's reasoning. The judge explains that COMPAS has decided they are high risk "because your age of 19, your location of x, ethnicity of y, sex of z, ...". This is an example of algorithmic discrimination against particular demographics. Certainly discrimination is considered against the norm.T
+Suppose that COMPAS is highly accurate to a non-disputable extent and constructed through rule lists. Our judge has used COMPAS's prediction to sentence our defendant, however the defendant is unsatisfied and asks for an explanation of COMPAS's reasoning. The judge explains that COMPAS has decided they are high risk "because your age of 19, your location of x, ethnicity of y, sex of z, ...". This is an example of algorithmic discrimination against particular demographics. Certainly discrimination is considered against the norm, and also disagreeable by normative ethical theories. Kantian ethics agree that "algorithmic discrimination is morally wrong when it makes demeaning distinctions, as respect is owed to every individual." (Reinhardt L., 2024). It can too be argued with rule-based utilitarianism that a world in which algorithmic discrimination was permissible would be undesirable.
 
 COMPAS scores a mean accuracy of 66% whereas CORELS achieves 66.5% (Angelino et al 2024 p40). Studies show that "COMPAS (and so CORELS) is not significantly better than the crowd" (Derssel J, Farid H, 2018). 
 
@@ -86,12 +86,14 @@ Moreover, COMPAS and CORLES both shown to have biases, particularly in race (Ang
 ### References
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
 
-Angelino et al, 2018, Learning Certifiably Optimal Rule Lists for Categorical Data, accessed 30th October 2024, <https://arxiv.org/pdf/1704.01701>
+Angelino et al, 2018, Learning Certifiably Optimal Rule Lists for Categorical Data, accessed 30th October 2024, \<https://arxiv.org/pdf/1704.01701>
 
-Carl G.H 1962, Deductive-Nomological vs. Statistical Explanation, accessed 30th October 2024, <https://conservancy.umn.edu/items/b8ce3527-af35-44a0-be95-013a66d7af79>
+Carl G.H 1962, Deductive-Nomological vs. Statistical Explanation, accessed 30th October 2024, \<https://conservancy.umn.edu/items/b8ce3527-af35-44a0-be95-013a66d7af79>
 
-C. M. Lorkowski, David Hume: Causation, accessed 30th October 2024<https://iep.utm.edu/hume-causation/>
+C. M. Lorkowski, David Hume: Causation, accessed 30th October 2024 \<https://iep.utm.edu/hume-causation/>
 
 Lewis, D., 1973. Counterfactuals, Oxford: Blackwell.
 
-Dressel J, Farid H. 2018, The accuracy, fairness, and limits of predicting recidivism. _Sci Adv_, accessed 31st October 2024. <https://pmc.ncbi.nlm.nih.gov/articles/PMC5777393/>
+Dressel J, Farid H. 2018, The accuracy, fairness, and limits of predicting recidivism. _Sci Adv_, accessed 31st October 2024. \<https://pmc.ncbi.nlm.nih.gov/articles/PMC5777393/>
+
+Reinhardt L., 2024, When is algorithmic discrimination wrong? , accessed 31st October 2024, \<https://journals.ub.uni-koeln.de/index.php/phidi/article/view/2416>
