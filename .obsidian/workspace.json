@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "8bd74566ceebdf98",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b62bdca3295d0646",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "COMP4920/Pdfs/Pragmatic.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Pragmatic"
-            }
-          }
-        ]
-      },
-      {
         "id": "731b1c35764574e2",
         "type": "tabs",
         "children": [
@@ -29,12 +11,14 @@
             "id": "d2e2ac5ed8ce88ac",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "COMP4920/Pdfs/Week 4 Thursday Reading.pdf"
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Week 4 Thursday Reading"
+              "icon": "lucide-file",
+              "title": "Assignment 2 - Vinayak Fialok - z5416144"
             }
           }
         ]
@@ -109,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Pdfs/Pragmatic.pdf",
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Pragmatic"
+              "title": "Backlinks for Assignment 2 - Vinayak Fialok - z5416144"
             }
           },
           {
@@ -128,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Pdfs/Pragmatic.pdf",
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Pragmatic"
+              "title": "Outgoing links from Assignment 2 - Vinayak Fialok - z5416144"
             }
           },
           {
@@ -155,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Pdfs/Pragmatic.pdf"
+                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Pragmatic"
+              "title": "Outline of Assignment 2 - Vinayak Fialok - z5416144"
             }
           },
           {
@@ -191,17 +175,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b62bdca3295d0646",
+  "active": "d2e2ac5ed8ce88ac",
   "lastOpenFiles": [
-    "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
     "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
+    "COMP4920/Pdfs/Pragmatic.pdf",
+    "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
     "COMP4920/Assignment 1 - Vinayak Fialok - z5416144.md",
     "Job/Amazon Interview Stories.md",
     "COMP4920/COMP4920.md",
     "Tasks.md",
     "COMP4920/Pdfs/Toward Modeling and Automating Ethical Decision Making.pdf",
     "Job",
-    "COMP4920/Pdfs/Pragmatic.pdf",
     "COMP4920/Tute 01.md",
     "COMP3161/Assignment 0 - Vinayak Fialok.md",
     "conflict-files-obsidian-git.md",
