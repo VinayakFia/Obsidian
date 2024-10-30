@@ -53,7 +53,11 @@ Lets borrow the AI machine from Grayson's recidivism example. Our judge has sent
 ### 3.1 Ways of explanation
 Grayson discusses 4 models of explanation: the deductive-nomological model, the statistical model, the pragmatic model, and the causal model. Grayson primarily expounds on the causal model as "it (has) the most natural fit" (Grayson 2024, p4).
 
-To explain some event or state $x$ through causal explanation is to specify the causes of $x$. Causal explanation itself appears in several forms of which we will discuss constant conjunction and counterfactual. In *constant conjunction causal* explanation we say that "(event or state) A causes (event or state) B when the two always occur together" (C. M. Lorkowski). This model as discussed by Lorkowskie is not reasonably justified and has at best a "very weak notion of necessity". *Counterfactual causal* explanation takes the form "if A had not occurred, B would not have occurred".
+To explain some event or state $x$ through causal explanation is to specify the causes of $x$. Causal explanation itself appears in several forms of which we will discuss constant conjunction and counterfactual. In *constant conjunction causal* explanation we say that "(event or state) A causes (event or state) B when the two always occur together" (C. M. Lorkowski). This model as discussed by Lorkowskie is not reasonably justified and has at best a "very weak notion of necessity". *Counterfactual causal* explanation takes the form:
+
+Where $c$ and _e_ are two distinct possible events, _e_ _causally depends_ on _c_ if and only if, if _c_ were to occur _e_ would occur; and if _c_ were not to occur _e_ would not occur.
+
+(Lewis 1973).
 
 ### 4.1 Explicable simplification of COMPAS
 As mentioned earlier, one approach to making COMPAS explicable is to simplify its reasoning. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal explanation. Let's see an example rule list below:
@@ -78,3 +82,5 @@ Angelino et al, 2018, Learning Certifiably Optimal Rule Lists for Categorical Da
 Carl G.H 1962, Deductive-Nomological vs. Statistical Explanation, accessed 30th October 2024, <https://conservancy.umn.edu/items/b8ce3527-af35-44a0-be95-013a66d7af79>
 
 C. M. Lorkowski, David Hume: Causation, accessed 30th October 2024<https://iep.utm.edu/hume-causation/>
+
+Lewis, D., 1973. Counterfactuals, Oxford: Blackwell.
