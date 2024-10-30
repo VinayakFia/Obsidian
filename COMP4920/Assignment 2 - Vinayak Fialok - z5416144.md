@@ -3,32 +3,17 @@
 
 ## Possible Thesis
 
-1. Why are we worried about accountability, fairness and transparency
-	1. Intentions/ decisions are based upon beliefs/desires
-	2. Accountability, fairness and transparency are properties upon a decision
-	3. A decision is accountable if it is explicable
-	4. Decisions may be explained through an agen't beliefs and desires
-	5. A decision is fair if its explination is nomatively salient
-	6. Normative salience is a property on an explanation or reason that identifies that a decision aligns with ethical standards
-	7. a decision is transparent if its explanation is reportable and accessible.
-	8. Humans are partial to causal explanation
-	9. Human decision making is accepted by its accountability, fairness and transparency
-2. ADM
-	1. What is ADM
-	2. What makes a decision fair, accountable and transparent
-	3. ADM through causal does not work
-		1. COMPAS recidivism
-		2. LLM detection
-		3. Specifically discus the shortcomings
-
 > [!danger] TODO: MAKE CLEAR SENTENCES THAT ARE IN BOLD FOR EACH PARA
+
+1. What is accountability, fairness and transparency
+2. 
 
 ## 2.1. Accountability, Fairness, and Transparency
 Accountability, fairness and transparency are properties of a decision. Firstly, let's define what these properties mean.
 
 Borrowing from Grayson, we identify that accountability requires reasons. That is, an accountable decision is one that is reasonable. Reasonableness is a function of normatively rational salience (Grayson 2024 p5). For a reason to be normatively salient, a reason must be considered grounded in norms or morally "right" or "fair" within a given context. So we derive our property of fairness as possessing reasons that are considered morally salient. A decisions reasonableness also requires reportability, that is the reasons for a decision must also be understandable and accessible to its stakeholders. So we have our last derived property of transparency which refers to the reportability of our decision. Lets finally define that a decision that collectively achieves fairness, accountability and transparency is acceptable.
 
-The question of *How might fairness, accountability, and transparency be achieved collectively by an automated decision* may then be phrased as "How might an automated decision provide reasons that are ethical in a transparent manner". To understand the notion of reasoning, lets explore how Grayson argues human decisions are reasonable and transparent.
+The question of *How might fairness, accountability, and transparency be achieved collectively by an automated decision* may then be phrased as "**How might an automated decision provide reasons that are ethical in a transparent manner?**". To understand the notion of reasoning, lets explore how Grayson argues human decisions are reasonable and transparent.
 
 ### 2.2. Human Decision Making
 // TODO: intro para
@@ -57,9 +42,9 @@ To explain some event or state $x$ through causal explanation is to specify the 
 Where $c$ and $e$ are two distinct possible events, $e$ _causally depends_ on $c$ if and only if, if $c$ were to occur $e$ would occur; and if $c$ were not to occur $e$ would not occur. (Lewis 1973).
 From our earlier example, event $c$ is "Bob feels tired and believes there is coffee in the fridge" and event e is "Bob goes to the fridge".
 
-Statistical explanation is based upon the probability of event $c$ causing event $e$. This takes the form "given Bob feels tired and believes there is coffee in the fridge, bob will almost certainly go to the fridge" (adapted from Howel p125). Causal and statistical explanation are similar in that they identify a causal even $c$ and link $c$ to resulting event $e$. However, the difference between even $e$ occuring and "almost certainly occuring" is critical. Statistical explanation only explain the likeliness of $e$, which is not sufficient to explain the $e$ itself. Although statistical explanation is not sufficient, statistical models may be used to determine causes for a causal argument. For example, the statistic that 95% of tired people with coffee nearby will go to drink coffee along side the elimination of cor
+Statistical explanation is based upon the probability of event $c$ causing event $e$. This takes the form "given Bob feels tired and believes there is coffee in the fridge, bob will almost certainly go to the fridge" (adapted from Howel p125). Causal and statistical explanation are similar in that they identify a causal even $c$ and link $c$ to resulting event $e$. However, the difference between even $e$ occuring and "almost certainly occuring" is critical. Statistical explanation only explain the likeliness of $e$, which is not sufficient to explain the $e$ itself. Although statistical explanation is not sufficient, statistical models may be used to determine causes for a causal argument. For example, the statistic that 95% of tired people with coffee nearby will go to drink coffee along side the elimination of confounding variables may be used to determine the causal relationship mentioned above.
 
-Deductive nomological explanation involves starting from general laws and circumstances, and then showing "how that the statement describing the result can be validly inferred" (Hempel 1962 p100). For Bob we could say that "bob being tired and believing there is coffee in the fridge, and the general human law that individuals will take actions to remedy their fatigue implies that Bob will go to the fridge". In contrast, causal reasoning starts from the outcome event, and considers and refines the causes.
+Deductive nomological explanation involves starting from general laws and circumstances, and then showing "how that the statement describing the result can be validly inferred" (Hempel 1962 p100). For Bob we could say that "bob being tired and believing there is coffee in the fridge, and the general human law that individuals will take actions to remedy their fatigue implies that Bob will go to the fridge". In contrast, causal reasoning starts from the outcome event, and considers and refines the causes. Both causal and deductive explanation are sufficient to explain result $e$, we will explore the efficacy of these explanation models next.
 ### 4.1 COMPAS Simplification
 As mentioned earlier, one approach to making COMPAS explicable is to simplify its reasoning. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal explanation. Let's see an example rule list below:
 
