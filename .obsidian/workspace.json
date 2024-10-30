@@ -11,14 +11,12 @@
             "id": "b62bdca3295d0646",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
-                "mode": "source",
-                "source": false
+                "file": "COMP4920/Pdfs/Pragmatic.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Assignment 2 - Vinayak Fialok - z5416144"
+              "icon": "lucide-file-text",
+              "title": "Pragmatic"
             }
           }
         ]
@@ -111,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
+                "file": "COMP4920/Pdfs/Pragmatic.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Assignment 2 - Vinayak Fialok - z5416144"
+              "title": "Backlinks for Pragmatic"
             }
           },
           {
@@ -130,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
+                "file": "COMP4920/Pdfs/Pragmatic.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Assignment 2 - Vinayak Fialok - z5416144"
+              "title": "Outgoing links from Pragmatic"
             }
           },
           {
@@ -157,10 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md"
+                "file": "COMP4920/Pdfs/Pragmatic.pdf"
               },
               "icon": "lucide-list",
-              "title": "Outline of Assignment 2 - Vinayak Fialok - z5416144"
+              "title": "Outline of Pragmatic"
             }
           },
           {
@@ -195,8 +193,8 @@
   },
   "active": "b62bdca3295d0646",
   "lastOpenFiles": [
-    "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
     "COMP4920/Assignment 2 - Vinayak Fialok - z5416144.md",
+    "COMP4920/Pdfs/Week 4 Thursday Reading.pdf",
     "COMP4920/Assignment 1 - Vinayak Fialok - z5416144.md",
     "Job/Amazon Interview Stories.md",
     "COMP4920/COMP4920.md",
