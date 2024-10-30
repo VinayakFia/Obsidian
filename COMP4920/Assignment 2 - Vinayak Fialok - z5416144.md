@@ -92,7 +92,7 @@ else if (sex = male) and (juvenile crimes > 0) then predict yes
 else predict no
 ```
 
-
+Rule-list 1 may be accepted as normatively salient as it only distinguishes based on prior convictions. We can argue this reasoning as moral using rule-based utilitarianism, as a world where prior convictions are considered higher risk for recidivism
 ### References
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
 
