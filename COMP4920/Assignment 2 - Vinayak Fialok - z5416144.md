@@ -21,6 +21,8 @@
 		2. LLM detection
 		3. Specifically discus the shortcomings
 
+> [!danger] TODO: MAKE CLEAR SENTENCES THAT ARE IN BOLD FOR EACH PARA
+
 ## 2.1. Accountability, Fairness, and Transparency
 Accountability, fairness and transparency are properties of a decision. Firstly, let's define what these properties mean.
 
@@ -49,7 +51,9 @@ Lets borrow the AI machine from Grayson's recidivism example. Our judge has sent
 **Since significant translation from reasoning to explanation is in of itself opaque, we AI decisions must be utilise reasoning that is explicable, whilst also retaining accuracy to roaming morally salient.** Next, we will explore how this may be possible, and explore the nature of explanation whether causal or otherwise.
 
 ### 3.1 Ways of explanation
+Grayson discusses 4 models of explanation: the deductive-nomological model, the statistical model, the pragmatic model, and the causal model. Grayson primarily expounds on the causal model as "it (has) the most natural fit" (Grayson 2024, p4).
 
+The Causal model of explanation
 
 ### 4.1 Explicable simplification of COMPAS
 As mentioned earlier, one approach to making COMPAS explicable is to simplify its reasoning. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal explanation. Let's see an example rule list below:
