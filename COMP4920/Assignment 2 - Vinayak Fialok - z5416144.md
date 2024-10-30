@@ -6,7 +6,13 @@
 > [!danger] TODO: MAKE CLEAR SENTENCES THAT ARE IN BOLD FOR EACH PARA
 
 1. What is accountability, fairness and transparency
-2. 
+2. Rephrase the first part of the question as **How might an automated decision provide reasons that are ethical in a transparent manner?**
+3. Discuss these in practice through human decision making
+4. what is COMPAS
+5. Reasoning is not explanation, explanation is rather made from reasoning
+6. A complex reasoning is hard to explain, and cannot be translated to a transparent accessible explanation without being non-accessible.
+7. We must find reasoning that is easily explicable, not explication that matches reasoning
+8. Causal explanation and deduct
 
 ## 2.1. Accountability, Fairness, and Transparency
 Accountability, fairness and transparency are properties of a decision. Firstly, let's define what these properties mean.
