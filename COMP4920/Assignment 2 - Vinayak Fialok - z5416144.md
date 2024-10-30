@@ -74,3 +74,5 @@ Borrowing from Grayson, we identify that accountability requires reasons (Grayso
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
 
 Angelino et al, 2018, Learning Certifiably Optimal Rule Lists for Categorical Data, accessed 30th October 2024, <https://arxiv.org/pdf/1704.01701>
+
+Carl G.H 1962, Deductive-Nomological vs. Statistical Explanation, accessed 30th October 2024, <https://conservancy.umn.edu/items/b8ce3527-af35-44a0-be95-013a66d7af79>
