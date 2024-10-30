@@ -77,7 +77,7 @@ Simplification of COMPAS into CORELS also does not diminish accuracy and so rema
 ## 4.3 Accuracy and fairness
 Grayson states that accuracy entails fairness, however, it is unclear the degree of accuracy sufficient for a decision to be considered fair. .. INTRO
 
-COMPAS scores a mean accuracy of 66% whereas CORELS achieves 66.5% (Angelino et al 2024 p40). Studies show that "COMPAS is not significantly better than the crowd" (Derssel J, Farid H, 2018).
+COMPAS scores a mean accuracy of 66% whereas CORELS achieves 66.5% (Angelino et al 2024 p40). Studies show that "COMPAS is not significantly better than the crowd" (Derssel J, Farid H, 2018). Moreover, COMPAS 
 
 ### References
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
