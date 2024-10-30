@@ -17,6 +17,10 @@
 10. We can simplify compas using rule list model
 11. Rule lists are an example of reasoning that is easy to translate to both causal and deductive reasoning <- TRANSPARENCY
 12. We have discussed a method of reasoning, now lets discuss how reasoning may be normatively salient.
+13. We can show that COMPAS with rule lists can be fair
+14. what is lethal autonomous weapons
+15. show that it is not feasible to sufficiently simplify some situations
+16. conclusion/ intro: the ability for an AI decision to be fair is dependant on situation and context, some ADM's may satisfy the triad, but that is certainly not true for most.
 
 ## 2.1. Accountability, Fairness, and Transparency
 Accountability, fairness and transparency are properties of a decision. Firstly, let's define what these properties mean.
