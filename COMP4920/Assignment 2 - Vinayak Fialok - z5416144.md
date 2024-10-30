@@ -53,7 +53,7 @@ Lets borrow the AI machine from Grayson's recidivism example. Our judge has sent
 ### 3.1 Ways of explanation
 Grayson discusses 4 models of explanation: the deductive-nomological model, the statistical model, the pragmatic model, and the causal model. Grayson primarily expounds on the causal model as "it (has) the most natural fit" (Grayson 2024, p4).
 
-To explain some event or state $x$ through causal explanation is to specify the causes of $x$. Causal explanation itself appears in several forms. For example, in *constant conjunction causal* explanation we say that 
+To explain some event or state $x$ through causal explanation is to specify the causes of $x$. Causal explanation itself appears in several forms of which we will discuss . In *constant conjunction causal* explanation we say that "(event or state) A causes (event or state) B when the two always occur together" (C. M. Lorkowski). *Counterfactual causal* explanation 
 
 ### 4.1 Explicable simplification of COMPAS
 As mentioned earlier, one approach to making COMPAS explicable is to simplify its reasoning. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal explanation. Let's see an example rule list below:
@@ -76,3 +76,5 @@ Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS
 Angelino et al, 2018, Learning Certifiably Optimal Rule Lists for Categorical Data, accessed 30th October 2024, <https://arxiv.org/pdf/1704.01701>
 
 Carl G.H 1962, Deductive-Nomological vs. Statistical Explanation, accessed 30th October 2024, <https://conservancy.umn.edu/items/b8ce3527-af35-44a0-be95-013a66d7af79>
+
+C. M. Lorkowski, David Hume: Causation, accessed 30th October 2024<https://iep.utm.edu/hume-causation/>
