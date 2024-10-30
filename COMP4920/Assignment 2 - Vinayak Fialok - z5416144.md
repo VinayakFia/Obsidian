@@ -50,7 +50,7 @@ Lets borrow the AI machine from Grayson's recidivism example. Our judge has sent
 **Since significant translation from reasoning to explanation is in of itself opaque, AI decisions must utilise reasoning that is directly explicable, whilst also retaining accuracy to roaming morally salient.** Next, we will explore how this may be possible, and explore the nature of explanation whether causal or otherwise.
 
 ### 3.1 Ways of explanation
-Grayson discusses 4 models of explanation: the deductive-nomological model, the statistical model, the pragmatic model, and the causal model. Grayson primarily expounds on the causal model as "it (has) the most natural fit" (Grayson 2024, p4).
+Grayson discusses 4 models of explanation of which we will discuss: the deductive-nomological model, the statistical model, and the causal model.
 
 To explain some event or state $x$ through causal explanation is to specify the causes of $x$. *Counterfactual causal* explanation takes the form:
 Where $c$ and $e$ are two distinct possible events, $e$ _causally depends_ on $c$ if and only if, if $c$ were to occur $e$ would occur; and if $c$ were not to occur $e$ would not occur. (Lewis 1973).
@@ -60,7 +60,6 @@ Statistical explanation is based upon the probability of event $c$ causing event
 
 Deductive nomological explanation involves starting from general laws and circumstances, and then showing "how that the statement describing the result can be validly inferred" (Hempel 1962 p100). For Bob we could say that "bob being tired and believing there is coffee in the fridge, and the general human law that individuals will take actions to remedy their fatigue implies that Bob will go to the fridge". In contrast, causal reasoning starts from the outcome event, and considers and refines the causes. Both causal and deductive explanation are sufficient to explain result $e$, we will explore the efficacy of these explanation models next.
 
-Pragmatic explanation
 ### 4.1 COMPAS Simplification
 As mentioned earlier, one approach to making COMPAS explicable is to simplify its reasoning. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal explanation. Let's see an example rule list below:
 
