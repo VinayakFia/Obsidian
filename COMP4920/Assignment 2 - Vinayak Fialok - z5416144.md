@@ -48,7 +48,7 @@ Lets borrow the AI machine from Grayson's recidivism example. Our judge has sent
 
 **Since significant translation from reasoning to explanation is in of itself opaque, we AI decisions must be utilise reasoning that is explicable, whilst also retaining accuracy to roaming morally salient.** Next, we will explore how this may be possible, and explore the nature of explanation whether causal or otherwise.
 
-### 3.1 Simplification of COPAS
+### 3.1 Explicable simplification of COMPAS
 As mentioned earlier, one approach to making COMPAS explicable is to simplify its reasoning. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal explanation. Let's see an example rule list below:
 
 ```python
@@ -58,7 +58,7 @@ else if (priors > 3) then predict yes
 else predict no
 ```
 
-Using counterfactual ca
+If our criminal from our aforementioned case was aged 19 and male we could explain causally to him that "because you are 19 and male, we have decided that you will re-offend".
 
 ### 2.2 Accountability
 Borrowing from Grayson, we identify that accountability requires reasons (Grayson 2024 p5). It is because a decision may be explained that it is accountable.
