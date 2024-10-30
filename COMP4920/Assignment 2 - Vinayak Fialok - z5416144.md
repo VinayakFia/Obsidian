@@ -53,11 +53,11 @@ Lets borrow the AI machine from Grayson's recidivism example. Our judge has sent
 ### 3.1 Ways of explanation
 Grayson discusses 4 models of explanation: the deductive-nomological model, the statistical model, the pragmatic model, and the causal model. Grayson primarily expounds on the causal model as "it (has) the most natural fit" (Grayson 2024, p4).
 
-To explain some event or state $x$ through causal explanation is to specify the causes of $x$. Causal explanation itself appears in several forms of which we will discuss constant conjunction and counterfactual. In *constant conjunction causal* explanation we say that "(event or state) A causes (event or state) B when the two always occur together" (C. M. Lorkowski). This model as discussed by Lorkowskie is not reasonably justified and has at best a "very weak notion of necessity". *Counterfactual causal* explanation takes the form:
+To explain some event or state $x$ through causal explanation is to specify the causes of $x$. In *constant conjunction causal* explanation we say that "(event or state) A causes (event or state) B when the two always occur together" (C. M. Lorkowski). This model as discussed by Lorkowskie is not reasonably justified and has at best a "very weak notion of necessity". *Counterfactual causal* explanation takes the form:
 
 Where $c$ and $e$ are two distinct possible events, $e$ _causally depends_ on $c$ if and only if, if $c$ were to occur $e$ would occur; and if $c$ were not to occur $e$ would not occur. (Lewis 1973).
 
-From our earlier example, event $c$ is "Bob feels tired and believes there is cofee in the fridge" and event e is "Bob goes to the fridge". Causal reasoning is effective because it takes
+From our earlier example, event $c$ is "Bob feels tired and believes there is coffee in the fridge" and event e is "Bob goes to the fridge". Counterfactual causal explanation is effective because it is focussed on relative information, 
 
 ### 4.1 Explicable simplification of COMPAS
 As mentioned earlier, one approach to making COMPAS explicable is to simplify its reasoning. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal explanation. Let's see an example rule list below:
