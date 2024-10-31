@@ -1,4 +1,16 @@
-> [!info] Question
+1. [[#Question|Question]]
+1. [[#1. Introduction|1. Introduction]]
+1. [[#2.1. Accountability, Fairness, and Transparency|2.1. Accountability, Fairness, and Transparency]]
+1. [[#2.2. Human Decision Making|2.2. Human Decision Making]]
+1. [[#2.3. COMPAS Recidivism Prediction|2.3. COMPAS Recidivism Prediction]]
+1. [[#2.4. Ways of Explanation|2.4. Ways of Explanation]]
+1. [[#2.5. Reasoning to Explanation|2.5. Reasoning to Explanation]]
+1. [[#3.1. Explicable reasoning|3.1. Explicable reasoning]]
+1. [[#3.2. Accuracy is necessary, but insufficient to prove fairness|3.2. Accuracy is necessary, but insufficient to prove fairness]]
+1. [[#3.3. Is CORELS accurate enough to be fair?|3.3. Is CORELS accurate enough to be fair?]]
+1. [[#5. Conclusion|5. Conclusion]]
+1. [[#References|References]]
+### Question
 > How might fairness, accountability, and transparency be achieved collectively by an automated decision - that is - by a decision outputted by an AI? In your answer, compare and contrast a causal account of explanation with at least one other account of explanation. Make explicit reference to the reading (and references therein) for Thursday of Week 4.
 ### 1. Introduction
 Achieving the properties of accountability, fairness and transparency is essential to acceptable Automated Decision Making (ADM). We assess the potential for rule-lists to jointly achieve fairness and transparency for COMPAS, a recidivism prediction software. We argue that COMPAS achieves transparency through explicable rule-lists without diminishing accuracy. We argue that rule-lists can be shown to be normatively salient through Kantian ethics. Finally, we show that COMPAS does not in practice have sufficient accuracy to result in fairness, particularly through the effect of automation bias.
@@ -15,15 +27,13 @@ First, let's define accountability, fairness and transparency. Borrowing from Gr
 COMPAS (Correctional Offender Management Profiling and Alternative Sanctions) is a software that predicts recidivism of convicted criminals. COMPAS aims to be used to assist judges in deciding the sentence of a convicted criminal by providing a prediction of the recidivism risk of said criminal. COMPAS uses at least 15 factors with multiple items (Center for Criminology and Public Policy Research 2010, p10) as of 2010, this number has undoubtedly increased in the last decade.
 
 ### 2.4. Ways of Explanation
-Essential to transparency is explanation. Grayson mentions 4 models of explanation, of these we will consider: the deductive-nomological model, the statistical model, and the causal model.
+Essential to transparency is explanation. Grayson mentions 4 models of explanation, of these we will consider: the deductive-nomological model, and the causal model.
 
 To explain some event or state $x$ through causal explanation is to specify the causes of $x$. *Counterfactual causal* explanation takes the below form which we will refer to as form $C$.
 
 > Where $c$ and $e$ are two distinct possible events, $e$ _causally depends_ on $c$ if and only if, if $c$ were to occur $e$ would occur; and if $c$ were not to occur $e$ would not occur. (Lewis 1973).
 
 From our earlier example, event $c$ is "Bob feels tired and believes there is coffee in the fridge" and event e is "Bob goes to the fridge". Proving causal relationships is not trivial however. The methods of proof of causal relationships are complex, and "unfortunately, valid explanations of the causes of social phenomena do not come easily" (Chambliss 2018). Methods can include statistical inference, longitudanal studies, and controlled trials. These methods are discussed in greater detail in Chambliss' book 'Making sense of the social world'.
-
-Statistical explanation is based upon the probability of event $c$ causing event $e$. This takes the form "given Bob feels tired and believes there is coffee in the fridge, bob will almost certainly go to the fridge" (adapted from Howel p125). Causal and statistical explanation are similar in that they identify a causal event $c$ and link $c$ to resulting event $e$. However, the difference between even $e$ occurring and "almost certainly occurring" is critical. Statistical explanation only explain the likeliness of $e$, which is not sufficient to explain the $e$ itself. **Although statistical explanation is not sufficient, statistical models may be used to determine causal relationships.** For example, the statistic that 95% of tired people with coffee nearby will go to drink coffee in conjunction with the elimination of confounding variables may be used to determine the causal relationship mentioned above.
 
 Deductive nomological explanation involves starting from general laws and circumstances, and then showing "how that the statement describing the result can be validly inferred" (Hempel 1962 p100). To explain Bob's behaviour we could explain "Bob being tired and believing there is coffee in the fridge, and the general human law that individuals will take actions to remedy their fatigue implies that Bob will go to the fridge". Similar to causal explanation, these general laws are not trivial to prove, and themselves require sophisticated reasoning. Unlike deductive explanation's bottom-up approach which deduces the outcome, causal reasoning starts from the outcome event, and considers and refines the causes. Both causal and deductive explanation are sufficient to explain result $e$.
 
@@ -82,9 +92,6 @@ Both rule-lists are created to optimally predict recidivism from subsets of the 
 We have discussed how CORELS can be proven to have have normatively salient and transparent reasoning. To complete our justification for fairness, we are left to prove that CORELS is sufficiently accurate. **We can define sufficient accuracy of an ADM to be such that does not result in compromised accuracy of related decision making as recommended by Commonwealth Ombudsman's ADM guide. Finally, based upon this definition, we can show that CORELS negatively impacts accuracy of sentencing judges, and so cannot be fair.**
 
 Many concerns regarding COMPAS are regarding it's lack of accuracy (Grayson 2024 p6). Studies show that "COMPAS is not significantly better (more accurate) than the crowd" (Derssel J, Farid H, 2018). To answer the question of whether CORELS/COMPAS's accuracy of ~66% (Angelino et al 2018 p40) is sufficient, we may turn to an item from Commonwealth's 'Automated Decision Making' guide: "Have you ensured that the automated system does not, at any part of the process, compromise accuracy in decision making?" Commonwealth Ombudsman p29). **Specifically for CORELS, does CORELS compromise the accuracy of sentencing judges?** As argued by Park, "cognitive biases serve to further entrench COMPAS’s role in sentencing decisions" (Park 2029). Most notably *automation bias* - the tendency to ascribe power to automated aids over other sources (Kate Goddard et al) - leads to judges disregarding other factors pertinent to a case. Ultimately, due to COREL's inaccuracy, it is at a high risk of diminishing the accuracy of sentencing judges, and thus cannot be considered fair. Should CORELS have indisputable accuracy through rule-lists, we would be able to consider CORELS to be fair, however that is not the case at present.
-
-### 4. Schema for joint fairness and accountability
-
 
 ### 5. Conclusion
 We have shown how COMPAS recidivism software can be made transparent through rule-lists without losing accuracy, and shown to be normatively salient by analysing morality of underlying reasoning through Kantian ethics. However, we determine that due to cognitive biases, utilisation of COMPAS is at high risk of diminishing accuracy of sentencing judges, and as such COMPAS cannot be regarded as fair.
