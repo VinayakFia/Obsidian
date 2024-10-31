@@ -92,7 +92,7 @@ else if (sex = male) and (juvenile crimes > 0) then predict yes
 else predict no
 ```
 
-Rule-list 1 may be accepted as normatively salient as it only distinguishes risk based on prior convictions. It is legal (under Australian law) and
+Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under models such as rule-based utilitarianism.
 ### References
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
 
