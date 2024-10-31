@@ -27,7 +27,7 @@ Accountability, fairness and transparency are properties of a decision. Firstly,
 
 Borrowing from Grayson, we identify that accountability requires reasons. That is, an accountable decision is one that is reasonable. Reasonableness is a function of normatively rational salience (Grayson 2024 p5). For a reason to be normatively salient, a reason must be considered grounded in norms or morally "right" or "fair" within a given context. So we derive our property of fairness as possessing reasons that are considered morally salient. A decisions reasonableness also requires reportability, that is the reasons for a decision must also be understandable and accessible to its stakeholders. So we have our last derived property of transparency which refers to the reportability of our decision. Lets finally define that a decision that collectively achieves fairness, accountability and transparency is acceptable.
 
-The question of *How might fairness, accountability, and transparency be achieved collectively by an automated decision* may then be phrased as "**How might an automated decision provide reasons that are ethical in a transparent manner?**". To understand the notion of reasoning, lets explore how Grayson argues human decisions are reasonable and transparent.
+The question of *How might fairness, accountability, and transparency be achieved collectively by an automated decision* may then be phrased as "**How might an automated decision have reasons that are ethical in a transparent manner?**". To understand the notion of reasoning, lets explore how Grayson argues human decisions are reasonable and transparent.
 
 ### 2.2. Human Decision Making
 // TODO: intro para
