@@ -1,2 +1,2 @@
 ### 1. Introduction
-Achieving the properties of accountability, fairness and transparency is essential to acceptable Automated Decision Making (ADM). 
+Achieving the properties of accountability, fairness and transparency is essential to acceptable Automated Decision Making (ADM), particularly for critical life-changing ADM such as the COMPAS recidivism software. We argue that 
