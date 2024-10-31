@@ -49,7 +49,7 @@ else predict no
 ```
 (Angelino et al, 2018)
 
-**Through causal and deductive nomological explanation, as well as the relevant justifications for causal relationships and general laws, we can with very little translation, explain the reasoning for the high risk evaluation.** If our criminal from our aforementioned case was aged 19 and male we could explain causally using form $C$ (refer to 2.4.) with $e$ being our high risk prediction and $c$ being our if condition(s). It is also necessary that this causal relationship's justification is accessible. With deductive nomological explanation, we say that the circumstances of age 19 and male sex, along with the general law that this demographic is of high risk of reoffending (which like causal reasoning must be justified) implies that the convicted criminal is of high risk. 
+**Through causal and deductive nomological explanation, as well as the relevant justifications for causal relationships and general laws, we can with very little translation, explain reasoning for a rule-list system's decision.** If our criminal from our aforementioned case was aged 19 and male we could explain causally using form $C$ (refer to 2.4.) where event or circumstance $e$ is our high risk prediction and event or circumstance $c$ is the conditions of our if statement. It is also necessary that this causal relationship's justification is accessible and publicly available. With deductive nomological explanation, we say that the circumstances of age 19 and male sex, along with the general law that this demographic is of high risk of reoffending (which like causal reasoning must be justified) implies that the convicted criminal is of high risk. 
 
 > [!danger] REWORD
 
