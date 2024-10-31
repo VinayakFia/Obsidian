@@ -51,7 +51,7 @@ else predict no
 ```
 (Angelino et al, 2018)
 
-If our criminal from our aforementioned case was aged 19 and male we could explain causally using form $C$ (refer to 2.4.) with $e$ being our high risk prediction and $c$ being our if condition. It is important to note that a sufficient causal explanation would also explain *why* conditions $c$ lead to $e$, which is something the developer must append to the conditions in rule-lists. For example, the above rule-list's first condition would include the reasoning potential involving age and cognative development, 
+If our criminal from our aforementioned case was aged 19 and male we could explain causally using form $C$ (refer to 2.4.) with $e$ being our high risk prediction and $c$ being our if condition(s). It is important to note that a sufficient causal explanation would also explain *why* conditions $c$ lead to $e$. This may take the form of statistical inference orwhich must be accessible to
 
 Rule lists are to explain with deductive explanation where our circumstances of age 19 and male sex, along with the general law that this demographic is of high risk of reoffending (which may be proven statistically or otherwise) implies that the convicted criminal is of high risk. Since rule-lists can directly be explained through causal reasoning
 
