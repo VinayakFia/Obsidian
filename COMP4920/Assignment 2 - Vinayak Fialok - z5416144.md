@@ -79,7 +79,7 @@ Grayson states that accuracy allows COMPAS to achieve fairness, however, fairnes
 
 Suppose that COMPAS is highly accurate to a non-disputable extent and constructed through rule lists. Our judge has used COMPAS's prediction to sentence our defendant, however the defendant is unsatisfied and asks for an explanation of COMPAS's reasoning. The judge explains that COMPAS has decided they are high risk "because your age of 19, your location of $l$, ethnicity of $e$, sex of $s$, ...". This is an example of algorithmic discrimination against particular demographics $l, e, s$. Certainly discrimination is considered against the norm, and is disagreeable by normative ethical theories. Kantian ethics agree that "algorithmic discrimination is morally wrong when it makes demeaning distinctions, as respect is owed to every individual." (Reinhardt L., 2024). Certainly distinguishing recidivism based upon one's ethnicity and location would be considered demeaning.
 
-At present, COMPAS scores a mean accuracy of 66% whereas CORELS achieves 66.5% (Angelino et al 2024 p40). Studies show that "COMPAS (and so CORELS) is not significantly better than the crowd" (Derssel J, Farid H, 2018). Moreover, COMPAS and CORLES both shown to have biases, particularly in race (Angelino et al 2024 p40). However, bias in outcome is only unfair when there exists algorithmic discrimination. Consider 2 rule-lists from CORELS:
+At present, COMPAS scores a mean accuracy of 66% whereas CORELS achieves 66.5% (Angelino et al 2024 p40). Studies show that "COMPAS (and so CORELS) is not significantly better than the crowd" (Derssel J, Farid H, 2018). Moreover, COMPAS and CORLES both shown to have biases, particularly in race (Angelino et al 2024 p40). **However, bias in outcome is only unfair when there exists algorithmic discrimination.** Consider 2 rule-lists from CORELS:
 
 ```python
 (1)
@@ -96,6 +96,7 @@ else predict yes
 ```
 
 Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under Kantian ethics. The applicable maxim here could be "I ought to judge one's risk based upon their past actions". Rule-list 2 judges an individual as unlikely to have low recidivism risk if they are located in Bronx. This may be considered as against the norm, and also impermissible as the applicable maxim of "I ought to judge one's risk based upon their city" is un-agreeable.
+
 ### References
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
 
