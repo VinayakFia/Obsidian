@@ -87,12 +87,15 @@ if (priors > 3) then predict yes
 else predict no
 
 (2)
-if (priors > 3) then predict yes
-else if (sex = male) and (juvenile crimes > 0) then predict yes
-else predict no
+if (stop reason = suspicious object) then predict yes
+else if (location = transit authority) then predict yes
+else if (city = Bronx) then predict no
+else if (location = housing authority) then predict no
+else if (stop reason = furtive movements) then predict no
+else predict yes
 ```
 
-Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under Kantian ethics. The applicable maxim here could be "I ought to judge one's risk based upon their past actions". Rule-list 2 
+Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under Kantian ethics. The applicable maxim here could be "I ought to judge one's risk based upon their past actions". Rule-list 2 judges an individual as unlikely to have low recidivism risk if they are located in Bronx. This may be considered as against the norm, and also impermissible as the applicable maxim of "I ought to judge one's risk based upon their city" is un-agreeable.
 ### References
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
 
