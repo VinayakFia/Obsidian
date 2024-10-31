@@ -96,7 +96,7 @@ else if (stop reason = furtive movements) then predict no
 else predict yes
 ```
 
-Both rule-lists were created to match. Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under Kantian ethics. The applicable maxim here could be "I ought to judge one's risk based upon their past actions". Rule-list 2 judges an individual as unlikely to have low recidivism risk if they are located in Bronx. This may be considered as against the norm, and also impermissible as the applicable maxim of "I ought to judge one's risk based upon their city" is un-agreeable.
+Both rule-lists were created to optimally predict recidivism from the NYPD stop-and-frisk data set which resulted in similar accuracy and biases. Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under Kantian ethics. The applicable maxim here could be "I ought to judge one's risk based upon past actions". Rule-list 2 judges an individual as unlikely to have low recidivism risk if they are located in Bronx. This may be considered as against the norm, and also impermissible as the applicable maxim of "I ought to judge one's risk based upon their city" is un-agreeable. Though both rule-lists maintain similar bias and accuracy, rule-list 1 is permissible wherease 2 is not.
 
 So to maintain fairness, CO
 
