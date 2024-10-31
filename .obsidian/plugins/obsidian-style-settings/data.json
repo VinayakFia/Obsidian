@@ -27,5 +27,5 @@
   "typomagical-text@@font-default": "Spectral",
   "typomagical-text@@blockquote": "blockquote-plain",
   "typomagical-text@@callout-quote-style": false,
-  "sanctum@@dark-mode-contrast-mode": "sanctum-black"
+  "sanctum@@dark-mode-contrast-mode": "sanctum-default-dark"
 }
