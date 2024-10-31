@@ -47,7 +47,7 @@ Lets borrow the AI machine from Grayson's recidivism example. Our judge has sent
 
 **A translation algorithm that is able to turn complex reasoning into digestible explanation requires that the resulting explanation is not faithful, or the algorithm itself can be simplified enough to be explicable.** Let's consider the former, where the COMPAS system produces the explanation that "you have offended once in the past and your demographic is deemed to be more likely to re-offend in the upcoming years". However, the defendant may then ask "how can I trust that this translation is true to the vastly complex COMPAS algorithm?". We will discuss the latter simplification case in a later section.
 
-**Since significant translation from reasoning to explanation is in of itself opaque, AI decisions must utilise reasoning that is directly explicable, whilst also retaining accuracy to roaming morally salient.** Next, we will explore how this may be possible, and explore the nature of explanation whether causal or otherwise.
+**Since significant translation from reasoning to explanation is in of itself opaque, AI decisions must utilise reasoning that is explicable, whilst also retaining accuracy to remaining morally salient.** Next, we will explore how this may be possible, and explore the nature of explanation whether causal or otherwise.
 
 ### 3.1 Ways of explanation
 Grayson discusses 4 models of explanation of which we will discuss: the deductive-nomological model, the statistical model, and the causal model.
