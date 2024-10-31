@@ -23,7 +23,7 @@ To explain some event or state $x$ through causal explanation is to specify the 
 
 > Where $c$ and $e$ are two distinct possible events, $e$ _causally depends_ on $c$ if and only if, if $c$ were to occur $e$ would occur; and if $c$ were not to occur $e$ would not occur. (Lewis 1973).
 
-From our earlier example, event $c$ is "Bob feels tired and believes there is coffee in the fridge" and event e is "Bob goes to the fridge".
+From our earlier example, event $c$ is "Bob feels tired and believes there is coffee in the fridge" and event e is "Bob goes to the fridge". Proving causal relationships is not trivial however. A causal relationship may be supported through statistical methods, longitudanal studies
 
 Statistical explanation is based upon the probability of event $c$ causing event $e$. This takes the form "given Bob feels tired and believes there is coffee in the fridge, bob will almost certainly go to the fridge" (adapted from Howel p125). Causal and statistical explanation are similar in that they identify a causal even $c$ and link $c$ to resulting event $e$. However, the difference between even $e$ occuring and "almost certainly occuring" is critical. Statistical explanation only explain the likeliness of $e$, which is not sufficient to explain the $e$ itself. **Although statistical explanation is not sufficient, statistical models may be used to determine causes for a causal explanation.** For example, the statistic that 95% of tired people with coffee nearby will go to drink coffee in conjunction with the elimination of confounding variables may be used to determine the causal relationship mentioned above.
 
