@@ -39,7 +39,7 @@ Borrowing from Grayson's recidivism example, our judge has sentenced the defenda
 ### 3.1. Explicable reasoning
 **Through rule-lists, which I will argue are transparent reasons, COMPAS may be made transparent without losing accuracy.**
 
-As mentioned earlier, one approach to making COMPAS explicable is to make its reasoning explicable. An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal and deductive explanation. Let's see an example rule list below:
+An attempt of this was made by a research team from Berkely using the reasoning of "rule-lists" which are predictive models composed of if-then statements (Angelino et al 2018). Reasoning through rule lists is transparent because the reasoning for a decision is easily explicable through causal and deductive explanation. Let's see an example rule list below:
 
 ```python
 if (age = 18 − 20) and (sex = male) then predict yes
