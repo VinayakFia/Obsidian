@@ -98,7 +98,9 @@ else predict yes
 
 Both rule-lists were created to optimally predict recidivism from the NYPD stop-and-frisk data set which resulted in similar accuracy and biases. Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under Kantian ethics. The applicable maxim here could be "I ought to judge one's risk based upon past actions". Rule-list 2 judges an individual as unlikely to have low recidivism risk if they are located in Bronx. This may be considered as against the norm, and also impermissible as the applicable maxim of "I ought to judge one's risk based upon their city" is un-agreeable. As such, rule-list 2 is a case of algorithmic-discrimination. **Though both rule-lists maintain similar bias and accuracy, it is the reasoning of rule-list 2 that causes it to discriminate and be impermissible.**
 
-### 4.4 
+### 4.4 Fairness of CORELS
+We have shown that CORELS can be fair if it's contained rule-lists are normatively salient. We have also seen that CORELS is approximately as accurate as 
+
 ### References
 Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
 
