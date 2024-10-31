@@ -22,5 +22,10 @@
   "primary-theme@@h1-border-width": "0px",
   "primary-theme@@h2-border-width": "0px 0px 2px 0px",
   "primary-theme@@h2-border-radius": "4px",
-  "typomagical-colour@@theme-variant": "ficus-ruby"
+  "typomagical-colour@@theme-variant": "ficus-ruby",
+  "typomagical-text@@body-ligatures": false,
+  "typomagical-text@@font-default": "Spectral",
+  "typomagical-text@@blockquote": "blockquote-plain",
+  "typomagical-text@@callout-quote-style": false,
+  "sanctum@@dark-mode-contrast-mode": "sanctum-black"
 }
