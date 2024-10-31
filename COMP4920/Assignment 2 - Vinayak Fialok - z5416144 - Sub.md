@@ -16,8 +16,19 @@ First, let's define accountability, fairness and transparency. Borrowing from Gr
 ### 2.3. COMPAS Recidivism Prediction
 COMPAS (Correctional Offender Management Profiling and Alternative Sanctions) is an algorithm that predicts recidivism of convicted criminals. COMPAS aims to be used to assist judges in deciding the sentence of a convicted criminal by providing a prediction of the recidivism risk of said criminal. COMPAS uses at least 15 factors with multiple items (Center for Criminology and Public Policy Research 2010, p10) as of 2010, which has undoubtedly increased in the last decade.
 
+### 3.1. Ways of Explanation
+Grayson discusses 4 models of explanation of which we will discuss: the deductive-nomological model, the statistical model, and the causal model.
+
+To explain some event or state $x$ through causal explanation is to specify the causes of $x$. *Counterfactual causal* explanation takes the form:
+Where $c$ and $e$ are two distinct possible events, $e$ _causally depends_ on $c$ if and only if, if $c$ were to occur $e$ would occur; and if $c$ were not to occur $e$ would not occur. (Lewis 1973).
+From our earlier example, event $c$ is "Bob feels tired and believes there is coffee in the fridge" and event e is "Bob goes to the fridge".
+
+Statistical explanation is based upon the probability of event $c$ causing event $e$. This takes the form "given Bob feels tired and believes there is coffee in the fridge, bob will almost certainly go to the fridge" (adapted from Howel p125). Causal and statistical explanation are similar in that they identify a causal even $c$ and link $c$ to resulting event $e$. However, the difference between even $e$ occuring and "almost certainly occuring" is critical. Statistical explanation only explain the likeliness of $e$, which is not sufficient to explain the $e$ itself. **Although statistical explanation is not sufficient, statistical models may be used to determine causes for a causal explanation.** For example, the statistic that 95% of tired people with coffee nearby will go to drink coffee in conjunction with the elimination of confounding variables may be used to determine the causal relationship mentioned above.
+
+Deductive nomological explanation involves starting from general laws and circumstances, and then showing "how that the statement describing the result can be validly inferred" (Hempel 1962 p100). For Bob we could say that "bob being tired and believing there is coffee in the fridge, and the general human law that individuals will take actions to remedy their fatigue implies that Bob will go to the fridge". In contrast, causal reasoning starts from the outcome event, and considers and refines the causes. Both causal and deductive explanation are sufficient to explain result $e$, we will explore the effectiveness of these models in attaining transparency next.
+
 ### 2.4. Reasoning to Explanation
-For an AI decision to be transparent, it must have minimal translation between its reasoning and explanation. 
+For an AI decision to be transparent, it must possess reasoning that tends easily tends towards explanation t
 
 Reasoning is the process in which a human or machine come to a decision. An explanation is the conveying of our reasoning to others. We can think of the process of conveying reasoning as translation from logic into language. For human decision making, there is little required translation. This is because the justification of a decision, that is the beliefs and desires of an agent are intuitively explicable through language.
 
