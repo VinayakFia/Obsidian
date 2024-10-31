@@ -3,12 +3,10 @@
 ### 1. Introduction
 Achieving the properties of accountability, fairness and transparency is essential to acceptable Automated Decision Making (ADM). We discuss how fairness and transparency may be jointly achieved for COMPAS, a recidivism prediction software. We explore how COMPAS may achieve transparency through transparent rule-lists without diminishing accuracy. However, we show that COMPAS does not in practice have sufficient accuracy to result in fairness, particularly through the effect of automation bias.
 
-First we define that accountability is to have normatively salient reasoning (fairness) and accessible, understandable reasoning (transparency). Then, we discuss how Human decision making is able to achieve fairness and transparency through the belief-desire-intention model. We define reasoning as the process/steps in coming to a decision, and explanation as the accessible and understandable communication of reasoning. We then argue that we cannot achieve transparency through the translation of reasoning to explanation, and that reasoning itself must be inherently explicable. We explore ways of explanation, determining the deductive nomological and causal explanation are sufficient to explain decision. Next, we explore how rule-lists are explicable through deductive nomological and causal explanation. We show that COMPAS can be become transparent through simplification to rule-lists without losing accuracy. Next we argue that accuracy is not sufficient to prove moral salience, but rather the reasons underlying the decision should themselves be morally salient. We discuss how rule-lists may be shown to be morally-salient through Kantian ethics. Finally, we argue that the degree to which COMPAS is accurate, even with transparency, is not sufficient for fairness through considering ADM guidelines and cognitive bias.
+First we define that accountability is to have normatively salient reasoning (fairness) and accessible, understandable explanation of said reasoning (transparency). Then, we discuss how human decision making is able to achieve fairness and transparency through the belief-desire-intention model. We define reasoning as the process/steps in coming to a decision, and explanation as the accessible and understandable communication of reasoning. We then argue that we cannot achieve transparency through the translation of reasoning to explanation, and that reasoning itself must be inherently explicable. We explore ways of explanation, determining the deductive nomological and causal explanation are sufficient to explain decision. Next, we explore how rule-lists are explicable through deductive nomological and causal explanation. We show that COMPAS can be become transparent through simplification to rule-lists without losing accuracy. Next we argue that accuracy is not sufficient to prove moral salience, but rather the reasons underlying the decision should themselves be morally salient. We discuss how rule-lists may be shown to be morally-salient through Kantian ethics. Finally, we argue that the degree to which COMPAS is accurate, even with transparency, is not sufficient for fairness through considering ADM guidelines and cognitive bias.
 
 ### 2.1. Accountability, Fairness, and Transparency
 First, let's define accountability, fairness and transparency. Borrowing from Grayson, we identify that **accountability requires reasons**. That is, an accountable decision is one that is reasonable. Reasonableness is a function of normatively rational salience (Grayson 2024 p5). For a reason to be normatively salient, a reason must be considered grounded in norms or morally "right" or "fair" within a given context. **So we derive our property of fairness as possessing reasons that are considered morally salient**. A decisions reasonableness also requires reportability, that is the reasons for a decision must also be understandable and accessible to its stakeholders. **So we have our last derived property of transparency which refers to the reportability of our decision.** Lets finally define that a decision that collectively achieves fairness, accountability and transparency is acceptable.
-
-~~The question of *How might fairness, accountability, and transparency be achieved collectively by an automated decision* may then be phrased as "**How might an automated decision have reasons that are ethical in a transparent manner?**". To understand the notion of reasoning, lets explore how Grayson argues human decisions are reasonable and transparent.~~
 
 ### 2.2. Human Decision Making
 **Through the belief-desire-intention model and causal explanation, humans are capable of making decisions that are fair and transparent, and as such accountable and acceptable.** Grayson explore human decision making through the a model mirroring the belief-desire-intention (BDI) agent model developed by Michael Bratman. Beliefs are the set of true statements understood by some agent, let's say Bob, such as "there is coffee in the fridge". Desires are an agent's goals, preferences and values, such as "Bob feels groggy and tired". Beliefs and desires are independent of each other. An intention is a plan, scheme or strategy formed in pursuit of an agent's desires, and based upon an agent's beliefs. The coexistence of the aforementioned belief and desire, and the lack of opposing desires such as "Bob wants to stay in bed", would culminate in the intention of "Bob will go to the kitchen and drink coffee". This line of reasoning naturally aligns itself with causal reasoning which may be phrased as "if Bob had not believed coffee lie in the fridge and Bob did not feel tired, then Bob would not have gone to get coffee". By explaining a decision using causal explanation in relation to beliefs and desires, one's decision is made transparent. By explaining morally salient beliefs and desires, one's decision is made fair.
@@ -57,8 +55,6 @@ else predict no
 
 Through rule-lists, researches created the CORELS recidivism algorithm which was "competitive with scores generated by the COMPAS algorithm" (Angelino et al 2018). So, we have satisfied transparency whilst maintain accuracy of our algorithm, next we discuss if this is sufficient for the property of fairness.
 
-~~As stated by Grayson "It is the accuracy of the COMPAS system that allows it to achieve fairness" (Grayson 2024 p7), so the question arises, is CORELS accurate enough to satisfy fairness?~~
-
 ## 3.2. Accuracy is nessec, but insufficient to prove fairness
 Grayson states that accuracy allows COMPAS to achieve fairness (Grayson 2024 p7), however, fairness is defined not in terms of the outcome, but in terms of the reasoning. **For predictive ADM to remain fair, not only must they be accurate, but so too much their reasoning, that is, their internal logic, be normatively salient**. We may justify normative salience through Kantian ethics.
 
@@ -94,3 +90,23 @@ We have shown how COMPAS recidivism software can be made transparent through rul
 
 ### References
 Chambliss D.F. 2018, Causation and Experimental Design, Making sense of the social world, \<https://www.sagepub.com/sites/default/files/upm-binaries/23639_Chapter_5___Causation_and_Experimental_Design.pdf>
+
+Center for Criminology and Public Policy Research 2010, VALIDATION OF THE COMPAS RISK ASSESSMENT CLASSIFICATION INSTRUMENT, accessed 29th October 2024, \<https://criminology.fsu.edu/sites/g/files/upcbnu3076/files/2021-03/Validation-of-the-COMPAS-Risk-Assessment-Classification-Instrument.pdf>
+
+Angelino et al, 2018, Learning Certifiably Optimal Rule Lists for Categorical Data, accessed 30th October 2024, \<https://arxiv.org/pdf/1704.01701>
+
+Carl G.H 1962, Deductive-Nomological vs. Statistical Explanation, accessed 30th October 2024, \<https://conservancy.umn.edu/items/b8ce3527-af35-44a0-be95-013a66d7af79>
+
+C. M. Lorkowski, David Hume: Causation, accessed 30th October 2024 \<https://iep.utm.edu/hume-causation/>
+
+Lewis, D., 1973. Counterfactuals, Oxford: Blackwell.
+
+Dressel J, Farid H. 2018, The accuracy, fairness, and limits of predicting recidivism. _Sci Adv_, accessed 31st October 2024. \<https://pmc.ncbi.nlm.nih.gov/articles/PMC5777393/>
+
+Reinhardt L., 2024, When is algorithmic discrimination wrong? , accessed 31st October 2024, \<https://journals.ub.uni-koeln.de/index.php/phidi/article/view/2416>
+
+Commonwealth Ombudsman, Automated Decision-making, Better Pratice Guide, accessed 31st October 2024, <https://www.ombudsman.gov.au/__data/assets/pdf_file/0029/288236/OMB1188-Automated-Decision-Making-Report_Final-A1898885.pdf>
+
+Kate Goddard et al. 2012, Automation Bias: A Systematic Review of Frequency, Effect Mediators, and Mitigators
+
+Andrew Lee Park 2019, Injustice Ex Machina: Predictive Algorithms in Criminal Sentencing, accessed 31st October 2024, \<https://www.uclalawreview.org/injustice-ex-machina-predictive-algorithms-in-criminal-sentencing/>
