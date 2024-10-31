@@ -83,7 +83,8 @@ At present, COMPAS scores a mean accuracy of 66% whereas CORELS achieves 66.5% (
 
 ```python
 (1)
-if (priors > 3) then predict yes
+if (location = transit authority) then predict yes . Found by 2 folds
+else if (stop reason = suspicious object) then predict yes
 else predict no
 
 (2)
@@ -95,7 +96,7 @@ else if (stop reason = furtive movements) then predict no
 else predict yes
 ```
 
-Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under Kantian ethics. The applicable maxim here could be "I ought to judge one's risk based upon their past actions". Rule-list 2 judges an individual as unlikely to have low recidivism risk if they are located in Bronx. This may be considered as against the norm, and also impermissible as the applicable maxim of "I ought to judge one's risk based upon their city" is un-agreeable.
+Both rule-lists were created to match. Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under Kantian ethics. The applicable maxim here could be "I ought to judge one's risk based upon their past actions". Rule-list 2 judges an individual as unlikely to have low recidivism risk if they are located in Bronx. This may be considered as against the norm, and also impermissible as the applicable maxim of "I ought to judge one's risk based upon their city" is un-agreeable.
 
 So to maintain fairness, CO
 
