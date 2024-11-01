@@ -1,15 +1,4 @@
-1. [[#Question|Question]]
-1. [[#1. Introduction|1. Introduction]]
-1. [[#2.1. Accountability, Fairness, and Transparency|2.1. Accountability, Fairness, and Transparency]]
-1. [[#2.2. Human Decision Making|2.2. Human Decision Making]]
-1. [[#2.3. COMPAS Recidivism Prediction|2.3. COMPAS Recidivism Prediction]]
-1. [[#2.4. Ways of Explanation|2.4. Ways of Explanation]]
-1. [[#2.5. Reasoning to Explanation|2.5. Reasoning to Explanation]]
-1. [[#3.1. Explicable reasoning|3.1. Explicable reasoning]]
-1. [[#3.2. Accuracy is necessary, but insufficient to prove fairness|3.2. Accuracy is necessary, but insufficient to prove fairness]]
-1. [[#3.3. Is CORELS accurate enough to be fair?|3.3. Is CORELS accurate enough to be fair?]]
-1. [[#5. Conclusion|5. Conclusion]]
-1. [[#References|References]]
+
 ### Question
 > How might fairness, accountability, and transparency be achieved collectively by an automated decision - that is - by a decision outputted by an AI? In your answer, compare and contrast a causal account of explanation with at least one other account of explanation. Make explicit reference to the reading (and references therein) for Thursday of Week 4.
 ### 1. Introduction
@@ -88,7 +77,7 @@ else predict yes
 
 Both rule-lists are created to optimally predict recidivism from subsets of the same NYPD stop-and-frisk data set which resulted in similar accuracy and biases. Rule-list 1 may be accepted as normatively salient as it is legal (under Australian law), reasonably permissible as a norm, and can be shown to be ethical under Kantian ethics. The applicable maxim here could be "I ought to judge one's risk based upon past actions". Rule-list 2 judges an individual to have low recidivism risk if they are located in Bronx. Judging one's risk based on city may be considered as against the norm, and also impermissible as the applicable maxim of "I ought to judge one's risk based upon their city of origin" is un-agreeable. As such, rule-list 2 is a case of algorithmic-discrimination, even if it is in the favour of the convicted criminal. Though both rule-lists maintain similar bias and accuracy, it is the reasoning of rule-list 2 that causes it to discriminate and be impermissible. **Thus, it is possible to create an accurate rule-list that we can prove through normative ethical theories such as Kant's to be normatively salient.**
 
-### 3.3. Is CORELS accurate enough to be fair?
+### 3.3. Sufficient accuracy
 We have discussed how CORELS can be proven to have have normatively salient and transparent reasoning. To complete our justification for fairness, we are left to prove that CORELS is sufficiently accurate. **We can define sufficient accuracy of an ADM to be such that does not result in compromised accuracy of related decision making as recommended by Commonwealth Ombudsman's ADM guide. Finally, based upon this definition, we can show that CORELS negatively impacts accuracy of sentencing judges, and so cannot be fair.**
 
 Many concerns regarding COMPAS are regarding it's lack of accuracy (Grayson 2024 p6). Studies show that "COMPAS is not significantly better (more accurate) than the crowd" (Derssel J, Farid H, 2018). To answer the question of whether CORELS/COMPAS's accuracy of ~66% (Angelino et al 2018 p40) is sufficient, we may turn to an item from Commonwealth's 'Automated Decision Making' guide: "Have you ensured that the automated system does not, at any part of the process, compromise accuracy in decision making?" Commonwealth Ombudsman p29). **Specifically for CORELS, does CORELS compromise the accuracy of sentencing judges?** As argued by Park, "cognitive biases serve to further entrench COMPAS’s role in sentencing decisions" (Park 2029). Most notably *automation bias* - the tendency to ascribe power to automated aids over other sources (Kate Goddard et al) - leads to judges disregarding other factors pertinent to a case. Ultimately, due to COREL's inaccuracy, it is at a high risk of diminishing the accuracy of sentencing judges, and thus cannot be considered fair. Should CORELS have indisputable accuracy through rule-lists, we would be able to consider CORELS to be fair, however that is not the case at present.
