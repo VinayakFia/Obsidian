@@ -10,6 +10,18 @@
 1. [[#3.3. Sufficient accuracy|3.3. Sufficient accuracy]]
 1. [[#5. Conclusion|5. Conclusion]]
 1. [[#References|References]]
+1. [[#Question|Question]]
+1. [[#1. Introduction|1. Introduction]]
+1. [[#2.1. Accountability, Fairness, and Transparency|2.1. Accountability, Fairness, and Transparency]]
+1. [[#2.2. Human Decision Making|2.2. Human Decision Making]]
+1. [[#2.3. COMPAS Recidivism Prediction|2.3. COMPAS Recidivism Prediction]]
+1. [[#2.4. Ways of Explanation|2.4. Ways of Explanation]]
+1. [[#2.5. Reasoning to Explanation|2.5. Reasoning to Explanation]]
+1. [[#3.1. Explicable reasoning|3.1. Explicable reasoning]]
+1. [[#3.2. Accuracy is necessary, but insufficient to prove fairness|3.2. Accuracy is necessary, but insufficient to prove fairness]]
+1. [[#3.3. Sufficient accuracy|3.3. Sufficient accuracy]]
+1. [[#5. Conclusion|5. Conclusion]]
+1. [[#References|References]]
 ### Question
 > How might fairness, accountability, and transparency be achieved collectively by an automated decision - that is - by a decision outputted by an AI? In your answer, compare and contrast a causal account of explanation with at least one other account of explanation. Make explicit reference to the reading (and references therein) for Thursday of Week 4.
 ### 1. Introduction
