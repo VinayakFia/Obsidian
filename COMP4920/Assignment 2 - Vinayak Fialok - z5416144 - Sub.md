@@ -1,8 +1,19 @@
-
+1. [[#Question|Question]]
+1. [[#1. Introduction|1. Introduction]]
+1. [[#2.1. Accountability, Fairness, and Transparency|2.1. Accountability, Fairness, and Transparency]]
+1. [[#2.2. Human Decision Making|2.2. Human Decision Making]]
+1. [[#2.3. COMPAS Recidivism Prediction|2.3. COMPAS Recidivism Prediction]]
+1. [[#2.4. Ways of Explanation|2.4. Ways of Explanation]]
+1. [[#2.5. Reasoning to Explanation|2.5. Reasoning to Explanation]]
+1. [[#3.1. Explicable reasoning|3.1. Explicable reasoning]]
+1. [[#3.2. Accuracy is necessary, but insufficient to prove fairness|3.2. Accuracy is necessary, but insufficient to prove fairness]]
+1. [[#3.3. Sufficient accuracy|3.3. Sufficient accuracy]]
+1. [[#5. Conclusion|5. Conclusion]]
+1. [[#References|References]]
 ### Question
 > How might fairness, accountability, and transparency be achieved collectively by an automated decision - that is - by a decision outputted by an AI? In your answer, compare and contrast a causal account of explanation with at least one other account of explanation. Make explicit reference to the reading (and references therein) for Thursday of Week 4.
 ### 1. Introduction
-Achieving the properties of accountability, fairness, and transparency is essential to acceptable Automated Decision Making (ADM). We assess the potential for rule-lists to jointly achieve fairness and transparency for COMPAS, a recidivism prediction software. We argue that COMPAS achieves transparency through explicable rule-lists without diminishing accuracy. We argue that rule-lists can be shown to be normatively salient through Kantian ethics. Finally, we show that COMPAS does not in practice have sufficient accuracy to result in fairness, particularly through the effect of automation bias.
+Achieving the properties of accountability, fairness, and transparency is essential to acceptable Automated Decision Making (ADM). **We assess the potential for rule-lists to jointly achieve fairness and transparency for COMPAS, a recidivism prediction software. We argue that COMPAS achieves transparency through explicable rule-lists without diminishing accuracy. We argue that rule-lists can be shown to be normatively salient through Kantian ethics.** Finally, we show that COMPAS does not in practice have sufficient accuracy to result in fairness, particularly through the effect of automation bias.
 
 First, we define accountability is to possess normatively salient reasoning (fairness) and an accessible, understandable explanation of said reasoning (transparency). Then, we discuss how human decision making is able to jointly achieve fairness and transparency through the belief-desire-intention model. We define reasoning as the process of coming to a decision, and explanation as the accessible and understandable communication of this process. We then argue that we cannot achieve transparency through the translation of reasoning to explanation and that we must employ reasoning that is inherently explicable (which we call transparent reasoning). We explore ways of explanation, determining that deductive nomological and causal explanation are sufficient to explain decisions. Next, we show how rule-lists are forms of transparent reasoning through deductive nomological and causal explanation. We show that COMPAS can made to be transparent through implementation of rule-lists without losing accuracy. The rule-list implementation is called CORELS. Next we argue that accuracy is not sufficient to prove moral salience, but rather the reasons underlying the decision should themselves be morally salient. We discuss how rule-lists may be shown to be morally-salient through Kantian ethics. Finally, we argue that the accuracy of CORELS/COMPAS, even with transparency and moral reasoning, is ultimately insufficient for fairness through considering ADM guidelines and cognitive bias.
 
