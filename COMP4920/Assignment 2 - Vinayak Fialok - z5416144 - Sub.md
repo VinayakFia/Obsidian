@@ -29,11 +29,14 @@ COMPAS (Correctional Offender Management Profiling and Alternative Sanctions) is
 ### 2.4. Ways of Explanation
 Essential to transparency is accessible and understandable explanation, which is not trivial. Grayson mentions 4 models of explanation, of these we will consider the deductive-nomological model, and the causal model.
 
-To explain some event or state $x$ through causal explanation is to specify the causes of $x$. *Counterfactual causal* explanation takes the below form which we will refer to as form $C$.
+To explain some event or state $x$ through causal explanation is to specify the causes of $x$. *Counterfactual causal* explanation takes the below form which we will refer to as form $C$ adapted from Lewis' text Counterfactuals.
 
-> Where $c$ and $e$ are two distinct possible events, $e$ _causally depends_ on $c$ if and only if, if $c$ were to occur $e$ would occur; and if $c$ were not to occur $e$ would not occur. (Lewis 1973).
+> Where $c$ and $e$ are distinct events or circumstances, $e$ causally depends on $c$ given that
+> 1. if $c$ were to occur, $e$ would occur
+> 2. if $c$ were not to occur, $e$ would not occur
+> (Lewis 1973)
 
-From our earlier example, event $c$ is "Bob feels tired and believes there is coffee in the fridge" and event e is "Bob goes to the fridge". Proving causal relationships is not trivial however. The methods of proof of causal relationships are complex, and "unfortunately, valid explanations of the causes of social phenomena do not come easily" (Chambliss 2018). Methods can include statistical inference, longitudanal studies, and controlled trials. These methods are discussed in greater detail in Chambliss' book 'Making sense of the social world'.
+From our earlier example, we subtitute $c$ is"Bob feels tired and believes there is coffee in the fridge" and event e is "Bob goes to the fridge". Proving causal relationships is not trivial however. The methods of proof of causal relationships are complex, and "unfortunately, valid explanations of the causes of social phenomena do not come easily" (Chambliss 2018). Methods can include statistical inference, longitudanal studies, and controlled trials. These methods are discussed in greater detail in Chambliss' book 'Making sense of the social world'.
 
 Deductive nomological explanation involves s**tarting from general laws and circumstances, and then showing "how that the statement describing the result can be validly inferred"** (Hempel 1962 p100). To explain Bob's behaviour we could explain "Bob being tired and believing there is coffee in the fridge, and the general human law that individuals will take actions to remedy their fatigue implies that Bob will go to the fridge". **Similar to causal explanation, these general laws are not trivial to prove, and themselves require sophisticated reasoning. Unlike deductive explanation's bottom-up approach which deduces the outcome, causal reasoning starts from the outcome event, and considers and refines the causes.** **Both causal and deductive explanation are sufficient to explain result $e$.**
 
