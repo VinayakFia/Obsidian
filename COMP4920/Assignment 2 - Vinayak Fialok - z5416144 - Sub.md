@@ -27,7 +27,7 @@ First, let's define accountability, fairness and transparency. Borrowing from Gr
 COMPAS (Correctional Offender Management Profiling and Alternative Sanctions) is a software that predicts recidivism of convicted criminals. COMPAS aims to be used to assist judges in deciding the sentence of a convicted criminal by providing a prediction of the recidivism risk of said criminal. COMPAS uses at least 15 factors with multiple items (Center for Criminology and Public Policy Research 2010, p10) as of 2010, this number has undoubtedly increased in the last decade.
 
 ### 2.4. Ways of Explanation
-Essential to transparency is accessible and understandable explanation, which is not trivial. Grayson mentions 4 models of explanation, of these we will consider the deductive-nomological model, and the causal model. We find both these models capable of explaining decision.
+Essential to transparency is accessible and understandable explanation, which is not trivial. Before . Grayson mentions 4 models of explanation, of these we will consider the deductive-nomological model, and the causal model. We find both these models capable of explaining decision.
 
 To explain some event or state $x$ through causal explanation is to specify the causes of $x$. *Counterfactual causal* explanation takes the below form which we will refer to as form $C$ adapted from Lewis' text Counterfactuals.
 
