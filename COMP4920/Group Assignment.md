@@ -4,7 +4,7 @@
 ### **Technology**
 COMPAS recidivism software
 ### **What is it? (Purpose, scope, needs, benefits)**
-COMPAS (Correctional Offender Management Profiling and Alternative Sanctions) is a software that predicts recidivism of convicted criminals. COMPAS aims to be used to assist judges in deciding the sentence of a convicted criminal by providing a prediction of the recidivism risk of said criminal. COMPAS uses at least 15 factors with multiple items (Center for Criminology and Public Policy Research 2010, p10) as of 2010, this number has undoubtedly increased in the last decade.newe can more accurately identify individuals who are inclined to re-offend.
+COMPAS (Correctional Offender Management Profiling and Alternative Sanctions) is a software that predicts recidivism of convicted criminals. COMPAS aims to be used to assist judges in deciding the sentence of a convicted criminal by providing a prediction of the recidivism risk of said criminal. COMPAS uses at least 15 factors with multiple items (Center for Criminology and Public Policy Research 2010, p10) as of 2010, this number has undoubtedly increased in the last decade. benefits: we can more accurately identify individuals who are inclined to re-offend.
 
 #### Goals
  The goals is to provide more accurate sentences to have better enforcement of justice and increased safety of populus.
