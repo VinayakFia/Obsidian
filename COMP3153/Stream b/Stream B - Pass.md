@@ -58,4 +58,4 @@ that is, for all states:
 This problem is equivalant to *for all states, for all paths, paths will eventually satisfy b*. $q4$ is part of every cycle and will always eventually be reached. As such $b$ will eventually occur for all paths from all states.
 
 ## B.3
-a)
+a) **F**(a$\wedge$**F**a)
