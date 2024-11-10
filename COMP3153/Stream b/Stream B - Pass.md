@@ -9,7 +9,10 @@
 that is, for all starting paths from $q_0$
 - after 2 steps
 - satisfies $b$
-*Not satisfied.* Consider $q_0$ -> $q_1$ -> $q_2$, where $q_2$ does not have $b$ in its proposition set.
+
+*Not satisfied.*
+
+Consider $q_0$ -> $q_1$ -> $q_2$, where $q_2$ does not have $b$ in its proposition set.
 
 2. a**U**c
 that is, for all paths starting from $q_0$
@@ -17,7 +20,7 @@ that is, for all paths starting from $q_0$
 
 *This is satisfied.*
 
-The only state not satisfying $a$ is $q_5$, to reach $q_5$ we can only come from $q_2$. $q_2$ satisfies $c$. So, 
+The only state not satisfying $a$ is $q_5$, to reach $q_5$ we can only come from $q_2$. Since $q_2$ satisfies $c$, we would have satisfied $a\textbf{U}c$ before reaching $q_5$. Since all states that can exist on the path to $q_2$ satisfy $a$, the LTL $a\textbf{U}c$ is satisfied.
 
 3. **GF**b
 that is, for all paths starting from $q_0$, $b$ occurs infinitely often.
