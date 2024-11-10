@@ -68,3 +68,23 @@ c) paths that eventually do not contain a c. that is, eventually, c will never a
 $$\textbf{FG}\neg c$$
 
 ## B.4
+Construct an OBDD for $f(x, y, z) = (x ∨ y ∨ z) ∧ (¬x ∨ ¬y ∨ ¬z)$
+
+**Table**
+
+| x   | y   | z   | ((x ∨ (y ∨ z)) ∧ (¬x ∨ (¬y ∨ ¬z))) |
+| --- | --- | --- | ---------------------------------- |
+| F   | F   | F   | F                                  |
+| F   | F   | T   | T                                  |
+| F   | T   | F   | T                                  |
+| F   | T   | T   | T                                  |
+| T   | F   | F   | T                                  |
+| T   | F   | T   | T                                  |
+| T   | T   | F   | T                                  |
+| T   | T   | T   | F                                  |
+
+**Diagram**
+```mermaid
+stateDiagram-v2
+	
+```
