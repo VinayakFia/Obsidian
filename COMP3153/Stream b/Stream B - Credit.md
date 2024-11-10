@@ -48,10 +48,17 @@ stateDiagram-v2
 	not : ¬p1∧¬p2∧¬p3
 
 	p1p2 --> p2p3
+	
 	p1p3 --> p2p3
+	
 	p2p3 --> not
 	p2p3 --> p2p3
-	
+
+	p2 --> p1p2
+
+	not --> p1p3
+	not --> not
+	not --> p2
 ```
 
 p1, p2, not p3 has:
