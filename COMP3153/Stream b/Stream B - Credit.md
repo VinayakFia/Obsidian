@@ -81,4 +81,7 @@ not p1, not p2, not p3 has:
 - q01
 
 ## B.2
-$$(\textbf{GF}a)\wedge(\textbf{GF}b)$$
+$$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
+that is, if a is to occur infinitely, then eventually c will never occur again
+
+## B.3
