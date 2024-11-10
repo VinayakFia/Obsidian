@@ -24,3 +24,5 @@ not p1, p2 has:
 - q22
 
 not p1, not p2 has:
+- q00
+- q01
