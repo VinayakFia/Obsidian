@@ -3,3 +3,4 @@
 
 ## B.2
 1. **XX**b
+This is satisfied because $q_4$ contains $b$.
