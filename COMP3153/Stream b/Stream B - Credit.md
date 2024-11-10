@@ -19,23 +19,7 @@ stateDiagram-v2
 	not --> not
 	not --> p2
 ```
-
-p1, p2 has:
-- q12
-
-p1, not p2 has:
-- q10
-
-not p1, p2 has:
-- q11
-- q02
-- q20
-- q21
-- q22
-
-not p1, not p2 has:
-- q00
-- q01
+![[Pasted image 20241110181246.png]]
 
 #### Part B
 ```mermaid
