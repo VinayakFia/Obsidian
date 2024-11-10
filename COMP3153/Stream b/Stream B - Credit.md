@@ -85,4 +85,4 @@ $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
 that is, if a is to occur infinitely, then eventually c will never occur again
 
 ## B.3
-![[Pasted image 20241110175359.png]]
+![[Pasted image 20241110180018.png]]
