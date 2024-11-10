@@ -37,3 +37,28 @@ not p1, not p2 has:
 - q01
 
 #### Part B
+```mermaid
+stateDiagram-v2
+	direction LR
+
+	p1p2 : p2 
+```
+
+p1, p2, not p3 has:
+- q12
+
+p1, not p2, p3 has:
+- q10
+
+not p1, p2, p3 has:
+- q11
+- q20
+- q21
+- q22
+
+not p1, p2, not p3 has:
+- q02
+
+not p1, not p2, not p3 has:
+- q00
+- q01
