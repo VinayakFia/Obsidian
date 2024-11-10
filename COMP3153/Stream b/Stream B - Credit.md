@@ -81,4 +81,4 @@ not p1, not p2, not p3 has:
 - q01
 
 ## B.2
-$$\textbf{FG}a)\wedge()$$
+$$(\textbf{GF}a)\wedge(\textbf{GF}b)$$

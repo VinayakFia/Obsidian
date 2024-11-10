@@ -66,7 +66,7 @@ a) paths that contain at least two a:
 $$F(a\wedge\textbf{F}a)$$
 
 b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$* which can be expressed as:
-$$\neg b \cup a$$
+$$\neg b \textbf{U} a$$
 
 c) paths that eventually do not contain a c. that is, eventually, c will never again be satisfied, we can express this as: 
 $$\textbf{FG}\neg c$$
