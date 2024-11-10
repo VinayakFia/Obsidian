@@ -79,3 +79,6 @@ not p1, p2, not p3 has:
 not p1, not p2, not p3 has:
 - q00
 - q01
+
+## B.2
+$$\textbf{FG}a)\wedge()$$
