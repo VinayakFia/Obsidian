@@ -11,4 +11,4 @@ This is satisfied because the only 2 states with $c$ are $q2, q5$. When reaching
 This is satisfied, it can be seen by noting that $q4$ is part of every cycle and will always eventually be reached. As such $b$ will occur infinitely often.
 
 **Part b**
-
+1. **AXEX**b
