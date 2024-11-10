@@ -49,3 +49,8 @@ This cannot be satisfied because when starting from $q_5$, no paths can satisfy 
 3. **EGAF**b
 that is, for all states:
 - there exists a path
+- for each state in the path
+- for all paths
+- eventually the path will reach a $b$
+
+We know from **Part A.3** that $b$ occurs infinitely often for all paths starting from $q0$
