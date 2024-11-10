@@ -15,10 +15,12 @@ that is, for all starting paths from $q_0$
 that is, for all paths starting from $q_0$
 - $a$ is satisfied in all steps until we reach $c$
 
-*This is satisfied* because the only 2 states with $c$ are $q2, q5$. When reaching $q2$, we must come from $q1, q_0$, which has $a$ in its proposition set. When reaching $q5$, we must come from $q2, q_1, q_0$, which also has $a$ in its proposition set set. So, regardless of how we reach a state with $c$ in its proposition set, we will have satisfied $a$ on the way.
+*This is satisfied.*
+
+The only state not satisfying $a$ is $q_5$, to reach $q_5$ we can only come from $q_2$. $q_2$ satisfies $c$. So, 
 
 3. **GF**b
-that is, $b$ occurs infinitely often.
+that is, for all paths starting from $q_0$, $b$ occurs infinitely often.
 
 *This is satisfied*, it can be seen by noting that $q4$ is part of every cycle and will always eventually be reached. As such $b$ will occur infinitely often.
 
