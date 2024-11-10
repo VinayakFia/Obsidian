@@ -53,4 +53,6 @@ that is, for all states:
 - for all paths
 - eventually the path will reach a $b$
 
-We know from **Part A.3** that $b$ occurs infinitely often for all paths starting from $q0$
+*This is satisfied*
+
+It can be seen by noting that $q4$ is part of every cycle and will always eventually be reached. As such $b$ will occur infinitely often.
