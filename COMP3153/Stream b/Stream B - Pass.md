@@ -58,5 +58,13 @@ that is, for all states:
 This problem is equivalant to *for all states, for all paths, paths will eventually satisfy b*. $q4$ is part of every cycle and will always eventually be reached. As such $b$ will eventually occur for all paths from all states.
 
 ## B.3
-a) paths that contain at least two a: $F(a\wedge\textbf{F}a)$
-b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$* which can
+a) paths that contain at least two a:
+$$F(a\wedge\textbf{F}a)$$
+
+b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$* which can be expressed as:
+$$\neg b \cup a$$
+
+c) paths that eventually do not contain a c. that is, eventually, c will never again be satisfied, we can express this as: 
+$$\textbf{FG}\neg c$$
+
+## B.4
