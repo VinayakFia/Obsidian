@@ -9,14 +9,14 @@
 that is
 - after 2 steps from $q_0$
 - contains $b$ in its proposition set
-**Not satisfied.** Consider $q_0$ -> $q_1$ -> $q_2$, where $q_2$ does not have $b$ in its proposition set.
+*Not satisfied.* Consider $q_0$ -> $q_1$ -> $q_2$, where $q_2$ does not have $b$ in its proposition set.
 
 2. a**U**c
 that is
 - starting from $q_0$
 - $a$ is contained in proposition set on until we reach $c$
 
-This is satisfied because the only 2 states with $c$ are $q2, q5$. When reaching $q2$, we must come from $q1, q_0$, which has $a$ in its proposition set. When reaching $q5$, we must come from $q2, q_1, q_0$, which also has $a$ in its proposition set set. So, regardless of how we reach a state with $c$ in its proposition set, we will have satisfied $a$ on the way.
+*This is satisfied* because the only 2 states with $c$ are $q2, q5$. When reaching $q2$, we must come from $q1, q_0$, which has $a$ in its proposition set. When reaching $q5$, we must come from $q2, q_1, q_0$, which also has $a$ in its proposition set set. So, regardless of how we reach a state with $c$ in its proposition set, we will have satisfied $a$ on the way.
 
 3. **GF**b
 that is, $b$ occurs infinitely often.
@@ -42,3 +42,10 @@ that is, for all states:
 - there exists $a$ path
 - that satisfies $a$ before it satisfies $c$
 
+*Not satisfied*
+
+This cannot be satisfied because when starting from $q_5$, no paths can satisfy $a$ until $c$ since $q_5$ does not have $c$ in its proposition set.
+
+3. **EGAF**b
+that is, for all states:
+- there exists a path
