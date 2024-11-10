@@ -3,5 +3,6 @@ $$aB_1b \equiv \textbf{F}a \wedge (a \implies \textbf{G}\neg a \wedge \textbf{F}
 $$\forall n > 1, aB_nb \equiv \textbf{F}a \wedge a \implies B_{n-1}$$
 
 **Proof**
-Base case:
-$aB_1b$
+Base case: $aB_1b \equiv \textbf{F}a \wedge (a \implies \textbf{G}\neg a \wedge \textbf{F} b)$
+
+Here we have that $aB_
