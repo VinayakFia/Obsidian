@@ -4,10 +4,10 @@
 stateDiagram-v2
 	direction LR
 	
-	and : p1, p2
-	p2 : not p1, p2
-	p1 : p1, not p2
-	not : not p1, not p2
+	and : p1∧p2
+	p2 : ￢p1∧p2
+	p1 : p1∧￢p2
+	not : ￢p1∧￢p2
 
 	and --> p2
 	p1 --> p2
@@ -35,3 +35,5 @@ not p1, p2 has:
 not p1, not p2 has:
 - q00
 - q01
+
+#### Part B
