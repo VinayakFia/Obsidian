@@ -6,15 +6,14 @@
 
 #### Part a
 1. **XX**b
-that is
-- after 2 steps from $q_0$
-- contains $b$ in its proposition set
+that is, for all starting paths from $q_0$
+- after 2 steps
+- satisfies $b$
 *Not satisfied.* Consider $q_0$ -> $q_1$ -> $q_2$, where $q_2$ does not have $b$ in its proposition set.
 
 2. a**U**c
-that is
-- starting from $q_0$
-- $a$ is contained in proposition set on until we reach $c$
+that is, for all paths starting from $q_0$
+- $a$ is satisfied in all steps until we reach $c$
 
 *This is satisfied* because the only 2 states with $c$ are $q2, q5$. When reaching $q2$, we must come from $q1, q_0$, which has $a$ in its proposition set. When reaching $q5$, we must come from $q2, q_1, q_0$, which also has $a$ in its proposition set set. So, regardless of how we reach a state with $c$ in its proposition set, we will have satisfied $a$ on the way.
 
@@ -86,17 +85,14 @@ Construct an OBDD for $f(x, y, z) = (x ∨ y ∨ z) ∧ (¬x ∨ ¬y ∨ ¬z)$
 **Diagram**
 ```mermaid
 stateDiagram-v2
-	x --> y0 : F
-	x --> y1 : T
-
 	y0 : y
 	y1 : y
 
-	y0 --> z0 : F
-	y0 --> z1 : T
-	y1 --> z2 : F
-	y1 --> z3 : T
-	
+	z0 : z
+	z1 : z
+	z2 : z
+	z3 : z
+		
 	F0 : F
 	F1 : F
 	T0 : T 
@@ -105,7 +101,15 @@ stateDiagram-v2
 	T3 : T
 	T4 : T
 	T5 : T
-	
+
+	x --> y0 : F
+	x --> y1 : T
+
+	y0 --> z0 : F
+	y0 --> z1 : T
+	y1 --> z2 : F
+	y1 --> z3 : T
+
 	z0 --> F0 : F
 	z0 --> T0 : T
 	z1 --> T1 : F
