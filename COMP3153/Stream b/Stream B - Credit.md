@@ -7,7 +7,8 @@ stateDiagram-v2
 	p1 : p1, not p2
 	none : not p1, not p2
 
-	()
+	and --> p2
+	p1 --> p2
 ```
 
 p1, p2 has:
