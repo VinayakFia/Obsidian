@@ -89,11 +89,29 @@ stateDiagram-v2
 	x --> y0 : F
 	x --> y1 : T
 
+	y0 : y
+	y1 : y
+
 	y0 --> z0 : F
 	y0 --> z1 : T
 	y1 --> z2 : F
 	y1 --> z3 : T
-
-	z0 --> F : F
-	z0 --> T : T
+	
+	F0 : F
+	F1 : F
+	T0 : T 
+	T1 : T
+	T2 : T
+	T3 : T
+	T4 : T
+	T5 : T
+	
+	z0 --> F0 : F
+	z0 --> T0 : T
+	z1 --> T1 : F
+	z1 --> T2 : T
+	z2 --> T3 : F
+	z2 --> T4 : T
+	z3 --> T5 : F
+	z3 --> F1 : T
 ```
