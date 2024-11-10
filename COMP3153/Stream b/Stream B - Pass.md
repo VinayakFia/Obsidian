@@ -15,3 +15,7 @@ This is satisfied, it can be seen by noting that $q4$ is part of every cycle and
 
 #### Part b
 1. **AXEX**b
+
+that is:
+- For all paths:
+	- 
