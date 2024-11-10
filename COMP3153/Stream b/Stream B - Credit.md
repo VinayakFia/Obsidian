@@ -9,6 +9,7 @@ stateDiagram-v2
 
 	and --> p2
 	p1 --> p2
+	p2 --> 
 ```
 
 p1, p2 has:
