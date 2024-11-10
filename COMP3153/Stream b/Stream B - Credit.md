@@ -5,9 +5,9 @@ stateDiagram-v2
 	direction LR
 	
 	and : p1∧p2
-	p2 : ￢p1∧p2
-	p1 : p1∧￢p2
-	not : ￢p1∧￢p2
+	p2 : ¬p1∧p2
+	p1 : p1∧¬p2
+	not : ¬p1∧¬p2
 
 	and --> p2
 	p1 --> p2
@@ -41,7 +41,11 @@ not p1, not p2 has:
 stateDiagram-v2
 	direction LR
 
-	p1p2 : p2 
+	p1p2 : p1∧p2∧¬p3
+	p1p3 : p1∧¬p2∧p3
+	p2p3 : ¬p1∧p2∧p3
+	p2 : ¬p1∧p2∧¬p3
+	not : ¬p1∧p2∧¬p3
 ```
 
 p1, p2, not p3 has:
