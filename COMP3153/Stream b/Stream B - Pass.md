@@ -25,10 +25,16 @@ This is satisfied, it can be seen by noting that $q4$ is part of every cycle and
 #### Part b
 1. **AXEX**b
 that is, for all states:
-	- for all paths
-	- after 1 step
-	- there exists a path
-	- after 1 step
-	- contains b in the proposition set
+- for all paths
+- after 1 step
+- there exists a path
+- after 1 step
+- contains b in the proposition set
 
-We can ignore the first **AX** as we are able to reach any state after 1 step. So we have the formula that *for all paths, there exists a p*
+We can ignore the first **AX** as we are able to reach any state after 1 step. So we have the formula that *for all paths, there exists a path that after one satisfies b*.
+We can see that this is not true for state $q_1$, which has one path that leads to state $q_2$ which does not have $b$ in its proposition set.
+
+2. **E**a**U**c
+that is, for all states:
+- there exists a path
+- that satisfies a before it satisfies c
