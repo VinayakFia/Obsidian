@@ -1,4 +1,5 @@
 ## B.1
+![[Pasted image 20241110180404.png]]
 #### Part A
 ```mermaid
 stateDiagram-v2
