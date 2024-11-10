@@ -14,6 +14,7 @@ that is
 2. a**U**c
 that is
 - $a$ is contained in proposition set on until we reach $c$
+
 This is satisfied because the only 2 states with $c$ are $q2, q5$. When reaching $q2$, we must come from $q1$, which has $a$ in its proposition set. When reaching $q5$, we must come from $q2$, which also has $a$ in its proposition set set. So, regardless of how we 
 reach a state with $c$ in its proposition set, we will have satisfied $a$ on the way.
 
@@ -36,5 +37,5 @@ We can see that this is not true for state $q_1$, which has one path that leads 
 
 2. **E**a**U**c
 that is, for all states:
-- there exists a path
-- that satisfies a before it satisfies c
+- there exists $a$ path
+- that satisfies $a$ before it satisfies $c$
