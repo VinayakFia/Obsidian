@@ -2,22 +2,6 @@
 ![[Pasted image 20241110180404.png]]
 #### Part A
 ![[Pasted image 20241110181246.png]]
-p1, p2 has:
-- q12
-
-p1, not p2 has:
-- q10
-
-not p1, p2 has:
-- q11
-- q02
-- q20
-- q21
-- q22
-
-not p1, not p2 has:
-- q00
-- q01
 #### Part B
 ```mermaid
 stateDiagram-v2
