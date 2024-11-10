@@ -72,19 +72,28 @@ Construct an OBDD for $f(x, y, z) = (x ∨ y ∨ z) ∧ (¬x ∨ ¬y ∨ ¬z)$
 
 **Table**
 
-| x   | y   | z   | ((x ∨ (y ∨ z)) ∧ (¬x ∨ (¬y ∨ ¬z))) |
-| --- | --- | --- | ---------------------------------- |
-| F   | F   | F   | F                                  |
-| F   | F   | T   | T                                  |
-| F   | T   | F   | T                                  |
-| F   | T   | T   | T                                  |
-| T   | F   | F   | T                                  |
-| T   | F   | T   | T                                  |
-| T   | T   | F   | T                                  |
-| T   | T   | T   | F                                  |
+| x   | y   | z   | (x ∨ y ∨ z) ∧ (¬x ∨ ¬y ∨ ¬z) |
+| --- | --- | --- | ---------------------------- |
+| F   | F   | F   | F                            |
+| F   | F   | T   | T                            |
+| F   | T   | F   | T                            |
+| F   | T   | T   | T                            |
+| T   | F   | F   | T                            |
+| T   | F   | T   | T                            |
+| T   | T   | F   | T                            |
+| T   | T   | T   | F                            |
 
 **Diagram**
 ```mermaid
 stateDiagram-v2
-	
+	x --> y0 : F
+	x --> y1 : T
+
+	y0 --> z0 : F
+	y0 --> z1 : T
+	y1 --> z2 : F
+	y1 --> z3 : T
+
+	z0 --> F : F
+	z0 --> T : T
 ```
