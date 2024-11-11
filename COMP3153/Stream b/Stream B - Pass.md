@@ -1,6 +1,10 @@
 ## B.1
-![[Pasted image 20241110134915.png]]
+![[Pasted image 20241111211751.png]]
+we start at q1 which represents the odd position. Here, we only accept b and c moving to q2. Once at q2, which represents the even position, we can also accept a to go pack to the odd position.
 
+For example, with string 'abc' starting at q1, we cannot go anywhere as the odd position does not accept a.  
+  
+With string 'bac', we accept b to go to q2, then accept a to go to q1, then accept c to go back to q2
 ## B.2
 ![[Pasted image 20241110152103.png]]
 
