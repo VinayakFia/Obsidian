@@ -68,7 +68,7 @@ This problem is equivalant to *for all states, all paths will eventually satisfy
 ## B.3
 a) paths that contain at least two a:
 $$Fa \wedge (Fa \implies Fa)$$
-That is, a happens eventually, and 
+That is, $a$ is satisfied eventually, and $a$ being satisfied implies that $a$ will be satisfied eventually. This, $a$ must be satisfied eventually at least twice.
 
 b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$* which can be expressed as:
 $$\neg b \textbf{U} a$$
