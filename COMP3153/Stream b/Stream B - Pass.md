@@ -132,5 +132,15 @@ stateDiagram-v2
 **Robdd**
 ```mermaid
 stateDiagram-v2
-	
+	y1: y
+	y2: y
+
+	x --> y1 : F
+	x --> y2 : T
+
+	z1 : z
+	z2 : z
+
+	y1 --> z1 : F
+	y2 --> z2 : F
 ```
