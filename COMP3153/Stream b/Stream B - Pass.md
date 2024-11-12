@@ -92,6 +92,8 @@ Construct an OBDD for $f(x, y, z) = (x ∨ y ∨ z) ∧ (¬x ∨ ¬y ∨ ¬z)$
 | T   | T   | T   | F                            |
 
 **Diagram**
+
+**Full OBDD**
 ```mermaid
 stateDiagram-v2
 	y0 : y
@@ -129,7 +131,7 @@ stateDiagram-v2
 	z3 --> F1 : T
 ```
 
-**Robdd**
+**ROBDD**
 ```mermaid
 stateDiagram-v2
 	y1: y
@@ -142,5 +144,19 @@ stateDiagram-v2
 	z2 : z
 
 	y1 --> z1 : F
-	y2 --> z2 : F
+	y2 --> z2 : T
+
+	t1: T
+	t2: T
+	t3: T
+	t4: T
+	f1: F
+	f2: F
+
+	z1 --> f1 : F
+	z1 --> t1 : T
+	y1 --> t2 : T
+	y2 --> t3 : F
+	z2 --> t4 : F
+	z2 --> f2 : T
 ```
