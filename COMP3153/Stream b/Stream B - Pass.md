@@ -132,31 +132,4 @@ stateDiagram-v2
 ```
 
 **ROBDD**
-```mermaid
-stateDiagram-v2
-	y1: y
-	y2: y
-
-	x --> y1 : F
-	x --> y2 : T
-
-	z1 : z
-	z2 : z
-
-	y1 --> z1 : F
-	y2 --> z2 : T
-
-	t1: T
-	t2: T
-	t3: T
-	t4: T
-	f1: F
-	f2: F
-
-	z1 --> f1 : F
-	z1 --> t1 : T
-	y1 --> t2 : T
-	y2 --> t3 : F
-	z2 --> t4 : F
-	z2 --> f2 : T
-```
+![[Pasted image 20241112200710.png]]
