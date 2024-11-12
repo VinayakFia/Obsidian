@@ -42,7 +42,7 @@ that is, starting from $q_0$
 
 *This is satisfied*
 
-The only path from $q_0$ in one step is to get to $q_1$. As such, we can simplify our requirements to *from $q_0$, there exists a path after 1 step that contains $b$ in the proposition set*. We can see that after 1 step from $q_0$, we can arrive at $q_4$ which has $b$ in its proposition set. As such, we have satisfied the LTL formula.
+The only path from $q_0$ in one step is to get to $q_1$. As such, we can simplify our requirements to *from $q_1$, there exists a path after 1 step that contains $b$ in the proposition set*. We can see that after 1 step from $q_1$, we can arrive at $q_4$ which has $b$ in its proposition set. As such, we have satisfied the LTL formula.
 
 2. **E**a**U**c
 that is, from $q_0$:
@@ -51,10 +51,10 @@ that is, from $q_0$:
 
 *This is satisfied*
 
-The path starting from $q_0$:  $q_0 \rightarrow q_1 \rightarrow q_2$ satisfies $a$ until
+The path starting from $q_0$:  $q_0 \rightarrow q_1 \rightarrow q_2$ satisfies $a$ until it reaches $q_2$ which satisfies $c$. So, there exists a path from $q_0$ where $a\textbf{U}c$ is satisfied, and as such we have satisfied the LTL.
 
 3. **EGAF**b
-that is, for all states:
+that is, starting from $q_0$:
 - there exists a path
 - for each state in the path
 - for all paths
