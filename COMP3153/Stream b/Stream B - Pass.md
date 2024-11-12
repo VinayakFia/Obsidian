@@ -24,7 +24,7 @@ that is, for all paths starting from $q_0$
 
 *This is not satisfied.*
 
-Consider the cycle $q_0 \rightArrow$
+Consider the cycle $q_0 \rightarrow q_1 \rightarrow q_4 \rightarrow q_0$. If this cycle were to occur infinitely, we would never satisfy $c$, and as such we would never satisfy $a\textbf{U}c$.
 
 3. **GF**b
 that is, for all paths starting from $q_0$, $b$ occurs infinitely often.
@@ -33,17 +33,14 @@ that is, for all paths starting from $q_0$, $b$ occurs infinitely often.
 
 #### Part b
 1. **AXEX**b
-that is, for all states:
+that is, starting from $q_0$
 - for all paths
 - after 1 step
 - there exists a path
 - after 1 step
 - contains b in the proposition set
 
-*Not satisfied*
-
-We can ignore the first **AX** as we are able to reach any state after 1 step. So we have the formula that *for all paths, there exists a path that after one satisfies b*.
-We can see that this is not true for state $q_1$, which has one path that leads to state $q_2$ which does not have $b$ in its proposition set. Therefore, this is not satisfied.
+The only path from $q_0$ in one step is to get to $q_1$. As such, we ca
 
 2. **E**a**U**c
 that is, for all states:
