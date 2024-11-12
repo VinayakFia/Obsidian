@@ -22,9 +22,9 @@ Consider $q_0$ -> $q_1$ -> $q_2$, where $q_2$ does not have $b$ in its propositi
 that is, for all paths starting from $q_0$
 - $a$ is satisfied in all steps until we reach $c$
 
-*This is satisfied.*
+*This is not satisfied.*
 
-The only state not satisfying $a$ is $q_5$, to reach $q_5$ we can only come from $q_2$. Since $q_2$ satisfies $c$, we would have satisfied $a\textbf{U}c$ before reaching $q_5$. Since all states that can exist on the path to $q_2$ satisfy $a$, the LTL $a\textbf{U}c$ is satisfied.
+Consider the cycle $q_0 \rightArrow$
 
 3. **GF**b
 that is, for all paths starting from $q_0$, $b$ occurs infinitely often.
@@ -67,11 +67,12 @@ This problem is equivalant to *for all states, all paths will eventually satisfy
 
 ## B.3
 a) paths that contain at least two a:
-$$Fa \wedge (Fa \implies Fa)$$
-That is, $a$ is satisfied eventually, and $a$ being satisfied implies that $a$ will be satisfied eventually. This, $a$ must be satisfied eventually at least twice.
+$$\textbf{F}a \wedge (\textbf{F}a \implies \textbf{F}a)$$
+That is, $a$ is satisfied eventually, and $a$ being satisfied implies that $a$ will be satisfied eventually. Thus, $a$ must be satisfied eventually at least twice.
 
-b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$* which can be expressed as:
-$$\neg b \textbf{U} a$$
+b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$ if we encounter an a eventually* which can be expressed as.
+$$\textbf{F}a \implies \neg b \textbf{U} a$$
+Here, if we encounter an $a$, then we must meet the condition that we do not encounter any $b$s until $a$.
 
 c) paths that eventually do not contain a c. that is, eventually, c will never again be satisfied, we can express this as: 
 $$\textbf{FG}\neg c$$
