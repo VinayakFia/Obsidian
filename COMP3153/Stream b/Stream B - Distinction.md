@@ -13,7 +13,7 @@ Next lets see the whole formula $(¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \
 In practice: (let position 1 of the word be the first letter)
 - `aab...`. (1) is satisfied position 2 since $\alpha$ occurs and $\neg \alpha \textbf{U} \beta$ is satisfied at position 3. However, $\neg \alpha \wedge \neg \beta$ is not satisfied at position 1. *So this word is rejected.*
 - `bbb...`. (1) is never satisfied as $a$ never occurs *so this is rejected.*
-- `ccaccb...`. (1) is satisfied at position 3 since $\alpha$ occurs and $\alpha$ do
+- `ccaccb...`. (1) is satisfied at position 3 since $\alpha$ occurs and $\alpha$ does not occur until $
 
 **Inductive case**
 Assumption, $aB_nb$ is the operator that specifies that $a$ holds true exactly $n$ times before $b$ holds true.
