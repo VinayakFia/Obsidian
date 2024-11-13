@@ -1,5 +1,5 @@
 ## B.1
-$$aB_1b \equiv \textbf{F}a \wedge (a \implies \textbf{G}\neg a \wedge \textbf{F} b)$$
+$$a\textbf{B}_1b \equiv \textbf{F}(a\wedge \textbf{XG}\neg a)$$
 $$\forall n > 1, aB_nb \equiv \textbf{F}a \wedge a \implies B_{n-1}$$
 
 **Proof**
