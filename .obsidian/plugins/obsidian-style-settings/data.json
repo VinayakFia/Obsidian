@@ -27,5 +27,10 @@
   "typomagical-text@@font-default": "Spectral",
   "typomagical-text@@blockquote": "blockquote-plain",
   "typomagical-text@@callout-quote-style": false,
-  "sanctum@@dark-mode-contrast-mode": "sanctum-contrast-dark"
+  "sanctum@@dark-mode-contrast-mode": "sanctum-contrast-dark",
+  "shiba-theme-settings@@shiba-colors-theme-light": "default-light-theme",
+  "shiba-theme-settings@@shiba-colors-theme-dark": "default-dark-theme",
+  "shiba-theme-settings@@shiba-accent-colors": "accent-rose",
+  "shiba-theme-settings@@translucent-pane-style-settings": "setting-style-traditional",
+  "shiba-theme-settings@@shib-transparent-setting-panel": false
 }
