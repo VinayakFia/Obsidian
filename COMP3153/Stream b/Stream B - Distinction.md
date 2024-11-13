@@ -42,7 +42,13 @@ $$\alpha\textbf{B}_{2}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\al
 Algorithm (from lectures):
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
 
-For personal clarity I will rewrite this in python:
+For personal clarity I will rewrite this in something akin to python:
 ```python
-class Node
+class Node:
+	value: bool
+	left: Node
+	right: Node
+
+def and(left: Node, right: Node):
+	if left is None 
 ```
