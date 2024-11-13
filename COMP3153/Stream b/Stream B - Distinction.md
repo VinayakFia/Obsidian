@@ -1,6 +1,6 @@
 ## B.1
 $$\alpha\textbf{B}_1\beta ≡ (¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$$
-$$\forall n > 1, a\textbf{B}_nb \equiv $$
+$$\forall n > 1, \alpha\textbf{B}_n\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{n-1}\beta))$$
 
 **Proof**
 **Base case**
