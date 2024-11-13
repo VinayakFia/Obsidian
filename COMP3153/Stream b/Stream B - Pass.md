@@ -66,8 +66,8 @@ This problem is equivalant to *for all states, all paths will eventually satisfy
 
 ## B.3
 a) paths that contain at least two a:
-$$F(a∧Fa)$$
-That is, $a$ is satisfied eventually, and $a$ being satisfied implies that $a$ will be satisfied eventually. Thus, $a$ must be satisfied eventually at least twice.
+$$\textbf{F}(a∧\textbf{XF}a)$$
+Here, eventually a must be satisfied AND after 1 step eventually a must be satisfied again. Therefore, a must be satisfied at least 2 times.
 
 b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$ if we encounter an a eventually* which can be expressed as.
 $$\textbf{F}a \implies \neg b \textbf{U} a$$
