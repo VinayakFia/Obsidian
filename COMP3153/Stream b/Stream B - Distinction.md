@@ -6,7 +6,7 @@ $$\forall n > 1, a\textbf{B}_nb \equiv \textbf{F}(a \wedge \textbf{XB}_{n-1})$$
 **Base case**
 $\alpha\textbf{B}_1\beta ≡ (¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} \beta))$
 
-Firstly lets see
+Firstly lets see $(\alpha ∧ \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} \beta))$
 
 **Inductive case**
 Assumption, $aB_nb$ is the operator that specifies that $a$ holds true exactly $n$ times before $b$ holds true.
