@@ -1,18 +1,12 @@
 ## B.1
-$$φ\textbf{B}_1ψ ≡ (¬φ ∧ ¬ψ) U (φ ∧ X((¬φ ∧ ¬ψ) U ψ))$$
+$$\alpha\textbf{B}_1\beta ≡ (¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} \beta))$$
 $$\forall n > 1, a\textbf{B}_nb \equiv \textbf{F}(a \wedge \textbf{XB}_{n-1})$$
 
 **Proof**
 **Base case**
-$φB1ψ ≡ (¬φ ∧ ¬ψ) U (φ ∧ X((¬φ ∧ ¬ψ) U ψ))$
+$\alpha\textbf{B}_1\beta ≡ (¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} \beta))$
 
-Firstly we have $a \wedge \textbf{X}(\neg a \textbf{U} b)$. This means that $a$ must be satisfied and after 1 step, $a$ must not be satisfied until $b$. So, $a$ must be satisfied now, and never again until $b$ is satisfied. This accepts words like `abbbaa` and `accccb` but not `cccab` which should be accepted.
-
-$\neg b \textbf{U} (a \wedge \textbf{X}(\neg a\textbf{U}b)$. This requires $b$ does not occur until
-
-$$a\textbf{B}_1b \equiv \textbf{F}b \wedge \neg b \textbf{U} (a \wedge \textbf{XG} \neg a)$$
-
-This would now not accept `cccaaa`
+Firstly lets see
 
 **Inductive case**
 Assumption, $aB_nb$ is the operator that specifies that $a$ holds true exactly $n$ times before $b$ holds true.
