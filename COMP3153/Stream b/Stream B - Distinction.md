@@ -24,8 +24,9 @@ That is, we must prove that $\alpha \textbf{B}_{k+1}\beta$ is the operator that 
 
 $$\alpha\textbf{B}_{k+1}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$$
 
-Lets start with the RHS of until $(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$. This can be expressed as $\alpha$ holds and after 1 step $\alpha$ holds true exactly $k$ times before $\beta$ holds true. That is $alpha$ holds true now and $k$ more times until $\beta$ holds true.
+Lets start with the RHS of until $(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$. This can be expressed as $\alpha$ holds and after 1 step $\alpha$ holds true exactly $k$ times before $\beta$ holds true. *That is $\alpha$ holds true now and $k$ more times until $\beta$ holds true.*
 
+Next the whole expression $(\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$. *This can be expressed as $\alpha$ and $\beta$ do not hold true until $\alpha$ holds true and is seen $k$ more times until $\beta$ holds true.* This is equivalent to the statement $\alpha$ holds true $k + 1$ times before $\beta$ holds true.
 ## B.2
 Algorithm:
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
