@@ -17,11 +17,14 @@ In practice: (let position 1 of the word be the first letter)
 - `cabaaaaaaa...`. (1) is satisfied at position 2 since $\alpha$ occurs and $\beta$  occurs in the next step. Until position 2, that is position 1, both $\alpha$ and $\beta$ are not satisfied. *So this word is accepted.*
 
 **Inductive Hypothesis**
-Inductive hypothesis (IH), $\alpha \textbf{B}_k \beta$ is the operator that specifies that $a$ holds true exactly $k$ times before $b$ holds true.
+Inductive hypothesis (IH), $\alpha \textbf{B}_k \beta$ is the operator that specifies that $\alpha$ holds true exactly $k$ times before $\beta$ holds true.
 
 **Inductive Case**
-That is, we must prove that $\alpha \textbf{B}_{k+1}
-We have $aB_{n+1}b \equiv \textbf{F}a \wedge a \implies B_{n}$. That is, $a$ occurs eventually and $a$ implies that $a$ holds true exactly $n$ times before $b$ holds true. So we have that $aB_{n+1}b$ is equivalent to $a$ occurring $n+1$ times before $b$ holds true.
+That is, we must prove that $\alpha \textbf{B}_{k+1}\beta$ is the operator that specifies that $\alpha$ holds true exactly $k + 1$ times before $\beta$ holds true.
+
+$$\alpha\textbf{B}_{k+1}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$$
+
+Lets start with the RHS of until $(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$. This can be expressed as $\alpha$ holds and after 1 step $\alpha$ holds true exactly $k$ times before $\beta$ holds true. That is $alpha$ holds true now and $k$ more times until $\beta
 
 ## B.2
 Algorithm:
