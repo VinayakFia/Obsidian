@@ -20,7 +20,7 @@ In practice: (let position 1 of the word be the first letter)
 Inductive hypothesis (IH), $\alpha \textbf{B}_k \beta$ is the operator that specifies that $a$ holds true exactly $k$ times before $b$ holds true.
 
 **Inductive Case**
-That is, we must prove that $\alpha \textbf{B}_
+That is, we must prove that $\alpha \textbf{B}_{k+1}
 We have $aB_{n+1}b \equiv \textbf{F}a \wedge a \implies B_{n}$. That is, $a$ occurs eventually and $a$ implies that $a$ holds true exactly $n$ times before $b$ holds true. So we have that $aB_{n+1}b$ is equivalent to $a$ occurring $n+1$ times before $b$ holds true.
 
 ## B.2
