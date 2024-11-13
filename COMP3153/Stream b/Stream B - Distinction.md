@@ -1,10 +1,10 @@
 ## B.1
-$$a\textbf{B}_1b \equiv \neg b \textbf{U} (a \wedge \textbf{X}(\neg a\textbf{U}b))$$
+$$φ\textbf{B}_1ψ ≡ (¬φ ∧ ¬ψ) U (φ ∧ X((¬φ ∧ ¬ψ) U ψ))$$
 $$\forall n > 1, a\textbf{B}_nb \equiv \textbf{F}(a \wedge \textbf{XB}_{n-1})$$
 
 **Proof**
 **Base case**
-$a\textbf{B}_1b \equiv \wedge \neg b \textbf{U} (a \wedge \textbf{X}(\neg a\textbf{U}b)$
+$φB1ψ ≡ (¬φ ∧ ¬ψ) U (φ ∧ X((¬φ ∧ ¬ψ) U ψ))$
 
 Firstly we have $a \wedge \textbf{X}(\neg a \textbf{U} b)$. This means that $a$ must be satisfied and after 1 step, $a$ must not be satisfied until $b$. So, $a$ must be satisfied now, and never again until $b$ is satisfied. This accepts words like `abbbaa` and `accccb` but not `cccab` which should be accepted.
 
