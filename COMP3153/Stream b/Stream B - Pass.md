@@ -73,7 +73,7 @@ b) paths that contain at least one a before the first b; We can rewrite this as 
 $$\textbf{F}b \implies\neg b \textbf{U} a$$
 Consider the string `aaaa`, this would be accepted as the LHS of the implication is false.
 Consider the string `cccc`, this would be accepted as the LHS of the implication is false.
-Consider the string `bbbb...`, this would not be accepted as the LHS is true so $\neg b \textbf{U} a$ must be true, however $a$ is not part of the word.
+Consider the string `bbbb...`, this would not be accepted as the LHS is true so $\neg b \textbf{U} a$ must be true, however $a$ is not satisfied.
 Consider the string `caccccb`, this would be accepted as the LHS is true and until we reach an $a$ no $b$'s are found.
 Consider the string `ccbaaa...`, this would not be accepted as the LHS of the implication is true, but $\neg b$ is satisfied at position $b$.
 
