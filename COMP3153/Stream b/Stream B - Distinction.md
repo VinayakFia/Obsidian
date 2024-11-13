@@ -28,8 +28,9 @@ Lets start with the RHS of until $(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}
 
 Next the whole expression $(\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$. *This can be expressed as $\alpha$ and $\beta$ do not hold true until $\alpha$ holds true and is seen $k$ more times until $\beta$ holds true.* This is equivalent to the statement $\alpha$ holds true $k + 1$ times before $\beta$ holds true.
 
-In practice lets consider $\alpha \textbf{B}_2 \beta$:
-- `caccaccb`. 
+In practice lets consider $\alpha\textbf{B}_2 \beta$:
+$$\alpha\textbf{B}_{2}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{1}\beta))$$$$\alpha \textbf{B}_2 \beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta)))) \qquad \text{substituting } \alpha \textbf{B}_1\beta$$
+- `cacacb`. At position 4 we satisfy
 ## B.2
 Algorithm:
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
