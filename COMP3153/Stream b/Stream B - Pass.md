@@ -71,8 +71,10 @@ Here, eventually a must be satisfied AND after 1 step eventually a must be satis
 
 b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$ if we counter a b* which can be expressed as.
 $$\textbf{F}b \implies\neg b \textbf{U} a$$
-bbbb
-Here, if we encounter an $a$, then we must meet the condition that we do not encounter any $b$s until $a$.
+Consider the string `aaaa`, this would be accepted as the LHS of the implication is false.
+Consider the string `cccc`, this would be accepted as the LHS of the implication is false.
+Consider the string `bbbb...`, this would not be accepted as the LHS is true so $\neg b \textbf{U} a$ must be true, however $a$ is not part of the word.
+Consider the string `caccccb`, this would be accepted as the LHS is true and until we reach an $a$ no $bs$ are f
 
 c) paths that eventually do not contain a c. that is, eventually, c will never again be satisfied, we can express this as: 
 $$\textbf{FG}\neg c$$
