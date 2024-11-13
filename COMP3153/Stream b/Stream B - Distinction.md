@@ -1,12 +1,14 @@
 ## B.1
-$$\alpha\textbf{B}_1\beta ≡ (¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} \beta))$$
+$$\alpha\textbf{B}_1\beta ≡ (¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$$
 $$\forall n > 1, a\textbf{B}_nb \equiv \textbf{F}(a \wedge \textbf{XB}_{n-1})$$
 
 **Proof**
 **Base case**
-$\alpha\textbf{B}_1\beta ≡ (¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} \beta))$
+$\alpha\textbf{B}_1\beta ≡ (¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$
 
-Firstly lets see $(\alpha ∧ \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} \beta))$
+Firstly lets see $(\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$. This means that $\alpha$ is satisfied now and that after 1 step $\alpha$  is not seen until $\beta$. *That is, $\alpha$ occurs now, and never again until $\beta$*.
+
+Next lets see the whole formula $(¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$. This means that both $\alpha$ and 
 
 **Inductive case**
 Assumption, $aB_nb$ is the operator that specifies that $a$ holds true exactly $n$ times before $b$ holds true.
