@@ -1,5 +1,5 @@
 ## B.1
-$$a\textbf{B}_1b \equiv \textbf{F}(a\wedge \textbf{XG}\neg a)$$
+$$a\textbf{B}_1b \equiv \textbf{F}(a\wedge \textbf{X}(\neg a \textbf{U}b))$$
 $$\forall n > 1, a\textbf{B}_nb \equiv \textbf{F}(a \wedge \textbf{XB}_{n-1})$$
 
 **Proof**
