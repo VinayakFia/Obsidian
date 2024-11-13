@@ -69,8 +69,9 @@ a) paths that contain at least two a:
 $$\textbf{F}(a∧\textbf{XF}a)$$
 Here, eventually a must be satisfied AND after 1 step eventually a must be satisfied again. Therefore, a must be satisfied at least 2 times.
 
-b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$ if we encounter an a eventually* which can be expressed as.
-$$\neg b \textbf{U} a$$
+b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$ if we counter a b* which can be expressed as.
+$$\textbf{F}b \implies\neg b \textbf{U} a$$
+bbbb
 Here, if we encounter an $a$, then we must meet the condition that we do not encounter any $b$s until $a$.
 
 c) paths that eventually do not contain a c. that is, eventually, c will never again be satisfied, we can express this as: 
