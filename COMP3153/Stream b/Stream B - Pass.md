@@ -74,7 +74,7 @@ $$\textbf{F}b \implies\neg b \textbf{U} a$$
 Consider the string `aaaa`, this would be accepted as the LHS of the implication is false.
 Consider the string `cccc`, this would be accepted as the LHS of the implication is false.
 Consider the string `bbbb...`, this would not be accepted as the LHS is true so $\neg b \textbf{U} a$ must be true, however $a$ is not part of the word.
-Consider the string `caccccb`, this would be accepted as the LHS is true and until we reach an $a$ no $bs$ are f
+Consider the string `caccccb`, this would be accepted as the LHS is true and until we reach an $a$ no $b$'s
 
 c) paths that eventually do not contain a c. that is, eventually, c will never again be satisfied, we can express this as: 
 $$\textbf{FG}\neg c$$
