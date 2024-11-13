@@ -1,6 +1,6 @@
 ## B.1
 $$\alpha\textbf{B}_1\beta ≡ (¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$$
-$$\forall n > 1, a\textbf{B}_nb \equiv \textbf{F}(a \wedge \textbf{XB}_{n-1})$$
+$$\forall n > 1, a\textbf{B}_nb \equiv $$
 
 **Proof**
 **Base case**
@@ -13,7 +13,8 @@ Next lets see the whole formula $(¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \
 In practice: (let position 1 of the word be the first letter)
 - `aab...`. (1) is satisfied position 2 since $\alpha$ occurs and $\neg \alpha \textbf{U} \beta$ is satisfied at position 3. However, $\neg \alpha \wedge \neg \beta$ is not satisfied at position 1. *So this word is rejected.*
 - `bbb...`. (1) is never satisfied as $a$ never occurs *so this is rejected.*
-- `ccaccb...`. (1) is satisfied at position 3 since $\alpha$ occurs and $\alpha$ does not occur until $
+- `ccaccb...`. (1) is satisfied at position 3 since $\alpha$ occurs and $\alpha$ does not occur until $\beta$. Positions 1 and 2 do not contain $a$ or $b$ so the LHS of the until is also satisfied. *So this would be accepted.*
+- `cabaaaaaaa...`. (1) is satisfied at position 2 since $\alpha$ occurs and $\beta$  occurs in the next step. Until position 2, that is position 1, both $\alpha$ and $\beta$ are not satisfied. *So this word is accepted.*
 
 **Inductive case**
 Assumption, $aB_nb$ is the operator that specifies that $a$ holds true exactly $n$ times before $b$ holds true.
