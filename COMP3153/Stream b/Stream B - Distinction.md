@@ -36,7 +36,8 @@ $$\alpha\textbf{B}_{2}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\al
 - At position 2 we satisfy $(\alpha \wedge \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$
 	- At position 2 we satisfy $\textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$
 	- At position 2 we also satisfy $a$
-- Until position 2 $\neg a \wedge \$
+- Until position 2 $\neg a \wedge \neg b$ is never satisfied.
+*So this word satisfied $\alpha \textbf{B}_2 \beta$.*
 ## B.2
 Algorithm:
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
