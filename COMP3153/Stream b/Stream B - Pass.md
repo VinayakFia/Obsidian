@@ -67,14 +67,15 @@ This problem is equivalant to *for all states, all paths will eventually satisfy
 ## B.3
 a) paths that contain at least two a:
 $$\textbf{F}(a∧\textbf{XF}a)$$
-Here, eventually a must be satisfied AND after 1 step eventually a must be satisfied again. Therefore, a must be satisfied at least 2 times.
+Eventually a must be satisfied, and after 1 step, a must be satisfied again eventually. As such, a must be satisfied at least twice.
 
 b) paths that contain at least one a before the first b; We can rewrite this as *we do not encounter a $b$ before $a$ if we counter a b* which can be expressed as.
 $$\textbf{F}b \implies\neg b \textbf{U} a$$
 Consider the string `aaaa`, this would be accepted as the LHS of the implication is false.
 Consider the string `cccc`, this would be accepted as the LHS of the implication is false.
 Consider the string `bbbb...`, this would not be accepted as the LHS is true so $\neg b \textbf{U} a$ must be true, however $a$ is not part of the word.
-Consider the string `caccccb`, this would be accepted as the LHS is true and until we reach an $a$ no $b$'s
+Consider the string `caccccb`, this would be accepted as the LHS is true and until we reach an $a$ no $b$'s are found.
+Consider the string `ccbaaa...`, this would not be accepted as the LHS of the implication is true, but $\neg b$ is satisfied at position $b$.
 
 c) paths that eventually do not contain a c. that is, eventually, c will never again be satisfied, we can express this as: 
 $$\textbf{FG}\neg c$$
