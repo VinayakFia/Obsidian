@@ -6,9 +6,9 @@ $$\forall n > 1, a\textbf{B}_nb \equiv \textbf{F}(a \wedge \textbf{XB}_{n-1})$$
 **Base case**
 $a\textbf{B}_1b \equiv \wedge \neg b \textbf{U} (a \wedge \textbf{X}(\neg a\textbf{U}b)$
 
-Here we have $a \wedge \textbf{X}(\neg a \textbf{U} b)$. This means that $a$ must be satisfied and after 1 step, $a$ must not be satisfied until $b$. So, $a$ must be satisfied now, and never again until $b$ is satisfied. This accepts words like `abbbaa` and `accccb` but not `cccab` which should be accepted.
+Firstly we have $a \wedge \textbf{X}(\neg a \textbf{U} b)$. This means that $a$ must be satisfied and after 1 step, $a$ must not be satisfied until $b$. So, $a$ must be satisfied now, and never again until $b$ is satisfied. This accepts words like `abbbaa` and `accccb` but not `cccab` which should be accepted.
 
-$\neg b \textbf{U} (a \wedge \textbf{X}(\neg a\textbf{U}b)$
+$\neg b \textbf{U} (a \wedge \textbf{X}(\neg a\textbf{U}b)$. This requires $b$ does not occur until
 
 $$a\textbf{B}_1b \equiv \textbf{F}b \wedge \neg b \textbf{U} (a \wedge \textbf{XG} \neg a)$$
 
