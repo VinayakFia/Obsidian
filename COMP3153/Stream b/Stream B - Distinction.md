@@ -30,7 +30,13 @@ Next the whole expression $(\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wed
 
 In practice lets consider $\alpha\textbf{B}_2 \beta$:
 $$\alpha\textbf{B}_{2}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{1}\beta))$$$$\alpha \textbf{B}_2 \beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta)))) \qquad \text{substituting } \alpha \textbf{B}_1\beta$$
-- `cacacb`. At position 4 we satisfy
+`cacacb...`.
+- At position 4 we satisfy $(\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$
+- At position 3 we satisfy $(¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta)$
+- At position 2 we satisfy $(\alpha \wedge \textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$
+	- At position 2 we satisfy $\textbf{X}((¬\alpha ∧ ¬\beta) \textbf{U} (\alpha ∧ \textbf{X}(¬\alpha \textbf{U} \beta))$
+	- At position 2 we also satisfy $a$
+- Until position 2 $\ne$
 ## B.2
 Algorithm:
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
