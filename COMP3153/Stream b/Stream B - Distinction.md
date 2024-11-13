@@ -24,7 +24,7 @@ That is, we must prove that $\alpha \textbf{B}_{k+1}\beta$ is the operator that 
 
 $$\alpha\textbf{B}_{k+1}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$$
 
-Lets start with the RHS of until $(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$. This can be expressed as $\alpha$ holds and after 1 step $\alpha$ holds true exactly $k$ times before $\beta$ holds true. That is $alpha$ holds true now and $k$ more times until $\beta
+Lets start with the RHS of until $(\alpha \wedge \textbf{X}(\alpha\textbf{B}_{k}\beta))$. This can be expressed as $\alpha$ holds and after 1 step $\alpha$ holds true exactly $k$ times before $\beta$ holds true. That is $alpha$ holds true now and $k$ more times until $\beta$ holds true.
 
 ## B.2
 Algorithm:
