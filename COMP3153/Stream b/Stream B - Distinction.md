@@ -4,11 +4,11 @@ $$\forall n > 1, a\textbf{B}_nb \equiv \textbf{F}(a \wedge \textbf{XB}_{n-1})$$
 
 **Proof**
 **Base case**
-$a\textbf{B}_1b \equiv \textbf{F}b \wedge \neg b \textbf{U} (a \wedge \textbf{XG} \neg a)$
+$a\textbf{B}_1b \equiv \wedge \neg b \textbf{U} (a \wedge \textbf{X}(\neg a\textbf{U}b)$
 
-Here we have $a \wedge \textbf{XG}\neg a$. This means that $a$ must be satisfied and after 1 step, $a$ must never be satisfied again. So, *a is satisfied exactly once*. This would accept a word like `abbbbb...`, but not word like `babbb...`.
+Here we have $a \wedge \textbf{X}(\neg a \textbf{U} b)$. This means that $a$ must be satisfied and after 1 step, $a$ must not be satisfied until $b$. So, $a$ must be satisfied now, and never again until $b$ is satisfied. This accepts words like `abbbaa` and `accccb` but not `cccab` which should be accepted.
 
-Next we have $\neg b \textbf{U}(a \wedge \textbf{XG}\neg a$). That is, $b$ will not be satisfied until *a is satisfied exactly once*. This would accept a word like `abbbbb...` and `ccccabbbbb`, however it would fail to accept words like `cccccccacccc...` where $b$ never occurs. To remedy this we add the condition $\textbf{F}b$ resulting in
+$\neg b \textbf{U} (a \wedge \textbf{X}(\neg a\textbf{U}b)$
 
 $$a\textbf{B}_1b \equiv \textbf{F}b \wedge \neg b \textbf{U} (a \wedge \textbf{XG} \neg a)$$
 
