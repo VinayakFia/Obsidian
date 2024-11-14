@@ -60,7 +60,10 @@ and (TreeNode h fn tn) (TreeNode h' fn' tn')
 
 For each case:
 - **Leaf and Leaf**, we make a new `Leaf` with the `and` of the two values
-- **Leaf and TreeNode**, we make a new `TreeNode` we make a new `TreeNode` and recurse on both of the `TreeNode`'s children.
-- **TreeNode and TreeNode**, we make a new `TreeNode` and `and` both children.
+- **Leaf and TreeNode**, we make a new `TreeNode` and recurse on both of the `TreeNode`'s children.
+- **TreeNode and TreeNode where the heights are not the same**, we make a new `TreeNode` and recurse on both of the higher `TreeNode`'s children.
+- **TreeNode and TreeNode where the heights are equal**, we make a new `TreeNode` and `and` both children.
 
-The only case where
+The only cases where more `TreeNode`s are made are with the **Leaf and TreeNode** case and the **TreeNode and TreeNode (unequal heights)** case.
+
+We can observe that `TreeNode` recurses until we reach leaf edges
