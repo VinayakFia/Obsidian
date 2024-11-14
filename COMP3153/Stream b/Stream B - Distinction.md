@@ -44,18 +44,31 @@ $$\alpha\textbf{B}_{2}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\al
 Algorithm (from lectures):
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
 
-For concreteness I will rewrite this in Haskell:
+For concreteness I will rewrite this in pseudocode akin to haskell:
 ```haskell
-data TreeNode = Leaf Bool | Node Int TreeNode TreeNode
+data TreeNode = Leaf Bool | Node String Int TreeNode TreeNode
+
+-- e.g. graph A will have root node `TreeNode "A" 0 (..) (..)`
+
+type Memo = Map (), TreeNode
 
 and :: TreeNode -> TreeNode -> TreeNode
+
 and (Leaf v1) (Leaf v2) = Leaf $ v1 && v2
-and (Leaf v1) (TreeNode h fn tn) = TreeNode h ((Leaf v1) `and` fn) ((Leaf v1) `and` tn)
-and (TreeNode h fn tn) (Leaf v1) = (Leaf v1) `and` (TreeNode h fn tn)
+
+and (Leaf v1) (TreeNode h fn tn) =
+	TreeNode h ((Leaf v1) `and` fn) ((Leaf v1) `and` tn)
+	
+and (TreeNode h fn tn) (Leaf v1) =
+	(Leaf v1) `and` (TreeNode h fn tn)
+	
 and (TreeNode h fn tn) (TreeNode h' fn' tn')
-	| h == h' = TreeNode h (fn `and` fn') (tn `and` tn')
-	| h < h' = TreeNode h (fn `and` (TreeNode h' fn' tn')) (tn `and` (TreeNode h' fn' tn'))
-	| otherwise = TreeNode h (fn' `and` (TreeNode h fn tn)) (tn' `and` (TreeNode h fn tn))
+	| h == h' =
+		TreeNode h (fn `and` fn') (tn `and` tn')
+	| h < h' =
+		TreeNode h (fn `and` (TreeNode h' fn' tn')) (tn `and` (TreeNode h' fn' tn'))
+	| otherwise =
+		TreeNode h (fn' `and` (TreeNode h fn tn)) (tn' `and` (TreeNode h fn tn))
 ```
 
 Now the above formula *is* certainly exponential, but we can optimise this with *memoisation*.
