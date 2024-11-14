@@ -112,7 +112,4 @@ fn And(TreeNode a, TreeNode b) -> TreeNode:
 	return result
 ```
 
-In this way, we never create the same node twice, and the resulting graph is automatically reduced. Now,
-- We can have at most $w_A$ nodes from A at level i
-- We can have at most $w_B$ nodes from B at level i
-- Each node from A needs to be combined with each node from B at the same level
+In this way, we never create the same node twice, and the resulting graph is automatically reduced. By memoising, we can have at most $w_a \times w_b$ calls to apply at each level, where each call makes 1 node. Given that each level has at most $w_a \times w_b$ nodes, our whole $and$ graph has $n \times w_a \times w_b$ nodes.
