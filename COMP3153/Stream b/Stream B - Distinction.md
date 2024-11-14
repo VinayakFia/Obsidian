@@ -61,4 +61,6 @@ and (TreeNode h fn tn) (TreeNode h' fn' tn')
 For each case:
 - **Leaf and Leaf**, we make a new `Leaf` with the `and` of the two values
 - **Leaf and TreeNode**, we make a new `TreeNode` we make a new `TreeNode` and recurse on both of the `TreeNode`'s children.
-- **TreeNode and TreeNode**, we make a new `TreeNode` and `and` both 
+- **TreeNode and TreeNode**, we make a new `TreeNode` and `and` both children.
+
+The only case where
