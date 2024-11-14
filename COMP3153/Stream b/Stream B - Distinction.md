@@ -45,10 +45,11 @@ $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \te
 For personal clarity I will rewrite this in something akin to python:
 ```python
 class Node:
-	value: bool
-	left: Node
+	height: int
+	value: bool # if this is a leaf node it will be true or false
+	left: Node # if thi
 	right: Node
 
 def and(left: Node, right: Node):
-	if left is None 
+	if left
 ```
