@@ -75,13 +75,12 @@ data TreeNode = Leaf Int Bool | Node Int Int TreeNode TreeNode
 -- map is a global variable
 map :: Map((Int, Int), TreeNode) = {}
 
+fn GetId(TreeNode n) -> Int:
+	if n is (Leaf i _): return i
+	if n is (Node i _ _ _): return i
+
 fn GetMemo(TreeNode a, TreeNode b) -> Maybe TreeNode:
-	fst = 0, snd = 0
-	if a is (Leaf i _): fst = i
-	if a is (Node i _ _ _): fst = i
-	if b is (Leaf i _): snd = i
-	if b is (Node i _ _ _): snd = i
-	return lookup map (fst, snd)
+	return lookup map (GetId(a), GetId(b))
 
 fn PutMemo(Int l, Int r, TreeNode n):
 	put map (l, r) n
@@ -92,22 +91,25 @@ fn And(TreeNode a, TreeNode b) -> TreeNode:
 		return node
 
 	result :: TreeNode
-	l = 0
-	r = 0
 	
-	if a is (Leaf v1) and b is (Leaf v2):
+	if a is (Leaf _ v1) and b is (Leaf _ v2):
 		result = Leaf (v2 && v2)
-	else if a is (Leaf v1) and b is (Node h fn tn):
-		result = Node h And(Leaf v1, fn) And(Leaf v1, tn)
-	else if a is (Node h fn tn) and b is (Leaf v1):
-		result = Node h And(fn, Leaf v1) And(tn, Leaf v1)
-	else if a is (Node h fn tn) and b is (Node h' fn' tn'):
+	else if a is (Leaf i v1) and b is (Node _ h fn tn):
+		result = Node h And(Leaf i v1, fn) And(Leaf i v1, tn)
+	else if a is (Node h fn tn) and b is (Leaf i v1):
+		result = Node h And(fn, Leaf i v1) And(tn, Leaf i v1)
+	else if a is (Node i h fn tn) and b is (Node i' h' fn' tn'):
 		if h == h':
 			result = Node h And(fn, fn') And(tn, tn')
 		else if h < h':
-			result = Node h And(fn, (Node h' fn' tn')) And(tn, (Node h' fn' tn'))
+			result = Node h
+				And(fn, (Node i' h' fn' tn'))
+				And(tn, (Node i' h' fn' tn'))
 		else:
-			result = Node h And((Node h fn tn), fn') And((Node h fn tn), tn')
+			result = Node h And((Node i h fn tn), fn') And((Node i h fn tn), tn')
 
-	PutMemo()
+	PutMemo(GetId(a), GetId(b), result)
+	return result
 ```
+
+The crucial change here is that 
