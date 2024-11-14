@@ -70,7 +70,7 @@ data TreeNode = Leaf Bool | Node Int Int TreeNode TreeNode
 
 -- Node and Leaf have been extended with an `Int` which is a unique identifier for that `TreeNode`
 
--- a map from (Int, Int) -> TreeNode where the first int represents the unique identifier from tree a and 
+-- a map from (Int, Int) -> TreeNode where the first int represents the unique identifier from tree a and the second int 
 map :: Map((Int, Int), TreeNode) = {}
 
 fn And(TreeNode a, TreeNode b):
