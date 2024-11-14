@@ -42,14 +42,11 @@ $$\alpha\textbf{B}_{2}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\al
 Algorithm (from lectures):
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
 
-For personal clarity I will rewrite this in something akin to python:
-```python
-class Node:
-	height: int
-	value: bool # if this is a leaf node it will be true or false
-	left: Node # if thi
-	right: Node
+For personal clarity I will rewrite this in something akin to haskell:
+```haskell
+data TreeNode = Leaf Bool | Node Int TreeNode TreeNode
 
-def and(left: Node, right: Node):
-	if left
+and :: TreeNode -> TreeNode -> TreeNode
+and (Leaf v1) (Leaf v2) = Leaf $ v1 && v2
+and (Leaf v1) (TreeNode h fn tn) = (Leaf v1)
 ```
