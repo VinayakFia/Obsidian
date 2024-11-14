@@ -64,6 +64,10 @@ For each case:
 - **TreeNode and TreeNode where the heights are not the same**, we make a new `TreeNode` and recurse on both of the higher `TreeNode`'s children.
 - **TreeNode and TreeNode where the heights are equal**, we make a new `TreeNode` and `and` both children.
 
-The only cases where more `TreeNode`s are made are with the **Leaf and TreeNode** case and the **TreeNode and TreeNode (unequal heights)** case.
+In terms of the number of resulting nodes we can simplify this to 2 cases:
+- $a \wedge b$ where $a$ and $b$ are the same height. Here we do not create any new nodes.
+- $a \wedge b$ where $a$ and $b$ e are not the same height. here we create a new node and recurse on the higher node.
 
-We can observe that `TreeNode` recurses until we reach leaf edges
+We can observe that each node of height $i$ in $A$ needs to be combined with each node of height $i$ in $B$. 
+
+The only cases where more `TreeNode`s are made are with the **Leaf and TreeNode** case and the **TreeNode and TreeNode (unequal heights)** case. We can observe that 
