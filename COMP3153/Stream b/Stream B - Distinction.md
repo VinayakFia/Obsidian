@@ -42,7 +42,7 @@ $$\alpha\textbf{B}_{2}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\al
 Algorithm (from lectures):
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
 
-For personal clarity I will rewrite this in something akin to haskell:
+For concreteness I will rewrite this in something akin to haskell:
 ```haskell
 data TreeNode = Leaf Bool | Node Int TreeNode TreeNode
 
@@ -52,4 +52,6 @@ and (Leaf v1) (TreeNode h fn tn) = TreeNode h ((Leaf v1) `and` fn) ((Leaf v1) `a
 and (TreeNode h fn tn) (Leaf v1) = (Leaf v1) `and` (TreeNode h fn tn)
 and (TreeNode h fn tn) (TreeNode h' fn' tn')
 	| h == h' = TreeNode h (fn `and` fn') (tn `and` tn')
+	| h < h' = TreeNode h (fn `and` (TreeNode h' fn' tn')) (tn `and` (TreeNode h' fn' tn'))
+	| otherwise = TreeNode h (fn' `and` (TreeNode h fn tn)) (tn' `and` (TreeNode h fn tn))
 ```
