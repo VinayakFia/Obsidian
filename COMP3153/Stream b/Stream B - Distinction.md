@@ -58,4 +58,7 @@ and (TreeNode h fn tn) (TreeNode h' fn' tn')
 	| otherwise = TreeNode h (fn' `and` (TreeNode h fn tn)) (tn' `and` (TreeNode h fn tn))
 ```
 
+Lets consider the change in nodes for each case
 
+1. Leaf and Leaf, this results in 1 node
+2. Leaf and TreeNode, 
