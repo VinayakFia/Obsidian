@@ -58,3 +58,4 @@ and (TreeNode h fn tn) (TreeNode h' fn' tn')
 	| otherwise = TreeNode h (fn' `and` (TreeNode h fn tn)) (tn' `and` (TreeNode h fn tn))
 ```
 
+Now the above formula *is* certainly exponential, but we can optimise this with *memoisation*.
