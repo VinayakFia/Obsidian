@@ -57,3 +57,5 @@ and (TreeNode h fn tn) (TreeNode h' fn' tn')
 	| h < h' = TreeNode h (fn `and` (TreeNode h' fn' tn')) (tn `and` (TreeNode h' fn' tn'))
 	| otherwise = TreeNode h (fn' `and` (TreeNode h fn tn)) (tn' `and` (TreeNode h fn tn))
 ```
+
+For each case:
