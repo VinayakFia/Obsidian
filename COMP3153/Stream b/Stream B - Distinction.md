@@ -39,7 +39,8 @@ $$\alpha\textbf{B}_{2}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\al
 - Until position 2 $\neg a \wedge \neg b$ is never satisfied.
 *So this word satisfied $\alpha \textbf{B}_2 \beta$.*
 ## B.2
-> Let A and B be OBDDs over n variables. Let $w_A (w_B)$ be the maximum number of nodes appearing in any row of A (B, respectively) – so A has at most $nw_A$ nodes (excluding T/F) and B has at most $nw_B$ nodes (excluding T/F). By considering a Dynamic Programming solution to compute $A ⊗ B$ (or otherwise), prove that $A ⊗ B$ has at most $nw_Aw_B$ nodes (excluding T/F)
+> Let A and B be OBDDs over n variables. Let $w_A (w_B)$ be the maximum number of nodes appearing in any row of A (B, respectively) – so A has at most $nw_A$ nodes (excluding T/F) and B has at most $nw_B$ nodes (excluding T/F).
+> By considering a Dynamic Programming solution to compute $A ⊗ B$ (or otherwise), prove that $A ⊗ B$ has at most $nw_Aw_B$ nodes (excluding T/F)
 
 Algorithm (from lectures):
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
@@ -63,7 +64,7 @@ fn And(TreeNode a, TreeNode b):
 		return Node h And((Node h fn tn), fn') And((Node h fn tn), tn')
 ```
 
-Now the above formula *is* certainly exponential, but we can optimise this with *memoisation*. We get:
+Now the above formula *is* exponential, but we can optimise this with *memoisation*. We get:
 
 ```haskell
 data TreeNode = Leaf Int Bool | Node Int Int TreeNode TreeNode
@@ -112,4 +113,5 @@ fn And(TreeNode a, TreeNode b) -> TreeNode:
 	return result
 ```
 
-In this way, we never create the same node twice, and the resulting graph is automatically reduced. By memoising, we can have at most $w_a \times w_b$ calls to apply at each level, where each call makes 1 node. Given that each level has at most $w_a \times w_b$ nodes, our whole $and$ graph has $n \times w_a \times w_b$ nodes.
+In this way, we never create the same node twice. Note that we only create new . By memoising, we can have at most $w_a \times w_b$ calls to apply at each level, where each call makes 1 node. Given that each level has at most $w_a \times w_b$ nodes, our complete $and$ graph has no more than $n \times w_a \times w_b$ nodes.
+
