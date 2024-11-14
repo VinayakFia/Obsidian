@@ -113,5 +113,7 @@ fn And(TreeNode a, TreeNode b) -> TreeNode:
 	return result
 ```
 
-In this way, we never create the same node twice. At each level of the OBDD, we can have at most $w_a w_b$ combinations of calls to $And$ and as such have at most $w_a w_b$ possible resulting nodes. With the non-memoisation solution, these nodes would be duplicated so the resulting graph would grow exponentially. With memoisation, we are not creating new nodes, but linking to already made nodes when possible, we create at most $w_a w_b$. By memoising, we can have at most $w_a \times w_b$ calls to apply at each level, where each call makes 1 node. Given that each level has at most $w_a \times w_b$ nodes, our complete $and$ graph has no more than $n \times w_a \times w_b$ nodes.
+In this way, we never create the same node twice.
+
+Each call to `And` that is not memoised creates 1 node. At each level of the OBDD, we can have at most $w_a w_b$ combinations of calls to `And` and as such have at most $w_a w_b$ possible resulting nodes. With the non-memoisation solution, these nodes would be duplicated so the resulting graph would grow exponentially. With memoisation, we are not creating new nodes, but linking to already made nodes when possible, so we create at most $w_a w_b$ nodes. Given that each level has at most $w_a \times w_b$ nodes in our resulting graph, our complete `And` graph has no more than $n \times w_a \times w_b$ nodes.
 
