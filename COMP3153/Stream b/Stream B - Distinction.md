@@ -48,7 +48,7 @@ For concreteness I will rewrite this in pseudocode :
 ```haskell
 data TreeNode = Leaf Bool | Node Int TreeNode TreeNode
 
-def And(TreeNode a, TreeNode b):
+fn And(TreeNode a, TreeNode b):
 	if a is (Leaf v1) and b is (Leaf v2):
 		return Leaf (v2 && v2)
 	if a is (Leaf v1) and b is (Node h fn tn):
@@ -59,24 +59,8 @@ def And(TreeNode a, TreeNode b):
 		if h == h':
 			return Node h And(fn, fn') And(tn, tn')
 		if h < h':
-			return Node h And(fn, (Node h' fn' tn'))
-
-and :: TreeNode -> TreeNode -> TreeNode
-and (Leaf v1) (Leaf v2) = Leaf $ v1 && v2
-
-and (Leaf v1) (TreeNode h fn tn) =
-	TreeNode h ((Leaf v1) `and` fn) ((Leaf v1) `and` tn)
-	
-and (TreeNode h fn tn) (Leaf v1) =
-	(Leaf v1) `and` (TreeNode h fn tn)
-	
-and (TreeNode h fn tn) (TreeNode h' fn' tn')
-	| h == h' =
-		TreeNode h (fn `and` fn') (tn `and` tn')
-	| h < h' =
-		TreeNode h (fn `and` (TreeNode h' fn' tn')) (tn `and` (TreeNode h' fn' tn'))
-	| otherwise =
-		TreeNode h (fn' `and` (TreeNode h fn tn)) (tn' `and` (TreeNode h fn tn))
+			return Node h And(fn, (Node h' fn' tn')) And(tn, (Node h' fn' tn'))
+		return Node h And((Node h fn tn), fn') And((Node h fn tn), tn')
 ```
 
 Now the above formula *is* certainly exponential, but we can optimise this with *memoisation*. We get:
@@ -84,24 +68,22 @@ Now the above formula *is* certainly exponential, but we can optimise this with 
 ```haskell
 data TreeNode = Leaf Bool | Node Int Int TreeNode TreeNode
 
--- We've added another int to Node, the first int represents the height, the second one represents a unique index for that node. Every Node has a unique index
+-- Node and Leaf have been extended with an `Int` which is a unique identifier for that `TreeNode`
 
-type Memo = Map (Int, Int) TreeNode
+-- a map from (Int, Int) -> TreeNode where the first int represents the unique identifier from tree a and 
+map :: Map((Int, Int), TreeNode) = {}
 
-and :: TreeNode -> TreeNode -> (TreeNode, Memo)
-and (Leaf v1) (Leaf v2) = Leaf $ v1 && v2
-
-and (Leaf v1) (TreeNode h fn tn) =
-	TreeNode h ((Leaf v1) `and` fn) ((Leaf v1) `and` tn)
-	
-and (TreeNode h fn tn) (Leaf v1) =
-	(Leaf v1) `and` (TreeNode h fn tn)
-	
-and (TreeNode h fn tn) (TreeNode h' fn' tn')
-	| h == h' =
-		TreeNode h (fn `and` fn') (tn `and` tn')
-	| h < h' =
-		TreeNode h (fn `and` (TreeNode h' fn' tn')) (tn `and` (TreeNode h' fn' tn'))
-	| otherwise =
-		TreeNode h (fn' `and` (TreeNode h fn tn)) (tn' `and` (TreeNode h fn tn))
+fn And(TreeNode a, TreeNode b):
+	if a is (Leaf v1) and b is (Leaf v2):
+		return Leaf (v2 && v2)
+	if a is (Leaf v1) and b is (Node h fn tn):
+		return Node h And(Leaf v1, fn) And(Leaf v1, tn)
+	if a is (Node h fn tn) and b is (Leaf v1):
+		return Node h And(fn, Leaf v1) And(tn, Leaf v1)
+	if a is (Node h fn tn) and b is (Node h' fn' tn'):
+		if h == h':
+			return Node h And(fn, fn') And(tn, tn')
+		if h < h':
+			return Node h And(fn, (Node h' fn' tn')) And(tn, (Node h' fn' tn'))
+		return Node h And((Node h fn tn), fn') And((Node h fn tn), tn')
 ```
