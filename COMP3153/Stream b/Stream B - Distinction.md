@@ -66,15 +66,21 @@ fn And(TreeNode a, TreeNode b):
 Now the above formula *is* certainly exponential, but we can optimise this with *memoisation*. We get:
 
 ```haskell
-data TreeNode = Leaf Bool | Node Int Int TreeNode TreeNode
+data TreeNode = Leaf Int Bool | Node Int Int TreeNode TreeNode
 
--- Node and Leaf have been extended with an `Int` which is a unique identifier for that `TreeNode`
+-- Node and Leaf have been extended with an `Int` which is a unique identifier for each `TreeNode` in a tree. The first Int of Node is this unique identifier
 
 -- a map from (Int, Int) -> TreeNode where the first int represents the unique identifier from tree a and the second int represents the unique identifier from tree b
 -- the TreeNode contained is the result of the and call
 map :: Map((Int, Int), TreeNode) = {}
 
-fn And(TreeNode a, TreeNode b):
+fn GetMemo(TreeNode a, TreeNode b) -> Maybe TreeNode:
+	fst = 0, snd = 0
+	if a is (Leaf i _): fst = i
+	if a is (Node i _): fst = i
+	if b is (Leaf i _): fst = i
+
+fn And(TreeNode a, TreeNode b) -> TreeNode:
 	if a is (Leaf v1) and b is (Leaf v2):
 		return Leaf (v2 && v2)
 	if a is (Leaf v1) and b is (Node h fn tn):
