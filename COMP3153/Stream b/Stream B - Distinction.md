@@ -48,6 +48,9 @@ For concreteness I will rewrite this in pseudocode :
 ```haskell
 data TreeNode = Leaf Bool | Node Int TreeNode TreeNode
 
+def And(TreeNode a, TreeNode b):
+	
+
 and :: TreeNode -> TreeNode -> TreeNode
 and (Leaf v1) (Leaf v2) = Leaf $ v1 && v2
 
@@ -69,9 +72,11 @@ and (TreeNode h fn tn) (TreeNode h' fn' tn')
 Now the above formula *is* certainly exponential, but we can optimise this with *memoisation*. We get:
 
 ```haskell
-data TreeNode = Leaf Bool | Node String Int TreeNode TreeNode
+data TreeNode = Leaf Bool | Node Int Int TreeNode TreeNode
 
-type Memo = Map (Int, Int) ->
+-- We've added another int to Node, the first int represents the height, the second one represents a unique index for that node. Every Node has a unique index
+
+type Memo = Map (Int, Int) TreeNode
 
 and :: TreeNode -> TreeNode -> (TreeNode, Memo)
 and (Leaf v1) (Leaf v2) = Leaf $ v1 && v2
