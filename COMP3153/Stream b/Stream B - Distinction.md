@@ -49,7 +49,13 @@ For concreteness I will rewrite this in pseudocode :
 data TreeNode = Leaf Bool | Node Int TreeNode TreeNode
 
 def And(TreeNode a, TreeNode b):
-	
+	if a is (Leaf v1) and b is (Leaf v2):
+		return Leaf (v2 && v2)
+	if a is (Leaf v1) and b is (TreeNode h fn tn):
+		return TreeNode h And(Leaf v1, fn) And(Leaf v1, tn)
+	if a is (TreeNode h fn tn) and b is (Leaf v1):
+		return TreeNode h And(fn, Leaf v1) And(tn, Leaf v1)
+	if a is (TreeNode h fn tn) and 
 
 and :: TreeNode -> TreeNode -> TreeNode
 and (Leaf v1) (Leaf v2) = Leaf $ v1 && v2
