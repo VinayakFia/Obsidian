@@ -39,12 +39,12 @@ $$\alpha\textbf{B}_{2}\beta \equiv (\neg \alpha \wedge \neg \beta)\textbf{U}(\al
 - Until position 2 $\neg a \wedge \neg b$ is never satisfied.
 *So this word satisfied $\alpha \textbf{B}_2 \beta$.*
 ## B.2
-> Let A and B be OBDDs over n variables. Let $w_A (w_B)$ be the maximum number of nodes appearing in any row of A (B, respectively) – so A has at most $nw_A$ nodes (excluding T/F) and B has at most $nw_B$ nodes (excluding T/F). By considering a Dynamic Programming solution to compute A ⊗ B (or otherwise), prove that A ⊗ B has at most nwAwB nodes (excluding T/F)
+> Let A and B be OBDDs over n variables. Let $w_A (w_B)$ be the maximum number of nodes appearing in any row of A (B, respectively) – so A has at most $nw_A$ nodes (excluding T/F) and B has at most $nw_B$ nodes (excluding T/F). By considering a Dynamic Programming solution to compute $A ⊗ B$ (or otherwise), prove that $A ⊗ B$ has at most $nw_Aw_B$ nodes (excluding T/F)
 
 Algorithm (from lectures):
 $$\phi \wedge \varphi = \text{if } b_1 \text{ then } \phi_1 \wedge \varphi_1 \text{ else } \phi_2 \wedge \varphi_2$$
 
-For concreteness I will rewrite this in something akin to haskell:
+For concreteness I will rewrite this in Haskell:
 ```haskell
 data TreeNode = Leaf Bool | Node Int TreeNode TreeNode
 
@@ -57,3 +57,5 @@ and (TreeNode h fn tn) (TreeNode h' fn' tn')
 	| h < h' = TreeNode h (fn `and` (TreeNode h' fn' tn')) (tn `and` (TreeNode h' fn' tn'))
 	| otherwise = TreeNode h (fn' `and` (TreeNode h fn tn)) (tn' `and` (TreeNode h fn tn))
 ```
+
+
