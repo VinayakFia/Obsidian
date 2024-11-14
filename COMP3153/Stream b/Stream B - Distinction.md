@@ -51,6 +51,5 @@ and (Leaf v1) (Leaf v2) = Leaf $ v1 && v2
 and (Leaf v1) (TreeNode h fn tn) = TreeNode h ((Leaf v1) `and` fn) ((Leaf v1) `and` tn)
 and (TreeNode h fn tn) (Leaf v1) = (Leaf v1) `and` (TreeNode h fn tn)
 and (TreeNode h fn tn) (TreeNode h' fn' tn')
-	| h == h' = TreeNode h (fn `and` fn') (tn `and` tn
-	)
+	| h == h' = TreeNode h (fn `and` fn') (tn `and` tn')
 ```
