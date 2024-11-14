@@ -112,4 +112,7 @@ fn And(TreeNode a, TreeNode b) -> TreeNode:
 	return result
 ```
 
-The crucial change here is that 
+In this way, we never create the same node twice, and the resulting graph is automatically reduced. Now,
+- We can have at most $w_A$ nodes from A at level i
+- We can have at most $w_B$ nodes from B at level i
+- Each node from A needs to be combined with each node from B at the same level
