@@ -46,6 +46,12 @@ that is, if a is to occur infinitely, then eventually c will never occur again
 
 ## B.3
 We have the formula 
+
+
+
+==================================
+$$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
+We have the formula 
 $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
 We can replace $\textbf{G}a$ with $\neg\textbf{F}\neg a$ so we have
 $$(\neg \textbf{F}\neg(\textbf{F}a))\implies(\textbf{F}(\neg\textbf{F}c))$$
