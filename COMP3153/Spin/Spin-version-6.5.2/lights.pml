@@ -15,7 +15,7 @@ proctype Waiting(int n, chan c) {
   printf("Light %d waiting\n", n);
 
   if
-    :: chan?stop -> run Stop(n, c)
+    :: chan?[stop] -> run Stop(n, c)
   fi;
 }
 
