@@ -2,8 +2,8 @@ mtype = { stop, ready, car, go }
 
 proctype Car(chan c) {
   if
-    :: c!stop;
-    :: else skip;
+    :: true -> c!stop;
+    :: else -> skip;
   fi;
 }
 
