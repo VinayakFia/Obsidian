@@ -1,9 +1,9 @@
 // SETUP
-mtype = { stop, ready, car, go }
+mtype = { stop, ready, car, go };
 
 chan light1 = [16] of { mtype };
 chan light2 = [16] of { mtype };
-int car = 0;
+int cars[5] = 0;
 
 // HELPERS
 
@@ -25,10 +25,9 @@ proctype Stop(int n; chan c) {
 
   if
     :: c?go -> run Waiting(n, c);
-    :: c?car -> {
-      car[n] = car[n] + 1;
+    :: c?car ->
+      cars[n] = cars[n] + 1;
       run StoppedCar(n, c);
-    };
   fi;
 }
 
@@ -45,11 +44,10 @@ proctype Waiting(int n; chan c) {
 
   if
     :: c?stop -> run Stop(n, c);
-    :: c?car -> {
-      car[n] = car[n] + 1;
+    :: c?car ->
+      cars[n] = cars[n] + 1;
       run Broadcast(ready);
       run Ready(n, c);
-    };
   fi;
 }
 
