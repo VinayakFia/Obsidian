@@ -3,7 +3,7 @@
 
 Consider $A_0$:
 ![[Pasted image 20241115151228.png]]
-Lets call the node on the left $q_0$ and the node on the right $q_1$. We may go on the infinite cycle $q_0 \rightarrow q_1 \rightarrow q_0 \rightarrow q_1 ...$ . Here the requirement $\textbf{FG}p$, that is, *eventually $p$ will always be satisfied is not help*.
+Lets call the node on the left $q_0$ and the node on the right $q_1$. We may go on the infinite cycle $q_0 \rightarrow q_1 \rightarrow q_0 \rightarrow q_1 ...$ . Here the requirement $\textbf{FG}p$, that is, *eventually $p$ will always be satisfied is not held*. **So, $A_n$ does not satisfy $\textbf{FG}p$.**
 
 Consider $B$, lets start with the base case $B_0$:
 ![[Pasted image 20241115151621.png]]
@@ -11,4 +11,8 @@ Here, after 1 step, $p$ will always be satisfied as there is a loop on the rhs n
 
 Going with an induction approach, lets assume that $B_{n-1}$ satisfies $\textbf{FG}p$. Does $B_{n}$ satisfy $\textbf{FG}p$? Lets consider $B_n$:
 ![[Pasted image 20241115151805.png]]
-Let LH
+Lets call the lhs node $q_0$ and the rhs node $q_1$. After 1 step we reach $q_1$. Here, we either loop forever at $q_1$ which satisfies $\textbf{FG}p$, or we eventually go to $B_{n-1}$, which satisfied $\textbf{FG}p$ according to the inductive hypothesis.
+
+**As such, $B_n$ satisfies $\textbf{FG}p$.**
+
+#### Part B
