@@ -3,6 +3,7 @@ mtype = { stop, ready, car, go }
 
 chan light1 = [16] of { mtype };
 chan light2 = [16] of { mtype };
+int car = 0;
 
 // HELPERS
 
