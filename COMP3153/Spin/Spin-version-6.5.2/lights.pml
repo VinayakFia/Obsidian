@@ -1,21 +1,27 @@
 mtype = { stop, ready, car, go }
 
-proctype Car() {
+proctype Car(chan c) {
   if
-    :: car_comes = true;
-    :: car_comes = false;
-  fi
-
-
+    :: c!stop;
+    :: else skip;
+  fi;
 }
 
-proctype Light(int n) {
-  
+proctype Stop(int n, chan c) {
+  printf("Light %d stopped\n", n);
+}
+
+proctype Waiting(int n, chan c) {
+  printf("Light %d waiting\n", n);
+
+  if
+    :: chan?stop -> run Stop(n, c)
+  fi;
 }
 
 init {
-  run Light(0);
-  run Light(1);
-  run Light(2);
+  chan light1 = [1] of { stop };
+  run Light(1, c);
+  Car(c);
 }
 
