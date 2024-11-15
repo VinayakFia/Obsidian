@@ -33,6 +33,15 @@ proctype Stop(int n; chan c) {
 
 proctype StoppedCar(int n; chan c) {
   printf("Light %d stoppedCar\n", n);
+
+  if
+    :: c?car ->
+      cars[n] = cars[n] + 1;
+      run StoppedCar(n, c);
+    :: c?go ->
+      run Broadcast(ready);
+      run Ready(n, c);
+  fi;
 }
 
 proctype Ready(int n; chan c) {
