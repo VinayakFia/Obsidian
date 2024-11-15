@@ -45,4 +45,8 @@ $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
 that is, if a is to occur infinitely, then eventually c will never occur again
 
 ## B.3
+We have the formula 
+$$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
+W
+
 ![[Pasted image 20241110180018.png]]
