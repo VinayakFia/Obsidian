@@ -51,7 +51,7 @@ We can replace $a\rightarrow b$ with $\neg a \vee b$, so we have:
 $$\neg(\textbf{GF}a)\vee(\textbf{FG}\neg c)$$
 Lets replace $\textbf{Ga}$ with $\neg\textbf{F}\neg{a}$ in the LHS of this formula, we get:
 
-$$\neg(\neg\textbf{F}\neg)$$
+$$\neg(\neg\textbf{F}\neg(\textbf{F}a))\vee(\textbf{FG}\neg c)$$
 
 ==================================
 $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
