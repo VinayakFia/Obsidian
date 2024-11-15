@@ -3,7 +3,7 @@ mtype = { stop, ready, car, go }
 
 chan light1 = [16] of { mtype };
 chan light2 = [16] of { mtype };
-int car[2];
+int car[2] = { 0, 0 };
 
 // HELPERS
 
@@ -55,7 +55,6 @@ proctype Waiting(int n; chan c) {
 
 // MAIN
 init {
-
   run Waiting(1, light1);
   run Waiting(2, light2);
 
