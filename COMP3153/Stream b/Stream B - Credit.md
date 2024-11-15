@@ -53,7 +53,12 @@ We can replace $a\implies b$ with $\neg a \vee b$, giving us
 $$\neg(\neg\textbf{F}\neg(\textbf{F}a))\vee(\textbf{F}(\neg\textbf{F}c))$$
 Simplifying we have
 $$\textbf{F}\neg(\textbf{F}a)\vee(\textbf{F}(\neg\textbf{F}c))$$
-Lets consider $\textbf{F}\neg(\textbf{F}a)$. $\textbf{F}a$ means that eventually a occur. $\neg\textbf{F}a$ means that a will not occur. $\textbf{F}\neg(\textbf{F}a)$ means that eventually
+Lets consider $\textbf{F}\neg(\textbf{F}a)$. $\textbf{F}a$ means that eventually a occur. $\neg\textbf{F}a$ means that a will not occur. $\textbf{F}\neg(\textbf{F}a)$ means that eventually $a$ will never occur again.
+
+Next lets consider $\textbf{F}(\neg\textbf{F}c)$. $\neg\textbf{F}c$ means that $c$ will not occur. $\textbf{F}(\neg\textbf{F}c)$ means that eventually $c$ will never occur again.
+
+
+
 Then replace $G$ with
 
 ![[Pasted image 20241110180018.png]]
