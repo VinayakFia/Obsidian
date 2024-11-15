@@ -25,8 +25,15 @@ proctype Stop(int n; chan c) {
 
   if
     :: c?go -> run Waiting(n, c);
-    // TODO: car?
+    :: c?car -> {
+      car[n] = car[n] + 1;
+      run StoppedCar(n, c);
+    };
   fi;
+}
+
+proctype StoppedCar(int n; chan c) {
+  printf("Light %d stoppedCar\n", n);
 }
 
 proctype Ready(int n; chan c) {
@@ -42,7 +49,7 @@ proctype Waiting(int n; chan c) {
       car[n] = car[n] + 1;
       run Broadcast(ready);
       run Ready(n, c);
-    }
+    };
   fi;
 }
 
