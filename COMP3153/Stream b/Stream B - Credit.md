@@ -54,9 +54,7 @@ Lets replace $\textbf{Ga}$ with $\neg\textbf{F}\neg{a}$ in the LHS of this formu
 $$\neg(\neg\textbf{F}\neg(\textbf{F}a))\vee(\textbf{FG}\neg c)$$
 simplifying we get
 $$\textbf{F}\neg(\textbf{F}a)\vee(\textbf{FG}\neg c)$$
-Lets consider $\textbf{F}\neg(\textbf{F}a)$. $\textbf{F}a$ means that eventually $a$ occur. $\neg\textbf{F}a$ means that a will not occur now or in the future. $\textbf{F}\neg(\textbf{F}a)$ means that eventually $a$ will never occur again. Similarly $\textbf{FG}\neg c$ means that eventually $c$ will never occur. So eventually, either $a$ will not occur again or $c$ will not occur again.
-
-So we get the diagram:
-![[Pasted image 20241115145340.png]]
+Lets consider $\textbf{F}\neg(\textbf{F}a)$. $\textbf{F}a$ means that eventually $a$ occur. $\neg\textbf{F}a$ means that a will not occur now or in the future. $\textbf{F}\neg(\textbf{F}a)$ means that eventually $a$ will never occur again. Similarly $\textbf{FG}\neg c$ means that eventually $c$ will never occur. **So eventually, either $a$ will not occur again or $c$ will not occur again.** So we get the diagram:
+![[Pasted image 20241115145340.png|250]]
 
 Here, we can accept `abc` at $q_0$, but eventually to have an accepting word we must go to $q_2$ where we never accept $c$ or $q_1$ where we never accept $a$.
