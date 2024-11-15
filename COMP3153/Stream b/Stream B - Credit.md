@@ -52,6 +52,14 @@ $$\neg(\textbf{GF}a)\vee(\textbf{FG}\neg c)$$
 Lets replace $\textbf{Ga}$ with $\neg\textbf{F}\neg{a}$ in the LHS of this formula, we get:
 
 $$\neg(\neg\textbf{F}\neg(\textbf{F}a))\vee(\textbf{FG}\neg c)$$
+simplifying we get
+$$\textbf{F}\neg(\textbf{F}a)\vee(\textbf{FG}\neg c)$$
+Lets consider $\textbf{F}\neg(\textbf{F}a)$. $\textbf{F}a$ means that eventually $a$ occur. $\neg\textbf{F}a$ means that a will not occur now or in the future. $\textbf{F}\neg(\textbf{F}a)$ means that eventually $a$ will never occur again.
+
+Similarly $\textbf{FG}\neg c$ means that eventually $c$ will never occur.
+
+So we get the diagram:
+
 
 ==================================
 $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
