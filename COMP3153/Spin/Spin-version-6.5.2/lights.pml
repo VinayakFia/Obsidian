@@ -1,8 +1,10 @@
 mtype = { stop, ready, car, go }
 
-proctype Car(chan c) {
-  printf("VROOM\n");
-  c!stop;
+proctype Sensor(int i; chan c) {
+  do
+    :: printf("Car for %d\n", i); c!stop;
+    :: printf("No cars for %d\n", i); skip;
+  od
 }
 
 proctype Stop(int n; chan c) {
@@ -18,11 +20,13 @@ proctype Waiting(int n; chan c) {
 }
 
 init {
-  chan light1 = [1] of { mtype };
-  light1!stop;
-  atomic{
-  run Light(1, light1);
-  run Car(light1);
-  }
+  chan light1 = [16] of { mtype };
+  chan light2 = [16] of { mtype };
+
+  run Waiting(1, light1);
+  run Waiting(2, light2);
+
+  run Sensor(1, light1);
+  run Sensor(2, light2);
 }
 
