@@ -54,11 +54,19 @@ We have the buchi automaton for $\textbf{F}a$
 stateDiagram-v2
 	direction LR
 
+	q1: (q1)
+
 	[*] --> q0
 	q0 --> q0 : a,b,c
-	q0 --> q1 
+	q0 --> q1 : a
+	q1 --> q1 : a,b,c
 ```
 
+Then we have $\textbf{GF}a$ as
+```mermaid
+stateDiagram-v2
+	direction LR
+```
 
 
 ==================================
