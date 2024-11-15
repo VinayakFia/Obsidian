@@ -47,8 +47,13 @@ that is, if a is to occur infinitely, then eventually c will never occur again
 ## B.3
 We have the formula 
 $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
-We can replace $Ga$ with $\neg\textbf{F}\neg a$ so we have
-$$\textbf{(\textbf{})}$$
+We can replace $\textbf{G}a$ with $\neg\textbf{F}\neg a$ so we have
+$$(\neg \textbf{F}\neg(\textbf{F}a))\implies(\textbf{F}(\neg\textbf{F}c))$$
+We can replace $a\implies b$ with $\neg a \vee b$, giving us
+$$\neg(\neg\textbf{F}\neg(\textbf{F}a))\vee(\textbf{F}(\neg\textbf{F}c))$$
+Simplifying we have
+$$\textbf{F}\neg(\textbf{F}a)\vee(\textbf{F}(\neg\textbf{F}c))$$
+Lets consider $\textbf{F}\neg(\textbf{F}a)$. $\textbf{F}a$ means that eventually a occur. $\neg\textbf{F}a$ means that 
 Then replace $G$ with
 
 ![[Pasted image 20241110180018.png]]
