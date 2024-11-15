@@ -49,7 +49,15 @@ We have the formula
 $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
 We can replace $a\rightarrow b$ with $\neg a \vee b$, so we have:
 $$\neg(\textbf{GF}a)\vee(\textbf{FG}\neg c)$$
+We have the buchi automaton for $\textbf{F}a$
+```mermaid
+stateDiagram-v2
+	direction LR
 
+	[*] --> q0
+	q0 --> q0 : a,b,c
+	q0 --
+```
 
 
 
