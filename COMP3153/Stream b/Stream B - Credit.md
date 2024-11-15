@@ -56,7 +56,7 @@ stateDiagram-v2
 
 	[*] --> q0
 	q0 --> q0 : a,b,c
-	q0 --
+	q0 --> q1 
 ```
 
 
