@@ -45,7 +45,11 @@ $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
 that is, if a is to occur infinitely, then eventually c will never occur again
 
 ## B.3
-We have the formula 
+We have the formula
+$$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
+We can replace $a\rightarrow b$ with $\neg a \vee b$, so we have:
+$$\neg(\textbf{GF}a)\vee(\textbf{FG}\neg c)$$
+
 
 
 
