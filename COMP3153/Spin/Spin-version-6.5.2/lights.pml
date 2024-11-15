@@ -1,5 +1,14 @@
 mtype = { stop, ready, car, go }
 
+chan light1 = [16] of { mtype };
+chan light2 = [16] of { mtype };
+int car[2];
+
+proctype Broadcast(mtype msg) {
+  light1!msg;
+  light2!msg;
+}
+
 proctype Sensor(int i; chan c) {
   do
     :: printf("Car for %d\n", i); c!stop;
@@ -20,8 +29,6 @@ proctype Waiting(int n; chan c) {
 }
 
 init {
-  chan light1 = [16] of { mtype };
-  chan light2 = [16] of { mtype };
 
   run Waiting(1, light1);
   run Waiting(2, light2);
