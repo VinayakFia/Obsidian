@@ -48,7 +48,7 @@ that is, if a is to occur infinitely, then eventually c will never occur again
 We have the formula 
 $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
 We can replace $Ga$ with $\neg\textbf{F}\neg a$ so we have
-$$\textbf{(\textbf{G})}$$
+$$\textbf{(\textbf{})}$$
 Then replace $G$ with
 
 ![[Pasted image 20241110180018.png]]
