@@ -20,8 +20,8 @@ proctype Waiting(int n, chan c) {
 }
 
 init {
-  chan light1 = [1] of { stop };
-  run Light(1, c);
-  Car(c);
+  chan light1 = [1] of { mtype };
+  run Light(1, light1);
+  Car(light1);
 }
 
