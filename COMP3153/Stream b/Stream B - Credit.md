@@ -45,31 +45,6 @@ $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
 that is, if a is to occur infinitely, then eventually c will never occur again
 
 ## B.3
-We have the formula
-$$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
-We can replace $a\rightarrow b$ with $\neg a \vee b$, so we have:
-$$\neg(\textbf{GF}a)\vee(\textbf{FG}\neg c)$$
-We have the buchi automaton for $\textbf{F}a$
-```mermaid
-stateDiagram-v2
-	direction LR
-
-	q1: (q1)
-
-	[*] --> q0
-	q0 --> q0 : a,b,c
-	q0 --> q1 : a
-	q1 --> q1 : a,b,c
-```
-
-Then we have $\textbf{GF}a$ as
-```mermaid
-stateDiagram-v2
-	direction LR
-```
-
-
-==================================
 $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
 We have the formula 
 $$(\textbf{GF}a) \rightarrow (\textbf{FG}\neg c)$$
