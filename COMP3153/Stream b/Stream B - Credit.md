@@ -55,21 +55,11 @@ Simplifying we have
 $$\textbf{F}\neg(\textbf{F}a)\vee(\textbf{F}(\neg\textbf{F}c))$$
 Lets consider $\textbf{F}\neg(\textbf{F}a)$. $\textbf{F}a$ means that eventually a occur. $\neg\textbf{F}a$ means that a will not occur. $\textbf{F}\neg(\textbf{F}a)$ means that eventually $a$ will never occur again.
 
+We can model $\textbf{F}a$ with 
+
 Next lets consider $\textbf{F}(\neg\textbf{F}c)$. $\neg\textbf{F}c$ means that $c$ will not occur. $\textbf{F}(\neg\textbf{F}c)$ means that eventually $c$ will never occur again.
 
 So we have that either eventually $a$ will never occur or eventually $c$ will never occur.
-
-```mermaid
-stateDiagram-v2
-	direction LR
-
-	[*] --> q0
-	q0 --> q0
-
-	q1 --> q1 : b, c
-
-	q2 --> q2 : a, b
-```
 
 Then replace $G$ with
 
