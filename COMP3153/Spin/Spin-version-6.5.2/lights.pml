@@ -1,5 +1,16 @@
+mtype = { stop, ready, car, go }
+
+proctype Car() {
+  if
+    :: car_comes = true;
+    :: car_comes = false;
+  fi
+
+
+}
+
 proctype Light(int n) {
-  printf("Hello world, this is process %d\n", _pid);
+  
 }
 
 init {
