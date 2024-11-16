@@ -17,7 +17,7 @@ bool lock = false;
 proctype Broadcast(int n; mtype msg) {
   if
     :: n == 0 -> light2!msg;
-    :: else -> light2!msg;
+    :: else -> light1!msg;
   fi;
 }
 
