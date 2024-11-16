@@ -101,13 +101,13 @@ proctype Ready(int n; chan c) {
   od;
 
   if
-    :: c?[car] ->
-      c?car;
-      cars[n] = cars[n] + 1;
-      run Ready(n, c);
     :: c?[stop] ->
       c?stop;
       run StoppedCar(n, c);
+    :: !c?[stop] && c?[car] ->
+      c?car;
+      cars[n] = cars[n] + 1;
+      run Ready(n, c);
     :: else ->
       run Broadcast(n, stop);
       run Green(n, c, 5);
