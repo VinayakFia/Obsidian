@@ -22,6 +22,7 @@ proctype DecrementCar(int n) {
 }
 
 // STATES
+
 proctype Sensor(int i; chan c) {
   do
     :: printf("Car for %d\n", i); c!car;
