@@ -115,6 +115,7 @@ proctype Amber(int n; chan c; int timer) {
 
   if
     :: timer == 0 -> {
+      run Broadcast(n, go);
       if
         :: cars[n] == 0 -> run Waiting(n, c);
         :: else ->
