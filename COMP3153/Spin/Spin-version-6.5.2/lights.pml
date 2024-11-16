@@ -13,9 +13,10 @@ proctype Broadcast(int n; mtype msg) {
   fi;
 }
 
-proctype DecrementCar(int n) {
+proctype DecrementCar(int n; chan c) {
   if
-    :: cars[n] > 0 -> cars[n] = cars[n] - 1;
+    :: c?[car] -> c?car;
+    :: !c?[car] && cars[n] > 0 -> cars[n] = cars[n] - 1;
     :: else -> skip;
   fi;
 }
@@ -83,30 +84,14 @@ proctype Ready(int n; chan c) {
       run Ready(n, c);
     :: else ->
       run Broadcast(n, stop);
-      run GreenInfinity(n, c);
-  fi;
-}
-
-proctype GreenInfinity(int n; chan c) {
-  printf("Light %d is Green Infinity\n", n);
-
-  run DecrementCar(n);
-
-  if
-    :: c?[ready] ->
-      c?ready;
       run Green(n, c, 5);
-    :: c?[car] ->
-      c?car;
-      run GreenInfinity(n, c);
-    :: else -> run GreenInfinity(n, c);
   fi;
 }
 
 proctype Green(int n; chan c; int timer) {
   printf("Light %d is green on time %d\n", n, timer);
 
-  run DecrementCar(n);
+  run DecrementCar(n, c);
 
   if
     :: timer == 3 -> run Amber(n, c, 3);
@@ -117,7 +102,7 @@ proctype Green(int n; chan c; int timer) {
 proctype Amber(int n; chan c; int timer) {
   printf("Light %d is amber on time %d\n", n, timer);
 
-  run DecrementCar(n);
+  run DecrementCar(n, c);
 
   if
     :: timer == 0 -> {
