@@ -20,10 +20,6 @@ proctype DecrementCar(int n) {
   fi;
 }
 
-proctype SkipAllBut(mtype m, chan c) {
-  
-}
-
 // STATES
 
 proctype Sensor(int i; chan c) {
@@ -75,12 +71,14 @@ proctype GreenInfinity(int n; chan c) {
   printf("Light %d is Green Infinity\n", n);
 
   run DecrementCar(n);
-  run SkipAllBut(c; ready);
 
   if
     :: c?[ready] ->
       c?ready;
       run Green(n, c, 5);
+    :: c?[car] ->
+      c?car;
+      run GreenInfinity(n, c);
     :: else -> run GreenInfinity(n, c);
   fi;
 }
