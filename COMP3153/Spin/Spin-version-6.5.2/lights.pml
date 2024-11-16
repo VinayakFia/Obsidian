@@ -27,6 +27,7 @@ proctype Sensor(int i; chan c) {
     //:: printf("Car for %d\n", i); c!car;
     //:: printf("No cars for %d\n", i); skip;
   //od
+  // TODO: make this run sometimes not always
   do
     ::  c!car;
   od
