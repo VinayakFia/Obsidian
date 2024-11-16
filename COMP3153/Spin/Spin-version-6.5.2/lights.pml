@@ -94,10 +94,13 @@ proctype Ready(int n; chan c) {
   od;
 
   if
-    :: c?[stop] ->
+    :: c?[go] ->
+      c?go
+      run Ready(n, c);
+    :: !c?[go] && c?[stop] ->
       c?stop;
       run StoppedCar(n, c);
-    :: !c?[stop] && c?[car] ->
+    :: !c?[go] && !c?[stop] && c?[car] ->
       c?car;
       cars[n] = cars[n] + 1;
       run Ready(n, c);
