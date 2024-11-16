@@ -3,12 +3,12 @@ mtype = { stop, ready, car, go };
 
 chan light1 = [16] of { mtype };
 chan light2 = [16] of { mtype };
-int cars[5] = 0;
+int cars[2] = { 0, 0 };
 
 // HELPERS
 proctype Broadcast(int n; mtype msg) {
   if
-    :: n == 1 -> light2!msg;
+    :: n == 0 -> light2!msg;
     :: else -> light2!msg;
   fi;
 }
@@ -28,8 +28,24 @@ proctype Sensor(int i; chan c) {
     //:: printf("No cars for %d\n", i); skip;
   //od
   // TODO: make this run sometimes not always
+  int count = 0;
   do
-    ::  c!car;
+    ::
+      if
+        :: count = 0;
+        :: count = 1;
+        :: count = 2;
+        :: count = 3;
+        :: count = 4;
+      fi;
+
+      if
+        :: count == 4 ->
+          printf("Car for %d\n", i);
+          c!car;
+        :: else ->
+          printf("No cars for %d\n", i);
+      fi;
   od
 }
 
@@ -130,10 +146,10 @@ proctype Waiting(int n; chan c) {
 
 // MAIN
 init {
-  run Waiting(1, light1);
-  run Waiting(2, light2);
+  run Waiting(0, light1);
+  run Waiting(1, light2);
 
-  run Sensor(1, light1);
-  run Sensor(2, light2);
+  run Sensor(0, light1);
+  run Sensor(1, light2);
 }
 
