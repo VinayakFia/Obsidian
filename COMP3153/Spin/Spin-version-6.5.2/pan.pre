@@ -1,11 +1,18 @@
-// SETUP
+# 1 "lights.pml"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 414 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "lights.pml" 2
+
 mtype = { stop, ready, car, go };
 
 chan light1 = [128] of { mtype };
 chan light2 = [128] of { mtype };
 int cars[2] = { 0, 0 };
 
-// HELPERS
+
 proctype Broadcast(int n; mtype msg) {
   if
     :: n == 0 -> light2!msg;
@@ -21,14 +28,14 @@ proctype DecrementCar(int n; chan c) {
   fi;
 }
 
-// STATES
+
 
 proctype Sensor(int i; chan c) {
-  //do
-    //:: printf("Car for %d\n", i); c!car;
-    //:: printf("No cars for %d\n", i); skip;
-  //od
-  // TODO: make this run sometimes not always
+
+
+
+
+
   int count = 0;
   do
     ::
@@ -134,7 +141,7 @@ proctype Waiting(int n; chan c) {
   fi;
 }
 
-// MAIN
+
 init {
   run Waiting(0, light1);
   run Waiting(1, light2);
@@ -142,4 +149,3 @@ init {
   run Sensor(0, light1);
   run Sensor(1, light2);
 }
-
