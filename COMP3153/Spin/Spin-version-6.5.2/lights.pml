@@ -4,6 +4,7 @@ mtype = { stop, ready, car, go };
 chan light1 = [128] of { mtype };
 chan light2 = [128] of { mtype };
 int cars[2] = { 0, 0 };
+bool lock = false;
 
 // HELPERS
 proctype Broadcast(int n; mtype msg) {
@@ -79,14 +80,29 @@ proctype StoppedCar(int n; chan c) {
 proctype Ready(int n; chan c) {
   printf("Light %d ready\n", n);
 
+  bool tmp = false;
+
+  do
+    :: atomic {
+         tmp = lock;
+         lock = true;
+       } ->
+       if
+          :: tmp;
+          :: else -> break;
+       fi;
+  od;
+
   if
     :: c?[car] ->
       c?car;
       cars[n] = cars[n] + 1;
       run Ready(n, c);
+      lock = false;
     :: else ->
       run Broadcast(n, stop);
       run Green(n, c, 5);
+      lock = false;
   fi;
 }
 
