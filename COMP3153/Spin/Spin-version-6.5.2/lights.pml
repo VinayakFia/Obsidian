@@ -135,13 +135,14 @@ proctype Amber(int n; chan c; int timer) {
 proctype Waiting(int n; chan c) {
   printf("Light %d waiting\n", n);
 
-  if
+  do
     :: c?stop -> run Stop(n, c);
     :: c?car ->
       cars[n] = cars[n] + 1;
       run Broadcast(n, ready);
       run Ready(n, c);
-  fi;
+    :: c?ready -> skip
+  od
 }
 
 // MAIN
