@@ -6,7 +6,6 @@ chan light2 = [16] of { mtype };
 int cars[5] = 0;
 
 // HELPERS
-
 proctype Broadcast(int n; mtype msg) {
   if
     :: n == 1 -> light2!msg;
@@ -58,7 +57,8 @@ proctype Ready(int n; chan c) {
   printf("Light %d ready\n", n);
 
   if
-    :: c?car ->
+    :: c?[car] ->
+      c?car;
       cars[n] = cars[n] + 1;
       run Ready(n, c);
     :: else ->
@@ -73,7 +73,9 @@ proctype GreenInfinity(int n; chan c) {
   run DecrementCar(n);
 
   if
-    :: c?ready -> run Green(n, c, 5);
+    :: c?[ready] ->
+      c?ready;
+      run Green(n, c, 5);
     :: else -> run GreenInfinity(n, c);
   fi;
 }
@@ -95,13 +97,14 @@ proctype Amber(int n; chan c; int timer) {
   run DecrementCar(n);
 
   if
-    :: timer == 0 ->
+    :: timer == 0 -> {
       if
         :: cars[n] == 0 -> run Waiting(n, c);
         :: else ->
-          Broadcast(n, ready);
+          run Broadcast(n, ready);
           run Ready(n, c);
       fi;
+    }
     :: else -> run Amber(n, c, timer - 1);
   fi;
 }
