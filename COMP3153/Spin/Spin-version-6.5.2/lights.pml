@@ -12,6 +12,13 @@ proctype Broadcast(mtype msg) {
   light2!msg;
 }
 
+proctype DecrementCar(int n) {
+  if
+    :: cars[n] > 0 -> cars[n] = cars[n] - 1;
+    :: else -> skip;
+  fi;
+}
+
 // STATES
 proctype Sensor(int i; chan c) {
   do
@@ -46,6 +53,37 @@ proctype StoppedCar(int n; chan c) {
 
 proctype Ready(int n; chan c) {
   printf("Light %d ready\n", n);
+
+  if
+    :: c?car ->
+      cars[n] = cars[n] + 1;
+      run Ready(n, c);
+    :: else ->
+      run Broadcast(stop);
+      run GreenInfinity(n, c);
+  fi;
+}
+
+proctype GreenInfinity(int n; chan c) {
+  printf("Light %d is Green Infinity\n", n);
+
+  run DecrementCar(n);
+
+  if
+    :: c?ready -> run Green(n, c, 5);
+    :: else -> run GreenInfinity(n, c);
+  fi;
+}
+
+proctype Green(int n; chan c; int timer) {
+  printf("Light %d is on time %d\n", n, timer);
+
+  run DecrementCar(n);
+
+  if
+    :: timer == 3 -> run Amber(n, c, 3);
+    :: else -> run Green(n, c, timer - 1);
+  fi;
 }
 
 proctype Waiting(int n; chan c) {
