@@ -81,6 +81,7 @@ proctype PedestrianLight(int this)
 p_start:
   AquireLock();
   //printf("HERE\n");
+  printf("L: %e, %e P: %e, %e, C: %d\n", LStates[0], LStates[1], PStates[0], PStates[1], counter);
   if
   // Has pedestrians and perpendicular light is RED
   :: atomic { PStates[this] == RED && LStates[other] == RED && Peds[this] > 0 } -> atomic { printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 3 };
