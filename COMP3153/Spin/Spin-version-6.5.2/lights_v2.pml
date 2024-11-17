@@ -32,17 +32,16 @@ inline ReleaseLock()
 
 proctype Signal(int chance)
 {
-  int light;
+  int light = 0
 car_start:
-  do
+  if
   :: light = 1
   :: light = 0
-  :: break
-  od;
+  fi;
 
   if
-  :: atomic { printf("Car for %d\n", light); Cars[light]++ };
-  :: atomic { printf("Pedestrian for %d\n", light); Peds[light]++ }
+  :: atomic { Cars[light]++ };
+  :: atomic { Peds[light]++ }
   :: else -> skip;
   fi;
 
@@ -58,7 +57,7 @@ t_start:
   AquireLock();
   if
   // Has cars and other light is not green
-  :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 } -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
+  :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 && PStates[other] == RED } -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
 
   // Light flow
   :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter > 0 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this]-- }; // Green Infinity state from diagram
@@ -81,7 +80,11 @@ p_start:
   AquireLock();
   if
   // Has pedestrians and perpendicular light is RED
-  :: atomic { LStates[other] == RED && Peds[0] > 0 } -> atomic { printf("P%d->Green", this); PStates[this] = GREEN; counter = 3 };
+  :: atomic { LStates[other] == RED && Peds[0] > 0 } -> atomic { printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 3 };
+
+  // Light flow
+  :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green\n", this); counter--; };
+  :: atomic { PStates[this] == GREEN && counter == 0 } -> atomic { printf("P%d->RED\n", this); PStates[this] = RED; };
   fi;
   ReleaseLock();
   goto p_start;
@@ -89,18 +92,27 @@ p_start:
 
 proctype Safety() {
   do
+  // Perpendicular lights should not be on at the same time
   :: assert(!(LStates[0] == GREEN && LStates[1] == GREEN));
   :: assert(!(LStates[0] == AMBER && LStates[1] == AMBER));
   :: assert(!(LStates[0] == AMBER && LStates[1] == GREEN));
   :: assert(!(LStates[0] == GREEN && LStates[1] == AMBER));
+
+  // Perpendicular pedestrian and traffic lights should not be on at the same time
+  :: assert(!(PStates[0] == GREEN && LStates[1] == GREEN));
+  :: assert(!(PStates[1] == GREEN && LStates[0] == GREEN));
   od
 }
 
 init {
   // Setup
-  run Signal(40);
   run TrafficLight(0);
   run TrafficLight(1);
+
+  run PedestrianLight(0);
+  run PedestrianLight(1);
+
+  run Signal(40);
 
   // Setup Safety
   run Safety();
