@@ -3,6 +3,9 @@ mtype = { RED, GREEN, AMBER };
 int Cars[2] = { 0, 0 };
 mtype LStates[2] = RED;
 
+int Peds[2] = { 0, 0 };
+mtype PStates[2] = RED;
+
 // LOCK
 bool lock = false;
 inline AquireLock()
@@ -66,6 +69,20 @@ t_start:
   fi;
   ReleaseLock();
   goto t_start;
+}
+
+proctype PedestrianLight(int this)
+{
+  int counter = 0;
+  int other = (this + 1) % 2;
+
+p_start:
+  AquireLock();
+  if
+  :: atomic { }
+  fi;
+  ReleaseLock();
+  goto p_start;
 }
 
 proctype Safety() {
