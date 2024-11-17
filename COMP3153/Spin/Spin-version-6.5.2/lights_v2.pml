@@ -42,6 +42,7 @@ car_start:
 
   if
   :: atomic { printf("Car for %d\n", light); Cars[light]++ };
+  :: atomic { printf("Pedestrian for %d\n", light); Peds[light]++ }
   :: else -> skip;
   fi;
 
@@ -79,7 +80,8 @@ proctype PedestrianLight(int this)
 p_start:
   AquireLock();
   if
-  :: atomic { }
+  // Has pedestrians and perpendicular light is RED
+  :: atomic { LStates[other] == RED && Peds[0] > 0 } -> atomic { printf("P%d->Green", this); PStates[this] = GREEN; counter = 3 };
   fi;
   ReleaseLock();
   goto p_start;
