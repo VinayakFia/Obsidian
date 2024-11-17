@@ -5,6 +5,8 @@ chan Chan_L0 = [1] of { mtype };
 chan Chan_L1 = [1] of { mtype };
 chan Chan_Intersection [1] of { mtype };
 
+int Cars[2] = { 0, 0 };
+
 mtype LStates[2] = RED;
 chan LChans[2] = { Chan_L0, Chan_L1 };
 
@@ -27,7 +29,7 @@ car_start:
   od;
 
   if
-  :: nr < chance -> LChans[light]!CAR;
+  :: nr < chance -> Cars[light] = Cars[light] + 1;
   :: else -> skip;
   fi;
 
@@ -36,29 +38,13 @@ car_start:
 
 proctype TrafficLight0()
 {
-l0_waiting:
+  int counter == 0;
   do
-  :: Chan_L0?[CAR] -> atomic
-  {
-    Chan_L0?CAR;
-    goto l0_green;
-  };
-  :: Chan_L0?[STOP] -> atomic
-  {
-    Chan_L0?STOP;
-    goto l0_stop;
-  };
+  :: Cars[0] > 0 && LStates[1] == RED -> atomic { printf("L0->Red\n"); LStates[0] = GREEN; counter = 5 };
+  :: LStates[0] == GREEN && counter > 0 -> counter = counter - 1;
+  :: LStates[0] == GREEN && counter == 0 -> atomic { counter = 3; LStates[0] = AMBER; }
+  :: LStates[0] == AMBER && counter > 0 -> counter = counter - 1;
+  :: LStates[0] == AMBER && counter == 0 -> atomic { counter = 3; LStates[0] = RED; }
   od;
-
-l0_stop:
-  do
-  :: Chan_L0?[GO] -> atomic
-  {
-    Chan_L0
-  };
-  od;
-
-l0_ready:
-  do
 }
 
