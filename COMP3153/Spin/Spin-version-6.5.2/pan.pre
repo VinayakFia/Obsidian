@@ -1,9 +1,16 @@
+# 1 "lights_v2.pml"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 414 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "lights_v2.pml" 2
 mtype = { RED, GREEN, AMBER };
 
 int Cars[2] = { 0, 0 };
 mtype LStates[2] = RED;
 
-// LOCK
+
 bool lock = false;
 inline AquireLock()
 {
@@ -25,20 +32,20 @@ inline ReleaseLock()
   lock = false;
 }
 
-// LOCK
+
 
 proctype Signal(int chance)
 {
   int nr = 0;
 
 car_start:
-	do
-  :: nr++		/* randomly increment */
-  :: nr--   /* randomly decrement */
-  :: break	/* or stop            */
-	od;
+ do
+  :: nr++
+  :: nr--
+  :: break
+ od;
 
-  // pick a random light from 0 or 1
+
   int light;
   do
   :: light = 1
@@ -62,11 +69,11 @@ proctype TrafficLight(int this)
 t_start:
   AquireLock();
   if
-  // Has cars and other light is not green
+
   :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 } -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
 
-  // Light flow
-  :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter > 0 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this]-- }; // Green Infinity state from diagram
+
+  :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter > 0 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this]-- };
   :: atomic { LStates[this] == GREEN && Cars[other] > 0 && counter > 0 }-> atomic { printf("L%d-Green%d\n", this, counter); counter = counter - 1; Cars[this]-- };
   :: atomic { LStates[this] == GREEN && counter == 0 }-> atomic { printf("L%d->Amber\n", this); counter = 3; LStates[this] = AMBER; Cars[this]-- }
   :: atomic { LStates[this] == AMBER && counter > 0 }-> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this]-- }
@@ -87,11 +94,11 @@ proctype Safety() {
 }
 
 init {
-  // Setup
+
   run Signal(100);
   run TrafficLight(0);
   run TrafficLight(1);
 
-  // Setup Safety
+
   run Safety();
 };
