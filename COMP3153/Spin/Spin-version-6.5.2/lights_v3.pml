@@ -123,7 +123,3 @@ init {
   // Setup Safety
   run Safety();
 };
-
-never {
-  do :: assert(LStates[0] == GREEN && LStates[1] == RED); od;
-}
