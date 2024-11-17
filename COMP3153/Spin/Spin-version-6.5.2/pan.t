@@ -26,215 +26,218 @@ settable(void)
 
 	/* proctype 4: :init: */
 
-	trans[4] = (Trans **) emalloc(7*sizeof(Trans *));
+	trans[4] = (Trans **) emalloc(8*sizeof(Trans *));
 
-	trans[4][1]	= settr(117,0,2,3,3,"(run TrafficLight(0))", 0, 2, 0);
-	trans[4][2]	= settr(118,0,3,4,4,"(run TrafficLight(1))", 0, 2, 0);
-	trans[4][3]	= settr(119,0,4,5,5,"(run PedestrianLight(0))", 0, 2, 0);
-	trans[4][4]	= settr(120,0,5,6,6,"(run PedestrianLight(1))", 0, 2, 0);
-	trans[4][5]	= settr(121,0,6,7,7,"(run Signal(40))", 0, 2, 0);
-	trans[4][6]	= settr(122,0,0,8,8,"-end-", 0, 3500, 0);
+	trans[4][1]	= settr(119,0,2,3,3,"(run TrafficLight(0))", 0, 2, 0);
+	trans[4][2]	= settr(120,0,3,4,4,"(run TrafficLight(1))", 0, 2, 0);
+	trans[4][3]	= settr(121,0,4,5,5,"(run PedestrianLight(0))", 0, 2, 0);
+	trans[4][4]	= settr(122,0,5,6,6,"(run PedestrianLight(1))", 0, 2, 0);
+	trans[4][5]	= settr(123,0,6,7,7,"(run Signal(40))", 0, 2, 0);
+	trans[4][6]	= settr(124,0,7,8,8,"(run Safety())", 0, 2, 0);
+	trans[4][7]	= settr(125,0,0,9,9,"-end-", 0, 3500, 0);
 
 	/* proctype 3: Safety */
 
 	trans[3] = (Trans **) emalloc(11*sizeof(Trans *));
 
-	trans[3][8]	= settr(114,0,7,1,0,".(goto)", 0, 2, 0);
-	T = trans[3][7] = settr(113,0,0,0,0,"DO", 0, 2, 0);
-	T = T->nxt	= settr(113,0,1,0,0,"DO", 0, 2, 0);
-	T = T->nxt	= settr(113,0,2,0,0,"DO", 0, 2, 0);
-	T = T->nxt	= settr(113,0,3,0,0,"DO", 0, 2, 0);
-	T = T->nxt	= settr(113,0,4,0,0,"DO", 0, 2, 0);
-	T = T->nxt	= settr(113,0,5,0,0,"DO", 0, 2, 0);
-	    T->nxt	= settr(113,0,6,0,0,"DO", 0, 2, 0);
-	trans[3][1]	= settr(107,0,7,9,0,"assert(!(((LStates[0]==GREEN)&&(LStates[1]==GREEN))))", 1, 2, 0);
-	trans[3][2]	= settr(108,0,7,10,0,"assert(!(((LStates[0]==AMBER)&&(LStates[1]==AMBER))))", 1, 2, 0);
-	trans[3][3]	= settr(109,0,7,11,0,"assert(!(((LStates[0]==AMBER)&&(LStates[1]==GREEN))))", 1, 2, 0);
-	trans[3][4]	= settr(110,0,7,12,0,"assert(!(((LStates[0]==GREEN)&&(LStates[1]==AMBER))))", 1, 2, 0);
-	trans[3][5]	= settr(111,0,7,13,0,"assert(!(((PStates[0]==GREEN)&&(LStates[1]==GREEN))))", 1, 2, 0);
-	trans[3][6]	= settr(112,0,7,14,0,"assert(!(((PStates[1]==GREEN)&&(LStates[0]==GREEN))))", 1, 2, 0);
-	trans[3][9]	= settr(115,0,10,1,0,"break", 0, 2, 0);
-	trans[3][10]	= settr(116,0,0,15,15,"-end-", 0, 3500, 0);
+	trans[3][8]	= settr(116,0,7,1,0,".(goto)", 0, 2, 0);
+	T = trans[3][7] = settr(115,0,0,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(115,0,1,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(115,0,2,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(115,0,3,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(115,0,4,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(115,0,5,0,0,"DO", 0, 2, 0);
+	    T->nxt	= settr(115,0,6,0,0,"DO", 0, 2, 0);
+	trans[3][1]	= settr(109,0,7,10,0,"assert(!(((LStates[0]==GREEN)&&(LStates[1]==GREEN))))", 1, 2, 0);
+	trans[3][2]	= settr(110,0,7,11,0,"assert(!(((LStates[0]==AMBER)&&(LStates[1]==AMBER))))", 1, 2, 0);
+	trans[3][3]	= settr(111,0,7,12,0,"assert(!(((LStates[0]==AMBER)&&(LStates[1]==GREEN))))", 1, 2, 0);
+	trans[3][4]	= settr(112,0,7,13,0,"assert(!(((LStates[0]==GREEN)&&(LStates[1]==AMBER))))", 1, 2, 0);
+	trans[3][5]	= settr(113,0,7,14,0,"assert(!(((PStates[0]==GREEN)&&(LStates[1]==GREEN))))", 1, 2, 0);
+	trans[3][6]	= settr(114,0,7,15,0,"assert(!(((PStates[1]==GREEN)&&(LStates[0]==GREEN))))", 1, 2, 0);
+	trans[3][9]	= settr(117,0,10,1,0,"break", 0, 2, 0);
+	trans[3][10]	= settr(118,0,0,16,16,"-end-", 0, 3500, 0);
 
 	/* proctype 2: PedestrianLight */
 
-	trans[2] = (Trans **) emalloc(36*sizeof(Trans *));
+	trans[2] = (Trans **) emalloc(40*sizeof(Trans *));
 
-	T = trans[ 2][13] = settr(84,0,0,0,0,"sub-sequence", 0, 2, 0);
-	T->nxt	= settr(84,0,1,0,0,"sub-sequence", 0, 2, 0);
-	trans[2][1]	= settr(72,0,10,16,16,"tmp = 0", 0, 2, 0);
-	trans[2][11]	= settr(82,0,10,1,0,".(goto)", 0, 2, 0);
-	T = trans[2][10] = settr(81,0,0,0,0,"DO", 0, 2, 0);
-	    T->nxt	= settr(81,0,4,0,0,"DO", 0, 2, 0);
-	T = trans[ 2][4] = settr(75,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(75,2,2,0,0,"ATOMIC", 1, 2, 0);
-	trans[2][2]	= settr(73,4,8,17,17,"tmp = lock", 1, 2, 0); /* m: 3 -> 0,8 */
+	T = trans[ 2][13] = settr(82,0,0,0,0,"sub-sequence", 0, 2, 0);
+	T->nxt	= settr(82,0,1,0,0,"sub-sequence", 0, 2, 0);
+	trans[2][1]	= settr(70,0,10,17,17,"tmp = 0", 0, 2, 0);
+	trans[2][11]	= settr(80,0,10,1,0,".(goto)", 0, 2, 0);
+	T = trans[2][10] = settr(79,0,0,0,0,"DO", 0, 2, 0);
+	    T->nxt	= settr(79,0,4,0,0,"DO", 0, 2, 0);
+	T = trans[ 2][4] = settr(73,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(73,2,2,0,0,"ATOMIC", 1, 2, 0);
+	trans[2][2]	= settr(71,4,8,18,18,"tmp = lock", 1, 2, 0); /* m: 3 -> 0,8 */
 	reached2[3] = 1;
 	trans[2][3]	= settr(0,0,0,0,0,"lock = 1",0,0,0);
-	T = trans[2][8] = settr(79,0,0,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(79,0,5,0,0,"IF", 0, 2, 0);
-	    T->nxt	= settr(79,0,6,0,0,"IF", 0, 2, 0);
-	trans[2][5]	= settr(76,0,10,18,18,"(tmp)", 0, 2, 0);
-	trans[2][9]	= settr(80,0,10,1,0,".(goto)", 0, 2, 0);
-	trans[2][6]	= settr(77,0,30,2,0,"else", 0, 2, 0);
-	trans[2][7]	= settr(78,0,30,1,0,"goto :b1", 0, 2, 0);
-	trans[2][12]	= settr(83,0,30,1,0,"break", 0, 2, 0);
-	T = trans[2][30] = settr(101,0,0,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(101,0,15,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(101,0,21,0,0,"IF", 0, 2, 0);
-	    T->nxt	= settr(101,0,26,0,0,"IF", 0, 2, 0);
-	T = trans[ 2][15] = settr(86,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(86,2,14,0,0,"ATOMIC", 1, 2, 0);
-	trans[2][14]	= settr(85,0,19,19,0,"(((LStates[other]==RED)&&(Peds[0]>0)))", 1, 2, 0);
-	T = trans[ 2][19] = settr(90,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(90,2,16,0,0,"ATOMIC", 1, 2, 0);
-	trans[2][16]	= settr(87,0,33,20,20,"printf('P%d->Green\\n',this)", 1, 2, 0); /* m: 17 -> 0,33 */
+	T = trans[2][8] = settr(77,0,0,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(77,0,5,0,0,"IF", 0, 2, 0);
+	    T->nxt	= settr(77,0,6,0,0,"IF", 0, 2, 0);
+	trans[2][5]	= settr(74,0,10,19,19,"(tmp)", 0, 2, 0);
+	trans[2][9]	= settr(78,0,10,1,0,".(goto)", 0, 2, 0);
+	trans[2][6]	= settr(75,0,34,2,0,"else", 0, 2, 0);
+	trans[2][7]	= settr(76,0,34,1,0,"goto :b1", 0, 2, 0);
+	trans[2][12]	= settr(81,0,34,1,0,"break", 0, 2, 0);
+	T = trans[2][34] = settr(103,0,0,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(103,0,15,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(103,0,21,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(103,0,27,0,0,"IF", 0, 2, 0);
+	    T->nxt	= settr(103,0,32,0,0,"IF", 0, 2, 0);
+	T = trans[ 2][15] = settr(84,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(84,2,14,0,0,"ATOMIC", 1, 2, 0);
+	trans[2][14]	= settr(83,0,19,20,0,"(((LStates[other]==RED)&&(Peds[0]>0)))", 1, 2, 0);
+	T = trans[ 2][19] = settr(88,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(88,2,16,0,0,"ATOMIC", 1, 2, 0);
+	trans[2][16]	= settr(85,0,37,21,21,"printf('P%d->Green\\n',this)", 1, 2, 0); /* m: 17 -> 0,37 */
 	reached2[17] = 1;
 	trans[2][17]	= settr(0,0,0,0,0,"PStates[this] = GREEN",0,0,0);
 	trans[2][18]	= settr(0,0,0,0,0,"counter = 3",0,0,0);
-	trans[2][31]	= settr(102,0,33,1,0,".(goto)", 0, 2, 0);
-	T = trans[ 2][21] = settr(92,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(92,2,20,0,0,"ATOMIC", 1, 2, 0);
-	trans[2][20]	= settr(91,0,24,21,0,"(((PStates[this]==GREEN)&&(counter>0)))", 1, 2, 0);
-	T = trans[ 2][24] = settr(95,2,0,0,0,"ATOMIC", 0, 2, 0);
-	T->nxt	= settr(95,2,22,0,0,"ATOMIC", 0, 2, 0);
-	trans[2][22]	= settr(93,0,33,22,22,"printf('P%d-Green\\n',this)", 0, 2, 0); /* m: 23 -> 0,33 */
+	trans[2][35]	= settr(104,0,37,1,0,".(goto)", 0, 2, 0);
+	T = trans[ 2][21] = settr(90,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(90,2,20,0,0,"ATOMIC", 1, 2, 0);
+	trans[2][20]	= settr(89,0,25,22,0,"(((PStates[this]==GREEN)&&(counter>0)))", 1, 2, 0);
+	T = trans[ 2][25] = settr(94,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(94,2,22,0,0,"ATOMIC", 1, 2, 0);
+	trans[2][22]	= settr(91,0,37,23,23,"printf('P%d-Green%d\\n',this,counter)", 1, 2, 0); /* m: 23 -> 0,37 */
 	reached2[23] = 1;
 	trans[2][23]	= settr(0,0,0,0,0,"counter = (counter-1)",0,0,0);
-	T = trans[ 2][26] = settr(97,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(97,2,25,0,0,"ATOMIC", 1, 2, 0);
-	trans[2][25]	= settr(96,0,29,23,0,"(((PStates[this]==GREEN)&&(counter==0)))", 1, 2, 0);
-	T = trans[ 2][29] = settr(100,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(100,2,27,0,0,"ATOMIC", 1, 2, 0);
-	trans[2][27]	= settr(98,0,33,24,24,"printf('P%d->RED\\n',this)", 1, 2, 0); /* m: 28 -> 0,33 */
-	reached2[28] = 1;
-	trans[2][28]	= settr(0,0,0,0,0,"PStates[this] = RED",0,0,0);
-	T = trans[ 2][33] = settr(104,0,0,0,0,"sub-sequence", 0, 2, 0);
-	T->nxt	= settr(104,0,32,0,0,"sub-sequence", 0, 2, 0);
-	trans[2][32]	= settr(103,0,13,25,25,"lock = 0", 1, 2, 0);
-	trans[2][34]	= settr(105,0,13,1,0,"goto p_start", 0, 2, 0);
-	trans[2][35]	= settr(0,0,0,0,0,"-end-",0,0,0);
+	trans[2][24]	= settr(0,0,0,0,0,"Peds[0] = (Peds[0]-1)",0,0,0);
+	T = trans[ 2][27] = settr(96,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(96,2,26,0,0,"ATOMIC", 1, 2, 0);
+	trans[2][26]	= settr(95,0,31,24,0,"(((PStates[this]==GREEN)&&(counter==0)))", 1, 2, 0);
+	T = trans[ 2][31] = settr(100,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(100,2,28,0,0,"ATOMIC", 1, 2, 0);
+	trans[2][28]	= settr(97,0,37,25,25,"printf('P%d->RED\\n',this)", 1, 2, 0); /* m: 29 -> 0,37 */
+	reached2[29] = 1;
+	trans[2][29]	= settr(0,0,0,0,0,"PStates[this] = RED",0,0,0);
+	trans[2][30]	= settr(0,0,0,0,0,"Peds[0] = (Peds[0]-1)",0,0,0);
+	trans[2][32]	= settr(101,0,33,2,0,"else", 0, 2, 0);
+	trans[2][33]	= settr(102,0,37,1,0,"(1)", 0, 2, 0);
+	T = trans[ 2][37] = settr(106,0,0,0,0,"sub-sequence", 0, 2, 0);
+	T->nxt	= settr(106,0,36,0,0,"sub-sequence", 0, 2, 0);
+	trans[2][36]	= settr(105,0,13,26,26,"lock = 0", 1, 2, 0);
+	trans[2][38]	= settr(107,0,13,1,0,"goto p_start", 0, 2, 0);
+	trans[2][39]	= settr(0,0,0,0,0,"-end-",0,0,0);
 
 	/* proctype 1: TrafficLight */
 
 	trans[1] = (Trans **) emalloc(59*sizeof(Trans *));
 
-	T = trans[ 1][13] = settr(26,0,0,0,0,"sub-sequence", 0, 2, 0);
-	T->nxt	= settr(26,0,1,0,0,"sub-sequence", 0, 2, 0);
-	trans[1][1]	= settr(14,0,10,26,26,"tmp = 0", 0, 2, 0);
-	trans[1][11]	= settr(24,0,10,1,0,".(goto)", 0, 2, 0);
-	T = trans[1][10] = settr(23,0,0,0,0,"DO", 0, 2, 0);
-	    T->nxt	= settr(23,0,4,0,0,"DO", 0, 2, 0);
-	T = trans[ 1][4] = settr(17,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(17,2,2,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][2]	= settr(15,4,8,27,27,"tmp = lock", 1, 2, 0); /* m: 3 -> 0,8 */
+	T = trans[ 1][13] = settr(24,0,0,0,0,"sub-sequence", 0, 2, 0);
+	T->nxt	= settr(24,0,1,0,0,"sub-sequence", 0, 2, 0);
+	trans[1][1]	= settr(12,0,10,27,27,"tmp = 0", 0, 2, 0);
+	trans[1][11]	= settr(22,0,10,1,0,".(goto)", 0, 2, 0);
+	T = trans[1][10] = settr(21,0,0,0,0,"DO", 0, 2, 0);
+	    T->nxt	= settr(21,0,4,0,0,"DO", 0, 2, 0);
+	T = trans[ 1][4] = settr(15,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(15,2,2,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][2]	= settr(13,4,8,28,28,"tmp = lock", 1, 2, 0); /* m: 3 -> 0,8 */
 	reached1[3] = 1;
 	trans[1][3]	= settr(0,0,0,0,0,"lock = 1",0,0,0);
-	T = trans[1][8] = settr(21,0,0,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(21,0,5,0,0,"IF", 0, 2, 0);
-	    T->nxt	= settr(21,0,6,0,0,"IF", 0, 2, 0);
-	trans[1][5]	= settr(18,0,10,28,28,"(tmp)", 0, 2, 0);
-	trans[1][9]	= settr(22,0,10,1,0,".(goto)", 0, 2, 0);
-	trans[1][6]	= settr(19,0,53,2,0,"else", 0, 2, 0);
-	trans[1][7]	= settr(20,0,53,1,0,"goto :b0", 0, 2, 0);
-	trans[1][12]	= settr(25,0,53,1,0,"break", 0, 2, 0);
-	T = trans[1][53] = settr(66,0,0,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(66,0,15,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(66,0,21,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(66,0,26,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(66,0,32,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(66,0,39,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(66,0,45,0,0,"IF", 0, 2, 0);
-	    T->nxt	= settr(66,0,51,0,0,"IF", 0, 2, 0);
-	T = trans[ 1][15] = settr(28,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(28,2,14,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][14]	= settr(27,0,19,29,0,"(((((LStates[this]==RED)&&(LStates[other]==RED))&&(Cars[this]>0))&&(PStates[other]==RED)))", 1, 2, 0);
-	T = trans[ 1][19] = settr(32,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(32,2,16,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][16]	= settr(29,0,56,30,30,"printf('L%d->Green\\n',this)", 1, 2, 0); /* m: 17 -> 0,56 */
+	T = trans[1][8] = settr(19,0,0,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(19,0,5,0,0,"IF", 0, 2, 0);
+	    T->nxt	= settr(19,0,6,0,0,"IF", 0, 2, 0);
+	trans[1][5]	= settr(16,0,10,29,29,"(tmp)", 0, 2, 0);
+	trans[1][9]	= settr(20,0,10,1,0,".(goto)", 0, 2, 0);
+	trans[1][6]	= settr(17,0,53,2,0,"else", 0, 2, 0);
+	trans[1][7]	= settr(18,0,53,1,0,"goto :b0", 0, 2, 0);
+	trans[1][12]	= settr(23,0,53,1,0,"break", 0, 2, 0);
+	T = trans[1][53] = settr(64,0,0,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(64,0,15,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(64,0,21,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(64,0,26,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(64,0,32,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(64,0,39,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(64,0,45,0,0,"IF", 0, 2, 0);
+	    T->nxt	= settr(64,0,51,0,0,"IF", 0, 2, 0);
+	T = trans[ 1][15] = settr(26,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(26,2,14,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][14]	= settr(25,0,19,30,0,"(((((LStates[this]==RED)&&(LStates[other]==RED))&&(Cars[this]>0))&&(PStates[other]==RED)))", 1, 2, 0);
+	T = trans[ 1][19] = settr(30,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(30,2,16,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][16]	= settr(27,0,56,31,31,"printf('L%d->Green\\n',this)", 1, 2, 0); /* m: 17 -> 0,56 */
 	reached1[17] = 1;
 	trans[1][17]	= settr(0,0,0,0,0,"LStates[this] = GREEN",0,0,0);
 	trans[1][18]	= settr(0,0,0,0,0,"counter = 5",0,0,0);
-	trans[1][54]	= settr(67,0,56,1,0,".(goto)", 0, 2, 0);
-	T = trans[ 1][21] = settr(34,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(34,2,20,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][20]	= settr(33,0,24,31,0,"((((LStates[this]==GREEN)&&(Cars[other]==0))&&(counter>0)))", 1, 2, 0);
-	T = trans[ 1][24] = settr(37,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(37,2,22,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][22]	= settr(35,0,56,32,32,"printf('L%d-GreenInf\\n',this)", 1, 2, 0); /* m: 23 -> 0,56 */
+	trans[1][54]	= settr(65,0,56,1,0,".(goto)", 0, 2, 0);
+	T = trans[ 1][21] = settr(32,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(32,2,20,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][20]	= settr(31,0,24,32,0,"((((LStates[this]==GREEN)&&(Cars[other]==0))&&(counter==5)))", 1, 2, 0);
+	T = trans[ 1][24] = settr(35,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(35,2,22,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][22]	= settr(33,0,56,33,33,"printf('L%d-GreenInf\\n',this)", 1, 2, 0); /* m: 23 -> 0,56 */
 	reached1[23] = 1;
 	trans[1][23]	= settr(0,0,0,0,0,"Cars[this] = (Cars[this]-1)",0,0,0);
-	T = trans[ 1][26] = settr(39,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(39,2,25,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][25]	= settr(38,0,30,33,0,"((((LStates[this]==GREEN)&&(Cars[other]>0))&&(counter>0)))", 1, 2, 0);
-	T = trans[ 1][30] = settr(43,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(43,2,27,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][27]	= settr(40,0,56,34,34,"printf('L%d-Green%d\\n',this,counter)", 1, 2, 0); /* m: 28 -> 0,56 */
+	T = trans[ 1][26] = settr(37,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(37,2,25,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][25]	= settr(36,0,30,34,0,"((((LStates[this]==GREEN)&&(counter>0))&&(counter<5)))", 1, 2, 0);
+	T = trans[ 1][30] = settr(41,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(41,2,27,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][27]	= settr(38,0,56,35,35,"printf('L%d-Green%d\\n',this,counter)", 1, 2, 0); /* m: 28 -> 0,56 */
 	reached1[28] = 1;
 	trans[1][28]	= settr(0,0,0,0,0,"counter = (counter-1)",0,0,0);
 	trans[1][29]	= settr(0,0,0,0,0,"Cars[this] = (Cars[this]-1)",0,0,0);
-	T = trans[ 1][32] = settr(45,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(45,2,31,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][31]	= settr(44,0,37,35,35,"(((LStates[this]==GREEN)&&(counter==0)))", 1, 2, 0);
-	T = trans[ 1][37] = settr(50,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(50,2,33,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][33]	= settr(46,0,56,36,36,"printf('L%d->Amber\\n',this)", 1, 2, 0); /* m: 34 -> 0,56 */
+	T = trans[ 1][32] = settr(43,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(43,2,31,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][31]	= settr(42,0,37,36,36,"(((LStates[this]==GREEN)&&(counter==0)))", 1, 2, 0);
+	T = trans[ 1][37] = settr(48,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(48,2,33,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][33]	= settr(44,0,56,37,37,"printf('L%d->Amber\\n',this)", 1, 2, 0); /* m: 34 -> 0,56 */
 	reached1[34] = 1;
 	trans[1][34]	= settr(0,0,0,0,0,"counter = 3",0,0,0);
 	trans[1][35]	= settr(0,0,0,0,0,"LStates[this] = AMBER",0,0,0);
 	trans[1][36]	= settr(0,0,0,0,0,"Cars[this] = (Cars[this]-1)",0,0,0);
-	T = trans[ 1][39] = settr(52,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(52,2,38,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][38]	= settr(51,0,43,37,0,"(((LStates[this]==AMBER)&&(counter>0)))", 1, 2, 0);
-	T = trans[ 1][43] = settr(56,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(56,2,40,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][40]	= settr(53,0,56,38,38,"printf('L%d-Amber%d\\n',this,counter)", 1, 2, 0); /* m: 41 -> 0,56 */
+	T = trans[ 1][39] = settr(50,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(50,2,38,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][38]	= settr(49,0,43,38,0,"(((LStates[this]==AMBER)&&(counter>0)))", 1, 2, 0);
+	T = trans[ 1][43] = settr(54,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(54,2,40,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][40]	= settr(51,0,56,39,39,"printf('L%d-Amber%d\\n',this,counter)", 1, 2, 0); /* m: 41 -> 0,56 */
 	reached1[41] = 1;
 	trans[1][41]	= settr(0,0,0,0,0,"counter = (counter-1)",0,0,0);
 	trans[1][42]	= settr(0,0,0,0,0,"Cars[this] = (Cars[this]-1)",0,0,0);
-	T = trans[ 1][45] = settr(58,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(58,2,44,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][44]	= settr(57,0,50,39,39,"(((LStates[this]==AMBER)&&(counter==0)))", 1, 2, 0);
-	T = trans[ 1][50] = settr(63,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(63,2,46,0,0,"ATOMIC", 1, 2, 0);
-	trans[1][46]	= settr(59,0,56,40,40,"printf('L%d->Red\\n',this)", 1, 2, 0); /* m: 47 -> 0,56 */
+	T = trans[ 1][45] = settr(56,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(56,2,44,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][44]	= settr(55,0,50,40,40,"(((LStates[this]==AMBER)&&(counter==0)))", 1, 2, 0);
+	T = trans[ 1][50] = settr(61,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(61,2,46,0,0,"ATOMIC", 1, 2, 0);
+	trans[1][46]	= settr(57,0,56,41,41,"printf('L%d->Red\\n',this)", 1, 2, 0); /* m: 47 -> 0,56 */
 	reached1[47] = 1;
 	trans[1][47]	= settr(0,0,0,0,0,"counter = 3",0,0,0);
 	trans[1][48]	= settr(0,0,0,0,0,"LStates[this] = RED",0,0,0);
 	trans[1][49]	= settr(0,0,0,0,0,"Cars[this] = (Cars[this]-1)",0,0,0);
-	trans[1][51]	= settr(64,0,52,2,0,"else", 0, 2, 0);
-	trans[1][52]	= settr(65,0,56,1,0,"(1)", 0, 2, 0);
-	T = trans[ 1][56] = settr(69,0,0,0,0,"sub-sequence", 0, 2, 0);
-	T->nxt	= settr(69,0,55,0,0,"sub-sequence", 0, 2, 0);
-	trans[1][55]	= settr(68,0,13,41,41,"lock = 0", 1, 2, 0);
-	trans[1][57]	= settr(70,0,13,1,0,"goto t_start", 0, 2, 0);
+	trans[1][51]	= settr(62,0,52,2,0,"else", 0, 2, 0);
+	trans[1][52]	= settr(63,0,56,1,0,"(1)", 0, 2, 0);
+	T = trans[ 1][56] = settr(67,0,0,0,0,"sub-sequence", 0, 2, 0);
+	T->nxt	= settr(67,0,55,0,0,"sub-sequence", 0, 2, 0);
+	trans[1][55]	= settr(66,0,13,42,42,"lock = 0", 1, 2, 0);
+	trans[1][57]	= settr(68,0,13,1,0,"goto t_start", 0, 2, 0);
 	trans[1][58]	= settr(0,0,0,0,0,"-end-",0,0,0);
 
 	/* proctype 0: Signal */
 
-	trans[0] = (Trans **) emalloc(15*sizeof(Trans *));
+	trans[0] = (Trans **) emalloc(13*sizeof(Trans *));
 
 	T = trans[0][3] = settr(2,0,0,0,0,"IF", 0, 2, 0);
 	T = T->nxt	= settr(2,0,1,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(2,0,2,0,0,"IF", 0, 2, 0);
-	trans[0][1]	= settr(0,0,11,42,42,"light = 1", 0, 2, 0);
-	trans[0][4]	= settr(3,0,11,1,0,".(goto)", 0, 2, 0);
-	trans[0][2]	= settr(1,0,11,43,43,"light = 0", 0, 2, 0);
-	T = trans[0][11] = settr(10,0,0,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(10,0,6,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(10,0,8,0,0,"IF", 0, 2, 0);
-	    T->nxt	= settr(10,0,9,0,0,"IF", 0, 2, 0);
+	trans[0][1]	= settr(0,0,9,43,43,"light = 1", 0, 2, 0);
+	trans[0][4]	= settr(3,0,9,1,0,".(goto)", 0, 2, 0);
+	trans[0][2]	= settr(1,0,9,44,44,"light = 0", 0, 2, 0);
+	T = trans[0][9] = settr(8,0,0,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(8,0,6,0,0,"IF", 0, 2, 0);
+	    T->nxt	= settr(8,0,8,0,0,"IF", 0, 2, 0);
 	T = trans[ 0][6] = settr(5,2,0,0,0,"ATOMIC", 1, 2, 0);
 	T->nxt	= settr(5,2,5,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][5]	= settr(4,0,3,44,44,"Cars[light] = (Cars[light]+1)", 1, 2, 0);
-	trans[0][12]	= settr(11,0,3,1,0,".(goto)", 0, 2, 0);
+	trans[0][5]	= settr(4,0,3,45,45,"Cars[light] = (Cars[light]+1)", 1, 2, 0);
+	trans[0][10]	= settr(9,0,3,1,0,".(goto)", 0, 2, 0);
 	T = trans[ 0][8] = settr(7,2,0,0,0,"ATOMIC", 1, 2, 0);
 	T->nxt	= settr(7,2,7,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][7]	= settr(6,0,3,45,45,"Peds[light] = (Peds[light]+1)", 1, 2, 0);
-	trans[0][9]	= settr(8,0,10,2,0,"else", 0, 2, 0);
-	trans[0][10]	= settr(9,0,3,1,0,"(1)", 0, 2, 0);
-	trans[0][13]	= settr(12,0,3,1,0,"goto car_start", 0, 2, 0);
-	trans[0][14]	= settr(0,0,0,0,0,"-end-",0,0,0);
+	trans[0][7]	= settr(6,0,3,46,46,"Peds[light] = (Peds[light]+1)", 1, 2, 0);
+	trans[0][11]	= settr(10,0,3,1,0,"goto car_start", 0, 2, 0);
+	trans[0][12]	= settr(0,0,0,0,0,"-end-",0,0,0);
 	/* np_ demon: */
 	trans[_NP_] = (Trans **) emalloc(3*sizeof(Trans *));
 	T = trans[_NP_][0] = settr(9997,0,1,_T5,0,"(np_)", 1,2,0);

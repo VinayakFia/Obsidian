@@ -41,6 +41,13 @@
 
 	case 8: // STATE 6
 		;
+		;
+		delproc(0, now._nr_pr-1);
+		;
+		goto R999;
+
+	case 9: // STATE 7
+		;
 		p_restor(II);
 		;
 		;
@@ -60,7 +67,7 @@
 		;
 		;
 		
-	case 15: // STATE 10
+	case 16: // STATE 10
 		;
 		p_restor(II);
 		;
@@ -69,13 +76,13 @@
 
 		 /* PROC PedestrianLight */
 
-	case 16: // STATE 1
+	case 17: // STATE 1
 		;
 		((P2 *)_this)->_6_17_tmp = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 17: // STATE 3
+	case 18: // STATE 3
 		;
 		now.lock = trpt->bup.ovals[1];
 		((P2 *)_this)->_6_17_tmp = trpt->bup.ovals[0];
@@ -83,7 +90,7 @@
 		ungrab_ints(trpt->bup.ovals, 2);
 		goto R999;
 
-	case 18: // STATE 5
+	case 19: // STATE 5
 		;
 	/* 0 */	((P2 *)_this)->_6_17_tmp = trpt->bup.oval;
 		;
@@ -92,7 +99,7 @@
 ;
 		;
 		
-	case 20: // STATE 18
+	case 21: // STATE 18
 		;
 		((P2 *)_this)->counter = trpt->bup.ovals[1];
 		now.PStates[ Index(((P2 *)_this)->this, 2) ] = trpt->bup.ovals[0];
@@ -102,21 +109,25 @@
 ;
 		;
 		
-	case 22: // STATE 23
+	case 23: // STATE 24
 		;
-		((P2 *)_this)->counter = trpt->bup.oval;
+		now.Peds[0] = trpt->bup.ovals[1];
+		((P2 *)_this)->counter = trpt->bup.ovals[0];
 		;
+		ungrab_ints(trpt->bup.ovals, 2);
 		goto R999;
 ;
 		;
 		
-	case 24: // STATE 28
+	case 25: // STATE 30
 		;
-		now.PStates[ Index(((P2 *)_this)->this, 2) ] = trpt->bup.oval;
+		now.Peds[0] = trpt->bup.ovals[1];
+		now.PStates[ Index(((P2 *)_this)->this, 2) ] = trpt->bup.ovals[0];
 		;
+		ungrab_ints(trpt->bup.ovals, 2);
 		goto R999;
 
-	case 25: // STATE 32
+	case 26: // STATE 36
 		;
 		now.lock = trpt->bup.oval;
 		;
@@ -124,13 +135,13 @@
 
 		 /* PROC TrafficLight */
 
-	case 26: // STATE 1
+	case 27: // STATE 1
 		;
 		((P1 *)_this)->_5_3_tmp = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 27: // STATE 3
+	case 28: // STATE 3
 		;
 		now.lock = trpt->bup.ovals[1];
 		((P1 *)_this)->_5_3_tmp = trpt->bup.ovals[0];
@@ -138,7 +149,7 @@
 		ungrab_ints(trpt->bup.ovals, 2);
 		goto R999;
 
-	case 28: // STATE 5
+	case 29: // STATE 5
 		;
 	/* 0 */	((P1 *)_this)->_5_3_tmp = trpt->bup.oval;
 		;
@@ -147,7 +158,7 @@
 ;
 		;
 		
-	case 30: // STATE 18
+	case 31: // STATE 18
 		;
 		((P1 *)_this)->counter = trpt->bup.ovals[1];
 		now.LStates[ Index(((P1 *)_this)->this, 2) ] = trpt->bup.ovals[0];
@@ -157,7 +168,7 @@
 ;
 		;
 		
-	case 32: // STATE 23
+	case 33: // STATE 23
 		;
 		now.Cars[ Index(((P1 *)_this)->this, 2) ] = trpt->bup.oval;
 		;
@@ -165,7 +176,7 @@
 ;
 		;
 		
-	case 34: // STATE 29
+	case 35: // STATE 29
 		;
 		now.Cars[ Index(((P1 *)_this)->this, 2) ] = trpt->bup.ovals[1];
 		((P1 *)_this)->counter = trpt->bup.ovals[0];
@@ -173,14 +184,14 @@
 		ungrab_ints(trpt->bup.ovals, 2);
 		goto R999;
 
-	case 35: // STATE 31
+	case 36: // STATE 31
 		;
 	/* 0 */	((P1 *)_this)->counter = trpt->bup.oval;
 		;
 		;
 		goto R999;
 
-	case 36: // STATE 36
+	case 37: // STATE 36
 		;
 		now.Cars[ Index(((P1 *)_this)->this, 2) ] = trpt->bup.ovals[2];
 		now.LStates[ Index(((P1 *)_this)->this, 2) ] = trpt->bup.ovals[1];
@@ -191,7 +202,7 @@
 ;
 		;
 		
-	case 38: // STATE 42
+	case 39: // STATE 42
 		;
 		now.Cars[ Index(((P1 *)_this)->this, 2) ] = trpt->bup.ovals[1];
 		((P1 *)_this)->counter = trpt->bup.ovals[0];
@@ -199,14 +210,14 @@
 		ungrab_ints(trpt->bup.ovals, 2);
 		goto R999;
 
-	case 39: // STATE 44
+	case 40: // STATE 44
 		;
 	/* 0 */	((P1 *)_this)->counter = trpt->bup.oval;
 		;
 		;
 		goto R999;
 
-	case 40: // STATE 49
+	case 41: // STATE 49
 		;
 		now.Cars[ Index(((P1 *)_this)->this, 2) ] = trpt->bup.ovals[2];
 		now.LStates[ Index(((P1 *)_this)->this, 2) ] = trpt->bup.ovals[1];
@@ -215,7 +226,7 @@
 		ungrab_ints(trpt->bup.ovals, 3);
 		goto R999;
 
-	case 41: // STATE 55
+	case 42: // STATE 55
 		;
 		now.lock = trpt->bup.oval;
 		;
@@ -223,25 +234,25 @@
 
 		 /* PROC Signal */
 
-	case 42: // STATE 1
+	case 43: // STATE 1
 		;
 		((P0 *)_this)->light = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 43: // STATE 2
+	case 44: // STATE 2
 		;
 		((P0 *)_this)->light = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 44: // STATE 5
+	case 45: // STATE 5
 		;
 		now.Cars[ Index(((P0 *)_this)->light, 2) ] = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 45: // STATE 7
+	case 46: // STATE 7
 		;
 		now.Peds[ Index(((P0 *)_this)->light, 2) ] = trpt->bup.oval;
 		;

@@ -54,6 +54,7 @@ proctype TrafficLight(int this)
 
 t_start:
   AquireLock();
+  printf("HERE2\n");
   if
   // Has cars and other light is not green
   :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 && PStates[other] == RED } -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
@@ -67,6 +68,7 @@ t_start:
   :: else -> skip;
   fi;
   ReleaseLock();
+  printf("here2\n");
   goto t_start;
 }
 
@@ -77,15 +79,18 @@ proctype PedestrianLight(int this)
 
 p_start:
   AquireLock();
+  printf("HERE\n");
   if
   // Has pedestrians and perpendicular light is RED
-  :: atomic { LStates[other] == RED && Peds[0] > 0 } -> atomic { printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 3 };
+  :: atomic { PStates[this] == RED && LStates[other] == RED && Peds[this] > 0 } -> atomic { printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 3 };
 
   // Light flow
-  :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green%d\n", this, counter); counter--; };
-  :: atomic { PStates[this] == GREEN && counter == 0 } -> atomic { printf("P%d->RED\n", this); PStates[this] = RED; };
+  :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green%d\n", this, counter); counter--; Peds[this]--; };
+  :: atomic { PStates[this] == GREEN && counter == 0 } -> atomic { printf("P%d->RED\n", this); PStates[this] = RED; Peds[this]--; };
+  :: else -> skip;
   fi;
   ReleaseLock();
+  printf("here\n");
   goto p_start;
 }
 

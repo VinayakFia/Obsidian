@@ -132,30 +132,30 @@ typedef struct S_F_MAP {
 	int upto;
 } S_F_MAP;
 
-#define _nstates4	7	/* :init: */
-#define minseq4	117
-#define maxseq4	122
-#define _endstate4	6
+#define _nstates4	8	/* :init: */
+#define minseq4	119
+#define maxseq4	125
+#define _endstate4	7
 
 #define _nstates3	11	/* Safety */
-#define minseq3	107
-#define maxseq3	116
+#define minseq3	109
+#define maxseq3	118
 #define _endstate3	10
 
-#define _nstates2	36	/* PedestrianLight */
-#define minseq2	72
-#define maxseq2	106
-#define _endstate2	35
+#define _nstates2	40	/* PedestrianLight */
+#define minseq2	70
+#define maxseq2	108
+#define _endstate2	39
 
 #define _nstates1	59	/* TrafficLight */
-#define minseq1	14
-#define maxseq1	71
+#define minseq1	12
+#define maxseq1	69
 #define _endstate1	58
 
-#define _nstates0	15	/* Signal */
+#define _nstates0	13	/* Signal */
 #define minseq0	0
-#define maxseq0	13
-#define _endstate0	14
+#define maxseq0	11
+#define _endstate0	12
 
 extern short src_ln4[];
 extern short src_ln3[];
@@ -169,8 +169,8 @@ extern S_F_MAP src_file1[];
 extern S_F_MAP src_file0[];
 
 #define T_ID	unsigned char
-#define _T5	46
-#define _T2	47
+#define _T5	47
+#define _T2	48
 #define WS		8 /* word size in bytes */
 #define SYNC	0
 #define ASYNC	0
@@ -848,7 +848,7 @@ void qsend(int, int, int);
 #define GLOBAL	7
 #define BAD	8
 #define ALPHA_F	9
-#define NTRANS	48
+#define NTRANS	49
 #if defined(BFS_PAR) || NCORE>1
 	void e_critical(int);
 	void x_critical(int);
