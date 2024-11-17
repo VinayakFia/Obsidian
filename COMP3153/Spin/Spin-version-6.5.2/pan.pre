@@ -1,3 +1,10 @@
+# 1 "lights_v2.pml"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 414 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "lights_v2.pml" 2
 mtype = { RED, GREEN, AMBER };
 
 int Cars[2] = { 0, 0 };
@@ -6,7 +13,7 @@ mtype LStates[2] = RED;
 int Peds[2] = { 0, 0 };
 mtype PStates[2] = RED;
 
-// LOCK
+
 bool lock = false;
 inline AquireLock()
 {
@@ -28,7 +35,7 @@ inline ReleaseLock()
   lock = false;
 }
 
-// LOCK
+
 
 proctype Signal(int chance)
 {
@@ -55,11 +62,11 @@ proctype TrafficLight(int this)
 t_start:
   AquireLock();
   if
-  // Has cars and other light is not green
+
   :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 && PStates[other] == RED } -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
 
-  // Light flow
-  :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter > 0 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this]-- }; // Green Infinity state from diagram
+
+  :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter > 0 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this]-- };
   :: atomic { LStates[this] == GREEN && Cars[other] > 0 && counter > 0 }-> atomic { printf("L%d-Green%d\n", this, counter); counter = counter - 1; Cars[this]-- };
   :: atomic { LStates[this] == GREEN && counter == 0 }-> atomic { printf("L%d->Amber\n", this); counter = 3; LStates[this] = AMBER; Cars[this]-- }
   :: atomic { LStates[this] == AMBER && counter > 0 }-> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this]-- }
@@ -78,10 +85,10 @@ proctype PedestrianLight(int this)
 p_start:
   AquireLock();
   if
-  // Has pedestrians and perpendicular light is RED
+
   :: atomic { LStates[other] == RED && Peds[0] > 0 } -> atomic { printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 3 };
 
-  // Light flow
+
   :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green\n", this); counter--; };
   :: atomic { PStates[this] == GREEN && counter == 0 } -> atomic { printf("P%d->RED\n", this); PStates[this] = RED; };
   fi;
@@ -91,20 +98,20 @@ p_start:
 
 proctype Safety() {
   do
-  // Perpendicular lights should not be on at the same time
+
   :: assert(!(LStates[0] == GREEN && LStates[1] == GREEN));
   :: assert(!(LStates[0] == AMBER && LStates[1] == AMBER));
   :: assert(!(LStates[0] == AMBER && LStates[1] == GREEN));
   :: assert(!(LStates[0] == GREEN && LStates[1] == AMBER));
 
-  // Perpendicular pedestrian and traffic lights should not be on at the same time
+
   :: assert(!(PStates[0] == GREEN && LStates[1] == GREEN));
   :: assert(!(PStates[1] == GREEN && LStates[0] == GREEN));
   od
 }
 
 init {
-  // Setup
+
   run TrafficLight(0);
   run TrafficLight(1);
 
@@ -113,6 +120,6 @@ init {
 
   run Signal(40);
 
-  // Setup Safety
+
   run Safety();
 };

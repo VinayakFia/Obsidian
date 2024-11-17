@@ -499,16 +499,14 @@ int _;	/* predefined write-only variable */
 #endif
 
 short src_ln4 [] = {
-	  0, 109, 110, 112, 113, 115, 118, 119, 
-	  0, };
+	  0, 109, 110, 112, 113, 115, 116,   0, };
 S_F_MAP src_file4 [] = {
 	{ "-", 0, 0 },
-	{ "lights_v2.pml", 1, 7 },
-	{ "-", 8, 9 }
+	{ "lights_v2.pml", 1, 6 },
+	{ "-", 7, 8 }
 };
 uchar reached4 [] = {
-	  0,   0,   0,   0,   0,   0,   0,   0, 
-	  0, };
+	  0,   0,   0,   0,   0,   0,   0,   0, };
 uchar *loopstate4;
 
 short src_ln3 [] = {
@@ -14338,7 +14336,7 @@ c_chandump(int unused)
 {	unused++; /* avoid complaints */
 }
 
-Trans *t_id_lkup[124];
+Trans *t_id_lkup[123];
 
 
 #ifdef BFS_PAR
