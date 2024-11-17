@@ -37,14 +37,14 @@ proctype TrafficLight(int this)
 
   do
   // Has cars and other light is not green
-  :: LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
+  :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 } -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
 
   // Light flow
-  :: LStates[this] == GREEN && Cars[other] == 0 && counter > 0 -> atomic { printf("L%d-GreenInf\n", this); Cars[this]-- }; // Green Infinity state from diagram
-  :: LStates[this] == GREEN && Cars[other] > 0 && counter > 0 -> atomic { printf("L%d-Green%d\n", this, counter); counter = counter - 1; Cars[this]-- };
-  :: LStates[this] == GREEN && counter == 0 -> atomic { printf("L%d->Amber\n", this); counter = 3; LStates[this] = AMBER; Cars[this]-- }
-  :: LStates[this] == AMBER && counter > 0 -> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this]-- }
-  :: LStates[this] == AMBER && counter == 0 -> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this]-- }
+  :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter > 0 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this]-- }; // Green Infinity state from diagram
+  :: atomic { LStates[this] == GREEN && Cars[other] > 0 && counter > 0 }-> atomic { printf("L%d-Green%d\n", this, counter); counter = counter - 1; Cars[this]-- };
+  :: atomic { LStates[this] == GREEN && counter == 0 }-> atomic { printf("L%d->Amber\n", this); counter = 3; LStates[this] = AMBER; Cars[this]-- }
+  :: atomic { LStates[this] == AMBER && counter > 0 }-> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this]-- }
+  :: atomic { LStates[this] == AMBER && counter == 0 }-> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this]-- }
   od;
 }
 
