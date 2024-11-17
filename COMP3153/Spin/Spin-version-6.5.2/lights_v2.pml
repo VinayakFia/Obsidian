@@ -35,7 +35,9 @@ proctype TrafficLight(int this)
   int counter = 0;
   int other = (this + 1) % 2;
 
-  do
+  tf_start:
+
+  if
   // Has cars and other light is not green
   :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 } -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
 
@@ -45,7 +47,9 @@ proctype TrafficLight(int this)
   :: atomic { LStates[this] == GREEN && counter == 0 }-> atomic { printf("L%d->Amber\n", this); counter = 3; LStates[this] = AMBER; Cars[this]-- }
   :: atomic { LStates[this] == AMBER && counter > 0 }-> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this]-- }
   :: atomic { LStates[this] == AMBER && counter == 0 }-> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this]-- }
-  od;
+  fi;
+
+  goto tf_start
 }
 
 proctype Safety() {
