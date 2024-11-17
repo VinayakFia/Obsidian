@@ -1,10 +1,10 @@
-# 1 "lights_v2.pml"
+# 1 "lights_v3.pml"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 414 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "lights_v2.pml" 2
+# 1 "lights_v3.pml" 2
 mtype = { RED, GREEN, AMBER };
 
 int Cars[2] = { 0, 0 };
@@ -130,3 +130,7 @@ init {
 
   run Safety();
 };
+
+never {
+  do :: assert(LStates[0] == GREEN && LStates[1] == RED); od;
+}
