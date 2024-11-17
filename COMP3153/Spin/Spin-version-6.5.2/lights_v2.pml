@@ -1,11 +1,12 @@
-mtype = { RED, AMBER, GREEN }; /* traffic light states */
-mtype = { CAR };
+mtype = { RED, AMBER, GREEN }; // Trafficlight States
+mtype = { L0_Complete, L1_Complete }; // Signals for intersection controller
 
-chan L0 = [1] of {mtype};
-chan L1 = [1] of {mtype};
+chan Chan_L0 = [1] of { mtype };
+chan Chan_L1 = [1] of { mtype };
+chan Chan_Intersection [1] of { mtype };
 
 mtype LStates[2] = RED;
-chan LChans[2] = { L0, L1 };
+chan LChans[2] = { Chan_L0, Chan_L1 };
 
 proctype Cars(int chance)
 {
@@ -33,7 +34,25 @@ car_start:
   goto car_start;
 }
 
-proctype Cars() {
-  if
-    :: 
+inline changeTrafficLightToGreen(light) {
+  // The other light must be red
+  assert(LStates[(light + 1) % 2] == RED);
+
 }
+
+proctype TrafficLight0()
+{
+l0_waiting:
+  do
+  :: Chan_L0?[CAR] -> atomic
+  {
+    Chan_L0?CAR;
+    goto l0_ready;
+  }
+  od;
+
+l0_ready:
+  do
+  ::
+}
+
