@@ -29,17 +29,8 @@ inline ReleaseLock()
 
 proctype Signal(int chance)
 {
-  int nr = 0;
-
-car_start:
-	do
-  :: nr++		/* randomly increment */
-  :: nr--   /* randomly decrement */
-  :: break	/* or stop            */
-	od;
-
-  // pick a random light from 0 or 1
   int light;
+car_start:
   do
   :: light = 1
   :: light = 0
@@ -47,7 +38,7 @@ car_start:
   od;
 
   if
-  :: nr < chance -> atomic { printf("Car for %d\n", light); Cars[light]++ };
+  :: atomic { printf("Car for %d\n", light); Cars[light]++ };
   :: else -> skip;
   fi;
 
@@ -88,7 +79,7 @@ proctype Safety() {
 
 init {
   // Setup
-  run Signal(100);
+  run Signal(40);
   run TrafficLight(0);
   run TrafficLight(1);
 
