@@ -5,6 +5,12 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "lights_v2.pml" 2
+
+
+
+
+
+
 mtype = { RED, GREEN, AMBER };
 
 int Cars[2] = { 0, 0 };

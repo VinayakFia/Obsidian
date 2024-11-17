@@ -1,3 +1,9 @@
+// LTL FORMULAE HELPERS
+#define l0_green (LStates[0] == GREEN)
+#define l1_green (LStates[1] == GREEN)
+#define both_green (LStates[0] == GREEN && LStates[1] == GREEN)
+// ====================
+
 mtype = { RED, GREEN, AMBER };
 
 int Cars[2] = { 0, 0 };
