@@ -34,12 +34,6 @@ car_start:
   goto car_start;
 }
 
-inline changeTrafficLightToGreen(light) {
-  // The other light must be red
-  assert(LStates[(light + 1) % 2] == RED);
-
-}
-
 proctype TrafficLight0()
 {
 l0_waiting:
@@ -47,12 +41,24 @@ l0_waiting:
   :: Chan_L0?[CAR] -> atomic
   {
     Chan_L0?CAR;
-    goto l0_ready;
-  }
+    goto l0_green;
+  };
+  :: Chan_L0?[STOP] -> atomic
+  {
+    Chan_L0?STOP;
+    goto l0_stop;
+  };
+  od;
+
+l0_stop:
+  do
+  :: Chan_L0?[GO] -> atomic
+  {
+    Chan_L0
+  };
   od;
 
 l0_ready:
   do
-  ::
 }
 
