@@ -54,7 +54,7 @@ proctype TrafficLight(int this)
 
 t_start:
   AquireLock();
-  //printf("L: %e, %e P: %e, %e, C: %d\n", LStates[0], LStates[1], PStates[0], PStates[1], counter);
+  //printf("L%d: %e[%d], %e[%d] P: %e[%d], %e[%d] C: %d\n", this, LStates[0], PStates[0], LStates[1], PStates[1], PStates[0], Peds[0], PStates[1], Peds[1], counter);
   //printf("HERE2\n");
   if
   // Has cars and other light is not green
@@ -62,10 +62,10 @@ t_start:
 
   // Light flow
   :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter == 5 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this] = Cars[this] - 3 }; // Green Infinity state from diagram
-  :: atomic { LStates[this] == GREEN && counter > 0 && counter < 5 }-> atomic { printf("L%d-Green%d\n", this, counter); counter = counter - 1; Cars[this] = Cars[this] - 3 };
-  :: atomic { LStates[this] == GREEN && counter == 0 }-> atomic { printf("L%d->Amber\n", this); counter = 3; LStates[this] = AMBER; Cars[this]-- }
-  :: atomic { LStates[this] == AMBER && counter > 0 }-> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this]-- }
-  :: atomic { LStates[this] == AMBER && counter == 0 }-> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this]-- }
+  :: atomic { LStates[this] == GREEN && counter > 0 }-> atomic { printf("L%d-Green%d\n", this, counter); counter = counter - 1; Cars[this] = Cars[this] - 3 };
+  :: atomic { LStates[this] == GREEN && counter == 0 }-> atomic { printf("L%d->Amber\n", this); counter = 3; LStates[this] = AMBER; Cars[this] = Cars[this] - 3 }
+  :: atomic { LStates[this] == AMBER && counter > 0 }-> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this] = Cars[this] - 3 }
+  :: atomic { LStates[this] == AMBER && counter == 0 }-> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this] = Cars[this] - 3 }
   :: else -> skip;
   fi;
   ReleaseLock();
@@ -81,14 +81,14 @@ proctype PedestrianLight(int this)
 p_start:
   AquireLock();
   //printf("HERE\n");
-  printf("L: %e, %e P: %e, %e, C: %d\n", LStates[0], LStates[1], PStates[0], PStates[1], counter);
+  //printf("L: %e, %e P: %e, %e, C: %d\n", LStates[0], LStates[1], PStates[0], PStates[1], counter);
   if
   // Has pedestrians and perpendicular light is RED
   :: atomic { PStates[this] == RED && LStates[other] == RED && Peds[this] > 0 } -> atomic { printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 5 };
 
   // Light flow
-  :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green%d\n", this, counter); counter--; Peds[this]--; };
-  :: atomic { PStates[this] == GREEN && counter == 0 } -> atomic { printf("P%d->Red\n", this); PStates[this] = RED; Peds[this]--; };
+  :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green%d\n", this, counter); counter--; Peds[this] = Peds[this] - 3; };
+  :: atomic { PStates[this] == GREEN && counter <= 0 } -> atomic { printf("P%d->Red\n", this); PStates[this] = RED; Peds[this] = Peds[this] - 3; };
   :: else -> skip;
   fi;
   ReleaseLock();
