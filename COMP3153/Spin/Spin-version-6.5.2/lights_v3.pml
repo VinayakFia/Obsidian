@@ -7,12 +7,15 @@ int Peds[2] = { 0, 0 };
 mtype PStates[2] = RED;
 
 // LOCK
+// These are unused, however have been left here as they were my original
+// solution before using atomic
 bool lock = false;
 inline AquireLock()
 {
   bool tmp = false;
   do
-  :: atomic {
+  :: atomic
+  {
     tmp = lock;
     lock = true;
   } ->
@@ -28,10 +31,11 @@ inline ReleaseLock()
   lock = false;
 }
 
-// LOCK
+// STATES
 
 proctype Signal(int chance)
 {
+  // choose a light to add to
   int light = 0
 car_start:
   if
@@ -39,6 +43,7 @@ car_start:
   :: light = 0
   fi;
 
+  // add to pedestrian or traffic light
   if
   :: atomic { Cars[light]++ };
   :: atomic { Peds[light]++ }
@@ -53,16 +58,49 @@ proctype TrafficLight(int this)
   int other = (this + 1) % 2;
 
 t_start:
-  // AquireLock();
-  //printf("L%d: %e[%d], %e[%d] P: %e[%d], %e[%d] C: %d\n", this, LStates[0], PStates[0], LStates[1], PStates[1], PStates[0], Peds[0], PStates[1], Peds[1], counter);
+  // AquireLock(); part of original design
+
+  // printf("L%d: %e[%d], %e[%d] P: %e[%d], %e[%d] C: %d\n", this, LStates[0], PStates[0], LStates[1], PStates[1], PStates[0], Peds[0], PStates[1], Peds[1], counter);
+
   if
   // Has cars and other light is not green
-  :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 && PStates[other] == RED -> printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5; }
+  :: atomic
+  {
+    LStates[this] == RED &&
+    LStates[other] == RED &&
+    Cars[this] > 0 &&
+    PStates[other] == RED ->
+    printf("L%d->Green\n", this);
+    LStates[this] = GREEN;
+    counter = 5;
+  };
 
   // Light flow
-  :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter == 5 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this] = Cars[this] - 3 }; // Green Infinity state from diagram
-  :: atomic { LStates[this] == GREEN && counter > 0 }-> atomic { printf("L%d-Green%d\n", this, counter); counter = counter - 1; Cars[this] = Cars[this] - 3 };
-  :: atomic { LStates[this] == GREEN && counter == 0 }-> atomic { printf("L%d->Amber\n", this); counter = 3; LStates[this] = AMBER; Cars[this] = Cars[this] - 3 }
+  :: atomic
+  {
+    LStates[this] == GREEN &&
+    Cars[other] == 0 &&
+    counter == 5 ->
+    printf("L%d-GreenInf\n", this);
+    Cars[this] = Cars[this] - 3;
+  }; // Green Infinity state from diagram
+  :: atomic
+  {
+    LStates[this] == GREEN &&
+    counter > 0 ->
+    printf("L%d-Green%d\n", this, counter);
+    counter = counter - 1;
+    Cars[this] = Cars[this] - 3
+  };
+  :: atomic
+  {
+    LStates[this] == GREEN &&
+    counter == 0 ->
+    printf("L%d->Amber\n", this);
+    counter = 3;
+    LStates[this] = AMBER;
+    Cars[this] = Cars[this] - 3;
+  }
   :: atomic { LStates[this] == AMBER && counter > 0 }-> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this] = Cars[this] - 3 }
   :: atomic { LStates[this] == AMBER && counter == 0 }-> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this] = Cars[this] - 3 }
   :: else -> skip;
