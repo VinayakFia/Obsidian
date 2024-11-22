@@ -200,16 +200,25 @@ proctype Safety() {
   od
 }
 
-never { /* F(a && F(!a)) where a is Cars[0] > 0*/
-never_init:
+never {
 	if
-	:: (1) -> goto never_init
-	:: (Cars[0] > 0) -> goto got_car
+	:: (!(Cars[0] > 0)) -> goto will_come_eventually
+	:: (Cars[0] > 0) -> goto eventually_leaves
 	fi;
-got_car:
+will_come_eventually:
 	if
-	:: (1) -> goto got_car
-	:: (!(Cars[0] > 0)) -> goto accept
+	:: (!Cars[0] > 0) -> goto will_come_eventually
+  :: else -> goto eventually_arrives
+	fi;
+eventually_arrives:
+	if
+	:: (Cars[0] > 0) -> goto eventually_leaves
+	:: else -> goto eventually_arrives
+	fi;
+eventually_leaves:
+	if
+	:: (!Cars[0] > 0) -> goto accept
+	:: else -> goto eventually_leaves
 	fi;
 accept:
 	skip
