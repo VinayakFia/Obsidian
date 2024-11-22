@@ -136,11 +136,33 @@ p_start:
   //printf("L: %e, %e P: %e, %e, C: %d\n", LStates[0], LStates[1], PStates[0], PStates[1], counter);
   if
   // Has pedestrians and perpendicular light is RED
-  :: atomic { PStates[this] == RED && LStates[other] == RED && Peds[this] > 0 -> printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 5; };
+  :: atomic
+  {
+    PStates[this] == RED &&
+    LStates[other] == RED &&
+    Peds[this] > 0 ->
+    printf("P%d->Green\n", this);
+    PStates[this] = GREEN;
+    counter = 5;
+  };
 
   // Light flow
-  :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green%d\n", this, counter); counter--; Peds[this] = Peds[this] - 3; };
-  :: atomic { PStates[this] == GREEN && counter <= 0 } -> atomic { printf("P%d->Red\n", this); PStates[this] = RED; Peds[this] = Peds[this] - 3; };
+  :: atomic
+  {
+    PStates[this] == GREEN &&
+    counter > 0 ->
+    printf("P%d-Green%d\n", this, counter);
+    counter--;
+    Peds[this] = Peds[this] - 3;
+  };
+  :: atomic
+  {
+    PStates[this] == GREEN &&
+    counter <= 0 ->
+    printf("P%d->Red\n", this);
+    PStates[this] = RED;
+    Peds[this] = Peds[this] - 3;
+  };
   :: else -> skip;
   fi;
 
