@@ -100,9 +100,24 @@ t_start:
     counter = 3;
     LStates[this] = AMBER;
     Cars[this] = Cars[this] - 3;
-  }
-  :: atomic { LStates[this] == AMBER && counter > 0 }-> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this] = Cars[this] - 3 }
-  :: atomic { LStates[this] == AMBER && counter == 0 }-> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this] = Cars[this] - 3 }
+  };
+  :: atomic
+  {
+    LStates[this] == AMBER &&
+    counter > 0 ->
+    printf("L%d-Amber%d\n", this, counter);
+    counter = counter - 1;
+    Cars[this] = Cars[this] - 3;
+  };
+  :: atomic
+  {
+    LStates[this] == AMBER &&
+    counter == 0 ->
+    printf("L%d->Red\n", this);
+    counter = 3;
+    LStates[this] = RED;
+    Cars[this] = Cars[this] - 3;
+  };
   :: else -> skip;
   fi;
   // ReleaseLock();
