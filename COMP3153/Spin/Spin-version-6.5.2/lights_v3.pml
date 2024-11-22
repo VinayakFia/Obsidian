@@ -58,7 +58,7 @@ t_start:
   //printf("HERE2\n");
   if
   // Has cars and other light is not green
-  :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 && PStates[other] == RED } -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
+  :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 && PStates[other] == RED -> printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5; }
 
   // Light flow
   :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter == 5 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this] = Cars[this] - 3 }; // Green Infinity state from diagram
@@ -84,7 +84,7 @@ p_start:
   //printf("L: %e, %e P: %e, %e, C: %d\n", LStates[0], LStates[1], PStates[0], PStates[1], counter);
   if
   // Has pedestrians and perpendicular light is RED
-  :: atomic { PStates[this] == RED && LStates[other] == RED && Peds[this] > 0 } -> atomic { printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 5 };
+  :: atomic { PStates[this] == RED && LStates[other] == RED && Peds[this] > 0 -> printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 5; };
 
   // Light flow
   :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green%d\n", this, counter); counter--; Peds[this] = Peds[this] - 3; };

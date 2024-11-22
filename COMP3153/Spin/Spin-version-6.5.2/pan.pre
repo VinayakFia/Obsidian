@@ -65,7 +65,7 @@ t_start:
 
   if
 
-  :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 && PStates[other] == RED } -> atomic { printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5 };
+  :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 && PStates[other] == RED -> printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5; }
 
 
   :: atomic { LStates[this] == GREEN && Cars[other] == 0 && counter == 5 } -> atomic { printf("L%d-GreenInf\n", this); Cars[this] = Cars[this] - 3 };
@@ -91,7 +91,7 @@ p_start:
 
   if
 
-  :: atomic { PStates[this] == RED && LStates[other] == RED && Peds[this] > 0 } -> atomic { printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 5 };
+  :: atomic { PStates[this] == RED && LStates[other] == RED && Peds[this] > 0 -> printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 5; };
 
 
   :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green%d\n", this, counter); counter--; Peds[this] = Peds[this] - 3; };
@@ -130,7 +130,3 @@ init {
 
   run Safety();
 };
-
-never {
-  do :: assert(!(LStates[0] == GREEN && LStates[1] == RED)); od;
-}
