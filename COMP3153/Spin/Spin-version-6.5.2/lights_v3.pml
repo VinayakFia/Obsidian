@@ -31,6 +31,24 @@ inline ReleaseLock()
   lock = false;
 }
 
+// HELPERS
+
+inline DecrementCar(i, n)
+{
+  if
+  :: Cars[i] < n -> Cars[i] = n;
+  :: else -> Cars[i] = Cars[i] - n;
+  fi;
+}
+
+inline DecrementPed(i, n)
+{
+  if
+  :: Peds[i] < n -> Peds[i] = n;
+  :: else -> Peds[i] = Peds[i] - n;
+  fi;
+}
+
 // STATES
 
 proctype Signal(int chance)
@@ -60,8 +78,6 @@ proctype TrafficLight(int this)
 t_start:
   // AquireLock(); part of original design
 
-  // printf("L%d: %e[%d], %e[%d] P: %e[%d], %e[%d] C: %d\n", this, LStates[0], PStates[0], LStates[1], PStates[1], PStates[0], Peds[0], PStates[1], Peds[1], counter);
-
   if
   // Has cars and other light is not green
   :: atomic
@@ -82,7 +98,7 @@ t_start:
     Cars[other] == 0 &&
     counter == 5 ->
     printf("L%d-GreenInf\n", this);
-    Cars[this] = Cars[this] - 3;
+    DecrementCar(this, 1);
   }; // Green Infinity state from diagram
   :: atomic
   {
@@ -90,7 +106,7 @@ t_start:
     counter > 0 ->
     printf("L%d-Green%d\n", this, counter);
     counter = counter - 1;
-    Cars[this] = Cars[this] - 3
+    DecrementCar(this, 1);
   };
   :: atomic
   {
@@ -99,7 +115,7 @@ t_start:
     printf("L%d->Amber\n", this);
     counter = 3;
     LStates[this] = AMBER;
-    Cars[this] = Cars[this] - 3;
+    DecrementCar(this, 1);
   };
   :: atomic
   {
@@ -107,7 +123,7 @@ t_start:
     counter > 0 ->
     printf("L%d-Amber%d\n", this, counter);
     counter = counter - 1;
-    Cars[this] = Cars[this] - 3;
+    DecrementCar(this, 1);
   };
   :: atomic
   {
@@ -116,7 +132,7 @@ t_start:
     printf("L%d->Red\n", this);
     counter = 3;
     LStates[this] = RED;
-    Cars[this] = Cars[this] - 3;
+    DecrementCar(this, 1);
   };
   :: else -> skip;
   fi;
@@ -132,8 +148,6 @@ proctype PedestrianLight(int this)
 p_start:
   // AquireLock(); initially I went with a lock based solution so that processes would not interleave, however this was solved through
   // the use of atomic
-
-  //printf("L: %e, %e P: %e, %e, C: %d\n", LStates[0], LStates[1], PStates[0], PStates[1], counter);
 
   if
   // Has pedestrians and perpendicular light is RED
@@ -154,7 +168,7 @@ p_start:
     counter > 0 ->
     printf("P%d-Green%d\n", this, counter);
     counter--;
-    Peds[this] = Peds[this] - 3;
+    DecrementPed(this, 1);
   };
   :: atomic
   {
@@ -162,7 +176,7 @@ p_start:
     counter <= 0 ->
     printf("P%d->Red\n", this);
     PStates[this] = RED;
-    Peds[this] = Peds[this] - 3;
+    DecrementPed(this, 1);
   };
   :: else -> skip;
   fi;
@@ -171,6 +185,7 @@ p_start:
   goto p_start;
 }
 
+// Checks that perpendicular lights are not on at the same time
 proctype Safety() {
   do
   // Perpendicular lights should not be on at the same time
@@ -183,6 +198,21 @@ proctype Safety() {
   :: assert(!(PStates[0] == GREEN && LStates[1] == GREEN));
   :: assert(!(PStates[1] == GREEN && LStates[0] == GREEN));
   od
+}
+
+never { /* F(a && F(!a)) where a is Cars[0] > 0*/
+never_init:
+	if
+	:: (1) -> goto never_init
+	:: (Cars[0] > 0) -> goto got_car
+	fi;
+got_car:
+	if
+	:: (1) -> goto got_car
+	:: (!(Cars[0] > 0)) -> goto accept
+	fi;
+accept:
+	skip
 }
 
 init {

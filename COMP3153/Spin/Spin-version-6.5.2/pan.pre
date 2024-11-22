@@ -40,6 +40,24 @@ inline ReleaseLock()
 
 
 
+inline DecrementCar(i, n)
+{
+  if
+  :: Cars[i] < n -> Cars[i] = n;
+  :: else -> Cars[i] = Cars[i] - n;
+  fi;
+}
+
+inline DecrementPed(i, n)
+{
+  if
+  :: Peds[i] < n -> Peds[i] = n;
+  :: else -> Peds[i] = Peds[i] - n;
+  fi;
+}
+
+
+
 proctype Signal(int chance)
 {
 
@@ -67,8 +85,6 @@ proctype TrafficLight(int this)
 t_start:
 
 
-
-
   if
 
   :: atomic
@@ -80,7 +96,7 @@ t_start:
     printf("L%d->Green\n", this);
     LStates[this] = GREEN;
     counter = 5;
-  }
+  };
 
 
   :: atomic
@@ -89,13 +105,42 @@ t_start:
     Cars[other] == 0 &&
     counter == 5 ->
     printf("L%d-GreenInf\n", this);
-    Cars[this] = Cars[this] - 3;
+    DecrementCar(this, 1);
   };
-
-  :: atomic { LStates[this] == GREEN && counter > 0 }-> atomic { printf("L%d-Green%d\n", this, counter); counter = counter - 1; Cars[this] = Cars[this] - 3 };
-  :: atomic { LStates[this] == GREEN && counter == 0 }-> atomic { printf("L%d->Amber\n", this); counter = 3; LStates[this] = AMBER; Cars[this] = Cars[this] - 3 }
-  :: atomic { LStates[this] == AMBER && counter > 0 }-> atomic { printf("L%d-Amber%d\n", this, counter); counter = counter - 1; Cars[this] = Cars[this] - 3 }
-  :: atomic { LStates[this] == AMBER && counter == 0 }-> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this] = Cars[this] - 3 }
+  :: atomic
+  {
+    LStates[this] == GREEN &&
+    counter > 0 ->
+    printf("L%d-Green%d\n", this, counter);
+    counter = counter - 1;
+    DecrementCar(this, 1);
+  };
+  :: atomic
+  {
+    LStates[this] == GREEN &&
+    counter == 0 ->
+    printf("L%d->Amber\n", this);
+    counter = 3;
+    LStates[this] = AMBER;
+    DecrementCar(this, 1);
+  };
+  :: atomic
+  {
+    LStates[this] == AMBER &&
+    counter > 0 ->
+    printf("L%d-Amber%d\n", this, counter);
+    counter = counter - 1;
+    DecrementCar(this, 1);
+  };
+  :: atomic
+  {
+    LStates[this] == AMBER &&
+    counter == 0 ->
+    printf("L%d->Red\n", this);
+    counter = 3;
+    LStates[this] = RED;
+    DecrementCar(this, 1);
+  };
   :: else -> skip;
   fi;
 
@@ -111,20 +156,42 @@ p_start:
 
 
 
-
   if
 
-  :: atomic { PStates[this] == RED && LStates[other] == RED && Peds[this] > 0 -> printf("P%d->Green\n", this); PStates[this] = GREEN; counter = 5; };
+  :: atomic
+  {
+    PStates[this] == RED &&
+    LStates[other] == RED &&
+    Peds[this] > 0 ->
+    printf("P%d->Green\n", this);
+    PStates[this] = GREEN;
+    counter = 5;
+  };
 
 
-  :: atomic { PStates[this] == GREEN && counter > 0 } -> atomic { printf("P%d-Green%d\n", this, counter); counter--; Peds[this] = Peds[this] - 3; };
-  :: atomic { PStates[this] == GREEN && counter <= 0 } -> atomic { printf("P%d->Red\n", this); PStates[this] = RED; Peds[this] = Peds[this] - 3; };
+  :: atomic
+  {
+    PStates[this] == GREEN &&
+    counter > 0 ->
+    printf("P%d-Green%d\n", this, counter);
+    counter--;
+    DecrementPed(this, 1);
+  };
+  :: atomic
+  {
+    PStates[this] == GREEN &&
+    counter <= 0 ->
+    printf("P%d->Red\n", this);
+    PStates[this] = RED;
+    DecrementPed(this, 1);
+  };
   :: else -> skip;
   fi;
 
 
   goto p_start;
 }
+
 
 proctype Safety() {
   do
@@ -138,6 +205,21 @@ proctype Safety() {
   :: assert(!(PStates[0] == GREEN && LStates[1] == GREEN));
   :: assert(!(PStates[1] == GREEN && LStates[0] == GREEN));
   od
+}
+
+never {
+T1_init :
+ if
+ :: (1) -> goto T1_init
+ :: (Cars[0] > 0) -> goto T0_S2
+ fi;
+T0_S2 :
+ if
+ :: (1) -> goto T0_S2
+ :: (!(Cars[0] > 0)) -> goto accept_all
+ fi;
+accept_all :
+ skip
 }
 
 init {
