@@ -60,7 +60,7 @@ proctype TrafficLight(int this)
   int other = (this + 1) % 2;
 
 t_start:
-  AquireLock();
+
 
 
   if
@@ -75,7 +75,7 @@ t_start:
   :: atomic { LStates[this] == AMBER && counter == 0 }-> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this] = Cars[this] - 3 }
   :: else -> skip;
   fi;
-  ReleaseLock();
+
 
   goto t_start;
 }
@@ -86,7 +86,7 @@ proctype PedestrianLight(int this)
   int other = (this + 1) % 2;
 
 p_start:
-  AquireLock();
+
 
 
   if
@@ -98,7 +98,7 @@ p_start:
   :: atomic { PStates[this] == GREEN && counter <= 0 } -> atomic { printf("P%d->Red\n", this); PStates[this] = RED; Peds[this] = Peds[this] - 3; };
   :: else -> skip;
   fi;
-  ReleaseLock();
+
 
   goto p_start;
 }

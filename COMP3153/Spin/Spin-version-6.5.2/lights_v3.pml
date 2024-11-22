@@ -53,9 +53,8 @@ proctype TrafficLight(int this)
   int other = (this + 1) % 2;
 
 t_start:
-  AquireLock();
+  // AquireLock();
   //printf("L%d: %e[%d], %e[%d] P: %e[%d], %e[%d] C: %d\n", this, LStates[0], PStates[0], LStates[1], PStates[1], PStates[0], Peds[0], PStates[1], Peds[1], counter);
-  //printf("HERE2\n");
   if
   // Has cars and other light is not green
   :: atomic { LStates[this] == RED && LStates[other] == RED && Cars[this] > 0 && PStates[other] == RED -> printf("L%d->Green\n", this); LStates[this] = GREEN; counter = 5; }
@@ -68,8 +67,7 @@ t_start:
   :: atomic { LStates[this] == AMBER && counter == 0 }-> atomic { printf("L%d->Red\n", this); counter = 3; LStates[this] = RED; Cars[this] = Cars[this] - 3 }
   :: else -> skip;
   fi;
-  ReleaseLock();
-  //printf("here2\n");
+  // ReleaseLock();
   goto t_start;
 }
 
@@ -79,8 +77,9 @@ proctype PedestrianLight(int this)
   int other = (this + 1) % 2;
 
 p_start:
-  AquireLock();
-  //printf("HERE\n");
+  // AquireLock(); initially I went with a lock based solution so that processes would not interleave, however this was solved through
+  // the use of atomic
+
   //printf("L: %e, %e P: %e, %e, C: %d\n", LStates[0], LStates[1], PStates[0], PStates[1], counter);
   if
   // Has pedestrians and perpendicular light is RED
@@ -91,8 +90,8 @@ p_start:
   :: atomic { PStates[this] == GREEN && counter <= 0 } -> atomic { printf("P%d->Red\n", this); PStates[this] = RED; Peds[this] = Peds[this] - 3; };
   :: else -> skip;
   fi;
-  ReleaseLock();
-  //printf("here\n");
+
+  // ReleaseLock();
   goto p_start;
 }
 
