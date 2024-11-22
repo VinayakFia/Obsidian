@@ -134,6 +134,7 @@ p_start:
   // the use of atomic
 
   //printf("L: %e, %e P: %e, %e, C: %d\n", LStates[0], LStates[1], PStates[0], PStates[1], counter);
+
   if
   // Has pedestrians and perpendicular light is RED
   :: atomic
