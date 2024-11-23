@@ -35,6 +35,6 @@ Here $A_1$ and $B_1$ are always satisfy our CTL formula. Again, it trivially hol
 Assume that $A_1 \models \alpha \iff B_1 \models \alpha$ holds for $|a| = k$.
 
 **Recursive case**
-Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for $|a| = k + 1$.
+Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all extensions of alpha.
 
- W
+*Case 1 - $$*
