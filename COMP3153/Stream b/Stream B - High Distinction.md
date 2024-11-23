@@ -16,3 +16,5 @@ Lets call the lhs node $q_0$ and the rhs node $q_1$. After 1 step we reach $q_1$
 **As such, $B_n$ satisfies $\textbf{FG}p$.**
 
 #### Part B
+**Base Case**
+$$$$
