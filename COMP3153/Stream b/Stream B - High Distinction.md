@@ -20,5 +20,10 @@ Lets call the lhs node $q_0$ and the rhs node $q_1$. After 1 step we reach $q_1$
 Given that $|\alpha|=1$
 $$A_1 \models \alpha \iff B_1 \models \alpha$$
 We have 2 cases here, $\alpha=p$ and $\alpha \neq p$.
-*First lets consider $a = p$*.
+**A_1**
 ![[Pasted image 20241123184628.png]]
+**B_1**
+![[Pasted image 20241123185008.png]]
+
+*First lets consider $a = p$*.
+If 
