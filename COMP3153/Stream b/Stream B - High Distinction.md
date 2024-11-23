@@ -39,4 +39,4 @@ Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all exten
 
 *Case 1: $\alpha$ is a state formula*
 *Case 1.1 $X\alpha$*
-We know that $B_{k+1}$ holds true from
+We know that $B_{k+1}$ holds true from \*.
