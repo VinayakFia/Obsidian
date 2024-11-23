@@ -26,4 +26,10 @@ We have 2 cases here, $\alpha=p$ and $\alpha \neq p$.
 ![[Pasted image 20241123185008.png]]
 
 *First lets consider $a = p$*.
-If 
+This can not be satisfied for $A_1$ or $B_1$ as the first state is the empty set $\emptyset$. As such our condition $A_1 \models \alpha \iff B_1 \models \alpha$ trivially holds true.
+
+*Next lets consider $a \neq p$*.
+Here $A_1$ and $B_1$ are always satisfy our CTL formula. Again, it trivially holds true.
+
+**Inductive hypothesis**
+Assume that $A_1 \models \alpha \iff B_1 \models \alpha$ holds for $|a| = k$
