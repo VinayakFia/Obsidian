@@ -38,6 +38,8 @@ Assume that $A_k \models \alpha \iff B_k \models \alpha$ holds for $|a| = k$.
 Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all extensions of alpha.
 
 *Case 1: $\alpha$ is a state formula*
-*Case 1.1 $X\alpha$*
+
+*Case 1.1 $\textbf{X}\alpha$*
 *Case 1.1.1 suppose $\alpha$ holds for $B_{k+1}$*
-Here we know that $Xa$ holds for $B_k$ from \*. We are now left to prove that given $A_{k + 1} \models X\alpha$. 
+![[Pasted image 20241123213239.png]]
+lets call the rhs state with the $q_2\{p\}$ and the lhs state $q_1{\emptyset}$. We know that with our new CTL formula $\
