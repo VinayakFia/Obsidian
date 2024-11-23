@@ -40,4 +40,4 @@ Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all exten
 *Case 1: $\alpha$ is a state formula*
 *Case 1.1 $X\alpha$*
 *Case 1.1.1 suppose $\alpha$ holds for $B_{k+1}$*
-Here we know that $Xa$ holds for $B_k$ from \*. We are now left to prove that given $A_{k + 1} \models X\alpha$.
+Here we know that $Xa$ holds for $B_k$ from \*. We are now left to prove that given $A_{k + 1} \models X\alpha$. 
