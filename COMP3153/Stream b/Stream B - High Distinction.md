@@ -19,7 +19,7 @@ Lets call the lhs node $q_0$ and the rhs node $q_1$. After 1 step we reach $q_1$
 **Base Case**
 Given that $|\alpha|=1$
 $$A_1 \models \alpha \iff B_1 \models \alpha$$
-We have 3 cases here, $\alpha = true$ (this trivially satisfies our requirement as ) $\alpha=p$ and $\alpha \neq p$.
+We have 3 cases here, $\alpha = true$ (this trivially satisfies our requirement as $A_1$ and $B_1$ would both always be true), $\alpha=p$ and $\alpha \neq p$.
 **A_1**
 ![[Pasted image 20241123184628.png]]
 **B_1**
@@ -37,3 +37,4 @@ Assume that $A_1 \models \alpha \iff B_1 \models \alpha$ holds for $|a| = k$.
 **Recursive case**
 Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for $|a| = k + 1$.
 
+ W
