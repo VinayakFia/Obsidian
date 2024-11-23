@@ -40,4 +40,4 @@ Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all exten
 *Case 1: $\alpha$ is a state formula*
 *Case 1.1 $X\alpha$*
 *Case 1.1.1 suppose $\alpha$ holds for $B_k$*
-Here we know that $Xa$ holds for $B_k$ from \*. Then we know that since $B_k$ holds from our indc
+Here we know that $Xa$ holds for $B_k$ from \*. Then we know that since $B_k$ satisfies $\alpha$ from our inductive hypothesis, $A_k \models \alpha$. We are now left to prove that given $A_{k + 1} \models X\alpha$.
