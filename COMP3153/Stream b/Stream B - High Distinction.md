@@ -17,4 +17,6 @@ Lets call the lhs node $q_0$ and the rhs node $q_1$. After 1 step we reach $q_1$
 
 #### Part B
 **Base Case**
-$$$$
+Given that $|\alpha|=1$
+$$A \models \alpha \iff B_1 \models \alpha$$
+We have 2 cases here, $\alpha=p$ and $\alpha \neg{=} p$
