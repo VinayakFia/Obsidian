@@ -1,3 +1,4 @@
+> [!info] only Part a is done
 #### Part A
 > For all n, exactly one of An or Bn satisfies the LTL formula: $FGp$. With justification, which structure(s) do and which structures do not?
 
@@ -34,27 +35,8 @@ Here $A_1$ and $B_1$ always satisfy our CTL formula. Again, it trivially holds t
 **Inductive hypothesis**
 Assume that $A_j \models \alpha \iff B_j \models \alpha$ holds for $|a| = k, j \geq k$. (IH)
 
-> [!warning] I've attempted this question a few times, the below explanation made sense to me, I would appreciate feedback here as I am still not 100%.
+> [!warning] I've attempted this question a few times, the below explanation made sense to me, I would appreciate feedback here as I am still not 100%. This proof isn't finished however.
 
-**Recursive case**
-For a CTL formula $φ$ with $|φ| = k$, we need to consider all possible temporal operators. We have the following cases:
-
-*Case 1. For $EX$, that is, exists after one step.*
-If $φ = EXψ$ where $|ψ| < k$. In both $A_j$ and $B_j$, there is exactly one next state. This is $B_{j-1}$ in both structures. Since $j ≥ |φ|$ and $|ψ| < |φ|$, we know $j-1 ≥ |ψ|$. By inductive hypothesis, $A_{j-1} \models ψ ⇔ B_{j-1} \models ψ$. So $A_j$ satisfies iff $B_j$ satisfied.
-
-*Case 2. For $AX$, that is, always after one step.*
-Similar to $EX$ case since there's only one path. So $A_j$ satisfies iff $B_j$ satisfied.
-
-*Case 3. For $EG$, that is, always every step.*
-If $φ = EGψ$ where $|ψ| < k$. Consider any path in $A_j$. It starts at the root and then continues through $B_j-1$. Any such path in $A_j$ has a corresponding path in $B_j$ (which also continues through $B_j-1$.By inductive hypothesis and assumption (\*), these paths satisfy ψ equivalently. So $A_j$ satisfies iff $B_j$ satisfied.
-
-*Case 4.  For $EU$, that is, exists until*
-If $φ = E(ψ1 U ψ2)$ where $|ψ1|, |ψ2| < k$. Any path in $A_j$ starting from root goes through $B_j-1$. Similar path exists in $B_j$. By inductive hypothesis, $ψ_1$ and $ψ_2$ are satisfied equivalently in both structures. Therefore, $A_j \models E(ψ1 U ψ2) ⇔ B_j \models E(ψ1 U ψ2)$. So $A_j$ satisfies iff $B_j$ satisfied.
-
-Essentially, for $j ≥ |φ|$. Both $A_j$ and Bj have identical initial states. Both lead to $B_j-1$ as their next structure. The inductive hypothesis ensures sub formulas are equivalent. Assumption (\*) ensures that any further $B_k$ structures $(k < j-1)$ behave equivalently. This means that any temporal property that holds in one structure must hold in the other, as their behavioural patterns are essentially identical from the perspective of CTL formulas of size ≤ k.
-
-PREVIOUS ATTEMPT
-=============
 **Recursive case**
 *Case 1: $\alpha$ is a state formula*
 *Case 1.1 $\textbf{X}\alpha$*
