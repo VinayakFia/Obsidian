@@ -40,6 +40,6 @@ Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all exten
 *Case 1: $\alpha$ is a state formula*
 
 *Case 1.1 $\textbf{X}\alpha$*
-*Case 1.1.1 suppose $\alpha$ holds for $B_{k+1}, prove that $\alpha$ holds true for*
+*Case 1.1.1 suppose $\alpha$ holds for $B_{k+1}$, prove that $\alpha$ holds true for*
 ![[Pasted image 20241123213239.png]]
 lets call the rhs state be $q_2\{p\}$ and the lhs state be $q_1{\emptyset}$. 
