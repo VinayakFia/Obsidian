@@ -42,4 +42,4 @@ Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all exten
 *Case 1.1 $\textbf{X}\alpha$*
 *Case 1.1.1 suppose $\alpha$ holds for $B_{k+1}$*
 ![[Pasted image 20241123213239.png]]
-lets call the rhs state with the $q_2\{p\}$ and the lhs state $q_1{\emptyset}$. We know that with our new CTL formula $\textbf{X}\alpha$
+lets call the rhs state $q_2\{p\}$ and the lhs state $q_1{\emptyset}$. We know that with our new CTL formula $\textbf{X}\alpha$
