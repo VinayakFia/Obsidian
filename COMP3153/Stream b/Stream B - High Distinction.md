@@ -45,3 +45,5 @@ lets call the rhs state be $q_2\{p\}$ and the lhs state be $q_1{\emptyset}$. The
 Like *1.1.1*, we are left to prove that $\alpha$ does not hold for $A_{k+1}$. From our IH, $A_{\geq k}$ would not hold since $B_{\geq k}$ does not hold. So, $A_{k+1}$ does not satisfy $\alpha$.
 
 *Case 1.2* $F\alpha$
+*Case 1.1.1 suppose $F\alpha$ holds for $B_{k+1}$, prove that $F\alpha$ holds for $A_{k+1}$*
+Eventually 
