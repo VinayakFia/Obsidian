@@ -46,4 +46,4 @@ Like *1.1.1*, we are left to prove that $\alpha$ does not hold for $A_{k+1}$. Fr
 
 *Case 1.2* $F\alpha$
 *Case 1.1.1 suppose $F\alpha$ holds for $B_{k+1}$, prove that $F\alpha$ holds for $A_{k+1}$*
-Eventually
+Here, we may take any path from $\alpha$
