@@ -29,7 +29,7 @@ We have 3 cases here, $\alpha = true$ (this trivially satisfies our requirement 
 This can not be satisfied for $A_1$ or $B_1$ as the first state is the empty set $\emptyset$. As such our condition $A_1 \models \alpha \iff B_1 \models \alpha$ trivially holds true.
 
 *Next lets consider $a \neq p$*.
-Here $A_1$ and $B_1$ are always satisfy our CTL formula. Again, it trivially holds true.
+Here $A_1$ and $B_1$ always satisfy our CTL formula. Again, it trivially holds true.
 
 **Inductive hypothesis**
 Assume that $A_j \models \alpha \iff B_j \models \alpha$ holds for $|a| = k, j \geq k$. (IH)
