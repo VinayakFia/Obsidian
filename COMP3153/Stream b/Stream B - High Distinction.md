@@ -35,13 +35,11 @@ Here $A_1$ and $B_1$ are always satisfy our CTL formula. Again, it trivially hol
 Assume that $A_k \models \alpha \iff B_k \models \alpha$ holds for $|a| = k$. (IH)
 
 **Recursive case**
-Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all extensions of alpha.
+Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all extensions of CTL $\alpha$.
 
 *Case 1: $\alpha$ is a state formula*
 
 *Case 1.1 $\textbf{X}\alpha$*
-*Case 1.1.1 suppose $\alpha$ holds for $B_{k+1}$*
+*Case 1.1.1 suppose $\alpha$ holds for $B_{k+1}, prove that $\alpha$ holds true for*
 ![[Pasted image 20241123213239.png]]
-lets call the rhs state be $q_2\{p\}$ and the lhs state be $q_1{\emptyset}$. We know that with our new CTL formula $\textbf{X}\alpha$ is satisfied by $B_k$ since \*. Hence from IH we know that $A_k$ holds. Now, from $q_2$. We can either
-1. Go to $B_{k}$ where $\textbf{X}\alpha$ holds.
-2. Go to $q2$ again. In this case
+lets call the rhs state be $q_2\{p\}$ and the lhs state be $q_1{\emptyset}$. 
