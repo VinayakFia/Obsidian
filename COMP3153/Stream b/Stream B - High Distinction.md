@@ -34,6 +34,35 @@ Here $A_1$ and $B_1$ are always satisfy our CTL formula. Again, it trivially hol
 **Inductive hypothesis**
 Assume that $A_j \models \alpha \iff B_j \models \alpha$ holds for $|a| = k, j \geq k$. (IH)
 
+> [!warning] I've attempted this question a few times, the below explanation made sense to me, I would appreciate feedback here as I am still not 100%.
+
+**Recursive case**
+For a CTL formula φ with |φ| = k, we need to consider all possible temporal operators. We have the following cases:
+
+1. For $EX$, that is, exists after one step, operator: If φ = $EXψ$ where $|ψ| < k$:
+    - In both $A_j$ and $B_j$, there's exactly one next state
+    - This next state is $B_j-1$ in both structures
+    - Since $j ≥ |φ|$ and $|ψ| < |φ|$, we know $j-1 ≥ |ψ|$
+    - By inductive hypothesis, $A_j-1 |= ψ ⇔ B_j-1 |= ψ$
+    - Therefore, $A_j |= EXψ ⇔ B_j |= EXψ$
+2. For $AX$, that is, always after one step, operator: Similar to $EX$ case since there's only one path.
+3. For $EG$, that is, always every step, operator: If $φ = EGψ$ where $|ψ| < k$:
+    - Consider any path in $A_j$. It starts at the root and then continues through $B_j-1$
+    - Any such path in $A_j$ has a corresponding path in $B_j$ (which also continues through $B_j-1$)
+    - By inductive hypothesis and assumption (\*), these paths satisfy ψ equivalently
+    - Therefore, $A_j |= EGψ ⇔ B_j |= EGψ$
+4. For $EU$, that is, exists until, operator: If $φ = E(ψ1 U ψ2)$ where $|ψ1|, |ψ2| < k$:
+    - Any path in Aj starting from root goes through Bj-1
+    - Similar path exists in Bj
+    - By inductive hypothesis, ψ1 and ψ2 are satisfied equivalently in both structures
+    - Therefore, $A_j |= E(ψ1 U ψ2) ⇔ B_j |= E(ψ1 U ψ2)$
+
+For $j ≥ |φ|$. Both $A_j$ and Bj have identical initial states. Both lead to $B_j-1$ as their next structure. The inductive hypothesis ensures sub formulas are equivalent. Assumption (\*) ensures that any further $B_k$ structures $(k < j-1)$ behave equivalently
+
+This means that any temporal property that holds in one structure must hold in the other, as their behavioural patterns are essentially identical from the perspective of CTL formulas of size ≤ k.
+
+PREVIOUS ATTEMPT
+=============
 **Recursive case**
 *Case 1: $\alpha$ is a state formula*
 *Case 1.1 $\textbf{X}\alpha$*
