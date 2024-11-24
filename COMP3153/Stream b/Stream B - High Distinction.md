@@ -18,7 +18,7 @@ Lets call the lhs node $q_0$ and the rhs node $q_1$. After 1 step we reach $q_1$
 #### Part B
 **Base Case**
 Given that $|\alpha|=1$
-$$A_1 \models \alpha \iff B_1 \models \alpha$$
+$$A_{\geq1} \models \alpha \iff B_{\geq1} \models \alpha$$
 We have 3 cases here, $\alpha = true$ (this trivially satisfies our requirement as $A_1$ and $B_1$ would both always be true), $\alpha=p$ and $\alpha \neq p$.
 **A_1**
 ![[Pasted image 20241123184628.png]]
@@ -32,7 +32,7 @@ This can not be satisfied for $A_1$ or $B_1$ as the first state is the empty set
 Here $A_1$ and $B_1$ are always satisfy our CTL formula. Again, it trivially holds true.
 
 **Inductive hypothesis**
-Assume that $A_k \models \alpha \iff B_k \models \alpha$ holds for $|a| = k$. (IH)
+Assume that $A_j \models \alpha \iff B_j \models \alpha$ holds for $|a| = k, j \geq k$. (IH)
 
 **Recursive case**
 Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all extensions of CTL $\alpha$.
@@ -42,4 +42,5 @@ Prove that $A_1 \models \alpha \iff B_1 \models \alpha$ holds true for all exten
 *Case 1.1 $\textbf{X}\alpha$*
 *Case 1.1.1 suppose $\alpha$ holds for $B_{k+1}$, prove that $\alpha$ holds true for $A_{k+1}$*
 ![[Pasted image 20241123213239.png]]
-lets call the rhs state be $q_2\{p\}$ and the lhs state be $q_1{\emptyset}$. The only difference between $B_{k+1}$ and $A_{k+1}$ is that $q_2$ in $A_{k+1}$ has an edge to $q_1$, which is the case for $B_{k+1}$. **All cases other than taking this edge satisfy $\textbf{X}a$ since the behaviour would be the same as $B_{k+1}$.** Now, if the edge was followed, we would simply return to the initial state, we are now left with, does $\alpha$ holds for $A_{k+1}$?  
+lets call the rhs state be $q_2\{p\}$ and the lhs state be $q_1{\emptyset}$. The only difference between $B_{k+1}$ and $A_{k+1}$ is that $q_2$ in $A_{k+1}$ has an edge to $q_1$, which is the case for $B_{k+1}$. **All cases other than taking this edge satisfy $\textbf{X}a$ since the behaviour would be the same as $B_{k+1}$.** Now, if the edge was followed, we would simply return to the initial state, we are now left with, does $\alpha$ hold for $A_{k+1}$? Well, from our IH, $\alpha$ holds for all $A_j$ where $j > k$. In this case, $j=k+1$, so $A_{k+1}$ satisfies $alpha$.
+*Case 1.1.2 suppose $\alpha$ does not hold for $B_{k+1}$, prove that $\alpha*
