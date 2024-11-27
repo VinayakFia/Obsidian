@@ -36,4 +36,7 @@ $$\frac{}{\text{and } \square \ b_2 \ \triangleright s \prec T \mapsto s \succ b
 
 ## B
 ### 1.
-$$\forall\alpha, \beta,  (\alpha + (\beta + (\text{int} \times \text{int})))$$
+$$1. \qquad \forall\alpha, \beta,  (\alpha + (\beta + (\text{int} \times \text{int})))$$
+$$2.\qquad \forall\alpha, \beta, \theta (\alpha \times (\beta \times \theta)) \rightarrow \beta$$
+$$3.\qquad ((\text{Bool}) + \beta) \rightarrow \text{Bool}$$
+recfun f x=case x of InL g→g False;InR x→False
