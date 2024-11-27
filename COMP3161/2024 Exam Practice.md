@@ -27,5 +27,8 @@ b1 bool V T, b2 bool V b' |- (and b1 b2) V b'
 $$\succ \prec \triangleright \square \circ $$
 $$\frac{}{s\succ\text{true}\mapsto s \prec T}$$
 $$\frac{}{s\succ\text{false}\mapsto s \prec F}$$
-$$\frac{}{s\succ\text{not } b\mapsto \text{not }\square \triangleright s \succ F}$$
-$$\frac{}{\text{not } \square \triangleright \prec \mapsto \text{not }\square \triangleright s \succ F}$$
+$$\frac{}{s\succ\text{not } b\mapsto \text{not }\square \triangleright s \succ b}$$
+$$\frac{}{\text{not } \square \ \triangleright s \prec T \mapsto s \prec F}$$
+$$\frac{}{\text{not } \square \ \triangleright s \prec F \mapsto s \prec T}$$
+$$\frac{}{s\succ\text{and } b_1 \ b_2\mapsto \text{and }\square \ b_2 \triangleright s \succ b_1}$$
+$$\frac{}{\text{and } \square \ b_2 \ \triangleright \prec \mapsto \text{and }\square \ b_2 \triangleright s \succ b_1}$$
