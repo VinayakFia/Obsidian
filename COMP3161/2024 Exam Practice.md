@@ -59,3 +59,8 @@ let s = empty
 This relationship is covariant as it maintains the subtying relationship.
 
 ### 2.
+> Assuming Square≤Rect, and the variable r:Rect, show that the above subtyping rule is incorrect by giving a MinHS expression of type Square that evaluates to r.
+
+```haskell
+(Square -> Square) -> (Rect -> Square)
+```
