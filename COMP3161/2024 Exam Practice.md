@@ -86,3 +86,6 @@ A <= B
 coerce :: Cont A -> Cont B
 coerce fa = 
 ```
+
+> [!warning] DO NOT UNDERSTAND AT ALLL
+
