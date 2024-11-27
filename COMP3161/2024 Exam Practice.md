@@ -67,10 +67,11 @@ However, in practice, this we canot convert a Square into a Rect.
 
 suppose we have:
 recfun f x :: (Square -> Square) = x.
-according to the rule above, we can use $f$ like a function (Square -> Rect) and do r = f square. This is clearly not possible.
+according to the rule above, we can use $f$ like a function (Rect -> Square) and do f r. This is clearly not possible.
 ```
 
 ### 3.
 > How does the existence of such an expression violate _progress_ or _preservation_?
 
-This would violate `preservation` as 
+This would violate `preservation` as the type of the expression goes from Square to Rect.
+
