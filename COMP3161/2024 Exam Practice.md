@@ -75,3 +75,7 @@ according to the rule above, we can use $f$ like a function (Rect -> Square) and
 
 This would violate `preservation` as the type of the expression goes from Square to Rect.
 
+`exclaim' :: (a -> String) -> a -> String`
+`exclaim' showFunc x = showFunc x ++ "!"`
+
+
