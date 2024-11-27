@@ -15,5 +15,5 @@ No, they are not ambiguous. This is because at each step there is exactly 1 eval
 ```haskell
 data Value = T | F
 
-|- true 
+|- true V T
 ```
