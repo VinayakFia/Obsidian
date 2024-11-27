@@ -78,3 +78,10 @@ This would violate `preservation` as the type of the expression goes from Square
 `exclaim' :: (a -> String) -> a -> String`
 `exclaim' showFunc x = showFunc x ++ "!"`
 
+```haskell
+coerce :: A -> B
+
+A <= B
+
+coerce :: Cont A -> C
+```
