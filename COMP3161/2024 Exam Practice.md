@@ -42,7 +42,8 @@ $$3.\qquad \forall\beta,  ((\text{Bool} \rightarrow \text{Bool}) + \beta) \right
 ### 2.
 > *(6 Marks)* Explain, with the help of an example, why most-general-type inference is not possible for the simple rec-based recursive types we added to MinHS in lectures. _Hint_: Consider the type(s) of the term: `roll (InR (roll (InL 3)))`
 
-This is because the problem of determining the most-general type is computationally intensive. Take the example `roll (InR (roll (InL 3)))`. First lets consider `roll (InL 3)`. We have the type `rec t. Int + ?`. Then `roll (InR (roll (InL 3)))` is `rec t. b + (rec t'. Int + a)`. Here determining the type of `t` and `t'`
+This is because the problem of determining the most-general type is computationally intensive. Take the example `roll (InR (roll (InL 3)))`. First lets consider `roll (InL 3)`. We have the type `rec t. Int + ?`. Then `roll (InR (roll (InL 3)))` is `rec t. b + (rec t'. Int + a)`. Here determining the type of `t` and `t'`.
+**????? I don't get this**
 ### 3.
  > [!warning] I don't think this is part of this term's couse
 
