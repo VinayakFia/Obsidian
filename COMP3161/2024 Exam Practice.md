@@ -45,3 +45,4 @@ $$3.\qquad \forall\beta,  ((\text{Bool} \rightarrow \text{Bool}) + \beta) \right
  > [!warning] I don't think this is part of this term's couse
 
 ### 3.
+
