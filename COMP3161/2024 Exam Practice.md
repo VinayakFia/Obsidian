@@ -83,5 +83,6 @@ coerce :: A -> B
 
 A <= B
 
-coerce :: Cont A -> C
+coerce :: Cont A -> Cont B
+coerce fa = 
 ```
