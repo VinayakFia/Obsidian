@@ -24,4 +24,8 @@ b1 bool V T, b2 bool V b' |- (and b1 b2) V b'
 ```
 
 ### 4.
-$$\succ \prec \righttriangle $$
+$$\succ \prec \triangleright \square \circ $$
+$$\frac{}{s\succ\text{true}\mapsto s \prec T}$$
+$$\frac{}{s\succ\text{false}\mapsto s \prec F}$$
+$$\frac{}{s\succ\text{not } b\mapsto \text{not }\square \triangleright s \succ F}$$
+$$\frac{}{\text{not } \square \triangleright \preq \mapsto \text{not }\square \triangleright s \succ F}$$
