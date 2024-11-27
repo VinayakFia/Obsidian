@@ -38,5 +38,10 @@ $$\frac{}{\text{and } \square \ b_2 \ \triangleright s \prec T \mapsto s \succ b
 ### 1.
 $$1. \qquad \forall\alpha, \beta,  (\alpha + (\beta + (\text{int} \times \text{int})))$$
 $$2.\qquad \forall\alpha, \beta, \theta (\alpha \times (\beta \times \theta)) \rightarrow \beta$$
-$$3.\qquad ((\text{Bool}) + \beta) \rightarrow \text{Bool}$$
-recfun f x=case x of InL g→g False;InR x→False
+$$3.\qquad \forall\beta,  ((\text{Bool} \rightarrow \text{Bool}) + \beta) \rightarrow \text{Bool}$$
+### 2.
+> *(6 Marks)* Explain, with the help of an example, why most-general-type inference is not possible for the simple rec-based recursive types we added to MinHS in lectures. _Hint_: Consider the type(s) of the term: `roll (InR (roll (InL 3)))`
+
+ > [!warning] I don't think this is part of this term's couse
+
+### 3.
