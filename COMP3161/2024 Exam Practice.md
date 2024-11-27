@@ -16,4 +16,12 @@ No, they are not ambiguous. This is because at each step there is exactly 1 eval
 data Value = T | F
 
 |- true V T
+|- false V F
+b bool V T |- not b V F
+b bool V F |- not b V T
+b1 bool V F, b2 bool V b' |- (and b1 b2) V F
+b1 bool V T, b2 bool V b' |- (and b1 b2) V b'
 ```
+
+### 4.
+$$\succ \prec \righttriangle $$
