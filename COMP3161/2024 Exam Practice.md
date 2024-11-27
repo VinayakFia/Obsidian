@@ -56,3 +56,6 @@ let s = empty
 
 ## C
 ### 1.
+This relationship is covariant as it maintains the subtying relationship.
+
+### 2.
