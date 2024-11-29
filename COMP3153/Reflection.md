@@ -31,9 +31,14 @@ fi;
 This implementation was functionally identical to my earlier one, which did seem to work. To test this model, I made a `Model` thread that makes assertions, e.g.:
 
 ```python
-proctype Model)()
+proctype Model()
+{
+	# this just checks that both lights are not green at the same time.
+	assert(states[1] != RED && State[0] != RED);
+}
 ```
 
+However, after running this model, it actually failed this assertions after a few seconds every time. I realised that in my model 
 ## self-assessment
 I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. I also did spend many many hours learning and programming promela, and made my system effectively. I did have to change my implementation from using signals to using shared arrays, however this did not change the important states, and importantly actually worked.
 
