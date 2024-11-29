@@ -1,4 +1,4 @@
-## stream a reflection
+## Stream a reflection
 I believe that my specification was quite complex, however, after implementing, there were several simplifications made. These simplifications were primarily *removing* the use of channels, and using shared state instead. I found that the use of channels lead to very complex states, whereas the use of shared state was much simpler. This did reduce the amount of states in my system, however, the important states, that is, the states that users of the traffic light will be able to see, were all kept. Moreover, the key aspects of the SCATS system were maintained.
 
 **First Implementation**
@@ -38,7 +38,37 @@ proctype Safety()
 }
 ```
 
-However, after running this model, it actually failed this assertions after a few seconds every time. I realised that in my model there was
+However, after running this model, it actually failed this assertions after a few seconds every time. I've coppied my original state diagram below to explain why:
+
+```mermaid
+stateDiagram-v2
+	state after_amber <<choice>>
+
+	[*] --> waiting
+	waiting --> stopped : stop?
+	stopped --> stoppedCar : car?, car++
+	stopped --> waiting : go?
+	stoppedCar --> ready : go?, broadcast(ready!)
+	stoppedCar --> stoppedCar : car?, car++
+	waiting --> ready : car?, car++, broadcast(ready!)
+	ready --> greenInfinity : broadcast(stop!)
+	ready --> stoppedCar : stop?
+	ready --> ready : car?, car++
+	greenInfinity --> green : ready?, timer = 5
+	green --> amber : timer = 3
+	amber --> after_amber : broadcast(go!)
+	after_amber --> ready : when car > 0, broadcast(ready!)
+	after_amber --> waiting : when car = 0
+```
+
+What happened is that the `Ready->GreenInfinity` transition had no requirement. This lead to a race condition where multiple lights could follow this transition at the same time. The solution was this had 2 steps.
+
+**1. Make the whole `if` statement atomic**
+This essentially means going from:
+```shell
+if
+:: 
+```
 ## self-assessment
 I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. I also did spend many many hours learning and programming promela, and made my system effectively. I did have to change my implementation from using signals to using shared arrays, however this did not change the important states, and importantly actually worked.
 
