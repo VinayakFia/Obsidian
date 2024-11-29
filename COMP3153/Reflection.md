@@ -63,10 +63,10 @@ stateDiagram-v2
 
 What happened is that the `Ready->GreenInfinity` transition had no requirement. This lead to a race condition where multiple lights could follow this transition at the same time. The solution was this had 2 steps.
 
-**1. Make sure that the stop? transition if prioritised**
+*1. Make sure that the stop? transition if prioritised*
 Originally I had the `(1)` condition for the above transition as I had directly translated it from my diagram. This means that it would simply take this transition whenever. I changed this to `else`, meaning it would check all the other possible options, and only do the `GreenInfinity` transition if all else were not possible.
 
-**2. Make the whole `if` statement atomic**
+*2. Make the whole `if` statement atomic*
 This essentially means going from:
 ```shell
 if
@@ -81,6 +81,20 @@ fi;
 ```
 
 together, this did solve my problem! However, in this time I realised a simpler implementation that would be easier to model check on. Specifically, to check on the number of cars as this was a challenge in my original implementation.
+
+**Third Implementation**
+This time, I used more global states, and removed the use of channels and messages entirely:
+```python
+mtype = { RED, GREEN, AMBER };
+
+int Cars[2] = { 0, 0 };
+mtype LStates[2] = RED;
+
+int Peds[2] = { 0, 0 };
+mtype PStates[2] = RED;
+```
+
+This lead to a simpler, easier to understand implementation that still modelled SCATS as in my specification. It also made it much easier to check things like Cars and States naturally, rather than these things being added on just for the `Safety` process. Originall, I ran into an issue where multiple lights would be green at the same time as earlier. My original solution was actually o 
 ## self-assessment
 I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. I also did spend many many hours learning and programming promela, and made my system effectively. I did have to change my implementation from using signals to using shared arrays, however this did not change the important states, and importantly actually worked.
 
