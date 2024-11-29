@@ -1,7 +1,29 @@
 ## stream a reflection
 I believe that my specification was quite complex, however, after implementing, there were several simplifications made. These simplifications were primarily *removing* the use of channels, and using shared state instead. I found that the use of channels lead to very complex states, whereas the use of shared state was much simpler. This did reduce the amount of states in my system, however, the important states, that is, the states that users of the traffic light will be able to see, were all kept. Moreover, the key aspects of the SCATS system were maintained.
 
-My first implementation of the system was done through channels. This lead to many more states than
+**First Implementation**
+My first implementation of the system was done through channels. This lead to many more states than expected, and I ran into issues of running out of processes in promela as each state was modelled as its own process. An example of how this worked is below:
+
+```python
+proctype Red(int light; chan c)
+{
+	if
+	:: c[?]
+	fi;
+}
+```
+
+**Second Implementation**
+I again used channels, but made signle larger `TrafficLight`, `PedestrianLight` and `Signal` process. States were modelled using `goto` where transitions would take the form of:
+
+```shell
+state_1:
+if
+:: atomic { ...check } -> goto state_0;
+:: else -> goto state_1;
+fi;
+..
+```
 
 ## self-assessment
 I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. I also did spend many many hours learning and programming promela, and made my system effectively. I did have to change my implementation from using signals to using shared arrays, however this did not change the important states, and importantly actually worked.
