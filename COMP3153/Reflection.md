@@ -8,10 +8,13 @@ My first implementation of the system was done through channels. This lead to ma
 proctype Red(int light; chan c)
 {
 	if
-	:: c[?]
+	:: atomic { c?[CAR]; c!car -> run StoppedRed(light, c); }
+	:: ....
 	fi;
 }
 ```
+
+As seen above, I would simply run the next state. I quickly realised after running this program that this would lead to hundreds of processes being made and run. However, this was a big learning experience as it helped me figure out how promela actually worked! Moreover, this actually seemed worked until it ran out of processes.
 
 **Second Implementation**
 I again used channels, but made signle larger `TrafficLight`, `PedestrianLight` and `Signal` process. States were modelled using `goto` where transitions would take the form of:
@@ -23,6 +26,12 @@ if
 :: else -> goto state_1;
 fi;
 ..
+```
+
+This implementation was functionally identical to my earlier one, which did seem to work. To test this model, I made a `Model` thread that makes assertions, e.g.:
+
+```python
+proctype Model)()
 ```
 
 ## self-assessment
