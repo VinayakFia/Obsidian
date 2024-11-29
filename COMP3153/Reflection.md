@@ -1,3 +1,6 @@
+## stream a reflection
+I believe that my specification was quite complex, however, after implementing, there were several simplifications made. These simpli
+
 ## self-assessment
 I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. I also did spend many many hours learning and programming promela, and made my system effectively. I did have to change my implementation from using signals to using shared arrays, however this did not change the important states, and importantly actually worked.
 
