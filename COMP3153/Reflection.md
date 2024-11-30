@@ -145,10 +145,12 @@ I believe that this lines up with a low HD (85-90) because:
 - my final implementation did satisfy all requirements
 
 ## Stream B assessment
-I made an attempt at everything except th
-I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. The
+I made an attempt at everything, although the attempt at the very last HD task was not very good. I have not gotten distinction feedback yet, but I believe I went sufficiently into depth, and made a strong attempt. It did take me several attempts for the P and C tasks, however Mark's feedback was super helpful and I got it all eventually.
 
-I believe that this lines up with a low HD (85-90) or a higher D (80-90).
+Overall I think this lines up with a high D or low HD (83-87?).
 
-## reflections on the unit
+## Reflections on the unit
 Through this unit, I have learnt how to model systems in promela, model real life systems with structures, design and evaluate CTL/LTL formulae, and much more. I've developed my ability to self-learn, and learn from formatif feedback. Overall, this has been a very interesting course, and I hope to do more research and study of formal verification in my free time in the future.
+
+## Overall Assessment
+All together, I think I line up with about a low HD mark (83 - 90) for the pre assessment work.
