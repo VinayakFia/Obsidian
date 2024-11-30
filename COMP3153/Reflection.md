@@ -123,10 +123,29 @@ This is so only 1 light can enter the critical section at a time. This was an in
 
 At this point, I just added in the rest of my safety thread, including for the pedestrian lights:
 ```python
-
+proctype Safety() {
+	do
+	// Perpendicular lights should not be on at the same time
+	:: assert(!(LStates[0] == GREEN && LStates[1] == GREEN));
+	:: assert(!(LStates[0] == AMBER && LStates[1] == AMBER));
+	:: assert(!(LStates[0] == AMBER && LStates[1] == GREEN));
+	:: assert(!(LStates[0] == GREEN && LStates[1] == AMBER));
+	
+	// Perpendicular pedestrian and traffic lights should not be on at the same time
+	:: assert(!(PStates[0] == GREEN && LStates[1] == GREEN));
+	:: assert(!(PStates[1] == GREEN && LStates[0] == GREEN));
+	od
+}
 ```
-## self-assessment
-I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. I also did spend many many hours learning and programming promela, and made my system effectively. I did have to change my implementation from using signals to using shared arrays, however this did not change the important states, and importantly actually worked.
+
+This could also easily be a never statement too.
+I believe that this lines up with a low HD (85-90) because:
+- my initial system model and details were in depth, well-researched, and complex
+- my implementation took several iterations and failures, and lead to alot of promela learning as well as 
+- my final implementation did satisfy all requierments
+
+## Stream B assessment
+I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. The
 
 I believe that this lines up with a low HD (85-90) or a higher D (80-90).
 
