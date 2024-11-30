@@ -94,7 +94,37 @@ int Peds[2] = { 0, 0 };
 mtype PStates[2] = RED;
 ```
 
-This lead to a simpler, easier to understand implementation that still modelled SCATS as in my specification. It also made it much easier to check things like Cars and States naturally, rather than these things being added on just for the `Safety` process. Originall, I ran into an issue where multiple lights would be green at the same time as earlier. My original solution was actually o 
+This lead to a simpler, easier to understand implementation that still modelled SCATS as in my specification. It also made it much easier to check things like Cars and States naturally, rather than these things being added on just for the `Safety` process. Originally, I ran into an issue where multiple lights would be green at the same time as earlier. The cause was also very similar, Light 1 would see Light 0 is red and turn green, in the meantime, Light 0 would see Light 1 is red and also turn green. My original solution was actually to use a lock:
+```python
+bool lock = false;
+inline AquireLock()
+{
+	bool tmp = false;
+	do
+	:: atomic
+	{
+		tmp = lock;
+		lock = true;
+	} ->
+		if
+		:: tmp;
+		:: else -> break;
+		fi;
+	od;
+}
+
+inline ReleaseLock()
+{
+	lock = false;
+}
+```
+
+This is so only 1 light can enter the critical section at a time. This was an interesting exersize, however I realised I could achieve the same with just the use of atomic.
+
+At this point, I just added in the rest of my safety thread, including for the pedestrian lights:
+```python
+
+```
 ## self-assessment
 I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. I also did spend many many hours learning and programming promela, and made my system effectively. I did have to change my implementation from using signals to using shared arrays, however this did not change the important states, and importantly actually worked.
 
