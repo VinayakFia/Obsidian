@@ -141,10 +141,11 @@ proctype Safety() {
 This could also easily be a never statement too.
 I believe that this lines up with a low HD (85-90) because:
 - my initial system model and details were in depth, well-researched, and complex
-- my implementation took several iterations and failures, and lead to alot of promela learning as well as 
-- my final implementation did satisfy all requierments
+- my implementation took several iterations and failures, and lead to a lot of promela learning. In the end, it did model my original system correctly.
+- my final implementation did satisfy all requirements
 
 ## Stream B assessment
+I made an attempt at everything except th
 I did not complete all HD tasks (e.g. stream B HD was not 100% completed), however, I made a strong attempt at all tasks regardless of grade, and did complete HD tasks for Stream A. The
 
 I believe that this lines up with a low HD (85-90) or a higher D (80-90).
