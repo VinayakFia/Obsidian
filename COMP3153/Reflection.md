@@ -137,8 +137,10 @@ proctype Safety() {
 	od
 }
 ```
+This method worked, however, had too many states (as the number of cars a light may have is infinite). The `pan` file would only partially be able to verify this model.
 
-This method worked, however, had too many states (as the number of cars a light may have is infinite). 
+**Fourth Implementation**
+I abstracted my model to instead either have or not have a car waiting (using booleans rather than integers). This, finally worked! It was a small change to make in practice, but it is the change that ended up actually running in the pan verifier.
 
 This could also easily be a never statement too.
 I believe that this lines up with a low HD (85-90) because:
