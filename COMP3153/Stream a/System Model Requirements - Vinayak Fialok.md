@@ -56,31 +56,20 @@ $$\textbf{F}a \implies \textbf{F}(a\wedge\textbf{F}(\neg a))$$
 Where $\alpha$ refers to light 1 having  more than 0 cars waiting.
 This requirement states that *if* a car arrives at light 1, then that car will eventually leave. We can easily modify this formula for light 2 by using index 1 instead of 0 in our condition $a$.
 
-A never claim for this would be
+A never claim for this would be the opposite of this, that is, eventually a car will always be present at light 0:
 $$\textbf{FG}a$$
+
 In promela we have:
 ```c
-never {
+never { /* FGa */
+T0_init :    /* init */
 	if
-	:: (!(Cars[0] > 0)) -> goto will_come_eventually
-	:: (Cars[0] > 0) -> goto eventually_leaves
+	:: (Cars[0] == false) -> goto T0_init
+	:: (Cars[0] == true) -> goto arrived
 	fi;
-will_come_eventually:
+arrived:    /* 1 */
 	if
-	:: (!Cars[0] > 0) -> goto will_come_eventually
-  :: else -> goto eventually_arrives
+	:: (Cars[0] == true) -> goto arrived;
 	fi;
-eventually_arrives:
-	if
-	:: (Cars[0] > 0) -> goto eventually_leaves
-	:: else -> goto eventually_arrives
-	fi;
-eventually_leaves:
-	if
-	:: (!Cars[0] > 0) -> goto accept
-	:: else -> goto eventually_leaves
-	fi;
-accept:
-	skip
 }
 ```

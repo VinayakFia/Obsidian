@@ -185,66 +185,17 @@ p_start:
   goto p_start;
 }
 
-// Cars at Light 0 can eventually go
+// Cars at Light 0 will never go
 never { /* FGa */
 T0_init :    /* init */
 	if
 	:: (Cars[0] == false) -> goto T0_init
-	:: (Cars[0] == true) -> goto accept_S2
+	:: (Cars[0] == true) -> goto arrived
 	fi;
-accept_S2 :    /* 1 */
+arrived:    /* 1 */
 	if
-	:: (Cars[0] == true) -> goto accept_S2
+	:: (Cars[0] == true) -> goto arrived;
 	fi;
-}
-
-never {
-	if
-	:: (!(Cars[0] == true)) -> goto will_come_eventually
-	:: (Cars[0] == true) -> goto eventually_leaves
-	fi;
-will_come_eventually:
-	if
-	:: (!Cars[0] == true) -> goto will_come_eventually
-  :: else -> goto eventually_arrives
-	fi;
-eventually_arrives:
-	if
-	:: (Cars[0] == true) -> goto eventually_leaves
-	:: else -> goto eventually_arrives
-	fi;
-eventually_leaves:
-	if
-	:: (!Cars[0] == true) -> goto accept
-	:: else -> goto eventually_leaves
-	fi;
-accept:
-	skip
-}
-
-// Cars at Light 1 can eventually go
-never {
-	if
-	:: (!(Cars[1] == true)) -> goto will_come_eventually2
-	:: (Cars[1] == true) -> goto eventually_leaves2
-	fi;
-will_come_eventually2:
-	if
-	:: (!Cars[1] == true) -> goto will_come_eventually2
-  :: else -> goto eventually_arrives2
-	fi;
-eventually_arrives2:
-	if
-	:: (Cars[1] == true) -> goto eventually_leaves2
-	:: else -> goto eventually_arrives2
-	fi;
-eventually_leaves2:
-	if
-	:: (!Cars[1] == true) -> goto accept2
-	:: else -> goto eventually_leaves2
-	fi;
-accept2:
-	skip
 }
 
 // This is also modelled in the safety thread
