@@ -189,7 +189,7 @@ p_start:
 never { /* FGa */
 T0_init :    /* init */
 	if
-	:: (1) -> goto T0_init
+	:: (Cars[0] == false) -> goto T0_init
 	:: (Cars[0] == true) -> goto accept_S2
 	fi;
 accept_S2 :    /* 1 */
