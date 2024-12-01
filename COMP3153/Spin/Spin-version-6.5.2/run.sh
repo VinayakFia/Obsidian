@@ -5,7 +5,7 @@ cd $temp
 cp ../lights_v4.pml .
 spin -a lights_v4.pml
 gcc -o pan pan.c
-./pan -a
-spin -p -t lights_v4.pml
+./pan -m10000 -a -c1
+# spin -p -t lights_v4.pml
 cd ..
 rm -rf $temp

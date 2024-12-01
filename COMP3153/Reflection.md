@@ -140,8 +140,9 @@ proctype Safety() {
 This method worked, however, had too many states (as the number of cars a light may have is infinite). The `pan` file would only partially be able to verify this model.
 
 **Fourth Implementation**
-I abstracted my model to instead either have or not have a car waiting (using booleans rather than integers). This, finally worked! It was a small change to make in practice, but it is the change that ended up actually running in the pan verifier.
+I abstracted my model to instead either have or not have a car waiting (using booleans rather than integers). This, finally worked! It was a small change to make in practice, but it is the change that ended up actually running in the pan verifier. I was finally able to run the `pan.c` output file and indeed verify that my program passed the never claim I wrote.
 
+**Assessment**
 This could also easily be a never statement too.
 I believe that this lines up with a low HD (85-90) because:
 - my initial system model and details were in depth, well-researched, and complex
@@ -158,6 +159,3 @@ Through this unit, I have learnt how to model systems in promela, model real lif
 
 ## Overall Assessment
 All together, I think I line up with about a low HD mark (83 - 90) for the pre assessment work.
-
-## Appendix (Screenshots)
-![[Pasted image 20241201184540.png]]*fig 1. notice that Never calim moves to line 224, meaning that it is accepted!*

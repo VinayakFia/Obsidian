@@ -186,77 +186,78 @@ p_start:
 }
 
 // Cars at Light 0 can eventually go
-// never {
-// 	if
-// 	:: (!(Cars[0] == true)) -> goto will_come_eventually
-// 	:: (Cars[0] == true) -> goto eventually_leaves
-// 	fi;
-// will_come_eventually:
-// 	if
-// 	:: (!Cars[0] == true) -> goto will_come_eventually
-//   :: else -> goto eventually_arrives
-// 	fi;
-// eventually_arrives:
-// 	if
-// 	:: (Cars[0] == true) -> goto eventually_leaves
-// 	:: else -> goto eventually_arrives
-// 	fi;
-// eventually_leaves:
-// 	if
-// 	:: (!Cars[0] == true) -> goto accept
-// 	:: else -> goto eventually_leaves
-// 	fi;
-// accept:
-// 	skip
-// }
+never {
+	if
+	:: (!(Cars[0] == true)) -> goto will_come_eventually
+	:: (Cars[0] == true) -> goto eventually_leaves
+	fi;
+will_come_eventually:
+	if
+	:: (!Cars[0] == true) -> goto will_come_eventually
+  :: else -> goto eventually_arrives
+	fi;
+eventually_arrives:
+	if
+	:: (Cars[0] == true) -> goto eventually_leaves
+	:: else -> goto eventually_arrives
+	fi;
+eventually_leaves:
+	if
+	:: (!Cars[0] == true) -> goto accept
+	:: else -> goto eventually_leaves
+	fi;
+accept:
+	skip
+}
 
-// // Cars at Light 1 can eventually go
-// never {
-// 	if
-// 	:: (!(Cars[1] == true)) -> goto will_come_eventually2
-// 	:: (Cars[1] == true) -> goto eventually_leaves2
-// 	fi;
-// will_come_eventually2:
-// 	if
-// 	:: (!Cars[1] == true) -> goto will_come_eventually2
-//   :: else -> goto eventually_arrives2
-// 	fi;
-// eventually_arrives2:
-// 	if
-// 	:: (Cars[1] == true) -> goto eventually_leaves2
-// 	:: else -> goto eventually_arrives2
-// 	fi;
-// eventually_leaves2:
-// 	if
-// 	:: (!Cars[1] == true) -> goto accept2
-// 	:: else -> goto eventually_leaves2
-// 	fi;
-// accept2:
-// 	skip
-// }
-
-// // Opposing lights are never green at the same time
-// never {
-// accept_init:
-//   if
-//   :: (!(LStates[0] != RED && LStates[1] != RED)) -> goto accept_init;
-//   fi;
-// }
+// Cars at Light 1 can eventually go
+never {
+	if
+	:: (!(Cars[1] == true)) -> goto will_come_eventually2
+	:: (Cars[1] == true) -> goto eventually_leaves2
+	fi;
+will_come_eventually2:
+	if
+	:: (!Cars[1] == true) -> goto will_come_eventually2
+  :: else -> goto eventually_arrives2
+	fi;
+eventually_arrives2:
+	if
+	:: (Cars[1] == true) -> goto eventually_leaves2
+	:: else -> goto eventually_arrives2
+	fi;
+eventually_leaves2:
+	if
+	:: (!Cars[1] == true) -> goto accept2
+	:: else -> goto eventually_leaves2
+	fi;
+accept2:
+	skip
+}
 
 // Opposing lights are never green at the same time
+// I had some trouble getting this one to run in the below format
+// however the Safety thread mirrors the same checks
 never {
-accept_init2:
+accept_init:
   if
+  :: (!(LStates[0] != RED && LStates[1] != RED)) -> goto accept_init;
+  fi;
+}
+
+// Checks that perpendicular lights are not on at the same time
+proctype Safety() {
+  do
   // Perpendicular lights should not be on at the same time
-  :: !(LStates[0] == GREEN && LStates[1] == GREEN) -> goto accept_init2;
-  :: !(LStates[0] == AMBER && LStates[1] == AMBER) -> goto accept_init2;
-  :: !(LStates[0] == AMBER && LStates[1] == GREEN) -> goto accept_init2;
-  :: !(LStates[0] == GREEN && LStates[1] == AMBER) -> goto accept_init2;
+  :: assert(!(LStates[0] == GREEN && LStates[1] == GREEN));
+  :: assert(!(LStates[0] == AMBER && LStates[1] == AMBER));
+  :: assert(!(LStates[0] == AMBER && LStates[1] == GREEN));
+  :: assert(!(LStates[0] == GREEN && LStates[1] == AMBER));
 
   // Perpendicular pedestrian and traffic lights should not be on at the same time
-  :: !(PStates[0] == GREEN && LStates[1] == GREEN) -> goto accept_init2;
-  :: !(PStates[1] == GREEN && LStates[0] == GREEN) -> goto accept_init2;
-  fi;
+  :: assert(!(PStates[0] == GREEN && LStates[1] == GREEN));
+  :: assert(!(PStates[1] == GREEN && LStates[0] == GREEN));
+  od
 }
 
 init {
@@ -268,4 +269,7 @@ init {
   run PedestrianLight(1);
 
   run Signal(40);
+
+  // Safety
+  run Safety();
 };
