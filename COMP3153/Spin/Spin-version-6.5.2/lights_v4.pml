@@ -186,6 +186,18 @@ p_start:
 }
 
 // Cars at Light 0 can eventually go
+never { /* FGa */
+T0_init :    /* init */
+	if
+	:: (1) -> goto T0_init
+	:: (Cars[0] == true) -> goto accept_S2
+	fi;
+accept_S2 :    /* 1 */
+	if
+	:: (Cars[0] == true) -> goto accept_S2
+	fi;
+}
+
 never {
 	if
 	:: (!(Cars[0] == true)) -> goto will_come_eventually

@@ -54,9 +54,10 @@ proctype Safety() {
 We have the LTL formula:
 $$\textbf{F}a \implies \textbf{F}(a\wedge\textbf{F}(\neg a))$$
 Where $\alpha$ refers to light 1 having  more than 0 cars waiting.
-
 This requirement states that *if* a car arrives at light 1, then that car will eventually leave. We can easily modify this formula for light 2 by using index 1 instead of 0 in our condition $a$.
 
+A never claim for this would be
+$$\textbf{FG}a$$
 In promela we have:
 ```c
 never {
