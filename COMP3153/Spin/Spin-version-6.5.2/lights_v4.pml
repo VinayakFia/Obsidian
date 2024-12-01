@@ -84,7 +84,7 @@ t_start:
   {
     LStates[this] == RED &&
     LStates[other] == RED &&
-    Cars[this] > 0 &&
+    Cars[this] == true &&
     PStates[other] == RED ->
     printf("L%d->Green\n", this);
     LStates[this] = GREEN;
@@ -95,7 +95,7 @@ t_start:
   :: atomic
   {
     LStates[this] == GREEN &&
-    Cars[other] == 0 &&
+    Cars[other] == false &&
     counter == 5 ->
     printf("L%d-GreenInf\n", this);
     DecrementCar(this, 1);
@@ -155,7 +155,7 @@ p_start:
   {
     PStates[this] == RED &&
     LStates[other] == RED &&
-    Peds[this] > 0 ->
+    Peds[this] == true ->
     printf("P%d->Green\n", this);
     PStates[this] = GREEN;
     counter = 5;
@@ -202,22 +202,22 @@ proctype Safety() {
 
 never {
 	if
-	:: (!(Cars[0] > 0)) -> goto will_come_eventually
-	:: (Cars[0] > 0) -> goto eventually_leaves
+	:: (!(Cars[0] == true)) -> goto will_come_eventually
+	:: (Cars[0] == true) -> goto eventually_leaves
 	fi;
 will_come_eventually:
 	if
-	:: (!Cars[0] > 0) -> goto will_come_eventually
+	:: (!Cars[0] == true) -> goto will_come_eventually
   :: else -> goto eventually_arrives
 	fi;
 eventually_arrives:
 	if
-	:: (Cars[0] > 0) -> goto eventually_leaves
+	:: (Cars[0] == true) -> goto eventually_leaves
 	:: else -> goto eventually_arrives
 	fi;
 eventually_leaves:
 	if
-	:: (!Cars[0] > 0) -> goto accept
+	:: (!Cars[0] == true) -> goto accept
 	:: else -> goto eventually_leaves
 	fi;
 accept:
