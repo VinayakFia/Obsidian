@@ -22,7 +22,16 @@ This formula ensures that pedestrian lights that cross in the path of traffic li
 Combining the above formulas we get:
 $$\textbf{G}(\neg(\alpha \wedge \beta)) \wedge \textbf{G}(\neg(\alpha \wedge c)) \wedge \textbf{G}(\neg(\beta \wedge d))$$
 
-This requirement has also been programmed in promela as a safety process:
+Expressed as a never claim we have the below:
+```c
+never {
+  do
+  :: ((LStates[0] != RED && LStates[1] != RED) || (PStates[0] != RED && LStates[1] != RED) || (PStates[1] != RED && LStates[0] != RED));
+  od;
+}
+```
+
+This requirement has also been programmed in promela as a safety process. This was my initial idea before I understood how never worked.
 ```c
 proctype Safety() {
   do
