@@ -185,7 +185,7 @@ p_start:
   goto p_start;
 }
 
-// // Cars at Light 0 can eventually go
+// Cars at Light 0 can eventually go
 // never {
 // 	if
 // 	:: (!(Cars[0] == true)) -> goto will_come_eventually
@@ -247,7 +247,15 @@ p_start:
 never {
 accept_init2:
   if
-  :: (!(LStates[0] != RED && LStates[1] != RED)) -> goto accept_init2;
+  // Perpendicular lights should not be on at the same time
+  :: !(LStates[0] == GREEN && LStates[1] == GREEN) -> goto accept_init2;
+  :: !(LStates[0] == AMBER && LStates[1] == AMBER) -> goto accept_init2;
+  :: !(LStates[0] == AMBER && LStates[1] == GREEN) -> goto accept_init2;
+  :: !(LStates[0] == GREEN && LStates[1] == AMBER) -> goto accept_init2;
+
+  // Perpendicular pedestrian and traffic lights should not be on at the same time
+  :: !(PStates[0] == GREEN && LStates[1] == GREEN) -> goto accept_init2;
+  :: !(PStates[1] == GREEN && LStates[0] == GREEN) -> goto accept_init2;
   fi;
 }
 
