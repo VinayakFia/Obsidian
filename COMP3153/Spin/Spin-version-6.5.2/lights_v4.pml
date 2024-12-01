@@ -1,21 +1,14 @@
-# 1 "lights_v3.pml"
-# 1 "<built-in>" 1
-# 1 "<built-in>" 3
-# 414 "<built-in>" 3
-# 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "lights_v3.pml" 2
 mtype = { RED, GREEN, AMBER };
 
-int Cars[2] = { 0, 0 };
+bool Cars[2] = false;
 mtype LStates[2] = RED;
 
-int Peds[2] = { 0, 0 };
+bool Peds[2] = false;
 mtype PStates[2] = RED;
 
-
-
-
+// LOCK
+// These are unused, however have been left here as they were my original
+// solution before using atomic
 bool lock = false;
 inline AquireLock()
 {
@@ -38,29 +31,29 @@ inline ReleaseLock()
   lock = false;
 }
 
-
+// HELPERS
 
 inline DecrementCar(i, n)
 {
   if
-  :: Cars[i] < n -> Cars[i] = n;
-  :: else -> Cars[i] = Cars[i] - n;
+  :: Cars[i] == true -> Cars[i] = false;
+  :: else -> skip
   fi;
 }
 
 inline DecrementPed(i, n)
 {
   if
-  :: Peds[i] < n -> Peds[i] = n;
-  :: else -> Peds[i] = Peds[i] - n;
+  :: Peds[i] == true -> Peds[i] = false;
+  :: else -> skip
   fi;
 }
 
-
+// STATES
 
 proctype Signal(int chance)
 {
-
+  // choose a light to add to
   int light = 0
 car_start:
   if
@@ -68,11 +61,10 @@ car_start:
   :: light = 0
   fi;
 
-
+  // add to pedestrian or traffic light
   if
-  :: atomic { Cars[light] == 0 -> Cars[light]++ };
-  :: atomic { Peds[light] == 0 -> Peds[light]++ };
-  :: else -> skip;
+  :: atomic { Cars[light] = true };
+  :: atomic { Peds[light] = true }
   fi;
 
   goto car_start;
@@ -84,10 +76,10 @@ proctype TrafficLight(int this)
   int other = (this + 1) % 2;
 
 t_start:
-
+  // AquireLock(); part of original design
 
   if
-
+  // Has cars and other light is not green
   :: atomic
   {
     LStates[this] == RED &&
@@ -99,7 +91,7 @@ t_start:
     counter = 5;
   };
 
-
+  // Light flow
   :: atomic
   {
     LStates[this] == GREEN &&
@@ -107,7 +99,7 @@ t_start:
     counter == 5 ->
     printf("L%d-GreenInf\n", this);
     DecrementCar(this, 1);
-  };
+  }; // Green Infinity state from diagram
   :: atomic
   {
     LStates[this] == GREEN &&
@@ -144,7 +136,7 @@ t_start:
   };
   :: else -> skip;
   fi;
-
+  // ReleaseLock();
   goto t_start;
 }
 
@@ -154,11 +146,11 @@ proctype PedestrianLight(int this)
   int other = (this + 1) % 2;
 
 p_start:
-
-
+  // AquireLock(); initially I went with a lock based solution so that processes would not interleave, however this was solved through
+  // the use of atomic
 
   if
-
+  // Has pedestrians and perpendicular light is RED
   :: atomic
   {
     PStates[this] == RED &&
@@ -169,7 +161,7 @@ p_start:
     counter = 5;
   };
 
-
+  // Light flow
   :: atomic
   {
     PStates[this] == GREEN &&
@@ -189,51 +181,51 @@ p_start:
   :: else -> skip;
   fi;
 
-
+  // ReleaseLock();
   goto p_start;
 }
 
-
+// Checks that perpendicular lights are not on at the same time
 proctype Safety() {
   do
-
+  // Perpendicular lights should not be on at the same time
   :: assert(!(LStates[0] == GREEN && LStates[1] == GREEN));
   :: assert(!(LStates[0] == AMBER && LStates[1] == AMBER));
   :: assert(!(LStates[0] == AMBER && LStates[1] == GREEN));
   :: assert(!(LStates[0] == GREEN && LStates[1] == AMBER));
 
-
+  // Perpendicular pedestrian and traffic lights should not be on at the same time
   :: assert(!(PStates[0] == GREEN && LStates[1] == GREEN));
   :: assert(!(PStates[1] == GREEN && LStates[0] == GREEN));
   od
 }
 
 never {
- if
- :: (!(Cars[0] > 0)) -> goto will_come_eventually
- :: (Cars[0] > 0) -> goto eventually_leaves
- fi;
+	if
+	:: (!(Cars[0] > 0)) -> goto will_come_eventually
+	:: (Cars[0] > 0) -> goto eventually_leaves
+	fi;
 will_come_eventually:
- if
- :: (!Cars[0] > 0) -> goto will_come_eventually
+	if
+	:: (!Cars[0] > 0) -> goto will_come_eventually
   :: else -> goto eventually_arrives
- fi;
+	fi;
 eventually_arrives:
- if
- :: (Cars[0] > 0) -> goto eventually_leaves
- :: else -> goto eventually_arrives
- fi;
+	if
+	:: (Cars[0] > 0) -> goto eventually_leaves
+	:: else -> goto eventually_arrives
+	fi;
 eventually_leaves:
- if
- :: (!Cars[0] > 0) -> goto accept
- :: else -> goto eventually_leaves
- fi;
+	if
+	:: (!Cars[0] > 0) -> goto accept
+	:: else -> goto eventually_leaves
+	fi;
 accept:
- skip
+	skip
 }
 
 init {
-
+  // Setup
   run TrafficLight(0);
   run TrafficLight(1);
 
@@ -242,6 +234,6 @@ init {
 
   run Signal(40);
 
-
+  // Setup Safety
   run Safety();
 };
