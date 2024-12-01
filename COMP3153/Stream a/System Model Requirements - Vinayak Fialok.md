@@ -1,3 +1,5 @@
+> [!note] I abstracted my model so that the number of cars waiting was maxed at 1 in order to enable promela to verify. When attempting to verify without this abstraction, it would not run and tell me there were too many states.
+
 ## Requirement 1
 **Safety property: perpendicular lights should not be green or amber at the same time.**
 
@@ -53,7 +55,7 @@ proctype Safety() {
 
 We have the LTL formula:
 $$\textbf{F}a \implies \textbf{F}(a\wedge\textbf{F}(\neg a))$$
-Where $\alpha$ refers to light 1 having  more than 0 cars waiting.
+Where $\alpha$ refers to light 1 having  more than 0 cars waiting. *In my abstract model, this refers to light 1 having a car waiting*.
 This requirement states that *if* a car arrives at light 1, then that car will eventually leave. We can easily modify this formula for light 2 by using index 1 instead of 0 in our condition $a$.
 
 A never claim for this would be the opposite of this, that is, eventually a car will always be present at light 0:

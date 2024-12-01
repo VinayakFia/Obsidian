@@ -137,13 +137,26 @@ proctype Safety() {
 	od
 }
 ```
-This method worked, however, had too many states (as the number of cars a light may have is infinite). The `pan` file would only partially be able to verify this model.
+This method worked, however, had too many states (as the number of cars a light may have is infinite). This lead to verifying through the generated `pan` file to not run. I realised after some research I needed to abstract my model.
 
 **Fourth Implementation**
 I abstracted my model to instead either have or not have a car waiting (using booleans rather than integers). This, finally worked! It was a small change to make in practice, but it is the change that ended up actually running in the pan verifier. I was finally able to run the `pan.c` output file and indeed verify that my program passed the never claim I wrote.
 
-![[Pasted image 20241201192534.png]]
+```c
+// All I had to change was the type of Cars and Peds
+mtype = { RED, GREEN, AMBER };
 
+bool Cars[2] = false;
+mtype LStates[2] = RED;
+
+bool Peds[2] = false;
+mtype PStates[2] = RED;
+```
+
+![[Pasted image 20241201203144.png]]
+*Some outputs of verification*
+
+> [!warning] To be completely honest, I still do have some gaps in my understanding of how never works in promela, however, I am satisfied with both the safety process I made earlier as well as the never claim I *eventually* manage to ran.
 
 **Assessment**
 This could also easily be a never statement too.
@@ -161,4 +174,4 @@ Overall I think this lines up with a high D or low HD (83-87?).
 Through this unit, I have learnt how to model systems in promela, model real life systems with structures, design and evaluate CTL/LTL formulae, and much more. I've developed my ability to self-learn, and learn from formatif feedback. Overall, this has been a very interesting course, and I hope to do more research and study of formal verification in my free time in the future.
 
 ## Overall Assessment
-All together, I think I line up with about a low HD mark (83 - 90) for the pre assessment work.
+All together, I think I line up with about a low HD mark (83 - 90) for the pre exam work.
