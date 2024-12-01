@@ -154,3 +154,6 @@ Through this unit, I have learnt how to model systems in promela, model real lif
 
 ## Overall Assessment
 All together, I think I line up with about a low HD mark (83 - 90) for the pre assessment work.
+
+## Appendix (Screenshots)
+![[Pasted image 20241201184540.png]]*fig 1. notice that Never calim moves to line 224, meaning that it is accepted!*

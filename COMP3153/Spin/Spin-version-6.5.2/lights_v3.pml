@@ -36,7 +36,7 @@ inline ReleaseLock()
 inline DecrementCar(i, n)
 {
   if
-  :: Cars[i] < n -> Cars[i] = n;
+  :: Cars[i] <= n -> Cars[i] = 0;
   :: else -> Cars[i] = Cars[i] - n;
   fi;
 }
@@ -44,7 +44,7 @@ inline DecrementCar(i, n)
 inline DecrementPed(i, n)
 {
   if
-  :: Peds[i] < n -> Peds[i] = n;
+  :: Peds[i] < n -> Peds[i] = 0;
   :: else -> Peds[i] = Peds[i] - n;
   fi;
 }
@@ -123,7 +123,7 @@ t_start:
     counter > 0 ->
     printf("L%d-Amber%d\n", this, counter);
     counter = counter - 1;
-    DecrementCar(this, 1);
+    DecrementCar(this, 5);
   };
   :: atomic
   {
@@ -132,7 +132,7 @@ t_start:
     printf("L%d->Red\n", this);
     counter = 3;
     LStates[this] = RED;
-    DecrementCar(this, 1);
+    DecrementCar(this, 5);
   };
   :: else -> skip;
   fi;
