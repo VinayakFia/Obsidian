@@ -138,6 +138,8 @@ proctype Safety() {
 }
 ```
 
+This method worked, however, had too many states (as the number of cars a light may have is infinite). 
+
 This could also easily be a never statement too.
 I believe that this lines up with a low HD (85-90) because:
 - my initial system model and details were in depth, well-researched, and complex
